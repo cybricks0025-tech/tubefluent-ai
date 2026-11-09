@@ -1,0 +1,3406 @@
+{
+  "id": "arj7oStGLkU_tech-interview",
+  "videoId": "arj7oStGLkU",
+  "title": "Inside the Mind of a Master Procrastinator | Tim Urban | TED",
+  "channel": "TED",
+  "thumbnail": "https://i.ytimg.com/vi/arj7oStGLkU/hqdefault.jpg",
+  "duration": 835,
+  "focusMode": "tech-interview",
+  "transcriptSource": "youtube-innertube-android",
+  "analysisSource": "cloud-bilingual-engine",
+  "cached": false,
+  "cachedAt": "2026-11-09T02:46:52.157Z",
+  "summary": {
+    "overviewZh": "已完整解析全片「Inside the Mind of a Master Procrastinator | Tim Urban | TED」（片長約 14 分鐘，共 112 個完整語句、160 個不重複核心字彙）。全片脈絡從「所以在大學裡，我學的是政府專業，這意味著我必須寫很多論文。 現在，當一個普通學生寫論文時，⋯」展開，中段探討「一個簡單又有趣的地方，完全脫離了有意義的圈子。我稱之為黑暗遊樂場。⋯」，最終收斂於「不久的將來。謝謝。」。",
+    "keyTakeaways": [
+      "全片 100% 完整解析：共 112 句中英對照字幕（0.0s 至 834.6s 全覆蓋）",
+      "共標記 219 處語境重點單字，點擊底線即可查看音標、中文釋義與雙語延伸例句",
+      "涵蓋片頭、中段與結尾的 5 題全片時間軸聽力測驗，可一鍵跳轉對應秒數複習"
+    ],
+    "difficultyLevel": "B2 中高級 (全片完整版)",
+    "topicTags": [
+      "全片完整解析",
+      "共 112 句",
+      "雙語時間軸同步"
+    ]
+  },
+  "subtitles": [
+    {
+      "id": 1,
+      "start": 12.6,
+      "end": 19.4,
+      "en": "So in college, I was a government major, which means I had to write a lot of papers.",
+      "zh": "所以在大學裡，我學的是政府專業，這意味著我必須寫很多論文。",
+      "grammarNote": "時間軸 (12.6s - 19.4s) · 核心字詞：government (n.)、college (n.)",
+      "keywords": [
+        {
+          "word": "government",
+          "lemma": "government",
+          "pos": "n.",
+          "phonetic": "/ˈɡʌvə(n)mənt/",
+          "meaning": "有權制定和/或執行法律以控制國家、土地區域、人民或組織的機構。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"government\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「有權制定和/或執行法律以控制國家、土地區域、人民或組織的機構。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "college",
+          "lemma": "college",
+          "pos": "n.",
+          "phonetic": "/ˈkɒlɪd͡ʒ/",
+          "meaning": "企業集團；一群同事。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"college\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「企業集團；一群同事。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 19.4,
+      "end": 23.9,
+      "en": "Now, when a normal student writes a paper, they might spread the work out a little like this.",
+      "zh": "現在，當一個普通學生寫論文時，他們可能會像這樣展開工作。",
+      "grammarNote": "時間軸 (19.4s - 23.9s) · 核心字詞：student (n.)、normal (n.)",
+      "keywords": [
+        {
+          "word": "student",
+          "lemma": "student",
+          "pos": "n.",
+          "phonetic": "/ˈstjuː.dənt/",
+          "meaning": "研究或了解某一特定主題的人。",
+          "level": "科技外商核心",
+          "exampleEn": "He is a student of life.",
+          "exampleZh": "在跨國團隊中，有效運用「研究或了解某一特定主題的人。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "normal",
+          "lemma": "normal",
+          "pos": "n.",
+          "phonetic": "/ˈnɔːməl/",
+          "meaning": "垂直於另一條線、曲面或平面的線或向量。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"normal\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「垂直於另一條線、曲面或平面的線或向量。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 23.9,
+      "end": 32.4,
+      "en": "So, you know -- you get started maybe a little slowly, but you get enough done in the first week that, with some heavier days later on,.",
+      "zh": "所以，你知道——你開始的時候可能有點慢，但你在第一周就完成了足夠的工作，之後的幾天更重。",
+      "grammarNote": "時間軸 (23.9s - 32.4s) · 核心字詞：start (v./adj.)、heavier (adj.)",
+      "keywords": [
+        {
+          "word": "started",
+          "lemma": "start",
+          "pos": "v./adj.",
+          "phonetic": "/start/",
+          "meaning": "開始",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"start\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「開始」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "heavier",
+          "lemma": "heavier",
+          "pos": "adj.",
+          "phonetic": "/ˈhɛvɪə/",
+          "meaning": "（物理物體）重量很大。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"heavier\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「（物理物體）重量很大。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 32.5,
+      "end": 38.1,
+      "en": "Everything gets done, things stay civil. And I would want to do that like that.",
+      "zh": "一切都完成了，一切都保持文明。我也想那樣做。",
+      "grammarNote": "時間軸 (32.5s - 38.1s) · 核心字詞：everyth (v./n.)、civil (n./v.)",
+      "keywords": [
+        {
+          "word": "Everything",
+          "lemma": "everyth",
+          "pos": "v./n.",
+          "phonetic": "/everyth/",
+          "meaning": "一切",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"everyth\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「一切」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "civil",
+          "lemma": "civil",
+          "pos": "n./v.",
+          "phonetic": "/civil/",
+          "meaning": "民用",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"civil\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「民用」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 38.1,
+      "end": 46.3,
+      "en": "That would be the plan. I would have it all ready to go, but then, actually, the paper would come along, and then I would kind of do this.",
+      "zh": "這就是計劃。我會把一切準備好，然後，實際上，論文會出現，然後我就會這樣做。",
+      "grammarNote": "時間軸 (38.1s - 46.3s) · 核心字詞：ready (n.)、paper (n./v.)",
+      "keywords": [
+        {
+          "word": "ready",
+          "lemma": "ready",
+          "pos": "n.",
+          "phonetic": "/ˈɹɛdi/",
+          "meaning": "準備錢；現金",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"ready\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「準備錢；現金」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "paper",
+          "lemma": "paper",
+          "pos": "n./v.",
+          "phonetic": "/paper/",
+          "meaning": "紙",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"paper\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「紙」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 48.8,
+      "end": 57.8,
+      "en": "And that would happen every single paper. But then came my 90-page senior thesis, a paper you're supposed to spend a year on.",
+      "zh": "每一篇論文都會發生這種情況。但接下來是我 90 頁的高級論文，你應該花一年的時間完成這篇論文。",
+      "grammarNote": "時間軸 (48.8s - 57.8s) · 核心字詞：supposed (v.)、happen (v.)",
+      "keywords": [
+        {
+          "word": "supposed",
+          "lemma": "supposed",
+          "pos": "v.",
+          "phonetic": "/spoʊst/",
+          "meaning": "認為理所當然；得出結論，缺乏絕對的支持數據；相信。",
+          "level": "科技外商核心",
+          "exampleEn": "Suppose that A implies B and B implies C. Then A implies C.",
+          "exampleZh": "在跨國團隊中，有效運用「認為理所當然；得出結論，缺乏絕對的支持數據；相信。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "happen",
+          "lemma": "happen",
+          "pos": "v.",
+          "phonetic": "/ˈhæpən/",
+          "meaning": "發生或發生。",
+          "level": "科技外商核心",
+          "exampleEn": "Let me tell you how it happened.",
+          "exampleZh": "在跨國團隊中，有效運用「發生或發生。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 57.9,
+      "end": 62.9,
+      "en": "And I knew for a paper like that, my normal work flow was not an option. It was way too big a project.",
+      "zh": "我知道對於這樣的論文，我的正常工作流程不是一個選擇。這是一個太大的工程。",
+      "grammarNote": "時間軸 (57.9s - 62.9s) · 核心字詞：project (n.)、normal (n.)",
+      "keywords": [
+        {
+          "word": "project",
+          "lemma": "project",
+          "pos": "n.",
+          "phonetic": "/project/",
+          "meaning": "有計劃的努力，通常具有特定目標並分幾個步驟或階段完成。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"project\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「有計劃的努力，通常具有特定目標並分幾個步驟或階段完成。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "normal",
+          "lemma": "normal",
+          "pos": "n.",
+          "phonetic": "/ˈnɔːməl/",
+          "meaning": "垂直於另一條線、曲面或平面的線或向量。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"normal\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「垂直於另一條線、曲面或平面的線或向量。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 62.9,
+      "end": 67.3,
+      "en": "So I planned things out, and I decided I kind of had to go something like this.",
+      "zh": "所以我計劃好了事情，我決定我必須這樣做。",
+      "grammarNote": "時間軸 (62.9s - 67.3s) · 核心字詞：planned (v.)、decided (v.)",
+      "keywords": [
+        {
+          "word": "planned",
+          "lemma": "planned",
+          "pos": "v.",
+          "phonetic": "/plænd/",
+          "meaning": "設計（建築物、機器等）。",
+          "level": "科技外商核心",
+          "exampleEn": "The architect planned the building for the client.",
+          "exampleZh": "在跨國團隊中，有效運用「設計（建築物、機器等）。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "decided",
+          "lemma": "decided",
+          "pos": "v.",
+          "phonetic": "/dɪˈsaɪdəd/",
+          "meaning": "解決（競賽、問題、爭議等）；選擇、決定或解決",
+          "level": "科技外商核心",
+          "exampleEn": "Her last-minute goal decided the game.",
+          "exampleZh": "在跨國團隊中，有效運用「解決（競賽、問題、爭議等）；選擇、決定或解決」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 67.8,
+      "end": 76.2,
+      "en": "This is how the year would go. So I'd start off light, and I'd bump it up in the middle months, and then at the end, I would kick it up into high gear.",
+      "zh": "這一年就這樣過去了。所以我會從輕的開始，在中間幾個月我會提高它，然後在最後，我會把它踢到高速檔。",
+      "grammarNote": "時間軸 (67.8s - 76.2s) · 核心字詞：middle (n.)、month (n./v.)",
+      "keywords": [
+        {
+          "word": "middle",
+          "lemma": "middle",
+          "pos": "n.",
+          "phonetic": "/ˈmɪdəl/",
+          "meaning": "中心，中點。",
+          "level": "科技外商核心",
+          "exampleEn": "The middle of a circle is the point which has the same distance to every point of circle.",
+          "exampleZh": "在跨國團隊中，有效運用「中心，中點。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "months",
+          "lemma": "month",
+          "pos": "n./v.",
+          "phonetic": "/month/",
+          "meaning": "月",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"month\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「月」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 76.2,
+      "end": 79.8,
+      "en": "Just like a little staircase. How hard could it be to walk up the stairs?",
+      "zh": "就像一座小樓梯。走上樓梯有多難？",
+      "grammarNote": "時間軸 (76.2s - 79.8s) · 核心字詞：staircase (n.)、stairs (n.)",
+      "keywords": [
+        {
+          "word": "staircase",
+          "lemma": "staircase",
+          "pos": "n.",
+          "phonetic": "/ˈstɛɹˌkeɪs/",
+          "meaning": "一段樓梯；一座樓梯。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"staircase\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「一段樓梯；一座樓梯。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "stairs",
+          "lemma": "stairs",
+          "pos": "n.",
+          "phonetic": "/ˈstɛəz/",
+          "meaning": "樓梯上的一步。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"stair\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「樓梯上的一步。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 80.2,
+      "end": 84.9,
+      "en": "No big deal, right? But then, the funniest thing happened.",
+      "zh": "沒什麼大不了的，對吧？但隨後，最有趣的事情發生了。",
+      "grammarNote": "時間軸 (80.2s - 84.9s) · 核心字詞：funniest (adj.)、happen (v./adj.)",
+      "keywords": [
+        {
+          "word": "funniest",
+          "lemma": "funniest",
+          "pos": "adj.",
+          "phonetic": "/ˈfʊnɪ.ɪst/",
+          "meaning": "有趣；幽默;滑稽。",
+          "level": "科技外商核心",
+          "exampleEn": "When I went to the circus, I only found the clowns funny.",
+          "exampleZh": "在跨國團隊中，有效運用「有趣；幽默;滑稽。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "happened",
+          "lemma": "happen",
+          "pos": "v./adj.",
+          "phonetic": "/happen/",
+          "meaning": "發生",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"happen\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「發生」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 84.9,
+      "end": 89.6,
+      "en": "Those first few months? They came and went, and I couldn't quite do stuff.",
+      "zh": "最初的幾個月？他們來來去去，我卻無能為力。",
+      "grammarNote": "時間軸 (84.9s - 89.6s) · 核心字詞：month (n./v.)、couldn (n./v.)",
+      "keywords": [
+        {
+          "word": "months",
+          "lemma": "month",
+          "pos": "n./v.",
+          "phonetic": "/month/",
+          "meaning": "月",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"month\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「月」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "couldn",
+          "lemma": "couldn",
+          "pos": "n./v.",
+          "phonetic": "/couldn/",
+          "meaning": "不能",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"couldn\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「不能」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 89.6,
+      "end": 93.8,
+      "en": "So we had an awesome new revised plan. And then --.",
+      "zh": "所以我們有了一個很棒的新修訂計劃。進而 - 。",
+      "grammarNote": "時間軸 (89.6s - 93.8s) · 核心字詞：awesome (n.)、revis (v./adj.)",
+      "keywords": [
+        {
+          "word": "awesome",
+          "lemma": "awesome",
+          "pos": "n.",
+          "phonetic": "/ˈɔːsəm/",
+          "meaning": "Awesomeness 的縮寫：awesomeness 的品質、狀態或本質。",
+          "level": "科技外商核心",
+          "exampleEn": "pure awesome; made of awesome",
+          "exampleZh": "在跨國團隊中，有效運用「Awesomeness 的縮寫：awesomeness 的品質、狀態或本質。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "revised",
+          "lemma": "revis",
+          "pos": "v./adj.",
+          "phonetic": "/revis/",
+          "meaning": "修訂",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"revis\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「修訂」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 95.7,
+      "end": 102.6,
+      "en": "But then those middle months actually went by, and I didn't really write words, and so we were here.",
+      "zh": "但中間的幾個月實際上過去了，我並沒有真正寫過文字，所以我們就在這裡。",
+      "grammarNote": "時間軸 (95.7s - 102.6s) · 核心字詞：middle (n.)、month (n./v.)",
+      "keywords": [
+        {
+          "word": "middle",
+          "lemma": "middle",
+          "pos": "n.",
+          "phonetic": "/ˈmɪdəl/",
+          "meaning": "中心，中點。",
+          "level": "科技外商核心",
+          "exampleEn": "The middle of a circle is the point which has the same distance to every point of circle.",
+          "exampleZh": "在跨國團隊中，有效運用「中心，中點。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "months",
+          "lemma": "month",
+          "pos": "n./v.",
+          "phonetic": "/month/",
+          "meaning": "月",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"month\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「月」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 103.5,
+      "end": 107.7,
+      "en": "And then two months turned into one month, which turned into two weeks.",
+      "zh": "然後兩個月變成了一個月，又變成了兩週。",
+      "grammarNote": "時間軸 (103.5s - 107.7s) · 核心字詞：month (n./v.)、turned (v.)",
+      "keywords": [
+        {
+          "word": "months",
+          "lemma": "month",
+          "pos": "n./v.",
+          "phonetic": "/month/",
+          "meaning": "月",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"month\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「月」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "turned",
+          "lemma": "turned",
+          "pos": "v.",
+          "phonetic": "/tɜːnd/",
+          "meaning": "（標題）進行非線性物理運動。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"turn\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「（標題）進行非線性物理運動。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 107.8,
+      "end": 117.5,
+      "en": "And one day I woke up with three days until the deadline, still not having written a word, and so I did the only thing I could:.",
+      "zh": "有一天，距離截止日期還有三天，我醒來，仍然沒有寫一個字，所以我做了我唯一能做的事：。",
+      "grammarNote": "時間軸 (107.8s - 117.5s) · 核心字詞：deadline (n.)、written (v.)",
+      "keywords": [
+        {
+          "word": "deadline",
+          "lemma": "deadline",
+          "pos": "n.",
+          "phonetic": "/ˈdɛdˌlaɪn/",
+          "meaning": "日期形式的時間限制，必須在該日期或之前完成某項工作。",
+          "level": "科技外商核心",
+          "exampleEn": "I must make this deadline or my boss will kill me!",
+          "exampleZh": "在跨國團隊中，有效運用「日期形式的時間限制，必須在該日期或之前完成某項工作。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "written",
+          "lemma": "written",
+          "pos": "v.",
+          "phonetic": "/ˈɹɪtn̩/",
+          "meaning": "在表面上形成字母、單字或符號以進行溝通。",
+          "level": "科技外商核心",
+          "exampleEn": "The pupil wrote his name on the paper.",
+          "exampleZh": "在跨國團隊中，有效運用「在表面上形成字母、單字或符號以進行溝通。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 117.5,
+      "end": 125,
+      "en": "I wrote 90 pages over 72 hours, pulling not one but two all-nighters -- humans are not supposed to pull two all-nighters --.",
+      "zh": "我在 72 小時內寫了 90 頁，不是一個通宵，而是兩個通宵——人類不應該通宵達旦。",
+      "grammarNote": "時間軸 (117.5s - 125s) · 核心字詞：all-nighter (n./v.)、supposed (v.)",
+      "keywords": [
+        {
+          "word": "all-nighters",
+          "lemma": "all-nighter",
+          "pos": "n./v.",
+          "phonetic": "/all-nighter/",
+          "meaning": "通宵達旦",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"all-nighter\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「通宵達旦」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "supposed",
+          "lemma": "supposed",
+          "pos": "v.",
+          "phonetic": "/spoʊst/",
+          "meaning": "認為理所當然；得出結論，缺乏絕對的支持數據；相信。",
+          "level": "科技外商核心",
+          "exampleEn": "Suppose that A implies B and B implies C. Then A implies C.",
+          "exampleZh": "在跨國團隊中，有效運用「認為理所當然；得出結論，缺乏絕對的支持數據；相信。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 126.4,
+      "end": 132,
+      "en": "Sprinted across campus, dove in slow motion, and got it in just at the deadline.",
+      "zh": "衝刺穿過校園，以慢動作潛入，並在截止日期前完成。",
+      "grammarNote": "時間軸 (126.4s - 132s) · 核心字詞：sprint (v./adj.)、deadline (n.)",
+      "keywords": [
+        {
+          "word": "Sprinted",
+          "lemma": "sprint",
+          "pos": "v./adj.",
+          "phonetic": "/sprint/",
+          "meaning": "衝刺",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"sprint\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「衝刺」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "deadline",
+          "lemma": "deadline",
+          "pos": "n.",
+          "phonetic": "/ˈdɛdˌlaɪn/",
+          "meaning": "日期形式的時間限制，必須在該日期或之前完成某項工作。",
+          "level": "科技外商核心",
+          "exampleEn": "I must make this deadline or my boss will kill me!",
+          "exampleZh": "在跨國團隊中，有效運用「日期形式的時間限制，必須在該日期或之前完成某項工作。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 132,
+      "end": 137.1,
+      "en": "I thought that was the end of everything. But a week later I get a call, and it's the school.",
+      "zh": "我以為一切就這樣結束了。但一週後我接到電話，是學校打來的。",
+      "grammarNote": "時間軸 (132s - 137.1s) · 核心字詞：everyth (v./n.)、thought (n./v.)",
+      "keywords": [
+        {
+          "word": "everything",
+          "lemma": "everyth",
+          "pos": "v./n.",
+          "phonetic": "/everyth/",
+          "meaning": "一切",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"everyth\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「一切」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "thought",
+          "lemma": "thought",
+          "pos": "n./v.",
+          "phonetic": "/thought/",
+          "meaning": "思想",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"thought\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「思想」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 137.8,
+      "end": 140.9,
+      "en": "And they say, \"Is this Tim Urban?\" And I say, \"Yeah.\"",
+      "zh": "他們說，“這是蒂姆·厄本嗎？”我說：“是的。”",
+      "grammarNote": "時間軸 (137.8s - 140.9s) · 核心字詞：urban (n./v.)",
+      "keywords": [
+        {
+          "word": "Urban",
+          "lemma": "urban",
+          "pos": "n./v.",
+          "phonetic": "/urban/",
+          "meaning": "城市",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"urban\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「城市」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 140.9,
+      "end": 144.5,
+      "en": "And they say, \"We need to talk about your thesis.\" And I say, \"OK.\"",
+      "zh": "他們說，“我們需要談談你的論文。”我說：“好吧。”",
+      "grammarNote": "時間軸 (140.9s - 144.5s) · 核心字詞：thesis (n./v.)",
+      "keywords": [
+        {
+          "word": "thesis",
+          "lemma": "thesis",
+          "pos": "n./v.",
+          "phonetic": "/thesis/",
+          "meaning": "論文",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"thesis\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「論文」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 145.5,
+      "end": 149.1,
+      "en": "And they say, \"It's the best one we've ever seen.\"",
+      "zh": "他們說：“這是我們見過的最好的一個。”",
+      "grammarNote": "時間軸 (145.5s - 149.1s) · 核心字詞：they (n./v.)",
+      "keywords": [
+        {
+          "word": "they",
+          "lemma": "they",
+          "pos": "n./v.",
+          "phonetic": "/they/",
+          "meaning": "他們",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"they\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「他們」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 156.9,
+      "end": 163.1,
+      "en": "That did not happen. It was a very, very bad thesis.",
+      "zh": "但那並沒有發生。這是一篇非常非常糟糕的論文。",
+      "grammarNote": "時間軸 (156.9s - 163.1s) · 核心字詞：happen (v.)、thesis (n./v.)",
+      "keywords": [
+        {
+          "word": "happen",
+          "lemma": "happen",
+          "pos": "v.",
+          "phonetic": "/ˈhæpən/",
+          "meaning": "發生或發生。",
+          "level": "科技外商核心",
+          "exampleEn": "Let me tell you how it happened.",
+          "exampleZh": "在跨國團隊中，有效運用「發生或發生。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "thesis",
+          "lemma": "thesis",
+          "pos": "n./v.",
+          "phonetic": "/thesis/",
+          "meaning": "論文",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"thesis\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「論文」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 165.4,
+      "end": 171.4,
+      "en": "I just wanted to enjoy that one moment when all of you thought, \"This guy is amazing!\"",
+      "zh": "我只是想享受那一刻，當你們所有人都想，“這傢伙太棒了！”",
+      "grammarNote": "時間軸 (165.4s - 171.4s) · 核心字詞：thought (n./v.)、amaz (v./n.)",
+      "keywords": [
+        {
+          "word": "thought",
+          "lemma": "thought",
+          "pos": "n./v.",
+          "phonetic": "/thought/",
+          "meaning": "思想",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"thought\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「思想」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "amazing",
+          "lemma": "amaz",
+          "pos": "v./n.",
+          "phonetic": "/amaz/",
+          "meaning": "阿瑪茲",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"amaz\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「阿瑪茲」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 172.8,
+      "end": 178.8,
+      "en": "No, no, it was very, very bad. Anyway, today I'm a writer-blogger guy.",
+      "zh": "不，不，這非常非常糟糕。不管怎樣，今天我是一個作家兼部落客。",
+      "grammarNote": "時間軸 (172.8s - 178.8s) · 核心字詞：writer-blogger (n./v.)、anyway (n./v.)",
+      "keywords": [
+        {
+          "word": "writer-blogger",
+          "lemma": "writer-blogger",
+          "pos": "n./v.",
+          "phonetic": "/writer-blogger/",
+          "meaning": "作家兼部落客",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"writer-blogger\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「作家兼部落客」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Anyway",
+          "lemma": "anyway",
+          "pos": "n./v.",
+          "phonetic": "/anyway/",
+          "meaning": "無論如何",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"anyway\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「無論如何」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 178.8,
+      "end": 184.3,
+      "en": "I write the blog Wait But Why. And a couple of years ago, I decided to write about procrastination.",
+      "zh": "我寫部落格 Wait But Why。幾年前，我決定寫一篇關於拖延症的文章。",
+      "grammarNote": "時間軸 (178.8s - 184.3s) · 核心字詞：procrastination (n.)、decided (v.)",
+      "keywords": [
+        {
+          "word": "procrastination",
+          "lemma": "procrastination",
+          "pos": "n.",
+          "phonetic": "/pɹəʊˌkɹæs.tɪˈneɪ.ʃən/",
+          "meaning": "延遲、延遲或延遲的行為，尤其是習慣性或故意的。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「延遲、延遲或延遲的行為，尤其是習慣性或故意的。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "decided",
+          "lemma": "decided",
+          "pos": "v.",
+          "phonetic": "/dɪˈsaɪdəd/",
+          "meaning": "解決（競賽、問題、爭議等）；選擇、決定或解決",
+          "level": "科技外商核心",
+          "exampleEn": "Her last-minute goal decided the game.",
+          "exampleZh": "在跨國團隊中，有效運用「解決（競賽、問題、爭議等）；選擇、決定或解決」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 184.3,
+      "end": 193.4,
+      "en": "My behavior has always perplexed the non-procrastinators around me, and I wanted to explain to the non-procrastinators of the world what goes on in the heads of procrastinators,.",
+      "zh": "我的行為一直讓我周圍的非拖延者感到困惑，我想向世界上的非拖延者解釋拖延者腦子裡到底在想什麼。",
+      "grammarNote": "時間軸 (184.3s - 193.4s) · 核心字詞：non-procrastinator (n./v.)、procrastinator (n./v.)",
+      "keywords": [
+        {
+          "word": "non-procrastinators",
+          "lemma": "non-procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/non-procrastinator/",
+          "meaning": "不拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"non-procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「不拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "procrastinators",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 193.4,
+      "end": 200.9,
+      "en": "And why we are the way we are. Now, I had a hypothesis that the brains of procrastinators were actually different than the brains of other people.",
+      "zh": "以及為什麼我們會是現在這個樣子。現在，我有一個假設：拖延者的大腦實際上與其他人的大腦不同。",
+      "grammarNote": "時間軸 (193.4s - 200.9s) · 核心字詞：procrastinator (n./v.)、hypothesis (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinators",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "hypothesis",
+          "lemma": "hypothesis",
+          "pos": "n./v.",
+          "phonetic": "/hypothesis/",
+          "meaning": "假設",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"hypothesis\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「假設」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 201.7,
+      "end": 209,
+      "en": "And to test this, I found an MRI lab that actually let me scan both my brain and the brain of a proven non-procrastinator,.",
+      "zh": "為了測試這一點，我找到了一個 MRI 實驗室，它實際上可以讓我掃描我的大腦和經過驗證的非拖延者的大腦。",
+      "grammarNote": "時間軸 (201.7s - 209s) · 核心字詞：non-procrastinator (n./v.)、proven (n./v.)",
+      "keywords": [
+        {
+          "word": "non-procrastinator",
+          "lemma": "non-procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/non-procrastinator/",
+          "meaning": "不拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"non-procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「不拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "proven",
+          "lemma": "proven",
+          "pos": "n./v.",
+          "phonetic": "/proven/",
+          "meaning": "已證明",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"proven\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「已證明」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 209.1,
+      "end": 212.7,
+      "en": "So I could compare them. I actually brought them here to show you today.",
+      "zh": "這樣我就可以比較它們。我今天實際上把它們帶到這裡來給你們看。",
+      "grammarNote": "時間軸 (209.1s - 212.7s) · 核心字詞：compare (n./v.)、brought (n./v.)",
+      "keywords": [
+        {
+          "word": "compare",
+          "lemma": "compare",
+          "pos": "n./v.",
+          "phonetic": "/compare/",
+          "meaning": "比較",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"compare\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「比較」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "brought",
+          "lemma": "brought",
+          "pos": "n./v.",
+          "phonetic": "/brought/",
+          "meaning": "帶來",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"brought\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「帶來」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 212.7,
+      "end": 218.6,
+      "en": "I want you to take a look carefully to see if you can notice a difference. I know that if you're not a trained brain expert,.",
+      "zh": "我希望你仔細看看是否能注意到差異。我知道如果你不是受過訓練的大腦專家。",
+      "grammarNote": "時間軸 (212.7s - 218.6s) · 核心字詞：difference (n./v.)、carefully (adv.)",
+      "keywords": [
+        {
+          "word": "difference",
+          "lemma": "difference",
+          "pos": "n./v.",
+          "phonetic": "/difference/",
+          "meaning": "差異",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"difference\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「差異」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "carefully",
+          "lemma": "carefully",
+          "pos": "adv.",
+          "phonetic": "/carefully/",
+          "meaning": "仔細",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"carefully\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「仔細」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 218.6,
+      "end": 223.1,
+      "en": "It's not that obvious, but just take a look, OK? So here's the brain of a non-procrastinator.",
+      "zh": "不是很明顯，但是看一下，好嗎？這是一個不拖延者的大腦。",
+      "grammarNote": "時間軸 (218.6s - 223.1s) · 核心字詞：non-procrastinator (n./v.)、obvious (adj.)",
+      "keywords": [
+        {
+          "word": "non-procrastinator",
+          "lemma": "non-procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/non-procrastinator/",
+          "meaning": "不拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"non-procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「不拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "obvious",
+          "lemma": "obvious",
+          "pos": "adj.",
+          "phonetic": "/obvious/",
+          "meaning": "顯而易見",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"obvious\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「顯而易見」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 226.1,
+      "end": 237.3,
+      "en": "Now ... here's my brain. There is a difference.",
+      "zh": "現在......這是我的大腦。有一個區別。",
+      "grammarNote": "時間軸 (226.1s - 237.3s) · 核心字詞：difference (n./v.)、brain (n./v.)",
+      "keywords": [
+        {
+          "word": "difference",
+          "lemma": "difference",
+          "pos": "n./v.",
+          "phonetic": "/difference/",
+          "meaning": "差異",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"difference\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「差異」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "brain",
+          "lemma": "brain",
+          "pos": "n./v.",
+          "phonetic": "/brain/",
+          "meaning": "大腦",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"brain\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「大腦」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 237.9,
+      "end": 245,
+      "en": "Both brains have a Rational Decision-Maker in them, but the procrastinator's brain also has an Instant Gratification Monkey.",
+      "zh": "兩個大腦中都有一個理性決策者，但拖延者的大腦中也有一個即時滿足猴。",
+      "grammarNote": "時間軸 (237.9s - 245s) · 核心字詞：decision-maker (n./v.)、procrastinator (n./v.)",
+      "keywords": [
+        {
+          "word": "Decision-Maker",
+          "lemma": "decision-maker",
+          "pos": "n./v.",
+          "phonetic": "/decision-maker/",
+          "meaning": "決策者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"decision-maker\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「決策者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 245,
+      "end": 249.8,
+      "en": "Now, what does this mean for the procrastinator? Well, it means everything's fine until this happens.",
+      "zh": "現在，這對拖延者意味著什麼？嗯，這意味著在這件事發生之前一切都很好。",
+      "grammarNote": "時間軸 (245s - 249.8s) · 核心字詞：procrastinator (n./v.)、everyth (v./n.)",
+      "keywords": [
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "everything",
+          "lemma": "everyth",
+          "pos": "v./n.",
+          "phonetic": "/everyth/",
+          "meaning": "一切",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"everyth\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「一切」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 252.4,
+      "end": 260.8,
+      "en": "So the Rational Decision-Maker will make the rational decision to do something productive, but the Monkey doesn't like that plan, so he actually takes the wheel,.",
+      "zh": "因此，理性決策者會做出理性的決定，去做一些有成效的事情，但猴子不喜歡這個計劃，所以他實際上掌握了方向盤。",
+      "grammarNote": "時間軸 (252.4s - 260.8s) · 核心字詞：decision-maker (n./v.)、productive (adj.)",
+      "keywords": [
+        {
+          "word": "Decision-Maker",
+          "lemma": "decision-maker",
+          "pos": "n./v.",
+          "phonetic": "/decision-maker/",
+          "meaning": "決策者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"decision-maker\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「決策者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "productive",
+          "lemma": "productive",
+          "pos": "adj.",
+          "phonetic": "/productive/",
+          "meaning": "有成效",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"productive\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「有成效」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 260.8,
+      "end": 268,
+      "en": "And he says, \"Actually, let's read the entire Wikipedia page of the Nancy Kerrigan/ Tonya Harding scandal, because I just remembered that that happened.",
+      "zh": "他說，「實際上，讓我們閱讀南希·克里根/托尼亞·哈丁醜聞的整個維基百科頁面，因為我剛剛記得那件事發生了。",
+      "grammarNote": "時間軸 (260.8s - 268s) · 核心字詞：remember (v./adj.)、wikipedia (n./v.)",
+      "keywords": [
+        {
+          "word": "remembered",
+          "lemma": "remember",
+          "pos": "v./adj.",
+          "phonetic": "/remember/",
+          "meaning": "記住",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"remember\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「記住」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Wikipedia",
+          "lemma": "wikipedia",
+          "pos": "n./v.",
+          "phonetic": "/wikipedia/",
+          "meaning": "維基百科",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"wikipedia\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「維基百科」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 269.1,
+      "end": 276.5,
+      "en": "Then -- Then we're going to go over to the fridge, to see if there's anything new in there since 10 minutes ago.",
+      "zh": "然後──然後我們要去冰箱看看，看看裡面有沒有 10 分鐘前的新東西。",
+      "grammarNote": "時間軸 (269.1s - 276.5s) · 核心字詞：anyth (v./n.)、minute (n./v.)",
+      "keywords": [
+        {
+          "word": "anything",
+          "lemma": "anyth",
+          "pos": "v./n.",
+          "phonetic": "/anyth/",
+          "meaning": "任意",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"anyth\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「任意」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "minutes",
+          "lemma": "minute",
+          "pos": "n./v.",
+          "phonetic": "/minute/",
+          "meaning": "分鐘",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"minute\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「分鐘」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 276.5,
+      "end": 285.1,
+      "en": "After that, we're going to go on a YouTube spiral that starts with videos of Richard Feynman talking about magnets and ends much, much later with us watching interviews.",
+      "zh": "之後，我們將進入 YouTube 螺旋式循環，從理查德·費曼 (Richard Feynman) 談論磁鐵的影片開始，到很久以後我們觀看採訪結束。",
+      "grammarNote": "時間軸 (276.5s - 285.1s) · 核心字詞：interview (n./v.)、watch (v./n.)",
+      "keywords": [
+        {
+          "word": "interviews",
+          "lemma": "interview",
+          "pos": "n./v.",
+          "phonetic": "/interview/",
+          "meaning": "採訪",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"interview\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「採訪」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "watching",
+          "lemma": "watch",
+          "pos": "v./n.",
+          "phonetic": "/watch/",
+          "meaning": "手錶",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"watch\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「手錶」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 285.2,
+      "end": 294.6,
+      "en": "With Justin Bieber's mom. \"All of that's going to take a while, so we're not going to really have room on the schedule for any work today.",
+      "zh": "與賈斯汀·比伯的媽媽。 「所有這些都需要一段時間，所以我們今天的日程安排上不會有真正的空間來進行任何工作。",
+      "grammarNote": "時間軸 (285.2s - 294.6s) · 核心字詞：schedule (n./v.)、justin (n./v.)",
+      "keywords": [
+        {
+          "word": "schedule",
+          "lemma": "schedule",
+          "pos": "n./v.",
+          "phonetic": "/schedule/",
+          "meaning": "時間表",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"schedule\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「時間表」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Justin",
+          "lemma": "justin",
+          "pos": "n./v.",
+          "phonetic": "/justin/",
+          "meaning": "賈斯汀",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"justin\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「賈斯汀」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 294.6,
+      "end": 301.7,
+      "en": "Sorry!\" Now, what is going on here?",
+      "zh": "抱歉！ 「現在，這是怎麼回事？",
+      "grammarNote": "時間軸 (294.6s - 301.7s) · 核心字詞：sorry (n./v.)",
+      "keywords": [
+        {
+          "word": "Sorry",
+          "lemma": "sorry",
+          "pos": "n./v.",
+          "phonetic": "/sorry/",
+          "meaning": "抱歉",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"sorry\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「抱歉」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 303.5,
+      "end": 307.4,
+      "en": "The Instant Gratification Monkey does not seem like a guy you want behind the wheel.",
+      "zh": "即時滿足猴子看起來不像是你想要的駕駛者。",
+      "grammarNote": "時間軸 (303.5s - 307.4s) · 核心字詞：gratification (n.)、instant (n./v.)",
+      "keywords": [
+        {
+          "word": "Gratification",
+          "lemma": "gratification",
+          "pos": "n.",
+          "phonetic": "/gratification/",
+          "meaning": "滿足",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"gratification\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「滿足」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Instant",
+          "lemma": "instant",
+          "pos": "n./v.",
+          "phonetic": "/instant/",
+          "meaning": "即時",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"instant\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「即時」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 307.5,
+      "end": 314,
+      "en": "He lives entirely in the present moment. He has no memory of the past, no knowledge of the future, and he only cares about two things:.",
+      "zh": "祂完全活在當下。他對過去沒有記憶，對未來一無所知，他只關心兩件事：。",
+      "grammarNote": "時間軸 (307.5s - 314s) · 核心字詞：knowledge (n./v.)、entirely (adv.)",
+      "keywords": [
+        {
+          "word": "knowledge",
+          "lemma": "knowledge",
+          "pos": "n./v.",
+          "phonetic": "/knowledge/",
+          "meaning": "知識",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"knowledge\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「知識」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "entirely",
+          "lemma": "entirely",
+          "pos": "adv.",
+          "phonetic": "/entirely/",
+          "meaning": "完全",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"entirely\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「完全」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 314,
+      "end": 319.4,
+      "en": "Easy and fun. Now, in the animal world, that works fine.",
+      "zh": "簡單又有趣。現在，在動物世界中，這很有效。",
+      "grammarNote": "時間軸 (314s - 319.4s) · 核心字詞：animal (adj.)、world (n./v.)",
+      "keywords": [
+        {
+          "word": "animal",
+          "lemma": "animal",
+          "pos": "adj.",
+          "phonetic": "/animal/",
+          "meaning": "動物",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"animal\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「動物」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "world",
+          "lemma": "world",
+          "pos": "n./v.",
+          "phonetic": "/world/",
+          "meaning": "世界",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"world\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「世界」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 319.4,
+      "end": 325.4,
+      "en": "If you're a dog and you spend your whole life doing nothing other than easy and fun things, you're a huge success!",
+      "zh": "如果你是一隻狗，一生只做簡單有趣的事情，那麼你就取得了巨大的成功！",
+      "grammarNote": "時間軸 (319.4s - 325.4s) · 核心字詞：noth (v./n.)、success (n./v.)",
+      "keywords": [
+        {
+          "word": "nothing",
+          "lemma": "noth",
+          "pos": "v./n.",
+          "phonetic": "/noth/",
+          "meaning": "沒有",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"noth\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「沒有」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "success",
+          "lemma": "success",
+          "pos": "n./v.",
+          "phonetic": "/success/",
+          "meaning": "成功",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"success\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「成功」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "start": 327.4,
+      "end": 332.1,
+      "en": "And to the Monkey, humans are just another animal species.",
+      "zh": "對猴子來說，人類只是另一種動物。",
+      "grammarNote": "時間軸 (327.4s - 332.1s) · 核心字詞：another (n./v.)、specy (n./v.)",
+      "keywords": [
+        {
+          "word": "another",
+          "lemma": "another",
+          "pos": "n./v.",
+          "phonetic": "/another/",
+          "meaning": "另一個",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"another\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「另一個」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "species",
+          "lemma": "specy",
+          "pos": "n./v.",
+          "phonetic": "/specy/",
+          "meaning": "物種",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specy\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「物種」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "start": 332.1,
+      "end": 338.9,
+      "en": "You have to keep well-slept, well-fed and propagating into the next generation, which in tribal times might have worked OK.",
+      "zh": "你必須保持良好的睡眠、良好的飲食並繁衍下一代，這在部落時代可能會很有效。",
+      "grammarNote": "時間軸 (332.1s - 338.9s) · 核心字詞：propagat (v./n.)、well-slept (n./v.)",
+      "keywords": [
+        {
+          "word": "propagating",
+          "lemma": "propagat",
+          "pos": "v./n.",
+          "phonetic": "/propagat/",
+          "meaning": "宣傳",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"propagat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「宣傳」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "well-slept",
+          "lemma": "well-slept",
+          "pos": "n./v.",
+          "phonetic": "/well-slept/",
+          "meaning": "睡得好",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"well-slept\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「睡得好」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "start": 338.9,
+      "end": 345.9,
+      "en": "But, if you haven't noticed, now we're not in tribal times. We're in an advanced civilization, and the Monkey does not know what that is.",
+      "zh": "但是，如果你沒有註意到，現在我們並不是處於部落時代。我們處在一個先進的文明中，而猴子不知道那是什麼。",
+      "grammarNote": "時間軸 (338.9s - 345.9s) · 核心字詞：civilization (n.)、advanc (v./adj.)",
+      "keywords": [
+        {
+          "word": "civilization",
+          "lemma": "civilization",
+          "pos": "n.",
+          "phonetic": "/civilization/",
+          "meaning": "文明",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"civilization\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「文明」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "advanced",
+          "lemma": "advanc",
+          "pos": "v./adj.",
+          "phonetic": "/advanc/",
+          "meaning": "先進",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"advanc\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「先進」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "start": 346,
+      "end": 353.7,
+      "en": "Which is why we have another guy in our brain, the Rational Decision-Maker, who gives us the ability to do things no other animal can do.",
+      "zh": "這就是為什麼我們的大腦中有另一個人，理性決策者，他讓我們有能力做其他動物做不到的事情。",
+      "grammarNote": "時間軸 (346s - 353.7s) · 核心字詞：decision-maker (n./v.)、rational (adj.)",
+      "keywords": [
+        {
+          "word": "Decision-Maker",
+          "lemma": "decision-maker",
+          "pos": "n./v.",
+          "phonetic": "/decision-maker/",
+          "meaning": "決策者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"decision-maker\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「決策者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Rational",
+          "lemma": "rational",
+          "pos": "adj.",
+          "phonetic": "/rational/",
+          "meaning": "理性",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"rational\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「理性」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "start": 353.7,
+      "end": 357.4,
+      "en": "We can visualize the future. We can see the big picture.",
+      "zh": "我們可以想像未來。我們可以看到大局。",
+      "grammarNote": "時間軸 (353.7s - 357.4s) · 核心字詞：visualize (n./v.)、picture (n./v.)",
+      "keywords": [
+        {
+          "word": "visualize",
+          "lemma": "visualize",
+          "pos": "n./v.",
+          "phonetic": "/visualize/",
+          "meaning": "視覺化",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"visualize\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「視覺化」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "picture",
+          "lemma": "picture",
+          "pos": "n./v.",
+          "phonetic": "/picture/",
+          "meaning": "圖片",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"picture\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「圖片」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "start": 357.4,
+      "end": 361.3,
+      "en": "We can make long-term plans. And he wants to take all of that into account.",
+      "zh": "我們可以製定長期計劃。他想把所有這些都考慮在內。",
+      "grammarNote": "時間軸 (357.4s - 361.3s) · 核心字詞：long-term (n./v.)、account (n./v.)",
+      "keywords": [
+        {
+          "word": "long-term",
+          "lemma": "long-term",
+          "pos": "n./v.",
+          "phonetic": "/long-term/",
+          "meaning": "長期",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"long-term\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「長期」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "account",
+          "lemma": "account",
+          "pos": "n./v.",
+          "phonetic": "/account/",
+          "meaning": "帳戶",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"account\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「帳戶」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "start": 362.1,
+      "end": 366.8,
+      "en": "And he wants to just have us do whatever makes sense to be doing right now.",
+      "zh": "祂要我們做任何現在有意義的事。",
+      "grammarNote": "時間軸 (362.1s - 366.8s) · 核心字詞：whatever (n./v.)、want (n./v.)",
+      "keywords": [
+        {
+          "word": "whatever",
+          "lemma": "whatever",
+          "pos": "n./v.",
+          "phonetic": "/whatever/",
+          "meaning": "無論如何",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"whatever\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「無論如何」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "wants",
+          "lemma": "want",
+          "pos": "n./v.",
+          "phonetic": "/want/",
+          "meaning": "想要",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"want\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「想要」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "start": 366.8,
+      "end": 372.4,
+      "en": "Now, sometimes it makes sense to be doing things that are easy and fun, like when you're having dinner or going to bed.",
+      "zh": "現在，有時做一些簡單有趣的事情是有意義的，例如當你吃晚餐或睡覺時。",
+      "grammarNote": "時間軸 (366.8s - 372.4s) · 核心字詞：sometime (n./v.)、hav (v./n.)",
+      "keywords": [
+        {
+          "word": "sometimes",
+          "lemma": "sometime",
+          "pos": "n./v.",
+          "phonetic": "/sometime/",
+          "meaning": "有時候",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"sometime\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「有時候」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "having",
+          "lemma": "hav",
+          "pos": "v./n.",
+          "phonetic": "/hav/",
+          "meaning": "有",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"hav\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「有」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "start": 372.5,
+      "end": 375.8,
+      "en": "Or enjoying well-earned leisure time. That's why there's an overlap.",
+      "zh": "或享受應得的休閒時間。這就是為什麼會有重疊。",
+      "grammarNote": "時間軸 (372.5s - 375.8s) · 核心字詞：well-earn (v./adj.)、enjoy (v./n.)",
+      "keywords": [
+        {
+          "word": "well-earned",
+          "lemma": "well-earn",
+          "pos": "v./adj.",
+          "phonetic": "/well-earn/",
+          "meaning": "賺得盆滿缽滿",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"well-earn\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「賺得盆滿缽滿」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "enjoying",
+          "lemma": "enjoy",
+          "pos": "v./n.",
+          "phonetic": "/enjoy/",
+          "meaning": "享受",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"enjoy\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「享受」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "start": 375.8,
+      "end": 385.6,
+      "en": "Sometimes they agree. But other times, it makes much more sense to be doing things that are harder and less pleasant, for the sake of the big picture.",
+      "zh": "有時他們會同意。但其他時候，為了大局考慮，做一些更困難、更不愉快的事情更有意義。",
+      "grammarNote": "時間軸 (375.8s - 385.6s) · 核心字詞：sometime (n./v.)、pleasant (n./v.)",
+      "keywords": [
+        {
+          "word": "Sometimes",
+          "lemma": "sometime",
+          "pos": "n./v.",
+          "phonetic": "/sometime/",
+          "meaning": "有時候",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"sometime\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「有時候」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "pleasant",
+          "lemma": "pleasant",
+          "pos": "n./v.",
+          "phonetic": "/pleasant/",
+          "meaning": "愉快",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"pleasant\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「愉快」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "start": 385.6,
+      "end": 395.6,
+      "en": "And that's when we have a conflict. And for the procrastinator, that conflict tends to end a certain way every time, leaving him spending a lot of time in this orange zone,.",
+      "zh": "這就是我們發生衝突的時候。對於拖延者來說，這種衝突每次都會以某種方式結束，讓他在這個橙色區域中花費大量時間。",
+      "grammarNote": "時間軸 (385.6s - 395.6s) · 核心字詞：procrastinator (n./v.)、conflict (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "conflict",
+          "lemma": "conflict",
+          "pos": "n./v.",
+          "phonetic": "/conflict/",
+          "meaning": "衝突",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"conflict\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「衝突」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "start": 395.6,
+      "end": 402.3,
+      "en": "An easy and fun place that's entirely out of the Makes Sense circle. I call it the Dark Playground.",
+      "zh": "一個簡單又有趣的地方，完全脫離了有意義的圈子。我稱之為黑暗遊樂場。",
+      "grammarNote": "時間軸 (395.6s - 402.3s) · 核心字詞：playground (n./v.)、entirely (adv.)",
+      "keywords": [
+        {
+          "word": "Playground",
+          "lemma": "playground",
+          "pos": "n./v.",
+          "phonetic": "/playground/",
+          "meaning": "遊樂場",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"playground\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「遊樂場」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "entirely",
+          "lemma": "entirely",
+          "pos": "adv.",
+          "phonetic": "/entirely/",
+          "meaning": "完全",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"entirely\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「完全」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "start": 403.9,
+      "end": 410.3,
+      "en": "Now, the Dark Playground is a place that all of you procrastinators out there know very well.",
+      "zh": "現在，黑暗遊樂場是你們所有拖延者都非常熟悉的地方。",
+      "grammarNote": "時間軸 (403.9s - 410.3s) · 核心字詞：procrastinator (n./v.)、playground (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinators",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Playground",
+          "lemma": "playground",
+          "pos": "n./v.",
+          "phonetic": "/playground/",
+          "meaning": "遊樂場",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"playground\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「遊樂場」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "start": 410.9,
+      "end": 416,
+      "en": "It's where leisure activities happen at times when leisure activities are not supposed to be happening.",
+      "zh": "這是休閒活動在不該發生的時候發生的地方。",
+      "grammarNote": "時間軸 (410.9s - 416s) · 核心字詞：activity (n./v.)、happen (v./n.)",
+      "keywords": [
+        {
+          "word": "activities",
+          "lemma": "activity",
+          "pos": "n./v.",
+          "phonetic": "/activity/",
+          "meaning": "活動",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activity\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「活動」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "happening",
+          "lemma": "happen",
+          "pos": "v./n.",
+          "phonetic": "/happen/",
+          "meaning": "發生",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"happen\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「發生」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "start": 416.4,
+      "end": 424.1,
+      "en": "The fun you have in the Dark Playground isn't actually fun, because it's completely unearned, and the air is filled with guilt, dread, anxiety, self-hatred --.",
+      "zh": "你在黑暗遊樂場中獲得的樂趣其實並不有趣，因為它完全是不勞而獲的，空氣中充滿了內疚、恐懼、焦慮、自我憎恨——。",
+      "grammarNote": "時間軸 (416.4s - 424.1s) · 核心字詞：self-hatr (v./adj.)、playground (n./v.)",
+      "keywords": [
+        {
+          "word": "self-hatred",
+          "lemma": "self-hatr",
+          "pos": "v./adj.",
+          "phonetic": "/self-hatr/",
+          "meaning": "自我憎恨",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"self-hatr\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「自我憎恨」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Playground",
+          "lemma": "playground",
+          "pos": "n./v.",
+          "phonetic": "/playground/",
+          "meaning": "遊樂場",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"playground\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「遊樂場」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "start": 424.1,
+      "end": 433.8,
+      "en": "All of those good procrastinator feelings. And the question is, in this situation, with the Monkey behind the wheel, how does the procrastinator ever get himself over here to this blue zone,.",
+      "zh": "所有這些拖延者的美好感受。問題是，在這種情況下，猴子在開車，拖延者如何讓自己到達這個藍色區域。",
+      "grammarNote": "時間軸 (424.1s - 433.8s) · 核心字詞：procrastinator (n./v.)、situation (n.)",
+      "keywords": [
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "situation",
+          "lemma": "situation",
+          "pos": "n.",
+          "phonetic": "/situation/",
+          "meaning": "情況",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"situation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「情況」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "start": 433.8,
+      "end": 445.4,
+      "en": "A less pleasant place, but where really important things happen? Well, turns out the procrastinator has a guardian angel, someone who's always looking down on him and watching over him.",
+      "zh": "一個不太愉快的地方，但真正重要的事情發生在哪裡？事實證明，拖延者有一個守護天使，一個總是瞧不起他、守護著他的人。",
+      "grammarNote": "時間軸 (433.8s - 445.4s) · 核心字詞：procrastinator (n./v.)、important (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "important",
+          "lemma": "important",
+          "pos": "n./v.",
+          "phonetic": "/important/",
+          "meaning": "重要",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"important\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重要」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "start": 445.4,
+      "end": 449,
+      "en": "In his darkest moments -- someone called the Panic Monster.",
+      "zh": "在他最黑暗的時刻－有人稱之為恐慌怪物。",
+      "grammarNote": "時間軸 (445.4s - 449s) · 核心字詞：darkest (n./v.)、moment (n./v.)",
+      "keywords": [
+        {
+          "word": "darkest",
+          "lemma": "darkest",
+          "pos": "n./v.",
+          "phonetic": "/darkest/",
+          "meaning": "最黑暗的",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"darkest\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「最黑暗的」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "moments",
+          "lemma": "moment",
+          "pos": "n./v.",
+          "phonetic": "/moment/",
+          "meaning": "時刻",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"moment\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「時刻」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "start": 454.4,
+      "end": 465.2,
+      "en": "Now, the Panic Monster is dormant most of the time, but he suddenly wakes up anytime a deadline gets too close or there's danger of public embarrassment,.",
+      "zh": "現在，恐慌怪物大部分時間都處於休眠狀態，但每當截止日期太近或有公眾尷尬的危險時，他就會突然醒來。",
+      "grammarNote": "時間軸 (454.4s - 465.2s) · 核心字詞：embarrassment (n.)、suddenly (adv.)",
+      "keywords": [
+        {
+          "word": "embarrassment",
+          "lemma": "embarrassment",
+          "pos": "n.",
+          "phonetic": "/embarrassment/",
+          "meaning": "尷尬",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"embarrassment\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「尷尬」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "suddenly",
+          "lemma": "suddenly",
+          "pos": "adv.",
+          "phonetic": "/suddenly/",
+          "meaning": "突然",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"suddenly\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「突然」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "start": 465.3,
+      "end": 472,
+      "en": "A career disaster or some other scary consequence. And importantly, he's the only thing the Monkey is terrified of.",
+      "zh": "職業災難或其他一些可怕的後果。重要的是，他是猴子唯一害怕的東西。",
+      "grammarNote": "時間軸 (465.3s - 472s) · 核心字詞：consequence (n./v.)、importantly (adv.)",
+      "keywords": [
+        {
+          "word": "consequence",
+          "lemma": "consequence",
+          "pos": "n./v.",
+          "phonetic": "/consequence/",
+          "meaning": "後果",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"consequence\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「後果」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "importantly",
+          "lemma": "importantly",
+          "pos": "adv.",
+          "phonetic": "/importantly/",
+          "meaning": "重要的是",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"importantly\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重要的是」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "start": 472,
+      "end": 479.8,
+      "en": "Now, he became very relevant in my life pretty recently, because the people of TED reached out to me about six months ago.",
+      "zh": "現在，他最近在我的生活中變得非常重要，因為大約六個月前 TED 的人聯繫了我。",
+      "grammarNote": "時間軸 (472s - 479.8s) · 核心字詞：relevant (n./v.)、recently (adv.)",
+      "keywords": [
+        {
+          "word": "relevant",
+          "lemma": "relevant",
+          "pos": "n./v.",
+          "phonetic": "/relevant/",
+          "meaning": "相關",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"relevant\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「相關」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "recently",
+          "lemma": "recently",
+          "pos": "adv.",
+          "phonetic": "/recently/",
+          "meaning": "最近",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recently\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「最近」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "start": 479.9,
+      "end": 489,
+      "en": "And invited me to do a TED Talk. Now, of course, I said yes.",
+      "zh": "並邀請我做一場 TED 演講。現在，我當然答應了。",
+      "grammarNote": "時間軸 (479.9s - 489s) · 核心字詞：invit (v./adj.)、course (n./v.)",
+      "keywords": [
+        {
+          "word": "invited",
+          "lemma": "invit",
+          "pos": "v./adj.",
+          "phonetic": "/invit/",
+          "meaning": "邀請",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"invit\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「邀請」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "course",
+          "lemma": "course",
+          "pos": "n./v.",
+          "phonetic": "/course/",
+          "meaning": "課程",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"course\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「課程」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "start": 489,
+      "end": 506.2,
+      "en": "It's always been a dream of mine to have done a TED Talk in the past. But in the middle of all this excitement,.",
+      "zh": "參加 TED 演講一直是我的夢想。但在這一切興奮之中，。",
+      "grammarNote": "時間軸 (489s - 506.2s) · 核心字詞：excitement (n.)、alway (n./v.)",
+      "keywords": [
+        {
+          "word": "excitement",
+          "lemma": "excitement",
+          "pos": "n.",
+          "phonetic": "/excitement/",
+          "meaning": "興奮",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"excitement\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「興奮」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "always",
+          "lemma": "alway",
+          "pos": "n./v.",
+          "phonetic": "/alway/",
+          "meaning": "永遠",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"alway\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「永遠」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "start": 506.2,
+      "end": 512.1,
+      "en": "The Rational Decision-Maker seemed to have something else on his mind. He was saying, \"Are we clear on what we just accepted?",
+      "zh": "理性決策者似乎有別的想法。他說：「我們清楚我們剛剛接受的是什麼嗎？",
+      "grammarNote": "時間軸 (506.2s - 512.1s) · 核心字詞：decision-maker (n./v.)、rational (adj.)",
+      "keywords": [
+        {
+          "word": "Decision-Maker",
+          "lemma": "decision-maker",
+          "pos": "n./v.",
+          "phonetic": "/decision-maker/",
+          "meaning": "決策者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"decision-maker\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「決策者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Rational",
+          "lemma": "rational",
+          "pos": "adj.",
+          "phonetic": "/rational/",
+          "meaning": "理性",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"rational\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「理性」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "start": 512.1,
+      "end": 517.6,
+      "en": "Do we get what's going to be now happening one day in the future? We need to sit down and work on this right now.\"",
+      "zh": "我們知道未來某一天會發生什麼事嗎？我們現在需要坐下來解決這個問題。 」",
+      "grammarNote": "時間軸 (512.1s - 517.6s) · 核心字詞：happen (v./n.)、future (n./v.)",
+      "keywords": [
+        {
+          "word": "happening",
+          "lemma": "happen",
+          "pos": "v./n.",
+          "phonetic": "/happen/",
+          "meaning": "發生",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"happen\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「發生」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "future",
+          "lemma": "future",
+          "pos": "n./v.",
+          "phonetic": "/future/",
+          "meaning": "未來",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"future\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「未來」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "start": 517.7,
+      "end": 524.1,
+      "en": "And the Monkey said, \"Totally agree, but let's just open Google Earth and zoom in to the bottom of India, like 200 feet above the ground,.",
+      "zh": "猴子說：「完全同意，但讓我們打開 Google 地球並放大到印度底部，例如離地面 200 英尺的地方。",
+      "grammarNote": "時間軸 (517.7s - 524.1s) · 核心字詞：totally (adv.)、monkey (n./v.)",
+      "keywords": [
+        {
+          "word": "Totally",
+          "lemma": "totally",
+          "pos": "adv.",
+          "phonetic": "/totally/",
+          "meaning": "完全",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"totally\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「完全」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Monkey",
+          "lemma": "monkey",
+          "pos": "n./v.",
+          "phonetic": "/monkey/",
+          "meaning": "猴子",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"monkey\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「猴子」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "start": 524.1,
+      "end": 529.8,
+      "en": "And scroll up for two and a half hours til we get to the top of the country, so we can get a better feel for India.\"",
+      "zh": "向上滾動兩個半小時，直到我們到達這個國家的頂部，這樣我們就可以更好地感受印度。 」",
+      "grammarNote": "時間軸 (524.1s - 529.8s) · 核心字詞：country (n./v.)、scroll (n./v.)",
+      "keywords": [
+        {
+          "word": "country",
+          "lemma": "country",
+          "pos": "n./v.",
+          "phonetic": "/country/",
+          "meaning": "國家",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"country\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「國家」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "scroll",
+          "lemma": "scroll",
+          "pos": "n./v.",
+          "phonetic": "/scroll/",
+          "meaning": "捲軸",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"scroll\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「捲軸」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "start": 535.1,
+      "end": 547.6,
+      "en": "So that's what we did that day. As six months turned into four and then two and then one, the people of TED decided to release the speakers.",
+      "zh": "這就是我們那天所做的。六個月變成了四個月，然後是兩個月，然後是一年，TED 的人們決定釋放揚聲器。",
+      "grammarNote": "時間軸 (535.1s - 547.6s) · 核心字詞：speaker (n./v.)、decided (v.)",
+      "keywords": [
+        {
+          "word": "speakers",
+          "lemma": "speaker",
+          "pos": "n./v.",
+          "phonetic": "/speaker/",
+          "meaning": "演講者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"speaker\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「演講者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "decided",
+          "lemma": "decided",
+          "pos": "v.",
+          "phonetic": "/dɪˈsaɪdəd/",
+          "meaning": "解決（競賽、問題、爭議等）；選擇、決定或解決",
+          "level": "科技外商核心",
+          "exampleEn": "Her last-minute goal decided the game.",
+          "exampleZh": "在跨國團隊中，有效運用「解決（競賽、問題、爭議等）；選擇、決定或解決」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "start": 547.6,
+      "end": 551.6,
+      "en": "And I opened up the website, and there was my face staring right back at me.",
+      "zh": "我打開了網站，我的臉正盯著我。",
+      "grammarNote": "時間軸 (547.6s - 551.6s) · 核心字詞：website (n./v.)、star (v./n.)",
+      "keywords": [
+        {
+          "word": "website",
+          "lemma": "website",
+          "pos": "n./v.",
+          "phonetic": "/website/",
+          "meaning": "網站",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"website\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網站」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "staring",
+          "lemma": "star",
+          "pos": "v./n.",
+          "phonetic": "/star/",
+          "meaning": "明星",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"star\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「明星」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "start": 551.7,
+      "end": 562.6,
+      "en": "And guess who woke up? So the Panic Monster starts losing his mind, and a few seconds later, the whole system's in mayhem.",
+      "zh": "猜猜誰醒了？於是恐慌怪物開始失去理智，幾秒鐘後，整個系統陷入混亂。",
+      "grammarNote": "時間軸 (551.7s - 562.6s) · 核心字詞：monster (n./v.)、second (n./v.)",
+      "keywords": [
+        {
+          "word": "Monster",
+          "lemma": "monster",
+          "pos": "n./v.",
+          "phonetic": "/monster/",
+          "meaning": "怪物",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"monster\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「怪物」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "seconds",
+          "lemma": "second",
+          "pos": "n./v.",
+          "phonetic": "/second/",
+          "meaning": "第二",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"second\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「第二」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "start": 567.5,
+      "end": 571.8,
+      "en": "And the Monkey -- remember, he's terrified of the Panic Monster -- boom, he's up the tree!",
+      "zh": "還有猴子──記住，他害怕恐慌怪物──砰，他爬上了樹！",
+      "grammarNote": "時間軸 (567.5s - 571.8s) · 核心字詞：terrify (v.)、remember (n./v.)",
+      "keywords": [
+        {
+          "word": "terrified",
+          "lemma": "terrify",
+          "pos": "v.",
+          "phonetic": "/terrify/",
+          "meaning": "恐懼",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"terrify\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「恐懼」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "remember",
+          "lemma": "remember",
+          "pos": "n./v.",
+          "phonetic": "/remember/",
+          "meaning": "記住",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"remember\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「記住」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "start": 571.8,
+      "end": 577.3,
+      "en": "And finally, finally, the Rational Decision-Maker can take the wheel and I can start working on the talk.",
+      "zh": "最後，最後，理性決策者可以掌舵，我可以開始演講了。",
+      "grammarNote": "時間軸 (571.8s - 577.3s) · 核心字詞：decision-maker (n./v.)、rational (adj.)",
+      "keywords": [
+        {
+          "word": "Decision-Maker",
+          "lemma": "decision-maker",
+          "pos": "n./v.",
+          "phonetic": "/decision-maker/",
+          "meaning": "決策者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"decision-maker\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「決策者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Rational",
+          "lemma": "rational",
+          "pos": "adj.",
+          "phonetic": "/rational/",
+          "meaning": "理性",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"rational\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「理性」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "start": 577.4,
+      "end": 589.4,
+      "en": "Now, the Panic Monster explains all kinds of pretty insane procrastinator behavior, like how someone like me could spend two weeks unable to start the opening sentence of a paper,.",
+      "zh": "現在，恐慌怪物解釋了各種相當瘋狂的拖延者行為，例如像我這樣的人如何花兩週時間無法開始論文的開頭句。",
+      "grammarNote": "時間軸 (577.4s - 589.4s) · 核心字詞：procrastinator (n./v.)、explain (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "explains",
+          "lemma": "explain",
+          "pos": "n./v.",
+          "phonetic": "/explain/",
+          "meaning": "解釋一下",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"explain\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「解釋一下」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "start": 589.4,
+      "end": 595.3,
+      "en": "And then miraculously find the unbelievable work ethic to stay up all night and write eight pages.",
+      "zh": "然後奇蹟般地找到了令人難以置信的職業道德，熬夜寫了八頁。",
+      "grammarNote": "時間軸 (589.4s - 595.3s) · 核心字詞：miraculously (adv.)、unbelievable (adj.)",
+      "keywords": [
+        {
+          "word": "miraculously",
+          "lemma": "miraculously",
+          "pos": "adv.",
+          "phonetic": "/miraculously/",
+          "meaning": "奇蹟般地",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"miraculously\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「奇蹟般地」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "unbelievable",
+          "lemma": "unbelievable",
+          "pos": "adj.",
+          "phonetic": "/unbelievable/",
+          "meaning": "難以置信",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"unbelievable\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「難以置信」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "start": 596.4,
+      "end": 601.4,
+      "en": "And this entire situation, with the three characters -- this is the procrastinator's system.",
+      "zh": "整個情況，有三個特徵──這就是拖延者的系統。",
+      "grammarNote": "時間軸 (596.4s - 601.4s) · 核心字詞：procrastinator (n./v.)、character (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "characters",
+          "lemma": "character",
+          "pos": "n./v.",
+          "phonetic": "/character/",
+          "meaning": "人物",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"character\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「人物」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "start": 602.1,
+      "end": 609.6,
+      "en": "It's not pretty, but in the end, it works. This is what I decided to write about on the blog a couple of years ago.",
+      "zh": "雖然不太漂亮，但最終還是有效的。這是我幾年前決定在部落格上寫的內容。",
+      "grammarNote": "時間軸 (602.1s - 609.6s) · 核心字詞：decided (v.)、pretty (n./v.)",
+      "keywords": [
+        {
+          "word": "decided",
+          "lemma": "decided",
+          "pos": "v.",
+          "phonetic": "/dɪˈsaɪdəd/",
+          "meaning": "解決（競賽、問題、爭議等）；選擇、決定或解決",
+          "level": "科技外商核心",
+          "exampleEn": "Her last-minute goal decided the game.",
+          "exampleZh": "在跨國團隊中，有效運用「解決（競賽、問題、爭議等）；選擇、決定或解決」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "pretty",
+          "lemma": "pretty",
+          "pos": "n./v.",
+          "phonetic": "/pretty/",
+          "meaning": "漂亮",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"pretty\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「漂亮」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "start": 609.6,
+      "end": 617.6,
+      "en": "When I did, I was amazed by the response. Literally thousands of emails came in, from all different kinds of people from all over the world,.",
+      "zh": "當我這樣做時，我對反應感到驚訝。事實上，來自世界各地不同類型的人收到了數千封電子郵件。",
+      "grammarNote": "時間軸 (609.6s - 617.6s) · 核心字詞：literally (adv.)、thousand (n./v.)",
+      "keywords": [
+        {
+          "word": "Literally",
+          "lemma": "literally",
+          "pos": "adv.",
+          "phonetic": "/literally/",
+          "meaning": "從字面上看",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"literally\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「從字面上看」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "thousands",
+          "lemma": "thousand",
+          "pos": "n./v.",
+          "phonetic": "/thousand/",
+          "meaning": "千",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"thousand\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「千」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "start": 617.6,
+      "end": 624.7,
+      "en": "Doing all different kinds of things. These are people who were nurses, bankers, painters, engineers and lots and lots of PhD students.",
+      "zh": "做各種各樣的事情。這些人是護士、銀行家、畫家、工程師和許許多多的博士生。",
+      "grammarNote": "時間軸 (617.6s - 624.7s) · 核心字詞：different (n./v.)、engineer (n./v.)",
+      "keywords": [
+        {
+          "word": "different",
+          "lemma": "different",
+          "pos": "n./v.",
+          "phonetic": "/different/",
+          "meaning": "不同",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"different\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「不同」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "engineers",
+          "lemma": "engineer",
+          "pos": "n./v.",
+          "phonetic": "/engineer/",
+          "meaning": "核心字彙：engineer",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"engineer\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：engineer」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "start": 626.7,
+      "end": 631,
+      "en": "And they were all writing, saying the same thing: \"I have this problem too.\"",
+      "zh": "他們都在寫信，說同樣的話：“我也有這個問題。”",
+      "grammarNote": "時間軸 (626.7s - 631s) · 核心字詞：writ (v./n.)、problem (n./v.)",
+      "keywords": [
+        {
+          "word": "writing",
+          "lemma": "writ",
+          "pos": "v./n.",
+          "phonetic": "/writ/",
+          "meaning": "核心字彙：writ",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"writ\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：writ」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "problem",
+          "lemma": "problem",
+          "pos": "n./v.",
+          "phonetic": "/problem/",
+          "meaning": "核心字彙：problem",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"problem\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：problem」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "start": 631,
+      "end": 637,
+      "en": "But what struck me was the contrast between the light tone of the post and the heaviness of these emails.",
+      "zh": "但令我印象深刻的是貼文的輕鬆語氣和這些電子郵件的沉重之間的對比。",
+      "grammarNote": "時間軸 (631s - 637s) · 核心字詞：heaviness (n.)、contrast (n./v.)",
+      "keywords": [
+        {
+          "word": "heaviness",
+          "lemma": "heaviness",
+          "pos": "n.",
+          "phonetic": "/heaviness/",
+          "meaning": "核心字彙：heaviness",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"heaviness\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：heaviness」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "contrast",
+          "lemma": "contrast",
+          "pos": "n./v.",
+          "phonetic": "/contrast/",
+          "meaning": "核心字彙：contrast",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"contrast\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：contrast」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "start": 637,
+      "end": 644.9,
+      "en": "These people were writing with intense frustration about what procrastination had done to their lives, about what this Monkey had done to them.",
+      "zh": "這些人帶著強烈的挫折感寫下了拖延症對他們的生活造成的影響，以及這隻猴子對他們所做的事情。",
+      "grammarNote": "時間軸 (637s - 644.9s) · 核心字詞：procrastination (n.)、frustration (n.)",
+      "keywords": [
+        {
+          "word": "procrastination",
+          "lemma": "procrastination",
+          "pos": "n.",
+          "phonetic": "/pɹəʊˌkɹæs.tɪˈneɪ.ʃən/",
+          "meaning": "延遲、延遲或延遲的行為，尤其是習慣性或故意的。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「延遲、延遲或延遲的行為，尤其是習慣性或故意的。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "frustration",
+          "lemma": "frustration",
+          "pos": "n.",
+          "phonetic": "/frustration/",
+          "meaning": "核心字彙：frustration",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"frustration\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：frustration」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "start": 646.9,
+      "end": 653,
+      "en": "And I thought about this, and I said, well, if the procrastinator's system works, then what's going on?",
+      "zh": "我想到了這一點，我說，好吧，如果拖延者的系統有效，那麼會發生什麼？",
+      "grammarNote": "時間軸 (646.9s - 653s) · 核心字詞：procrastinator (n./v.)、thought (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "thought",
+          "lemma": "thought",
+          "pos": "n./v.",
+          "phonetic": "/thought/",
+          "meaning": "思想",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"thought\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「思想」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "start": 653,
+      "end": 658.8,
+      "en": "Why are all of these people in such a dark place? Well, it turns out that there's two kinds of procrastination.",
+      "zh": "為什麼這些人都在這麼黑暗的地方？嗯，事實證明，拖延有兩種。",
+      "grammarNote": "時間軸 (653s - 658.8s) · 核心字詞：procrastination (n.)、place (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastination",
+          "lemma": "procrastination",
+          "pos": "n.",
+          "phonetic": "/pɹəʊˌkɹæs.tɪˈneɪ.ʃən/",
+          "meaning": "延遲、延遲或延遲的行為，尤其是習慣性或故意的。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「延遲、延遲或延遲的行為，尤其是習慣性或故意的。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "place",
+          "lemma": "place",
+          "pos": "n./v.",
+          "phonetic": "/place/",
+          "meaning": "核心字彙：place",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"place\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：place」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "start": 660,
+      "end": 664,
+      "en": "Everything I've talked about today, the examples I've given, they all have deadlines.",
+      "zh": "我今天談到的所有內容，我給的例子，它們都有截止日期。",
+      "grammarNote": "時間軸 (660s - 664s) · 核心字詞：everyth (v./n.)、deadline (n./v.)",
+      "keywords": [
+        {
+          "word": "Everything",
+          "lemma": "everyth",
+          "pos": "v./n.",
+          "phonetic": "/everyth/",
+          "meaning": "一切",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"everyth\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「一切」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "deadlines",
+          "lemma": "deadline",
+          "pos": "n./v.",
+          "phonetic": "/deadline/",
+          "meaning": "核心字彙：deadline",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"deadline\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：deadline」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "start": 664,
+      "end": 670.2,
+      "en": "And when there's deadlines, the effects of procrastination are contained to the short term because the Panic Monster gets involved.",
+      "zh": "當有最後期限時，拖延的影響會被限制在短期內，因為恐慌怪物會介入。",
+      "grammarNote": "時間軸 (664s - 670.2s) · 核心字詞：procrastination (n.)、deadline (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastination",
+          "lemma": "procrastination",
+          "pos": "n.",
+          "phonetic": "/pɹəʊˌkɹæs.tɪˈneɪ.ʃən/",
+          "meaning": "延遲、延遲或延遲的行為，尤其是習慣性或故意的。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「延遲、延遲或延遲的行為，尤其是習慣性或故意的。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "deadlines",
+          "lemma": "deadline",
+          "pos": "n./v.",
+          "phonetic": "/deadline/",
+          "meaning": "核心字彙：deadline",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"deadline\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：deadline」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "start": 670.2,
+      "end": 674.8,
+      "en": "But there's a second kind of procrastination that happens in situations when there is no deadline.",
+      "zh": "但第二種拖延發生在沒有最後期限的情況下。",
+      "grammarNote": "時間軸 (670.2s - 674.8s) · 核心字詞：procrastination (n.)、situation (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastination",
+          "lemma": "procrastination",
+          "pos": "n.",
+          "phonetic": "/pɹəʊˌkɹæs.tɪˈneɪ.ʃən/",
+          "meaning": "延遲、延遲或延遲的行為，尤其是習慣性或故意的。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「延遲、延遲或延遲的行為，尤其是習慣性或故意的。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "situations",
+          "lemma": "situation",
+          "pos": "n./v.",
+          "phonetic": "/situation/",
+          "meaning": "核心字彙：situation",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"situation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：situation」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "start": 674.8,
+      "end": 683.5,
+      "en": "So if you wanted a career where you're a self-starter -- something in the arts, something entrepreneurial -- there's no deadlines on those things at first, because nothing's happening,.",
+      "zh": "因此，如果你想要一份能夠自我啟動的職業──藝術方面的，創業方面的──這些事情一開始就沒有最後期限，因為什麼事也沒發生。",
+      "grammarNote": "時間軸 (674.8s - 683.5s) · 核心字詞：entrepreneurial (adj.)、self-starter (n./v.)",
+      "keywords": [
+        {
+          "word": "entrepreneurial",
+          "lemma": "entrepreneurial",
+          "pos": "adj.",
+          "phonetic": "/entrepreneurial/",
+          "meaning": "核心字彙：entrepreneurial",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"entrepreneurial\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：entrepreneurial」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "self-starter",
+          "lemma": "self-starter",
+          "pos": "n./v.",
+          "phonetic": "/self-starter/",
+          "meaning": "核心字彙：self-starter",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"self-starter\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：self-starter」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "start": 683.5,
+      "end": 687.4,
+      "en": "Not until you've gone out and done the hard work to get momentum, get things going.",
+      "zh": "直到你走出去並完成艱苦的工作來獲得動力，讓事情繼續下去。",
+      "grammarNote": "時間軸 (683.5s - 687.4s) · 核心字詞：momentum (n./v.)、until (n./v.)",
+      "keywords": [
+        {
+          "word": "momentum",
+          "lemma": "momentum",
+          "pos": "n./v.",
+          "phonetic": "/momentum/",
+          "meaning": "核心字彙：momentum",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"momentum\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：momentum」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "until",
+          "lemma": "until",
+          "pos": "n./v.",
+          "phonetic": "/until/",
+          "meaning": "核心字彙：until",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"until\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：until」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "start": 687.4,
+      "end": 695.4,
+      "en": "There's also all kinds of important things outside of your career that don't involve any deadlines, like seeing your family or exercising and taking care of your health,.",
+      "zh": "在你的職業生涯之外，還有各種不涉及任何截止日期的重要事情，例如拜訪你的家人或運動並照顧你的健康。",
+      "grammarNote": "時間軸 (687.4s - 695.4s) · 核心字詞：exercis (v./n.)、important (n./v.)",
+      "keywords": [
+        {
+          "word": "exercising",
+          "lemma": "exercis",
+          "pos": "v./n.",
+          "phonetic": "/exercis/",
+          "meaning": "核心字彙：exercis",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"exercis\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：exercis」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "important",
+          "lemma": "important",
+          "pos": "n./v.",
+          "phonetic": "/important/",
+          "meaning": "重要",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"important\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重要」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "start": 695.5,
+      "end": 699.6,
+      "en": "Working on your relationship or getting out of a relationship that isn't working.",
+      "zh": "努力改善你們的關係，或擺脫一段不起作用的關係。",
+      "grammarNote": "時間軸 (695.5s - 699.6s) · 核心字詞：relationship (n./v.)、work (v./n.)",
+      "keywords": [
+        {
+          "word": "relationship",
+          "lemma": "relationship",
+          "pos": "n./v.",
+          "phonetic": "/relationship/",
+          "meaning": "核心字彙：relationship",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"relationship\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：relationship」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Working",
+          "lemma": "work",
+          "pos": "v./n.",
+          "phonetic": "/work/",
+          "meaning": "核心字彙：work",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"work\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：work」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "start": 699.6,
+      "end": 709.5,
+      "en": "Now if the procrastinator's only mechanism of doing these hard things is the Panic Monster, that's a problem, because in all of these non-deadline situations,.",
+      "zh": "現在，如果拖延者做這些困難事情的唯一機制是恐慌怪物，那就是一個問題，因為在所有這些非最後期限的情況下，。",
+      "grammarNote": "時間軸 (699.6s - 709.5s) · 核心字詞：procrastinator (n./v.)、non-deadline (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinator",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "non-deadline",
+          "lemma": "non-deadline",
+          "pos": "n./v.",
+          "phonetic": "/non-deadline/",
+          "meaning": "核心字彙：non-deadline",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"non-deadline\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：non-deadline」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "start": 709.5,
+      "end": 717.1,
+      "en": "The Panic Monster doesn't show up. He has nothing to wake up for, so the effects of procrastination, they're not contained; they just extend outward forever.",
+      "zh": "恐慌怪物沒有出現。他沒有什麼值得醒來的，所以拖延的影響並沒有得到控制；它們只是永遠向外延伸。",
+      "grammarNote": "時間軸 (709.5s - 717.1s) · 核心字詞：procrastination (n.)、contain (v./adj.)",
+      "keywords": [
+        {
+          "word": "procrastination",
+          "lemma": "procrastination",
+          "pos": "n.",
+          "phonetic": "/pɹəʊˌkɹæs.tɪˈneɪ.ʃən/",
+          "meaning": "延遲、延遲或延遲的行為，尤其是習慣性或故意的。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「延遲、延遲或延遲的行為，尤其是習慣性或故意的。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "contained",
+          "lemma": "contain",
+          "pos": "v./adj.",
+          "phonetic": "/contain/",
+          "meaning": "核心字彙：contain",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"contain\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：contain」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "start": 718,
+      "end": 726.7,
+      "en": "And it's this long-term kind of procrastination that's much less visible and much less talked about than the funnier, short-term deadline-based kind.",
+      "zh": "與更有趣的、基於最後期限的短期拖延相比，這種長期拖延更不明顯，也更少被談論。",
+      "grammarNote": "時間軸 (718s - 726.7s) · 核心字詞：procrastination (n.)、deadline-bas (v./adj.)",
+      "keywords": [
+        {
+          "word": "procrastination",
+          "lemma": "procrastination",
+          "pos": "n.",
+          "phonetic": "/pɹəʊˌkɹæs.tɪˈneɪ.ʃən/",
+          "meaning": "延遲、延遲或延遲的行為，尤其是習慣性或故意的。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「延遲、延遲或延遲的行為，尤其是習慣性或故意的。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "deadline-based",
+          "lemma": "deadline-bas",
+          "pos": "v./adj.",
+          "phonetic": "/deadline-bas/",
+          "meaning": "核心字彙：deadline-bas",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"deadline-bas\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：deadline-bas」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "start": 726.8,
+      "end": 735.7,
+      "en": "It's usually suffered quietly and privately. And it can be the source of a huge amount of long-term unhappiness, and regrets.",
+      "zh": "它通常是悄悄地、私下遭受的。它可能是大量長期不快樂和遺憾的根源。",
+      "grammarNote": "時間軸 (726.8s - 735.7s) · 核心字詞：unhappiness (n.)、privately (adv.)",
+      "keywords": [
+        {
+          "word": "unhappiness",
+          "lemma": "unhappiness",
+          "pos": "n.",
+          "phonetic": "/unhappiness/",
+          "meaning": "核心字彙：unhappiness",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"unhappiness\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：unhappiness」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "privately",
+          "lemma": "privately",
+          "pos": "adv.",
+          "phonetic": "/privately/",
+          "meaning": "核心字彙：privately",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"privately\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：privately」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "start": 736.6,
+      "end": 742,
+      "en": "And I thought, that's why those people are emailing, and that's why they're in such a bad place.",
+      "zh": "我想，這就是那些人發電子郵件的原因，也是他們處境如此糟糕的原因。",
+      "grammarNote": "時間軸 (736.6s - 742s) · 核心字詞：email (v./n.)、thought (n./v.)",
+      "keywords": [
+        {
+          "word": "emailing",
+          "lemma": "email",
+          "pos": "v./n.",
+          "phonetic": "/email/",
+          "meaning": "核心字彙：email",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"email\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：email」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "thought",
+          "lemma": "thought",
+          "pos": "n./v.",
+          "phonetic": "/thought/",
+          "meaning": "思想",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"thought\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「思想」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "start": 742,
+      "end": 750.3,
+      "en": "It's not that they're cramming for some project. It's that long-term procrastination has made them feel like a spectator, at times, in their own lives.",
+      "zh": "這並不是說他們為了某個專案而臨時抱佛腳。長期的拖延讓他們有時覺得自己是自己生命中的旁觀者。",
+      "grammarNote": "時間軸 (742s - 750.3s) · 核心字詞：procrastination (n.)、long-term (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastination",
+          "lemma": "procrastination",
+          "pos": "n.",
+          "phonetic": "/pɹəʊˌkɹæs.tɪˈneɪ.ʃən/",
+          "meaning": "延遲、延遲或延遲的行為，尤其是習慣性或故意的。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「延遲、延遲或延遲的行為，尤其是習慣性或故意的。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "long-term",
+          "lemma": "long-term",
+          "pos": "n./v.",
+          "phonetic": "/long-term/",
+          "meaning": "長期",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"long-term\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「長期」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "start": 750.6,
+      "end": 756.7,
+      "en": "The frustration is not that they couldn't achieve their dreams; it's that they weren't even able to start chasing them.",
+      "zh": "挫折並不是他們無法實現自己的夢想，而是他們無法實現自己的夢想。而是他們根本就沒有能力去追趕他們。",
+      "grammarNote": "時間軸 (750.6s - 756.7s) · 核心字詞：frustration (n.)、achieve (n./v.)",
+      "keywords": [
+        {
+          "word": "frustration",
+          "lemma": "frustration",
+          "pos": "n.",
+          "phonetic": "/frustration/",
+          "meaning": "核心字彙：frustration",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"frustration\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：frustration」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "achieve",
+          "lemma": "achieve",
+          "pos": "n./v.",
+          "phonetic": "/achieve/",
+          "meaning": "核心字彙：achieve",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"achieve\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：achieve」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "start": 756.7,
+      "end": 765.6,
+      "en": "So I read these emails and I had a little bit of an epiphany -- that I don't think non-procrastinators exist.",
+      "zh": "所以我讀了這些電子郵件，頓悟了——我認為不拖延者不存在。",
+      "grammarNote": "時間軸 (756.7s - 765.6s) · 核心字詞：non-procrastinator (n./v.)、epiphany (n./v.)",
+      "keywords": [
+        {
+          "word": "non-procrastinators",
+          "lemma": "non-procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/non-procrastinator/",
+          "meaning": "不拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"non-procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「不拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "epiphany",
+          "lemma": "epiphany",
+          "pos": "n./v.",
+          "phonetic": "/epiphany/",
+          "meaning": "核心字彙：epiphany",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"epiphany\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：epiphany」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "start": 766,
+      "end": 773.2,
+      "en": "That's right -- I think all of you are procrastinators. Now, you might not all be a mess, like some of us,.",
+      "zh": "是的──我認為你們都是拖延者。現在，你們可能不會像我們中的一些人那樣一團糟。",
+      "grammarNote": "時間軸 (766s - 773.2s) · 核心字詞：procrastinator (n./v.)、right (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinators",
+          "lemma": "procrastinator",
+          "pos": "n./v.",
+          "phonetic": "/procrastinator/",
+          "meaning": "拖延者",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinator\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「拖延者」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "right",
+          "lemma": "right",
+          "pos": "n./v.",
+          "phonetic": "/right/",
+          "meaning": "核心字彙：right",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"right\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：right」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "start": 774.8,
+      "end": 782.5,
+      "en": "And some of you may have a healthy relationship with deadlines, but remember: the Monkey's sneakiest trick is when the deadlines aren't there.",
+      "zh": "你們中的一些人可能與截止日期有著良好的關係，但請記住：猴子最狡猾的伎倆是在截止日期不存在的時候。",
+      "grammarNote": "時間軸 (774.8s - 782.5s) · 核心字詞：relationship (n./v.)、deadline (n./v.)",
+      "keywords": [
+        {
+          "word": "relationship",
+          "lemma": "relationship",
+          "pos": "n./v.",
+          "phonetic": "/relationship/",
+          "meaning": "核心字彙：relationship",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"relationship\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：relationship」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "deadlines",
+          "lemma": "deadline",
+          "pos": "n./v.",
+          "phonetic": "/deadline/",
+          "meaning": "核心字彙：deadline",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"deadline\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：deadline」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "start": 783.3,
+      "end": 787.7,
+      "en": "Now, I want to show you one last thing. I call this a Life Calendar.",
+      "zh": "現在，我想向您展示最後一件事。我稱之為生活日曆。",
+      "grammarNote": "時間軸 (783.3s - 787.7s) · 核心字詞：calendar (n./v.)",
+      "keywords": [
+        {
+          "word": "Calendar",
+          "lemma": "calendar",
+          "pos": "n./v.",
+          "phonetic": "/calendar/",
+          "meaning": "核心字彙：calendar",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"calendar\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：calendar」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "start": 788.4,
+      "end": 797.9,
+      "en": "That's one box for every week of a 90-year life. That's not that many boxes, especially since we've already used a bunch of those.",
+      "zh": "這相當於 90 歲人生中每週一盒。盒子不多，尤其是我們已經用了很多了。",
+      "grammarNote": "時間軸 (788.4s - 797.9s) · 核心字詞：especially (adv.)、already (n./v.)",
+      "keywords": [
+        {
+          "word": "especially",
+          "lemma": "especially",
+          "pos": "adv.",
+          "phonetic": "/especially/",
+          "meaning": "核心字彙：especially",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"especially\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：especially」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "already",
+          "lemma": "already",
+          "pos": "n./v.",
+          "phonetic": "/already/",
+          "meaning": "核心字彙：already",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"already\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：already」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "start": 798.6,
+      "end": 808,
+      "en": "So I think we need to all take a long, hard look at that calendar. We need to think about what we're really procrastinating on,.",
+      "zh": "所以我認為我們都需要仔細檢視這份日曆。我們需要思考我們真正拖延的是什麼。",
+      "grammarNote": "時間軸 (798.6s - 808s) · 核心字詞：procrastinat (v./n.)、calendar (n./v.)",
+      "keywords": [
+        {
+          "word": "procrastinating",
+          "lemma": "procrastinat",
+          "pos": "v./n.",
+          "phonetic": "/procrastinat/",
+          "meaning": "核心字彙：procrastinat",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：procrastinat」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "calendar",
+          "lemma": "calendar",
+          "pos": "n./v.",
+          "phonetic": "/calendar/",
+          "meaning": "核心字彙：calendar",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"calendar\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：calendar」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "start": 808,
+      "end": 815.8,
+      "en": "Because everyone is procrastinating on something in life. We need to stay aware of the Instant Gratification Monkey.",
+      "zh": "因為每個人在生活中都會拖延一些事情。我們需要警惕即時滿足猴。",
+      "grammarNote": "時間軸 (808s - 815.8s) · 核心字詞：procrastinat (v./n.)、gratification (n.)",
+      "keywords": [
+        {
+          "word": "procrastinating",
+          "lemma": "procrastinat",
+          "pos": "v./n.",
+          "phonetic": "/procrastinat/",
+          "meaning": "核心字彙：procrastinat",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"procrastinat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：procrastinat」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Gratification",
+          "lemma": "gratification",
+          "pos": "n.",
+          "phonetic": "/gratification/",
+          "meaning": "滿足",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"gratification\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「滿足」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "start": 817.5,
+      "end": 825.3,
+      "en": "That's a job for all of us. And because there's not that many boxes on there, it's a job that should probably start today.",
+      "zh": "這是我們所有人的工作。因為那裡沒有那麼多盒子，所以這項工作可能應該從今天開始。",
+      "grammarNote": "時間軸 (817.5s - 825.3s) · 核心字詞：probably (adv.)、boxe (n./v.)",
+      "keywords": [
+        {
+          "word": "probably",
+          "lemma": "probably",
+          "pos": "adv.",
+          "phonetic": "/probably/",
+          "meaning": "核心字彙：probably",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"probably\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：probably」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "boxes",
+          "lemma": "boxe",
+          "pos": "n./v.",
+          "phonetic": "/boxe/",
+          "meaning": "核心字彙：boxe",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"boxe\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：boxe」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "start": 825.3,
+      "end": 831.1,
+      "en": "Well, maybe not today, but ... You know.",
+      "zh": "嗯，也許不是今天，但是…你知道。",
+      "grammarNote": "時間軸 (825.3s - 831.1s) · 核心字詞：maybe (n./v.)、today (n./v.)",
+      "keywords": [
+        {
+          "word": "maybe",
+          "lemma": "maybe",
+          "pos": "n./v.",
+          "phonetic": "/maybe/",
+          "meaning": "核心字彙：maybe",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"maybe\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：maybe」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "today",
+          "lemma": "today",
+          "pos": "n./v.",
+          "phonetic": "/today/",
+          "meaning": "核心字彙：today",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"today\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：today」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "start": 831.6,
+      "end": 834.6,
+      "en": "Sometime soon. Thank you.",
+      "zh": "不久的將來。謝謝。",
+      "grammarNote": "時間軸 (831.6s - 834.6s) · 核心字詞：sometime (n./v.)、thank (n./v.)",
+      "keywords": [
+        {
+          "word": "Sometime",
+          "lemma": "sometime",
+          "pos": "n./v.",
+          "phonetic": "/sometime/",
+          "meaning": "核心字彙：sometime",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"sometime\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：sometime」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Thank",
+          "lemma": "thank",
+          "pos": "n./v.",
+          "phonetic": "/thank/",
+          "meaning": "核心字彙：thank",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"thank\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「核心字彙：thank」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "At 48.8s in the video, which word best completes the sentence: \"And that would happen every single paper. But then came my 90-page senior thesis, a paper you're ________ to spend a year on.\"?",
+      "questionZh": "在影片 48.8 秒處，講者提到「每一篇論文都會發生這種情況。但接下來是我 90 頁的高級論文，你應該花一年的時間完成這篇論文。」，空格中應填入哪個字彙？",
+      "options": [
+        "supposed",
+        "civil",
+        "planned",
+        "funniest"
+      ],
+      "answer": 0,
+      "explanation": "原句為：「And that would happen every single paper. But then came my 90-page senior thesis, a paper you're supposed to spend a year on.」（每一篇論文都會發生這種情況。但接下來是我 90 頁的高級論文，你應該花一年的時間完成這篇論文。）。其中「supposed (v.)」意為「認為理所當然；得出結論，缺乏絕對的支持數據；相信。」。",
+      "relatedTimestamp": 48.8
+    },
+    {
+      "question": "At 218.6s in the video, which word best completes the sentence: \"It's not that obvious, but just take a look, OK? So here's the brain of a ________.\"?",
+      "questionZh": "在影片 218.6 秒處，講者提到「不是很明顯，但是看一下，好嗎？這是一個不拖延者的大腦。」，空格中應填入哪個字彙？",
+      "options": [
+        "amazing",
+        "non-procrastinator",
+        "procrastinators",
+        "carefully"
+      ],
+      "answer": 1,
+      "explanation": "原句為：「It's not that obvious, but just take a look, OK? So here's the brain of a non-procrastinator.」（不是很明顯，但是看一下，好嗎？這是一個不拖延者的大腦。）。其中「non-procrastinator (n./v.)」意為「不拖延者」。",
+      "relatedTimestamp": 218.6
+    },
+    {
+      "question": "At 410.9s in the video, which word best completes the sentence: \"It's where leisure ________ happen at times when leisure activities are not supposed to be happening.\"?",
+      "questionZh": "在影片 410.9 秒處，講者提到「這是休閒活動在不該發生的時候發生的地方。」，空格中應填入哪個字彙？",
+      "options": [
+        "world",
+        "gratification",
+        "activities",
+        "well-slept"
+      ],
+      "answer": 2,
+      "explanation": "原句為：「It's where leisure activities happen at times when leisure activities are not supposed to be happening.」（這是休閒活動在不該發生的時候發生的地方。）。其中「activity (n./v.)」意為「活動」。",
+      "relatedTimestamp": 410.9
+    },
+    {
+      "question": "At 631.0s in the video, which word best completes the sentence: \"But what struck me was the contrast between the light tone of the post and the ________ of these emails.\"?",
+      "questionZh": "在影片 631.0 秒處，講者提到「但令我印象深刻的是貼文的輕鬆語氣和這些電子郵件的沉重之間的對比。」，空格中應填入哪個字彙？",
+      "options": [
+        "consequence",
+        "conflict",
+        "situation",
+        "heaviness"
+      ],
+      "answer": 3,
+      "explanation": "原句為：「But what struck me was the contrast between the light tone of the post and the heaviness of these emails.」（但令我印象深刻的是貼文的輕鬆語氣和這些電子郵件的沉重之間的對比。）。其中「heaviness (n.)」意為「核心字彙：heaviness」。",
+      "relatedTimestamp": 631
+    },
+    {
+      "question": "At 766.0s in the video, which word best completes the sentence: \"That's right -- I think all of you are ________. Now, you might not all be a mess, like some of us,.\"?",
+      "questionZh": "在影片 766.0 秒處，講者提到「是的──我認為你們都是拖延者。現在，你們可能不會像我們中的一些人那樣一團糟。」，空格中應填入哪個字彙？",
+      "options": [
+        "procrastinators",
+        "monkey",
+        "staring",
+        "miraculously"
+      ],
+      "answer": 0,
+      "explanation": "原句為：「That's right -- I think all of you are procrastinators. Now, you might not all be a mess, like some of us,.」（是的──我認為你們都是拖延者。現在，你們可能不會像我們中的一些人那樣一團糟。）。其中「procrastinator (n./v.)」意為「拖延者」。",
+      "relatedTimestamp": 766
+    }
+  ]
+}

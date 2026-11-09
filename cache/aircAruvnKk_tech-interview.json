@@ -1,0 +1,4146 @@
+{
+  "id": "aircAruvnKk_tech-interview",
+  "videoId": "aircAruvnKk",
+  "title": "But what is a neural network? | Deep learning chapter 1",
+  "channel": "3Blue1Brown",
+  "thumbnail": "https://i.ytimg.com/vi/aircAruvnKk/hqdefault.jpg",
+  "duration": 1106,
+  "focusMode": "tech-interview",
+  "transcriptSource": "youtube-innertube-android",
+  "analysisSource": "cloud-bilingual-engine",
+  "cached": false,
+  "cachedAt": "2026-11-09T02:47:28.083Z",
+  "summary": {
+    "overviewZh": "已完整解析全片「But what is a neural network? | Deep learning chapter 1」（片長約 18 分鐘，共 135 個完整語句、171 個不重複核心字彙）。全片脈絡從「這是一個 3。它以 28x28 像素的極低解析度編寫和渲染，但您的大腦可以毫無困難地將其識⋯」展開，中段探討「然後從第一層取得所有這些活化並根據這些權重計算它們的加權和。⋯」，最終收斂於「非常適合這些令人難以置信的深度神經網路。好的，謝謝麗莎。」。",
+    "keyTakeaways": [
+      "全片 100% 完整解析：共 135 句中英對照字幕（0.0s 至 1105.6s 全覆蓋）",
+      "共標記 270 處語境重點單字，點擊底線即可查看音標、中文釋義與雙語延伸例句",
+      "涵蓋片頭、中段與結尾的 5 題全片時間軸聽力測驗，可一鍵跳轉對應秒數複習"
+    ],
+    "difficultyLevel": "B2 中高級 (全片完整版)",
+    "topicTags": [
+      "全片完整解析",
+      "共 135 句",
+      "雙語時間軸同步"
+    ]
+  },
+  "subtitles": [
+    {
+      "id": 1,
+      "start": 4.2,
+      "end": 13.7,
+      "en": "This is a 3. It's sloppily written and rendered at an extremely low resolution of 28x28 pixels, but your brain has no trouble recognizing it as a 3.",
+      "zh": "這是一個 3。它以 28x28 像素的極低解析度編寫和渲染，但您的大腦可以毫無困難地將其識別為 3。",
+      "grammarNote": "時間軸 (4.2s - 13.7s) · 核心字詞：recognizing (v.)、resolution (n.)",
+      "keywords": [
+        {
+          "word": "recognizing",
+          "lemma": "recognizing",
+          "pos": "v.",
+          "phonetic": "/recognizing/",
+          "meaning": "將（目前感知到的某事或某人）與先前遇到的同一個人或同一事物的記憶相匹配。",
+          "level": "科技外商核心",
+          "exampleEn": "I recognised his face immediately.",
+          "exampleZh": "在跨國團隊中，有效運用「將（目前感知到的某事或某人）與先前遇到的同一個人或同一事物的記憶相匹配。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "resolution",
+          "lemma": "resolution",
+          "pos": "n.",
+          "phonetic": "/ˌɹɛzəˈluːʃ(ə)n/",
+          "meaning": "堅強的意志、決心。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"resolution\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「堅強的意志、決心。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 14.3,
+      "end": 19,
+      "en": "And I want you to take a moment to appreciate how crazy it is that brains can do this so effortlessly.",
+      "zh": "我希望你能花點時間體會一下大腦可以如此輕鬆地做到這一點是多麼瘋狂。",
+      "grammarNote": "時間軸 (14.3s - 19s) · 核心字詞：effortlessly (adv.)、appreciate (n./v.)",
+      "keywords": [
+        {
+          "word": "effortlessly",
+          "lemma": "effortlessly",
+          "pos": "adv.",
+          "phonetic": "/ˈef.ət.ləs.li/",
+          "meaning": "不費力；沒有困難或掙扎。",
+          "level": "科技外商核心",
+          "exampleEn": "She hoisted the child effortlessly and plopped him in bed.",
+          "exampleZh": "在跨國團隊中，有效運用「不費力；沒有困難或掙扎。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "appreciate",
+          "lemma": "appreciate",
+          "pos": "n./v.",
+          "phonetic": "/appreciate/",
+          "meaning": "欣賞",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"appreciate\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「欣賞」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 19.7,
+      "end": 27.2,
+      "en": "I mean, this, this and this are also recognizable as 3s, even though the specific values of each pixel is very different from one.",
+      "zh": "我的意思是，這個、這個和這個也可以被識別為 3s，儘管每個像素的特定值與一個像素有很大不同。",
+      "grammarNote": "時間軸 (19.7s - 27.2s) · 核心字詞：recognizable (adj.)、different (n./v.)",
+      "keywords": [
+        {
+          "word": "recognizable",
+          "lemma": "recognizable",
+          "pos": "adj.",
+          "phonetic": "/recognizable/",
+          "meaning": "能夠被認可",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recognizable\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「能夠被認可」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "different",
+          "lemma": "different",
+          "pos": "n./v.",
+          "phonetic": "/different/",
+          "meaning": "不同",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"different\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「不同」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 27.2,
+      "end": 36.9,
+      "en": "Image to the next. The particular light-sensitive cells in your eye that are firing when you see this 3 are very different from the ones firing when you see this 3.",
+      "zh": "下一張圖片。當您看到這 3 時，您眼睛中發射的特定光敏細胞與您看到這 3 時發射的光敏細胞非常不同。",
+      "grammarNote": "時間軸 (27.2s - 36.9s) · 核心字詞：light-sensitive (adj.)、particular (n./v.)",
+      "keywords": [
+        {
+          "word": "light-sensitive",
+          "lemma": "light-sensitive",
+          "pos": "adj.",
+          "phonetic": "/light-sensitive/",
+          "meaning": "受光影響或對光敏感。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"light-sensitive\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「受光影響或對光敏感。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "particular",
+          "lemma": "particular",
+          "pos": "n./v.",
+          "phonetic": "/particular/",
+          "meaning": "特別",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"particular\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「特別」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 37.5,
+      "end": 47.8,
+      "en": "But something in that crazy-smart visual cortex of yours resolves these as representing the same idea, while at the same time recognizing other images as their own distinct.",
+      "zh": "但你那瘋狂聰明的視覺皮層中的某些東西將這些圖像解析為代表相同的想法，同時將其他圖像識別為它們自己的獨特圖像。",
+      "grammarNote": "時間軸 (37.5s - 47.8s) · 核心字詞：representing (v.)、crazy-smart (n./v.)",
+      "keywords": [
+        {
+          "word": "representing",
+          "lemma": "representing",
+          "pos": "v.",
+          "phonetic": "/ɹɛpɹɪˈzɛntɪŋ/",
+          "meaning": "再次或重新呈現；借助某物來代替…來呈現；展示其對應物或圖像；來代表。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"represent\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「再次或重新呈現；借助某物來代替…來呈現；展示其對應物或圖像；來代表。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "crazy-smart",
+          "lemma": "crazy-smart",
+          "pos": "n./v.",
+          "phonetic": "/crazy-smart/",
+          "meaning": "瘋狂的聰明",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"crazy-smart\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「瘋狂的聰明」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 47.8,
+      "end": 59.1,
+      "en": "Ideas. But if I told you, hey, sit down and write for me a program that takes in a grid of 28x28 pixels like this and outputs a single number between 0 and 10,.",
+      "zh": "想法。但如果我告訴你，嘿，坐下來為我寫一個程序，它接受像這樣的 28x28 像素網格，並輸出 0 到 10 之間的單個數字。",
+      "grammarNote": "時間軸 (47.8s - 59.1s) · 核心字詞：program (n.)、output (n./v.)",
+      "keywords": [
+        {
+          "word": "program",
+          "lemma": "program",
+          "pos": "n.",
+          "phonetic": "/ˈpɹoʊˌɡɹæm/",
+          "meaning": "一組結構化活動。",
+          "level": "科技外商核心",
+          "exampleEn": "Our program for today’s exercise class includes swimming and jogging.",
+          "exampleZh": "在跨國團隊中，有效運用「一組結構化活動。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "outputs",
+          "lemma": "output",
+          "pos": "n./v.",
+          "phonetic": "/output/",
+          "meaning": "輸出",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"output\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「輸出」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 59.1,
+      "end": 66.2,
+      "en": "Telling you what it thinks the digit is, well the task goes from comically trivial to dauntingly difficult.",
+      "zh": "告訴你它認為數字是什麼，任務從可笑的瑣碎變成了令人畏懼的困難。",
+      "grammarNote": "時間軸 (59.1s - 66.2s) · 核心字詞：dauntingly (adv.)、comically (adv.)",
+      "keywords": [
+        {
+          "word": "dauntingly",
+          "lemma": "dauntingly",
+          "pos": "adv.",
+          "phonetic": "/dauntingly/",
+          "meaning": "令人畏懼",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"dauntingly\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「令人畏懼」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "comically",
+          "lemma": "comically",
+          "pos": "adv.",
+          "phonetic": "/comically/",
+          "meaning": "滑稽",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"comically\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「滑稽」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 67.2,
+      "end": 74.6,
+      "en": "Unless you've been living under a rock, I think I hardly need to motivate the relevance and importance of machine learning and neural networks to the present and to the future.",
+      "zh": "除非你一直住在岩石下，否則我認為我幾乎不需要激發機器學習和神經網路對現在和未來的相關性和重要性。",
+      "grammarNote": "時間軸 (67.2s - 74.6s) · 核心字詞：importance (n./v.)、relevance (n.)",
+      "keywords": [
+        {
+          "word": "importance",
+          "lemma": "importance",
+          "pos": "n./v.",
+          "phonetic": "/importance/",
+          "meaning": "重要性",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"importance\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重要性」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "relevance",
+          "lemma": "relevance",
+          "pos": "n.",
+          "phonetic": "/relevance/",
+          "meaning": "相關或相關的屬性或狀態。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"relevance\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「相關或相關的屬性或狀態。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 75.1,
+      "end": 82.3,
+      "en": "But what I want to do here is show you what a neural network actually is, assuming no background, and to help visualize what it's doing,.",
+      "zh": "但我在這裡想做的是向您展示神經網路實際上是什麼，假設沒有背景，並幫助可視化它正在做什麼。",
+      "grammarNote": "時間軸 (75.1s - 82.3s) · 核心字詞：background (n./v.)、visualize (n./v.)",
+      "keywords": [
+        {
+          "word": "background",
+          "lemma": "background",
+          "pos": "n./v.",
+          "phonetic": "/background/",
+          "meaning": "背景",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"background\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「背景」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "visualize",
+          "lemma": "visualize",
+          "pos": "n./v.",
+          "phonetic": "/visualize/",
+          "meaning": "想像",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"visualize\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「想像」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 82.3,
+      "end": 88.8,
+      "en": "Not as a buzzword but as a piece of math. My hope is that you come away feeling like the structure itself is motivated,.",
+      "zh": "不是作為一個流行詞，而是作為一個數學。我希望你離開時感覺這個結構本身是有動力的。",
+      "grammarNote": "時間軸 (82.3s - 88.8s) · 核心字詞：structure (n./v.)、motivat (v./adj.)",
+      "keywords": [
+        {
+          "word": "structure",
+          "lemma": "structure",
+          "pos": "n./v.",
+          "phonetic": "/structure/",
+          "meaning": "結構",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"structure\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「結構」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "motivated",
+          "lemma": "motivat",
+          "pos": "v./adj.",
+          "phonetic": "/motivat/",
+          "meaning": "動機",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"motivat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「動機」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 88.8,
+      "end": 94.3,
+      "en": "And to feel like you know what it means when you read, or you hear about a neural network quote-unquote learning.",
+      "zh": "當你閱讀或聽到神經網路引用-非引用學習時，感覺你知道它意味著什麼。",
+      "grammarNote": "時間軸 (88.8s - 94.3s) · 核心字詞：quote-unquote (n./v.)、learn (v./n.)",
+      "keywords": [
+        {
+          "word": "quote-unquote",
+          "lemma": "quote-unquote",
+          "pos": "n./v.",
+          "phonetic": "/quote-unquote/",
+          "meaning": "引用-取消引用",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"quote-unquote\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「引用-取消引用」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "learning",
+          "lemma": "learn",
+          "pos": "v./n.",
+          "phonetic": "/learn/",
+          "meaning": "學習",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"learn\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「學習」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 95.4,
+      "end": 100.3,
+      "en": "This video is just going to be devoted to the structure component of that, and the following one is going to tackle learning.",
+      "zh": "這段影片將專門討論其結構部分，下面的影片將討論學習問題。",
+      "grammarNote": "時間軸 (95.4s - 100.3s) · 核心字詞：structure (n./v.)、component (n./v.)",
+      "keywords": [
+        {
+          "word": "structure",
+          "lemma": "structure",
+          "pos": "n./v.",
+          "phonetic": "/structure/",
+          "meaning": "結構",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"structure\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「結構」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "component",
+          "lemma": "component",
+          "pos": "n./v.",
+          "phonetic": "/component/",
+          "meaning": "組件",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"component\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「組件」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 101,
+      "end": 106,
+      "en": "What we're going to do is put together a neural network that can learn to recognize handwritten digits.",
+      "zh": "我們要做的是建立一個可以學習辨識手寫數字的神經網路。",
+      "grammarNote": "時間軸 (101s - 106s) · 核心字詞：handwritten (n./v.)、recognize (n./v.)",
+      "keywords": [
+        {
+          "word": "handwritten",
+          "lemma": "handwritten",
+          "pos": "n./v.",
+          "phonetic": "/handwritten/",
+          "meaning": "手寫",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"handwritten\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「手寫」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "recognize",
+          "lemma": "recognize",
+          "pos": "n./v.",
+          "phonetic": "/recognize/",
+          "meaning": "認識",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recognize\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「認識」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 109.4,
+      "end": 117.5,
+      "en": "This is a somewhat classic example for introducing the topic, and I'm happy to stick with the status quo here, because at the end of the two videos I want to point you to a couple good.",
+      "zh": "這是介紹該主題的一個有點經典的示例，我很高興在這裡堅持現狀，因為在兩個視頻的末尾，我想向您指出一些好的內容。",
+      "grammarNote": "時間軸 (109.4s - 117.5s) · 核心字詞：introduc (v./n.)、somewhat (n./v.)",
+      "keywords": [
+        {
+          "word": "introducing",
+          "lemma": "introduc",
+          "pos": "v./n.",
+          "phonetic": "/introduc/",
+          "meaning": "介紹",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"introduc\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「介紹」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "somewhat",
+          "lemma": "somewhat",
+          "pos": "n./v.",
+          "phonetic": "/somewhat/",
+          "meaning": "有點",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"somewhat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「有點」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 117.5,
+      "end": 123.1,
+      "en": "Resources where you can learn more, and where you can download the code that does this and play with it on your own computer.",
+      "zh": "您可以在其中了解更多信息，也可以下載執行此操作的程式碼並在您自己的電腦上使用它的資源。",
+      "grammarNote": "時間軸 (117.5s - 123.1s) · 核心字詞：resource (n./v.)、download (n.)",
+      "keywords": [
+        {
+          "word": "Resources",
+          "lemma": "resource",
+          "pos": "n./v.",
+          "phonetic": "/resource/",
+          "meaning": "資源",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"resource\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「資源」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "download",
+          "lemma": "download",
+          "pos": "n.",
+          "phonetic": "/ˈdaʊnˌləʊd/",
+          "meaning": "將檔案傳輸到本機。",
+          "level": "科技外商核心",
+          "exampleEn": "The download took longer than I expected.",
+          "exampleZh": "在跨國團隊中，有效運用「將檔案傳輸到本機。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 125,
+      "end": 132.3,
+      "en": "There are many many variants of neural networks, and in recent years there's been sort of a boom in research towards these variants,.",
+      "zh": "神經網路有很多變體，近年來對這些變體的研究出現了一定程度的繁榮。",
+      "grammarNote": "時間軸 (125s - 132.3s) · 核心字詞：variant (n./v.)、network (n./v.)",
+      "keywords": [
+        {
+          "word": "variants",
+          "lemma": "variant",
+          "pos": "n./v.",
+          "phonetic": "/variant/",
+          "meaning": "變體",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"variant\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「變體」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "networks",
+          "lemma": "network",
+          "pos": "n./v.",
+          "phonetic": "/network/",
+          "meaning": "網路",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"network\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網路」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 132.3,
+      "end": 139.2,
+      "en": "But in these two introductory videos you and I are just going to look at the simplest plain vanilla form with no added frills.",
+      "zh": "但在這兩個介紹影片中，你和我只是要看看最簡單的普通形式，沒有任何額外的裝飾。",
+      "grammarNote": "時間軸 (132.3s - 139.2s) · 核心字詞：introductory (n./v.)、simplest (n./v.)",
+      "keywords": [
+        {
+          "word": "introductory",
+          "lemma": "introductory",
+          "pos": "n./v.",
+          "phonetic": "/introductory/",
+          "meaning": "介紹",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"introductory\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「介紹」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "simplest",
+          "lemma": "simplest",
+          "pos": "n./v.",
+          "phonetic": "/simplest/",
+          "meaning": "最簡單的",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"simplest\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「最簡單的」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 139.9,
+      "end": 148.2,
+      "en": "This is kind of a necessary prerequisite for understanding any of the more powerful modern variants, and trust me it still has plenty of complexity for us to wrap our minds.",
+      "zh": "這是理解任何更強大的現代變體的必要先決條件，相信我，它仍然有足夠的複雜性讓我們思考。",
+      "grammarNote": "時間軸 (139.9s - 148.2s) · 核心字詞：understanding (v.)、prerequisite (n./v.)",
+      "keywords": [
+        {
+          "word": "understanding",
+          "lemma": "understanding",
+          "pos": "v.",
+          "phonetic": "/ʌndəˈstandɪŋ/",
+          "meaning": "全面徹底地掌握一個概念，特別是（字詞、陳述、藝術等）了解其意義和（人）了解其意圖。",
+          "level": "科技外商核心",
+          "exampleEn": "I'm sorry. I don't understand.",
+          "exampleZh": "在跨國團隊中，有效運用「全面徹底地掌握一個概念，特別是（字詞、陳述、藝術等）了解其意義和（人）了解其意圖。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "prerequisite",
+          "lemma": "prerequisite",
+          "pos": "n./v.",
+          "phonetic": "/prerequisite/",
+          "meaning": "先決條件",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"prerequisite\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「先決條件」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 148.2,
+      "end": 156.5,
+      "en": "Around. But even in this simplest form it can learn to recognize handwritten digits, which is a pretty cool thing for a computer to be able to do.",
+      "zh": "周圍。但即使是這種最簡單的形式，它也可以學習識別手寫數字，這對於計算機來說是一件非常酷的事情。",
+      "grammarNote": "時間軸 (148.2s - 156.5s) · 核心字詞：handwritten (n./v.)、recognize (n./v.)",
+      "keywords": [
+        {
+          "word": "handwritten",
+          "lemma": "handwritten",
+          "pos": "n./v.",
+          "phonetic": "/handwritten/",
+          "meaning": "手寫",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"handwritten\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「手寫」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "recognize",
+          "lemma": "recognize",
+          "pos": "n./v.",
+          "phonetic": "/recognize/",
+          "meaning": "認識",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recognize\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「認識」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 157.5,
+      "end": 162.3,
+      "en": "And at the same time you'll see how it does fall short of a couple hopes that we might have for it.",
+      "zh": "同時你會發現它確實沒有達到我們的一些希望。",
+      "grammarNote": "時間軸 (157.5s - 162.3s) · 核心字詞：couple (n./v.)、short (n./v.)",
+      "keywords": [
+        {
+          "word": "couple",
+          "lemma": "couple",
+          "pos": "n./v.",
+          "phonetic": "/couple/",
+          "meaning": "情侶",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"couple\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「情侶」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "short",
+          "lemma": "short",
+          "pos": "n./v.",
+          "phonetic": "/short/",
+          "meaning": "短",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"short\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「短」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 163.4,
+      "end": 171.7,
+      "en": "As the name suggests neural networks are inspired by the brain, but let's break that down. What are the neurons, and in what sense are they linked together?",
+      "zh": "顧名思義，神經網路受到大腦的啟發，但讓我們來分解一下。什麼是神經元，它們以什麼方式連結在一起？",
+      "grammarNote": "時間軸 (163.4s - 171.7s) · 核心字詞：suggest (n./v.)、network (n./v.)",
+      "keywords": [
+        {
+          "word": "suggests",
+          "lemma": "suggest",
+          "pos": "n./v.",
+          "phonetic": "/suggest/",
+          "meaning": "建議",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"suggest\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「建議」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "networks",
+          "lemma": "network",
+          "pos": "n./v.",
+          "phonetic": "/network/",
+          "meaning": "網路",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"network\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網路」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 172.5,
+      "end": 180.4,
+      "en": "Right now when I say neuron all I want you to think about is a thing that holds a number, specifically a number between 0 and 1.",
+      "zh": "現在，當我說神經元時，我希望你想到的是一個包含數字的東西，特別是 0 到 1 之間的數字。",
+      "grammarNote": "時間軸 (172.5s - 180.4s) · 核心字詞：specifically (adv.)、between (n./v.)",
+      "keywords": [
+        {
+          "word": "specifically",
+          "lemma": "specifically",
+          "pos": "adv.",
+          "phonetic": "/specifically/",
+          "meaning": "具體來說",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specifically\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「具體來說」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "between",
+          "lemma": "between",
+          "pos": "n./v.",
+          "phonetic": "/between/",
+          "meaning": "之間",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"between\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「之間」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 180.7,
+      "end": 194.2,
+      "en": "It's really not more than that. For example the network starts with a bunch of neurons corresponding to each of the 28x28 pixels of the input image, which is 784 neurons in total.",
+      "zh": "其實僅此而已。例如，網路從對應輸入影像的每個 28x28 像素的一堆神經元開始，總共 784 個神經元。",
+      "grammarNote": "時間軸 (180.7s - 194.2s) · 核心字詞：correspond (v./n.)、example (n./v.)",
+      "keywords": [
+        {
+          "word": "corresponding",
+          "lemma": "correspond",
+          "pos": "v./n.",
+          "phonetic": "/correspond/",
+          "meaning": "對應",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"correspond\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「對應」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "example",
+          "lemma": "example",
+          "pos": "n./v.",
+          "phonetic": "/example/",
+          "meaning": "例子",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"example\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「例子」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 194.7,
+      "end": 204.4,
+      "en": "Each one of these holds a number that represents the grayscale value of the corresponding pixel, ranging from 0 for black pixels up to 1 for white pixels.",
+      "zh": "其中每一個都包含一個數字，表示對應像素的灰階值，範圍從黑色像素的 0 到白色像素的 1。",
+      "grammarNote": "時間軸 (194.7s - 204.4s) · 核心字詞：correspond (v./n.)、represent (n./v.)",
+      "keywords": [
+        {
+          "word": "corresponding",
+          "lemma": "correspond",
+          "pos": "v./n.",
+          "phonetic": "/correspond/",
+          "meaning": "對應",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"correspond\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「對應」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "represents",
+          "lemma": "represent",
+          "pos": "n./v.",
+          "phonetic": "/represent/",
+          "meaning": "代表",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"represent\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「代表」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 205.3,
+      "end": 212.6,
+      "en": "This number inside the neuron is called its activation, and the image you might have in mind here is that each neuron is lit up when its.",
+      "zh": "神經元內部的這個數字稱為它的激活，您可能想到的圖像是每個神經元在激活時都會被點亮。",
+      "grammarNote": "時間軸 (205.3s - 212.6s) · 核心字詞：activation (n.)、number (n./v.)",
+      "keywords": [
+        {
+          "word": "activation",
+          "lemma": "activation",
+          "pos": "n.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "number",
+          "lemma": "number",
+          "pos": "n./v.",
+          "phonetic": "/number/",
+          "meaning": "數量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"number\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「數量」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 212.6,
+      "end": 221.9,
+      "en": "Activation is a high number. So all of these 784 neurons make up the first layer of our network.",
+      "zh": "活化率很高。因此，所有這 784 個神經元構成了我們網路的第一層。",
+      "grammarNote": "時間軸 (212.6s - 221.9s) · 核心字詞：activation (n.)、neuron (n./v.)",
+      "keywords": [
+        {
+          "word": "Activation",
+          "lemma": "activation",
+          "pos": "n.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "neurons",
+          "lemma": "neuron",
+          "pos": "n./v.",
+          "phonetic": "/neuron/",
+          "meaning": "神經元",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"neuron\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「神經元」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 226.5,
+      "end": 231.4,
+      "en": "Now jumping over to the last layer, this has 10 neurons, each representing one of the digits.",
+      "zh": "現在跳到最後一層，它有 10 個神經元，每個神經元代表一個數字。",
+      "grammarNote": "時間軸 (226.5s - 231.4s) · 核心字詞：representing (v.)、jump (v./n.)",
+      "keywords": [
+        {
+          "word": "representing",
+          "lemma": "representing",
+          "pos": "v.",
+          "phonetic": "/ɹɛpɹɪˈzɛntɪŋ/",
+          "meaning": "再次或重新呈現；借助某物來代替…來呈現；展示其對應物或圖像；來代表。",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"represent\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「再次或重新呈現；借助某物來代替…來呈現；展示其對應物或圖像；來代表。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "jumping",
+          "lemma": "jump",
+          "pos": "v./n.",
+          "phonetic": "/jump/",
+          "meaning": "跳躍",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"jump\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「跳躍」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 232,
+      "end": 242.1,
+      "en": "The activation in these neurons, again some number that's between 0 and 1, represents how much the system thinks that a given image corresponds with a given digit.",
+      "zh": "這些神經元的活化（同樣是 0 到 1 之間的某個數字）表示系統認為給定影像與給定數字對應的程度。",
+      "grammarNote": "時間軸 (232s - 242.1s) · 核心字詞：correspond (n./v.)、activation (n.)",
+      "keywords": [
+        {
+          "word": "corresponds",
+          "lemma": "correspond",
+          "pos": "n./v.",
+          "phonetic": "/correspond/",
+          "meaning": "對應",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"correspond\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「對應」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "activation",
+          "lemma": "activation",
+          "pos": "n.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 243,
+      "end": 249.8,
+      "en": "There's also a couple layers in between called the hidden layers, which for the time being should just be a giant question mark for.",
+      "zh": "中間還有幾個層，稱為隱藏層，目前這應該是一個巨大的問號。",
+      "grammarNote": "時間軸 (243s - 249.8s) · 核心字詞：question (n.)、between (n./v.)",
+      "keywords": [
+        {
+          "word": "question",
+          "lemma": "question",
+          "pos": "n.",
+          "phonetic": "/question/",
+          "meaning": "問題",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"question\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「問題」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "between",
+          "lemma": "between",
+          "pos": "n./v.",
+          "phonetic": "/between/",
+          "meaning": "之間",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"between\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「之間」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 249.8,
+      "end": 257.9,
+      "en": "How on earth this process of recognizing digits is going to be handled. In this network I chose two hidden layers, each one with 16 neurons,.",
+      "zh": "到底如何處理這個辨識數字的過程。在這個網路中，我選擇了兩個隱藏層，每個隱藏層有 16 個神經元。",
+      "grammarNote": "時間軸 (249.8s - 257.9s) · 核心字詞：recognizing (v.)、process (n./v.)",
+      "keywords": [
+        {
+          "word": "recognizing",
+          "lemma": "recognizing",
+          "pos": "v.",
+          "phonetic": "/recognizing/",
+          "meaning": "將（目前感知到的某事或某人）與先前遇到的同一個人或同一事物的記憶相匹配。",
+          "level": "科技外商核心",
+          "exampleEn": "I recognised his face immediately.",
+          "exampleZh": "在跨國團隊中，有效運用「將（目前感知到的某事或某人）與先前遇到的同一個人或同一事物的記憶相匹配。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "process",
+          "lemma": "process",
+          "pos": "n./v.",
+          "phonetic": "/process/",
+          "meaning": "過程",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"process\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「過程」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 257.9,
+      "end": 264.6,
+      "en": "And admittedly that's kind of an arbitrary choice. To be honest I chose two layers based on how I want to motivate the structure in.",
+      "zh": "誠然，這是一種任意的選擇。老實說，我根據我想要如何激發結構而選擇了兩層。",
+      "grammarNote": "時間軸 (257.9s - 264.6s) · 核心字詞：admittedly (adv.)、arbitrary (n./v.)",
+      "keywords": [
+        {
+          "word": "admittedly",
+          "lemma": "admittedly",
+          "pos": "adv.",
+          "phonetic": "/admittedly/",
+          "meaning": "誠然",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"admittedly\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「誠然」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "arbitrary",
+          "lemma": "arbitrary",
+          "pos": "n./v.",
+          "phonetic": "/arbitrary/",
+          "meaning": "任意",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"arbitrary\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「任意」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 264.6,
+      "end": 272.3,
+      "en": "Just a moment, and 16, well that was just a nice number to fit on the screen. In practice there is a lot of room for experiment with a specific structure here.",
+      "zh": "等一下，16，這個數字很適合顯示在螢幕上。實際上，這裡有很大的空間可以對特定結構進行實驗。",
+      "grammarNote": "時間軸 (264.6s - 272.3s) · 核心字詞：experiment (n.)、structure (n./v.)",
+      "keywords": [
+        {
+          "word": "experiment",
+          "lemma": "experiment",
+          "pos": "n.",
+          "phonetic": "/experiment/",
+          "meaning": "實驗",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"experiment\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「實驗」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "structure",
+          "lemma": "structure",
+          "pos": "n./v.",
+          "phonetic": "/structure/",
+          "meaning": "結構",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"structure\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「結構」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 273,
+      "end": 278.5,
+      "en": "The way the network operates, activations in one layer determine the activations of the next layer.",
+      "zh": "網路運作的方式，一層的啟動決定下一層的啟動。",
+      "grammarNote": "時間軸 (273s - 278.5s) · 核心字詞：activation (n./v.)、determine (n./v.)",
+      "keywords": [
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "determine",
+          "lemma": "determine",
+          "pos": "n./v.",
+          "phonetic": "/determine/",
+          "meaning": "確定",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"determine\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「確定」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 279.2,
+      "end": 288.2,
+      "en": "And of course the heart of the network as an information processing mechanism comes down to exactly how those activations from one layer bring about activations in the next.",
+      "zh": "當然，作為一種資訊處理機制，網路的核心歸結為一層的活化如何造成下一層的活化。",
+      "grammarNote": "時間軸 (279.2s - 288.2s) · 核心字詞：information (n.)、activation (n./v.)",
+      "keywords": [
+        {
+          "word": "information",
+          "lemma": "information",
+          "pos": "n.",
+          "phonetic": "/information/",
+          "meaning": "訊息",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"information\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「訊息」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 288.2,
+      "end": 297.2,
+      "en": "Layer. It's meant to be loosely analogous to how in biological networks of neurons, some groups of neurons firing cause certain others to fire.",
+      "zh": "層​​。這與神經元生物網路中的某些神經元群放電導致某些其他神經元放電的方式大致相似。",
+      "grammarNote": "時間軸 (288.2s - 297.2s) · 核心字詞：biological (adj.)、analogous (adj.)",
+      "keywords": [
+        {
+          "word": "biological",
+          "lemma": "biological",
+          "pos": "adj.",
+          "phonetic": "/biological/",
+          "meaning": "生物",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"biological\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「生物」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "analogous",
+          "lemma": "analogous",
+          "pos": "adj.",
+          "phonetic": "/analogous/",
+          "meaning": "類似的",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"analogous\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「類似的」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 298.1,
+      "end": 303.4,
+      "en": "Now the network I'm showing here has already been trained to recognize digits, and let me show you what I mean by that.",
+      "zh": "現在我在這裡展示的網路已經接受過識別數字的訓練，讓我向您展示我的意思。",
+      "grammarNote": "時間軸 (298.1s - 303.4s) · 核心字詞：recognize (n./v.)、network (n./v.)",
+      "keywords": [
+        {
+          "word": "recognize",
+          "lemma": "recognize",
+          "pos": "n./v.",
+          "phonetic": "/recognize/",
+          "meaning": "認識",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recognize\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「認識」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "network",
+          "lemma": "network",
+          "pos": "n./v.",
+          "phonetic": "/network/",
+          "meaning": "網路",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"network\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網路」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 303.6,
+      "end": 311.6,
+      "en": "It means if you feed in an image, lighting up all 784 neurons of the input layer according to the brightness of each pixel in the image,.",
+      "zh": "這表示如果你輸入一張影像，根據影像中每個像素的亮度點亮輸入層的所有 784 個神經元。",
+      "grammarNote": "時間軸 (303.6s - 311.6s) · 核心字詞：brightness (n.)、accord (v./n.)",
+      "keywords": [
+        {
+          "word": "brightness",
+          "lemma": "brightness",
+          "pos": "n.",
+          "phonetic": "/brightness/",
+          "meaning": "亮度",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"brightness\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「亮度」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "according",
+          "lemma": "accord",
+          "pos": "v./n.",
+          "phonetic": "/accord/",
+          "meaning": "一致",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"accord\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「一致」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 311.6,
+      "end": 318.9,
+      "en": "That pattern of activations causes some very specific pattern in the next layer which causes some pattern in the one after it,.",
+      "zh": "這種活化模式會在下一層產生一些非常特定的模式，從而在下一層產生一些模式。",
+      "grammarNote": "時間軸 (311.6s - 318.9s) · 核心字詞：activation (n./v.)、specific (n./v.)",
+      "keywords": [
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "specific",
+          "lemma": "specific",
+          "pos": "n./v.",
+          "phonetic": "/specific/",
+          "meaning": "具體",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specific\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「具體」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 318.9,
+      "end": 329.4,
+      "en": "Which finally gives some pattern in the output layer. And the brightest neuron of that output layer is the network's choice, so to speak, for what digit this image represents.",
+      "zh": "最終給出了輸出層的一些模式。輸出層最亮的神經元是網路的選擇，可以說，該影像代表什麼數字。",
+      "grammarNote": "時間軸 (318.9s - 329.4s) · 核心字詞：represent (n./v.)、brightest (n./v.)",
+      "keywords": [
+        {
+          "word": "represents",
+          "lemma": "represent",
+          "pos": "n./v.",
+          "phonetic": "/represent/",
+          "meaning": "代表",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"represent\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「代表」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "brightest",
+          "lemma": "brightest",
+          "pos": "n./v.",
+          "phonetic": "/brightest/",
+          "meaning": "最亮的",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"brightest\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「最亮的」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 332.6,
+      "end": 340.1,
+      "en": "And before jumping into the math for how one layer influences the next, or how training works, let's just talk about why it's even reasonable.",
+      "zh": "在深入研究一層如何影響下一層或訓練如何進行之前，我們先來談談為什麼它是合理的。",
+      "grammarNote": "時間軸 (332.6s - 340.1s) · 核心字詞：influence (n./v.)、reasonable (adj.)",
+      "keywords": [
+        {
+          "word": "influences",
+          "lemma": "influence",
+          "pos": "n./v.",
+          "phonetic": "/influence/",
+          "meaning": "影響力",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"influence\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「影響力」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "reasonable",
+          "lemma": "reasonable",
+          "pos": "adj.",
+          "phonetic": "/reasonable/",
+          "meaning": "合理",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"reasonable\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「合理」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 340.1,
+      "end": 345.2,
+      "en": "To expect a layered structure like this to behave intelligently. What are we expecting here?",
+      "zh": "期望這樣的分層結構能夠智慧地運作。我們在這裡期待什麼？",
+      "grammarNote": "時間軸 (340.1s - 345.2s) · 核心字詞：intelligently (adv.)、structure (n./v.)",
+      "keywords": [
+        {
+          "word": "intelligently",
+          "lemma": "intelligently",
+          "pos": "adv.",
+          "phonetic": "/intelligently/",
+          "meaning": "聰明地",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"intelligently\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「聰明地」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "structure",
+          "lemma": "structure",
+          "pos": "n./v.",
+          "phonetic": "/structure/",
+          "meaning": "結構",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"structure\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「結構」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 345.4,
+      "end": 353.5,
+      "en": "What is the best hope for what those middle layers might be doing? Well, when you or I recognize digits, we piece together various components.",
+      "zh": "這些中間層可能做的事情的最大希望是什麼？好吧，當你或我識別數字時，我們會將各種組件拼湊在一起。",
+      "grammarNote": "時間軸 (345.4s - 353.5s) · 核心字詞：component (n./v.)、recognize (n./v.)",
+      "keywords": [
+        {
+          "word": "components",
+          "lemma": "component",
+          "pos": "n./v.",
+          "phonetic": "/component/",
+          "meaning": "組件",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"component\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「組件」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "recognize",
+          "lemma": "recognize",
+          "pos": "n./v.",
+          "phonetic": "/recognize/",
+          "meaning": "認識",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recognize\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「認識」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 354.2,
+      "end": 361.2,
+      "en": "A 9 has a loop up top and a line on the right. An 8 also has a loop up top, but it's paired with another loop down low.",
+      "zh": "9 的頂部有一個環，右邊有一條線。 8 也有一個頂部環，但它與另一個底部環配對。",
+      "grammarNote": "時間軸 (354.2s - 361.2s) · 核心字詞：another (n./v.)、pair (v./adj.)",
+      "keywords": [
+        {
+          "word": "another",
+          "lemma": "another",
+          "pos": "n./v.",
+          "phonetic": "/another/",
+          "meaning": "另一個",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"another\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「另一個」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "paired",
+          "lemma": "pair",
+          "pos": "v./adj.",
+          "phonetic": "/pair/",
+          "meaning": "對",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"pair\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「對」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 362,
+      "end": 371.6,
+      "en": "A 4 basically breaks down into three specific lines, and things like that. Now in a perfect world, we might hope that each neuron in the second.",
+      "zh": "A 4 基本上分為三行，諸如此類。現在在一個完美的世界中，我們可能希望每個神經元都在第二個。",
+      "grammarNote": "時間軸 (362s - 371.6s) · 核心字詞：basically (adv.)、specific (n./v.)",
+      "keywords": [
+        {
+          "word": "basically",
+          "lemma": "basically",
+          "pos": "adv.",
+          "phonetic": "/basically/",
+          "meaning": "基本上",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"basically\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「基本上」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "specific",
+          "lemma": "specific",
+          "pos": "n./v.",
+          "phonetic": "/specific/",
+          "meaning": "具體",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specific\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「具體」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 371.6,
+      "end": 378.5,
+      "en": "To last layer corresponds with one of these subcomponents, that anytime you feed in an image with, say, a loop up top,.",
+      "zh": "最後一層對應於這些子組件之一，每當您輸入影像時，例如，頂部有一個循環。",
+      "grammarNote": "時間軸 (371.6s - 378.5s) · 核心字詞：subcomponent (n./v.)、correspond (n./v.)",
+      "keywords": [
+        {
+          "word": "subcomponents",
+          "lemma": "subcomponent",
+          "pos": "n./v.",
+          "phonetic": "/subcomponent/",
+          "meaning": "子組件",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"subcomponent\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「子組件」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "corresponds",
+          "lemma": "correspond",
+          "pos": "n./v.",
+          "phonetic": "/correspond/",
+          "meaning": "對應",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"correspond\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「對應」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "start": 378.5,
+      "end": 383.8,
+      "en": "Like a 9 or an 8, there's some specific neuron whose activation is going to be close to 1.",
+      "zh": "就像 9 或 8 一樣，有一些特定的神經元，其活化值將接近 1。",
+      "grammarNote": "時間軸 (378.5s - 383.8s) · 核心字詞：activation (n.)、specific (n./v.)",
+      "keywords": [
+        {
+          "word": "activation",
+          "lemma": "activation",
+          "pos": "n.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "specific",
+          "lemma": "specific",
+          "pos": "n./v.",
+          "phonetic": "/specific/",
+          "meaning": "具體",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specific\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「具體」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "start": 384.5,
+      "end": 391.6,
+      "en": "And I don't mean this specific loop of pixels, the hope would be that any generally loopy pattern towards the top sets off this neuron.",
+      "zh": "我並不是指這種特定的像素循環，而是希望任何朝向頂部的普遍循環模式都會引發該神經元。",
+      "grammarNote": "時間軸 (384.5s - 391.6s) · 核心字詞：generally (adv.)、specific (n./v.)",
+      "keywords": [
+        {
+          "word": "generally",
+          "lemma": "generally",
+          "pos": "adv.",
+          "phonetic": "/generally/",
+          "meaning": "一般而言",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"generally\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「一般而言」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "specific",
+          "lemma": "specific",
+          "pos": "n./v.",
+          "phonetic": "/specific/",
+          "meaning": "具體",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specific\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「具體」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "start": 392.4,
+      "end": 400,
+      "en": "That way, going from the third layer to the last one just requires learning which combination of subcomponents corresponds to which digits.",
+      "zh": "這樣，從第三層到最後一層只需要學習哪個子組件組合對應於哪個數字。",
+      "grammarNote": "時間軸 (392.4s - 400s) · 核心字詞：subcomponent (n./v.)、combination (n.)",
+      "keywords": [
+        {
+          "word": "subcomponents",
+          "lemma": "subcomponent",
+          "pos": "n./v.",
+          "phonetic": "/subcomponent/",
+          "meaning": "子組件",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"subcomponent\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「子組件」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "combination",
+          "lemma": "combination",
+          "pos": "n.",
+          "phonetic": "/combination/",
+          "meaning": "組合",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"combination\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「組合」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "start": 401,
+      "end": 407.6,
+      "en": "Of course, that just kicks the problem down the road, because how would you recognize these subcomponents, or even learn what the right subcomponents should be?",
+      "zh": "當然，這只是解決問題，因為你如何識別這些子元件，甚至如何了解正確的子元件應該是什麼？",
+      "grammarNote": "時間軸 (401s - 407.6s) · 核心字詞：subcomponent (n./v.)、recognize (n./v.)",
+      "keywords": [
+        {
+          "word": "subcomponents",
+          "lemma": "subcomponent",
+          "pos": "n./v.",
+          "phonetic": "/subcomponent/",
+          "meaning": "子組件",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"subcomponent\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「子組件」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "recognize",
+          "lemma": "recognize",
+          "pos": "n./v.",
+          "phonetic": "/recognize/",
+          "meaning": "認識",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recognize\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「認識」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "start": 408.1,
+      "end": 413.1,
+      "en": "And I still haven't even talked about how one layer influences the next, but run with me on this one for a moment.",
+      "zh": "我甚至還沒有討論一層如何影響下一層，但請跟我討論這一層。",
+      "grammarNote": "時間軸 (408.1s - 413.1s) · 核心字詞：influence (n./v.)、talk (v./adj.)",
+      "keywords": [
+        {
+          "word": "influences",
+          "lemma": "influence",
+          "pos": "n./v.",
+          "phonetic": "/influence/",
+          "meaning": "影響力",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"influence\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「影響力」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "talked",
+          "lemma": "talk",
+          "pos": "v./adj.",
+          "phonetic": "/talk/",
+          "meaning": "談話",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"talk\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「談話」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "start": 413.7,
+      "end": 422.8,
+      "en": "Recognizing a loop can also break down into subproblems. One reasonable way to do this would be to first recognize the various little edges that make it up.",
+      "zh": "辨識循環也可以分解為子問題。一種合理的方法是首先識別構成它的各種小邊緣。",
+      "grammarNote": "時間軸 (413.7s - 422.8s) · 核心字詞：recognizing (v.)、subproblem (n./v.)",
+      "keywords": [
+        {
+          "word": "Recognizing",
+          "lemma": "recognizing",
+          "pos": "v.",
+          "phonetic": "/recognizing/",
+          "meaning": "將（目前感知到的某事或某人）與先前遇到的同一個人或同一事物的記憶相匹配。",
+          "level": "科技外商核心",
+          "exampleEn": "I recognised his face immediately.",
+          "exampleZh": "在跨國團隊中，有效運用「將（目前感知到的某事或某人）與先前遇到的同一個人或同一事物的記憶相匹配。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "subproblems",
+          "lemma": "subproblem",
+          "pos": "n./v.",
+          "phonetic": "/subproblem/",
+          "meaning": "子問題",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"subproblem\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「子問題」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "start": 423.8,
+      "end": 433.4,
+      "en": "Similarly, a long line, like the kind you might see in the digits 1 or 4 or 7, is really just a long edge, or maybe you think of it as a certain pattern of several.",
+      "zh": "同樣，一條長線，就像您在數字 1、4 或 7 中看到的那種，實際上只是一條長邊，或者您可能將其視為幾條線的某種模式。",
+      "grammarNote": "時間軸 (423.8s - 433.4s) · 核心字詞：similarly (adv.)、certain (n./v.)",
+      "keywords": [
+        {
+          "word": "Similarly",
+          "lemma": "similarly",
+          "pos": "adv.",
+          "phonetic": "/similarly/",
+          "meaning": "同樣",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"similarly\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「同樣」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "certain",
+          "lemma": "certain",
+          "pos": "n./v.",
+          "phonetic": "/certain/",
+          "meaning": "某些",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"certain\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「某些」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "start": 433.4,
+      "end": 442.7,
+      "en": "Smaller edges. So maybe our hope is that each neuron in the second layer of the network corresponds with the various relevant little edges.",
+      "zh": "較小的邊緣。因此，也許我們希望網路第二層中的每個神經元都與各種相關的小邊相對應。",
+      "grammarNote": "時間軸 (433.4s - 442.7s) · 核心字詞：correspond (n./v.)、relevant (n./v.)",
+      "keywords": [
+        {
+          "word": "corresponds",
+          "lemma": "correspond",
+          "pos": "n./v.",
+          "phonetic": "/correspond/",
+          "meaning": "對應",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"correspond\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「對應」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "relevant",
+          "lemma": "relevant",
+          "pos": "n./v.",
+          "phonetic": "/relevant/",
+          "meaning": "相關",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"relevant\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「相關」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "start": 443.5,
+      "end": 451.2,
+      "en": "Maybe when an image like this one comes in, it lights up all of the neurons associated with around 8 to 10 specific little edges,.",
+      "zh": "也許當像這樣的影像出現時，它會點亮與大約 8 到 10 個特定小邊緣相關的所有神經元。",
+      "grammarNote": "時間軸 (443.5s - 451.2s) · 核心字詞：associat (v./adj.)、specific (n./v.)",
+      "keywords": [
+        {
+          "word": "associated",
+          "lemma": "associat",
+          "pos": "v./adj.",
+          "phonetic": "/associat/",
+          "meaning": "合夥人",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"associat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「合夥人」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "specific",
+          "lemma": "specific",
+          "pos": "n./v.",
+          "phonetic": "/specific/",
+          "meaning": "具體",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specific\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「具體」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "start": 451.2,
+      "end": 459.7,
+      "en": "Which in turn lights up the neurons associated with the upper loop and a long vertical line, and those light up the neuron associated with a 9.",
+      "zh": "依序點亮與上環和長垂直線相關的神經元，以及與 9 相關的神經元。",
+      "grammarNote": "時間軸 (451.2s - 459.7s) · 核心字詞：associat (v./adj.)、vertical (adj.)",
+      "keywords": [
+        {
+          "word": "associated",
+          "lemma": "associat",
+          "pos": "v./adj.",
+          "phonetic": "/associat/",
+          "meaning": "合夥人",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"associat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「合夥人」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "vertical",
+          "lemma": "vertical",
+          "pos": "adj.",
+          "phonetic": "/vertical/",
+          "meaning": "垂直",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"vertical\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「垂直」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "start": 460.7,
+      "end": 467.9,
+      "en": "Whether or not this is what our final network actually does is another question, one that I'll come back to once we see how to train the network,.",
+      "zh": "這是否是我們最終網絡實際上所做的事情是另一個問題，一旦我們了解如何訓練網絡，我就會回到這個問題。",
+      "grammarNote": "時間軸 (460.7s - 467.9s) · 核心字詞：question (n.)、whether (n./v.)",
+      "keywords": [
+        {
+          "word": "question",
+          "lemma": "question",
+          "pos": "n.",
+          "phonetic": "/question/",
+          "meaning": "問題",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"question\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「問題」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Whether",
+          "lemma": "whether",
+          "pos": "n./v.",
+          "phonetic": "/whether/",
+          "meaning": "是否",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"whether\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「是否」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "start": 467.9,
+      "end": 472.5,
+      "en": "But this is a hope that we might have, a sort of goal with the layered structure like this.",
+      "zh": "但這是我們可能擁有的一個希望，一種像這樣的分層結構的目標。",
+      "grammarNote": "時間軸 (467.9s - 472.5s) · 核心字詞：structure (n./v.)、layer (v./adj.)",
+      "keywords": [
+        {
+          "word": "structure",
+          "lemma": "structure",
+          "pos": "n./v.",
+          "phonetic": "/structure/",
+          "meaning": "結構",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"structure\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「結構」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "layered",
+          "lemma": "layer",
+          "pos": "v./adj.",
+          "phonetic": "/layer/",
+          "meaning": "層",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"layer\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「層」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "start": 473.2,
+      "end": 480.3,
+      "en": "Moreover, you can imagine how being able to detect edges and patterns like this would be really useful for other image recognition tasks.",
+      "zh": "此外，您可以想像能夠偵測這樣的邊緣和圖案對於其他影像辨識任務將非常有用。",
+      "grammarNote": "時間軸 (473.2s - 480.3s) · 核心字詞：recognition (n.)、moreover (n./v.)",
+      "keywords": [
+        {
+          "word": "recognition",
+          "lemma": "recognition",
+          "pos": "n.",
+          "phonetic": "/recognition/",
+          "meaning": "認可",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recognition\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「認可」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "Moreover",
+          "lemma": "moreover",
+          "pos": "n./v.",
+          "phonetic": "/moreover/",
+          "meaning": "此外",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"moreover\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「此外」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "start": 480.9,
+      "end": 487.3,
+      "en": "And even beyond image recognition, there are all sorts of intelligent things you might want to do that break down into layers of abstraction.",
+      "zh": "甚至除了圖像辨識之外，您可能還想做各種各樣的智慧事情，這些事情可以分解為抽象層。",
+      "grammarNote": "時間軸 (480.9s - 487.3s) · 核心字詞：recognition (n.)、intelligent (n./v.)",
+      "keywords": [
+        {
+          "word": "recognition",
+          "lemma": "recognition",
+          "pos": "n.",
+          "phonetic": "/recognition/",
+          "meaning": "認可",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recognition\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「認可」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "intelligent",
+          "lemma": "intelligent",
+          "pos": "n./v.",
+          "phonetic": "/intelligent/",
+          "meaning": "智能化",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"intelligent\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「智能化」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "start": 488,
+      "end": 496.5,
+      "en": "Parsing speech, for example, involves taking raw audio and picking out distinct sounds, which combine to make certain syllables, which combine to form words,.",
+      "zh": "例如，解析語音涉及獲取原始音訊並挑選出不同的聲音，這些聲音結合起來形成某些音節，這些音節結合起來形成單字。",
+      "grammarNote": "時間軸 (488s - 496.5s) · 核心字詞：syllable (n./v.)、involve (n./v.)",
+      "keywords": [
+        {
+          "word": "syllables",
+          "lemma": "syllable",
+          "pos": "n./v.",
+          "phonetic": "/syllable/",
+          "meaning": "音節",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"syllable\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「音節」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "involves",
+          "lemma": "involve",
+          "pos": "n./v.",
+          "phonetic": "/involve/",
+          "meaning": "涉及",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"involve\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「涉及」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "start": 496.5,
+      "end": 507.9,
+      "en": "Which combine to make up phrases and more abstract thoughts, etc. But getting back to how any of this actually works, picture yourself right now designing how exactly the activations in one layer might.",
+      "zh": "它們結合起來組成了短語和更抽象的想法等等。但回到這一切實際上是如何運作的，想像一下你自己現在設計一層中的活化究竟是如何的。",
+      "grammarNote": "時間軸 (496.5s - 507.9s) · 核心字詞：activation (n./v.)、design (v./n.)",
+      "keywords": [
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "designing",
+          "lemma": "design",
+          "pos": "v./n.",
+          "phonetic": "/design/",
+          "meaning": "設計",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"design\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「設計」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "start": 507.9,
+      "end": 519,
+      "en": "Determine the activations in the next. The goal is to have some mechanism that could conceivably combine pixels into edges, or edges into patterns, or patterns into digits.",
+      "zh": "確定下一步的激活。我們的目標是擁有某種機制，可以將像素組合成邊緣，或將邊緣組合成圖案，或將圖案組合成數字。",
+      "grammarNote": "時間軸 (507.9s - 519s) · 核心字詞：activation (n./v.)、conceivably (adv.)",
+      "keywords": [
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "conceivably",
+          "lemma": "conceivably",
+          "pos": "adv.",
+          "phonetic": "/conceivably/",
+          "meaning": "可以想像",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"conceivably\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「可以想像」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "start": 519.4,
+      "end": 526.9,
+      "en": "And to zoom in on one very specific example, let's say the hope is for one particular neuron in the second layer to pick up.",
+      "zh": "放大一個非常具體的例子，假設希望第二層中的一個特定神經元能夠接收到訊號。",
+      "grammarNote": "時間軸 (519.4s - 526.9s) · 核心字詞：particular (n./v.)、specific (n./v.)",
+      "keywords": [
+        {
+          "word": "particular",
+          "lemma": "particular",
+          "pos": "n./v.",
+          "phonetic": "/particular/",
+          "meaning": "特別",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"particular\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「特別」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "specific",
+          "lemma": "specific",
+          "pos": "n./v.",
+          "phonetic": "/specific/",
+          "meaning": "具體",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specific\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「具體」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "start": 526.9,
+      "end": 535.1,
+      "en": "On whether or not the image has an edge in this region here. The question at hand is what parameters should the network have?",
+      "zh": "這裡討論影像在該區域是否有邊緣。目前的問題是網路應該具有哪些參數？",
+      "grammarNote": "時間軸 (526.9s - 535.1s) · 核心字詞：parameter (n./v.)、question (n.)",
+      "keywords": [
+        {
+          "word": "parameters",
+          "lemma": "parameter",
+          "pos": "n./v.",
+          "phonetic": "/parameter/",
+          "meaning": "參數",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"parameter\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「參數」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "question",
+          "lemma": "question",
+          "pos": "n.",
+          "phonetic": "/question/",
+          "meaning": "問題",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"question\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「問題」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "start": 535.6,
+      "end": 543.7,
+      "en": "What dials and knobs should you be able to tweak so that it's expressive enough to potentially capture this pattern, or any other pixel pattern,.",
+      "zh": "您應該能夠調整哪些旋鈕和旋鈕，以便其具有足夠的表現力來潛在地捕捉此圖案或任何其他像素圖案。",
+      "grammarNote": "時間軸 (535.6s - 543.7s) · 核心字詞：potentially (adv.)、expressive (adj.)",
+      "keywords": [
+        {
+          "word": "potentially",
+          "lemma": "potentially",
+          "pos": "adv.",
+          "phonetic": "/potentially/",
+          "meaning": "潛在的",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"potentially\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「潛在的」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "expressive",
+          "lemma": "expressive",
+          "pos": "adj.",
+          "phonetic": "/expressive/",
+          "meaning": "富有表現力",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"expressive\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「富有表現力」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "start": 543.7,
+      "end": 551.8,
+      "en": "Or the pattern that several edges can make a loop, and other such things? Well, what we'll do is assign a weight to each one of the.",
+      "zh": "或幾條邊可以形成一個環的圖案，以及其他類似的東西？好吧，我們要做的就是為每一個分配一個權重。",
+      "grammarNote": "時間軸 (543.7s - 551.8s) · 核心字詞：pattern (n./v.)、several (adj.)",
+      "keywords": [
+        {
+          "word": "pattern",
+          "lemma": "pattern",
+          "pos": "n./v.",
+          "phonetic": "/pattern/",
+          "meaning": "圖案",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"pattern\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「圖案」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "several",
+          "lemma": "several",
+          "pos": "adj.",
+          "phonetic": "/several/",
+          "meaning": "幾個",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"several\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「幾個」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "start": 551.8,
+      "end": 557.7,
+      "en": "Connections between our neuron and the neurons from the first layer. These weights are just numbers.",
+      "zh": "我們的神經元和第一層神經元之間的連結。這些重量只是數字。",
+      "grammarNote": "時間軸 (551.8s - 557.7s) · 核心字詞：connection (n./v.)、between (n./v.)",
+      "keywords": [
+        {
+          "word": "Connections",
+          "lemma": "connection",
+          "pos": "n./v.",
+          "phonetic": "/connection/",
+          "meaning": "連接",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"connection\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「連接」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "between",
+          "lemma": "between",
+          "pos": "n./v.",
+          "phonetic": "/between/",
+          "meaning": "之間",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"between\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「之間」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "start": 558.5,
+      "end": 565.5,
+      "en": "Then take all of those activations from the first layer and compute their weighted sum according to these weights.",
+      "zh": "然後從第一層取得所有這些活化並根據這些權重計算它們的加權和。",
+      "grammarNote": "時間軸 (558.5s - 565.5s) · 核心字詞：activation (n./v.)、accord (v./n.)",
+      "keywords": [
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "according",
+          "lemma": "accord",
+          "pos": "v./n.",
+          "phonetic": "/accord/",
+          "meaning": "一致",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"accord\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「一致」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "start": 567.7,
+      "end": 574.6,
+      "en": "I find it helpful to think of these weights as being organized into a little grid of their own, and I'm going to use green pixels to indicate.",
+      "zh": "我發現將這些權重組織成自己的小網格是很有幫助的，我將使用綠色像素來表示。",
+      "grammarNote": "時間軸 (567.7s - 574.6s) · 核心字詞：organiz (v./adj.)、indicate (n./v.)",
+      "keywords": [
+        {
+          "word": "organized",
+          "lemma": "organiz",
+          "pos": "v./adj.",
+          "phonetic": "/organiz/",
+          "meaning": "組織",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"organiz\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「組織」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "indicate",
+          "lemma": "indicate",
+          "pos": "n./v.",
+          "phonetic": "/indicate/",
+          "meaning": "表明",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"indicate\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「表明」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "start": 574.6,
+      "end": 581.8,
+      "en": "Positive weights, and red pixels to indicate negative weights, where the brightness of that pixel is some loose depiction of the weight's value.",
+      "zh": "正權重，紅色像素表示負權重，其中該像素的亮度是權重值的一些鬆散描述。",
+      "grammarNote": "時間軸 (574.6s - 581.8s) · 核心字詞：brightness (n.)、depiction (n.)",
+      "keywords": [
+        {
+          "word": "brightness",
+          "lemma": "brightness",
+          "pos": "n.",
+          "phonetic": "/brightness/",
+          "meaning": "亮度",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"brightness\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「亮度」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "depiction",
+          "lemma": "depiction",
+          "pos": "n.",
+          "phonetic": "/depiction/",
+          "meaning": "描繪",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"depiction\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「描繪」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "start": 582.8,
+      "end": 590.1,
+      "en": "Now if we made the weights associated with almost all of the pixels zero except for some positive weights in this region that we care about,.",
+      "zh": "現在，如果我們將與幾乎所有像素相關的權重設為零，除了我們關心的該區域中的一些正權重之外。",
+      "grammarNote": "時間軸 (582.8s - 590.1s) · 核心字詞：associat (v./adj.)、positive (adj.)",
+      "keywords": [
+        {
+          "word": "associated",
+          "lemma": "associat",
+          "pos": "v./adj.",
+          "phonetic": "/associat/",
+          "meaning": "合夥人",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"associat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「合夥人」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "positive",
+          "lemma": "positive",
+          "pos": "adj.",
+          "phonetic": "/positive/",
+          "meaning": "積極",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"positive\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「積極」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "start": 590.1,
+      "end": 597.8,
+      "en": "Then taking the weighted sum of all the pixel values really just amounts to adding up the values of the pixel just in the region that we care about.",
+      "zh": "然後，對所有像素值求加權和實際上相當於將我們關心的區域中的像素值相加。",
+      "grammarNote": "時間軸 (590.1s - 597.8s) · 核心字詞：weight (v./adj.)、amount (n./v.)",
+      "keywords": [
+        {
+          "word": "weighted",
+          "lemma": "weight",
+          "pos": "v./adj.",
+          "phonetic": "/weight/",
+          "meaning": "重量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"weight\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重量」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "amounts",
+          "lemma": "amount",
+          "pos": "n./v.",
+          "phonetic": "/amount/",
+          "meaning": "金額",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"amount\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「數量」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "start": 599.1,
+      "end": 606.6,
+      "en": "And if you really wanted to pick up on whether there's an edge here, what you might do is have some negative weights associated with the surrounding pixels.",
+      "zh": "如果你真的想知道這裡是否有邊緣，你可以做的是與周圍的像素相關聯一些負權重。",
+      "grammarNote": "時間軸 (599.1s - 606.6s) · 核心字詞：surround (v./n.)、associat (v./adj.)",
+      "keywords": [
+        {
+          "word": "surrounding",
+          "lemma": "surround",
+          "pos": "v./n.",
+          "phonetic": "/surround/",
+          "meaning": "環繞",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"surround\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「環繞」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "associated",
+          "lemma": "associat",
+          "pos": "v./adj.",
+          "phonetic": "/associat/",
+          "meaning": "合夥人",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"associat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「合夥人」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "start": 607.5,
+      "end": 612.7,
+      "en": "Then the sum is largest when those middle pixels are bright but the surrounding pixels are darker.",
+      "zh": "那麼當中間的像素較亮而周圍的像素較暗時，總和最大。",
+      "grammarNote": "時間軸 (607.5s - 612.7s) · 核心字詞：surround (v./n.)、largest (n./v.)",
+      "keywords": [
+        {
+          "word": "surrounding",
+          "lemma": "surround",
+          "pos": "v./n.",
+          "phonetic": "/surround/",
+          "meaning": "環繞",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"surround\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「環繞」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "largest",
+          "lemma": "largest",
+          "pos": "n./v.",
+          "phonetic": "/largest/",
+          "meaning": "最大",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"largest\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「最大」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "start": 614.3,
+      "end": 623.5,
+      "en": "When you compute a weighted sum like this, you might come out with any number, but for this network what we want is for activations to be some value between 0 and 1.",
+      "zh": "當你計算這樣的加權和時，你可能會得到任何數字，但對於這個網絡，我們想要的是激活值是 0 到 1 之間的某個值。",
+      "grammarNote": "時間軸 (614.3s - 623.5s) · 核心字詞：activation (n./v.)、weight (v./adj.)",
+      "keywords": [
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "weighted",
+          "lemma": "weight",
+          "pos": "v./adj.",
+          "phonetic": "/weight/",
+          "meaning": "重量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"weight\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重量」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "start": 624.1,
+      "end": 632.1,
+      "en": "So a common thing to do is to pump this weighted sum into some function that squishes the real number line into the range between 0 and 1.",
+      "zh": "因此，常見的做法是將這個加權和注入某個函數，將實數軸壓縮到 0 到 1 之間的範圍內。",
+      "grammarNote": "時間軸 (624.1s - 632.1s) · 核心字詞：weight (v./adj.)、function (n.)",
+      "keywords": [
+        {
+          "word": "weighted",
+          "lemma": "weight",
+          "pos": "v./adj.",
+          "phonetic": "/weight/",
+          "meaning": "重量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"weight\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重量」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "function",
+          "lemma": "function",
+          "pos": "n.",
+          "phonetic": "/function/",
+          "meaning": "功能",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"function\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「功能」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "start": 632.5,
+      "end": 637.4,
+      "en": "And a common function that does this is called the sigmoid function, also known as a logistic curve.",
+      "zh": "執行此操作的常見函數稱為 sigmoid 函數，也稱為邏輯曲線。",
+      "grammarNote": "時間軸 (632.5s - 637.4s) · 核心字詞：function (n.)、logistic (n./v.)",
+      "keywords": [
+        {
+          "word": "function",
+          "lemma": "function",
+          "pos": "n.",
+          "phonetic": "/function/",
+          "meaning": "功能",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"function\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「功能」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "logistic",
+          "lemma": "logistic",
+          "pos": "n./v.",
+          "phonetic": "/logistic/",
+          "meaning": "物流",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"logistic\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「邏輯」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "start": 638,
+      "end": 646.6,
+      "en": "Basically very negative inputs end up close to 0, positive inputs end up close to 1, and it just steadily increases around the input 0.",
+      "zh": "基本上，非常負的輸入最終接近 0，正輸入最終接近 1，並且它只是在輸入 0 附近穩定增加。",
+      "grammarNote": "時間軸 (638s - 646.6s) · 核心字詞：basically (adv.)、increase (n./v.)",
+      "keywords": [
+        {
+          "word": "Basically",
+          "lemma": "basically",
+          "pos": "adv.",
+          "phonetic": "/basically/",
+          "meaning": "基本上",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"basically\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「基本上」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "increases",
+          "lemma": "increase",
+          "pos": "n./v.",
+          "phonetic": "/increase/",
+          "meaning": "增加",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"increase\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「增加」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "start": 649.1,
+      "end": 656.4,
+      "en": "So the activation of the neuron here is basically a measure of how positive the relevant weighted sum is.",
+      "zh": "所以這裡神經元的活化基本上是衡量相關加權和的正值程度。",
+      "grammarNote": "時間軸 (649.1s - 656.4s) · 核心字詞：activation (n.)、basically (adv.)",
+      "keywords": [
+        {
+          "word": "activation",
+          "lemma": "activation",
+          "pos": "n.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "basically",
+          "lemma": "basically",
+          "pos": "adv.",
+          "phonetic": "/basically/",
+          "meaning": "基本上",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"basically\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「基本上」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "start": 657.5,
+      "end": 661.9,
+      "en": "But maybe it's not that you want the neuron to light up when the weighted sum is bigger than 0.",
+      "zh": "但也許你並不希望神經元在加權和大於 0 時亮起。",
+      "grammarNote": "時間軸 (657.5s - 661.9s) · 核心字詞：weight (v./adj.)、neuron (n./v.)",
+      "keywords": [
+        {
+          "word": "weighted",
+          "lemma": "weight",
+          "pos": "v./adj.",
+          "phonetic": "/weight/",
+          "meaning": "重量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"weight\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重量」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "neuron",
+          "lemma": "neuron",
+          "pos": "n./v.",
+          "phonetic": "/neuron/",
+          "meaning": "神經元",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"neuron\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「神經元」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "start": 662.3,
+      "end": 670.3,
+      "en": "Maybe you only want it to be active when the sum is bigger than say 10. That is, you want some bias for it to be inactive.",
+      "zh": "也許您只希望當總和大於 10 時它才處於活動狀態。也就是說，您希望有一些偏差使其處於不活動狀態。",
+      "grammarNote": "時間軸 (662.3s - 670.3s) · 核心字詞：inactive (adj.)、active (adj.)",
+      "keywords": [
+        {
+          "word": "inactive",
+          "lemma": "inactive",
+          "pos": "adj.",
+          "phonetic": "/inactive/",
+          "meaning": "不活躍",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"inactive\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「不活躍」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "active",
+          "lemma": "active",
+          "pos": "adj.",
+          "phonetic": "/active/",
+          "meaning": "活躍",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"active\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「主動」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "start": 671.4,
+      "end": 679.7,
+      "en": "What we'll do then is just add in some other number like negative 10 to this weighted sum before plugging it through the sigmoid squishification function.",
+      "zh": "然後我們要做的就是在這個加權和中添加一些其他數字，例如負 10，然後將其插入 sigmoid 壓縮函數。",
+      "grammarNote": "時間軸 (671.4s - 679.7s) · 核心字詞：squishification (n.)、negative (adj.)",
+      "keywords": [
+        {
+          "word": "squishification",
+          "lemma": "squishification",
+          "pos": "n.",
+          "phonetic": "/squishification/",
+          "meaning": "壓扁",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"squishification\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「壓縮」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "negative",
+          "lemma": "negative",
+          "pos": "adj.",
+          "phonetic": "/negative/",
+          "meaning": "陰性",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"negative\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「否定」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "start": 680.6,
+      "end": 691.2,
+      "en": "That additional number is called the bias. So the weights tell you what pixel pattern this neuron in the second layer is picking up on, and the bias tells you how high the weighted.",
+      "zh": "這個額外的數字稱為偏差。因此，權重告訴您第二層中的該神經元正在接收什麼像素模式，而偏差則告訴您權重有多高。",
+      "grammarNote": "時間軸 (680.6s - 691.2s) · 核心字詞：additional (adj.)、weight (v./adj.)",
+      "keywords": [
+        {
+          "word": "additional",
+          "lemma": "additional",
+          "pos": "adj.",
+          "phonetic": "/additional/",
+          "meaning": "附加",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"additional\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「額外」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "weighted",
+          "lemma": "weight",
+          "pos": "v./adj.",
+          "phonetic": "/weight/",
+          "meaning": "重量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"weight\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重量」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "start": 691.2,
+      "end": 697.7,
+      "en": "Sum needs to be before the neuron starts getting meaningfully active. And that is just one neuron.",
+      "zh": "總和需要在神經元開始有意義地活動之前進行。那隻是一個神經元。",
+      "grammarNote": "時間軸 (691.2s - 697.7s) · 核心字詞：meaningfully (adv.)、gett (v./n.)",
+      "keywords": [
+        {
+          "word": "meaningfully",
+          "lemma": "meaningfully",
+          "pos": "adv.",
+          "phonetic": "/meaningfully/",
+          "meaning": "有意義",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"meaningfully\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，「有意義地」應用可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "getting",
+          "lemma": "gett",
+          "pos": "v./n.",
+          "phonetic": "/gett/",
+          "meaning": "得到",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"gett\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「gett」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "start": 698.3,
+      "end": 706.7,
+      "en": "Every other neuron in this layer is going to be connected to all 784 pixel neurons from the first layer, and each one of.",
+      "zh": "該層中的每個其他神經元都將連接到第一層的所有 784 個像素神經元，以及每個神經元。",
+      "grammarNote": "時間軸 (698.3s - 706.7s) · 核心字詞：connect (v./adj.)、neuron (n./v.)",
+      "keywords": [
+        {
+          "word": "connected",
+          "lemma": "connect",
+          "pos": "v./adj.",
+          "phonetic": "/connect/",
+          "meaning": "連接",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"connect\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「連結」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "neurons",
+          "lemma": "neuron",
+          "pos": "n./v.",
+          "phonetic": "/neuron/",
+          "meaning": "神經元",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"neuron\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「神經元」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "start": 706.7,
+      "end": 714.6,
+      "en": "Those 784 connections has its own weight associated with it. Also, each one has some bias, some other number that you add.",
+      "zh": "這 784 個連結有其自身的權重。此外，每個數字都有一些偏差，即您添加的一些其他數字。",
+      "grammarNote": "時間軸 (706.7s - 714.6s) · 核心字詞：connection (n./v.)、associat (v./adj.)",
+      "keywords": [
+        {
+          "word": "connections",
+          "lemma": "connection",
+          "pos": "n./v.",
+          "phonetic": "/connection/",
+          "meaning": "連接",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"connection\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「連接」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "associated",
+          "lemma": "associat",
+          "pos": "v./adj.",
+          "phonetic": "/associat/",
+          "meaning": "合夥人",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"associat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「合夥人」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "start": 714.6,
+      "end": 719.5,
+      "en": "On to the weighted sum before squishing it with the sigmoid. And that's a lot to think about!",
+      "zh": "在用 sigmoid 壓縮之前先進行加權和。這需要考慮很多！",
+      "grammarNote": "時間軸 (714.6s - 719.5s) · 核心字詞：squish (v./n.)、weight (v./adj.)",
+      "keywords": [
+        {
+          "word": "squishing",
+          "lemma": "squish",
+          "pos": "v./n.",
+          "phonetic": "/squish/",
+          "meaning": "擠壓",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"squish\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「擠壓」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "weighted",
+          "lemma": "weight",
+          "pos": "v./adj.",
+          "phonetic": "/weight/",
+          "meaning": "重量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"weight\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「重量」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "start": 720,
+      "end": 728,
+      "en": "With this hidden layer of 16 neurons, that's a total of 784 times 16 weights, along with 16 biases.",
+      "zh": "對於這個包含 16 個神經元的隱藏層，總共有 784 個權重乘以 16 個權重，以及 16 個偏差。",
+      "grammarNote": "時間軸 (720s - 728s) · 核心字詞：neuron (n./v.)、weight (n./v.)",
+      "keywords": [
+        {
+          "word": "neurons",
+          "lemma": "neuron",
+          "pos": "n./v.",
+          "phonetic": "/neuron/",
+          "meaning": "神經元",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"neuron\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「神經元」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "weights",
+          "lemma": "weight",
+          "pos": "n./v.",
+          "phonetic": "/weight/",
+          "meaning": "重量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"weight\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「權重」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "start": 728.8,
+      "end": 734.9,
+      "en": "And all of that is just the connections from the first layer to the second. The connections between the other layers also have.",
+      "zh": "所有這些只是從第一層到第二層的連接。其他層之間也有聯繫。",
+      "grammarNote": "時間軸 (728.8s - 734.9s) · 核心字詞：connection (n./v.)、between (n./v.)",
+      "keywords": [
+        {
+          "word": "connections",
+          "lemma": "connection",
+          "pos": "n./v.",
+          "phonetic": "/connection/",
+          "meaning": "連接",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"connection\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「連接」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "between",
+          "lemma": "between",
+          "pos": "n./v.",
+          "phonetic": "/between/",
+          "meaning": "之間",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"between\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「之間」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "start": 734.9,
+      "end": 743.8,
+      "en": "A bunch of weights and biases associated with them. All said and done, this network has almost exactly 13,000 total weights and biases.",
+      "zh": "一堆與之相關的權重和偏差。總而言之，這個網路幾乎有 13,000 個總權重和偏差。",
+      "grammarNote": "時間軸 (734.9s - 743.8s) · 核心字詞：associat (v./adj.)、weight (n./v.)",
+      "keywords": [
+        {
+          "word": "associated",
+          "lemma": "associat",
+          "pos": "v./adj.",
+          "phonetic": "/associat/",
+          "meaning": "合夥人",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"associat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「合夥人」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "weights",
+          "lemma": "weight",
+          "pos": "n./v.",
+          "phonetic": "/weight/",
+          "meaning": "重量",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"weight\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「權重」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "start": 743.8,
+      "end": 750,
+      "en": "13,000 knobs and dials that can be tweaked and turned to make this network behave in different ways.",
+      "zh": "13,000 個旋鈕和轉盤可以進行調整和轉動，以使該網路以不同的方式運作。",
+      "grammarNote": "時間軸 (743.8s - 750s) · 核心字詞：different (n./v.)、tweak (v./adj.)",
+      "keywords": [
+        {
+          "word": "different",
+          "lemma": "different",
+          "pos": "n./v.",
+          "phonetic": "/different/",
+          "meaning": "不同",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"different\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「不同」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "tweaked",
+          "lemma": "tweak",
+          "pos": "v./adj.",
+          "phonetic": "/tweak/",
+          "meaning": "調整",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"tweak\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「調整」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "start": 751,
+      "end": 757.6,
+      "en": "So when we talk about learning, what that's referring to is getting the computer to find a valid setting for all of these.",
+      "zh": "因此，當我們談論學習時，指的是讓電腦為所有這些找到有效的設定。",
+      "grammarNote": "時間軸 (751s - 757.6s) · 核心字詞：referr (v./n.)、learn (v./n.)",
+      "keywords": [
+        {
+          "word": "referring",
+          "lemma": "referr",
+          "pos": "v./n.",
+          "phonetic": "/referr/",
+          "meaning": "推薦人",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"referr\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「推薦人」可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "learning",
+          "lemma": "learn",
+          "pos": "v./n.",
+          "phonetic": "/learn/",
+          "meaning": "學習",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"learn\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「學習」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "start": 757.6,
+      "end": 767.2,
+      "en": "Many many numbers so that it'll actually solve the problem at hand. One thought experiment that is at once fun and kind of horrifying is to imagine sitting.",
+      "zh": "很多很多的數字，這樣它就能真正解決手邊的問題。一個既有趣又有點可怕的思想實驗是想像坐著。",
+      "grammarNote": "時間軸 (757.6s - 767.2s) · 核心字詞：experiment (n.)、horrify (v./n.)",
+      "keywords": [
+        {
+          "word": "experiment",
+          "lemma": "experiment",
+          "pos": "n.",
+          "phonetic": "/experiment/",
+          "meaning": "實驗",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"experiment\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「實驗」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "horrifying",
+          "lemma": "horrify",
+          "pos": "v./n.",
+          "phonetic": "/horrify/",
+          "meaning": "恐怖",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"horrify\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「恐怖」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "start": 767.2,
+      "end": 774.3,
+      "en": "Down and setting all of these weights and biases by hand, purposefully tweaking the numbers so that the second layer picks up on edges,.",
+      "zh": "手動設定所有這些權重和偏差，並有目的地調整數字，以便第二層在邊緣上擷取。",
+      "grammarNote": "時間軸 (767.2s - 774.3s) · 核心字詞：purposefully (adv.)、tweak (v./n.)",
+      "keywords": [
+        {
+          "word": "purposefully",
+          "lemma": "purposefully",
+          "pos": "adv.",
+          "phonetic": "/purposefully/",
+          "meaning": "有目的地",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"purposefully\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，「有目的地」應用程式可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "tweaking",
+          "lemma": "tweak",
+          "pos": "v./n.",
+          "phonetic": "/tweak/",
+          "meaning": "調整",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"tweak\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「調整」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "start": 774.3,
+      "end": 781.3,
+      "en": "The third layer picks up on patterns, etc. I personally find this satisfying rather than just treating the network as a total black.",
+      "zh": "第三層拾取模式等。我個人認為這令人滿意，而不僅僅是將網路視為全黑。",
+      "grammarNote": "時間軸 (774.3s - 781.3s) · 核心字詞：personally (adv.)、satisfy (v./n.)",
+      "keywords": [
+        {
+          "word": "personally",
+          "lemma": "personally",
+          "pos": "adv.",
+          "phonetic": "/personally/",
+          "meaning": "就個人而言",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"personally\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，「親自」應用可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "satisfying",
+          "lemma": "satisfy",
+          "pos": "v./n.",
+          "phonetic": "/satisfy/",
+          "meaning": "滿足",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"satisfy\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「滿足」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "start": 781.3,
+      "end": 789,
+      "en": "Box, because when the network doesn't perform the way you anticipate, if you've built up a little bit of a relationship with what those weights and biases.",
+      "zh": "Box，因為當網路沒有按照您預期的方式運作時，如果您已經與這些權重和偏差建立了一些關係。",
+      "grammarNote": "時間軸 (781.3s - 789s) · 核心字詞：relationship (n./v.)、anticipate (n./v.)",
+      "keywords": [
+        {
+          "word": "relationship",
+          "lemma": "relationship",
+          "pos": "n./v.",
+          "phonetic": "/relationship/",
+          "meaning": "關係",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"relationship\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「關係」可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "anticipate",
+          "lemma": "anticipate",
+          "pos": "n./v.",
+          "phonetic": "/anticipate/",
+          "meaning": "核心字彙：anticipate",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"anticipate\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「預期」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "start": 789,
+      "end": 794.2,
+      "en": "Actually mean, you have a starting place for experimenting with how to change the structure to improve.",
+      "zh": "實際上，你有一個起點來嘗試如何改變結構以進行改進。",
+      "grammarNote": "時間軸 (789s - 794.2s) · 核心字詞：experiment (v./n.)、structure (n./v.)",
+      "keywords": [
+        {
+          "word": "experimenting",
+          "lemma": "experiment",
+          "pos": "v./n.",
+          "phonetic": "/experiment/",
+          "meaning": "核心字彙：experiment",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"experiment\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「實驗」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "structure",
+          "lemma": "structure",
+          "pos": "n./v.",
+          "phonetic": "/structure/",
+          "meaning": "結構",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"structure\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「結構」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "start": 795,
+      "end": 802.3,
+      "en": "Or when the network does work but not for the reasons you might expect, digging into what the weights and biases are doing is a good way to challenge.",
+      "zh": "或者，當網路確實有效但並非出於您預期的原因時，深入研究權重和偏差的作用是一種很好的挑戰方法。",
+      "grammarNote": "時間軸 (795s - 802.3s) · 核心字詞：challenge (n./v.)、network (n./v.)",
+      "keywords": [
+        {
+          "word": "challenge",
+          "lemma": "challenge",
+          "pos": "n./v.",
+          "phonetic": "/challenge/",
+          "meaning": "核心字彙：challenge",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"challenge\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「挑戰」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "network",
+          "lemma": "network",
+          "pos": "n./v.",
+          "phonetic": "/network/",
+          "meaning": "網路",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"network\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網路」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "start": 802.3,
+      "end": 810,
+      "en": "Your assumptions and really expose the full space of possible solutions. By the way, the actual function here is a little cumbersome to write down,.",
+      "zh": "你的假設並真正暴露了可能解決方案的全部空間。順便說一下，這裡的實際功能寫起來有點麻煩，。",
+      "grammarNote": "時間軸 (802.3s - 810s) · 核心字詞：assumption (n./v.)、cumbersome (n./v.)",
+      "keywords": [
+        {
+          "word": "assumptions",
+          "lemma": "assumption",
+          "pos": "n./v.",
+          "phonetic": "/assumption/",
+          "meaning": "核心字彙：assumption",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"assumption\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「假設」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "cumbersome",
+          "lemma": "cumbersome",
+          "pos": "n./v.",
+          "phonetic": "/cumbersome/",
+          "meaning": "核心字彙：cumbersome",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"cumbersome\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「繁瑣」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "start": 810,
+      "end": 817.1,
+      "en": "Don't you think? So let me show you a more notationally compact way that these connections are represented.",
+      "zh": "你不這麼認為嗎？因此，讓我向您展示一種更緊湊的表示這些連接的方式。",
+      "grammarNote": "時間軸 (810s - 817.1s) · 核心字詞：notationally (adv.)、connection (n./v.)",
+      "keywords": [
+        {
+          "word": "notationally",
+          "lemma": "notationally",
+          "pos": "adv.",
+          "phonetic": "/notationally/",
+          "meaning": "核心字彙：notationally",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"notationally\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，「名義上」應用可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "connections",
+          "lemma": "connection",
+          "pos": "n./v.",
+          "phonetic": "/connection/",
+          "meaning": "連接",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"connection\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「連接」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "start": 817.7,
+      "end": 828,
+      "en": "This is how you'd see it if you choose to read up more about neural networks. Organize all of the activations from one layer into a column as a vector.",
+      "zh": "如果您選擇閱讀更多有關神經網路的內容，您會看到這樣的結果。將一層的所有活化組織為一列作為向量。",
+      "grammarNote": "時間軸 (817.7s - 828s) · 核心字詞：activation (n./v.)、network (n./v.)",
+      "keywords": [
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "networks",
+          "lemma": "network",
+          "pos": "n./v.",
+          "phonetic": "/network/",
+          "meaning": "網路",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"network\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網路」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "start": 828.4,
+      "end": 838,
+      "en": "Then organize all of the weights as a matrix, where each row of that matrix corresponds to the connections between one layer and a particular neuron in the next layer.",
+      "zh": "然後將所有權重組織為一個矩陣，其中矩陣的每一行對應於一層與下一層中特定神經元之間的連接。",
+      "grammarNote": "時間軸 (828.4s - 838s) · 核心字詞：correspond (n./v.)、connection (n./v.)",
+      "keywords": [
+        {
+          "word": "corresponds",
+          "lemma": "correspond",
+          "pos": "n./v.",
+          "phonetic": "/correspond/",
+          "meaning": "對應",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"correspond\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「對應」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "connections",
+          "lemma": "connection",
+          "pos": "n./v.",
+          "phonetic": "/connection/",
+          "meaning": "連接",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"connection\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「連接」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "start": 838.5,
+      "end": 845.9,
+      "en": "What that means is that taking the weighted sum of the activations in the first layer according to these weights corresponds to one of the.",
+      "zh": "這意味著根據這些權重取第一層活化的加權和對應於其中一個。",
+      "grammarNote": "時間軸 (838.5s - 845.9s) · 核心字詞：activation (n./v.)、correspond (n./v.)",
+      "keywords": [
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "corresponds",
+          "lemma": "correspond",
+          "pos": "n./v.",
+          "phonetic": "/correspond/",
+          "meaning": "對應",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"correspond\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「對應」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "start": 845.9,
+      "end": 857.7,
+      "en": "Terms in the matrix vector product of everything we have on the left here. By the way, so much of machine learning just comes down to having a good.",
+      "zh": "左邊所有內容的矩陣向量乘積中的項。順便說一句，機器學習的大部分內容都歸結為擁有一個好的東西。",
+      "grammarNote": "時間軸 (845.9s - 857.7s) · 核心字詞：everyth (v./n.)、learn (v./n.)",
+      "keywords": [
+        {
+          "word": "everything",
+          "lemma": "everyth",
+          "pos": "v./n.",
+          "phonetic": "/everyth/",
+          "meaning": "核心字彙：everyth",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"everyth\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「一切」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "learning",
+          "lemma": "learn",
+          "pos": "v./n.",
+          "phonetic": "/learn/",
+          "meaning": "學習",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"learn\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「學習」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "start": 857.7,
+      "end": 864.8,
+      "en": "Grasp of linear algebra, so for any of you who want a nice visual understanding for matrices and what matrix vector multiplication means,.",
+      "zh": "掌握線性代數，對於任何想要直觀地理解矩陣以及矩陣向量乘法意義的人來說。",
+      "grammarNote": "時間軸 (857.7s - 864.8s) · 核心字詞：multiplication (n.)、understanding (v.)",
+      "keywords": [
+        {
+          "word": "multiplication",
+          "lemma": "multiplication",
+          "pos": "n.",
+          "phonetic": "/multiplication/",
+          "meaning": "核心字彙：multiplication",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"multiplication\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「乘法」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "understanding",
+          "lemma": "understanding",
+          "pos": "v.",
+          "phonetic": "/ʌndəˈstandɪŋ/",
+          "meaning": "全面徹底地掌握一個概念，特別是（字詞、陳述、藝術等）了解其意義和（人）了解其意圖。",
+          "level": "科技外商核心",
+          "exampleEn": "I'm sorry. I don't understand.",
+          "exampleZh": "在跨國團隊中，有效運用「全面徹底地掌握一個概念，特別是（字詞、陳述、藝術等）了解其意義和（人）了解其意圖。」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "start": 864.8,
+      "end": 873.6,
+      "en": "Take a look at the series I did on linear algebra, especially chapter 3. Back to our expression, instead of talking about adding the bias to each one of.",
+      "zh": "看看我做的線性代數系列，特別是第3章。回到我們的表達式，而不是談論為每一個添加偏差。",
+      "grammarNote": "時間軸 (864.8s - 873.6s) · 核心字詞：especially (adv.)、expression (n.)",
+      "keywords": [
+        {
+          "word": "especially",
+          "lemma": "especially",
+          "pos": "adv.",
+          "phonetic": "/especially/",
+          "meaning": "核心字彙：especially",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"especially\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「特別」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "expression",
+          "lemma": "expression",
+          "pos": "n.",
+          "phonetic": "/expression/",
+          "meaning": "核心字彙：expression",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"expression\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「表達」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "start": 873.6,
+      "end": 882.3,
+      "en": "These values independently, we represent it by organizing all those biases into a vector, and adding the entire vector to the previous matrix vector product.",
+      "zh": "這些值是獨立的，我們透過將所有這些偏差組織成一個向量，並將整個向量加到先前的矩陣向量乘積來表示它。",
+      "grammarNote": "時間軸 (873.6s - 882.3s) · 核心字詞：independently (adv.)、organiz (v./n.)",
+      "keywords": [
+        {
+          "word": "independently",
+          "lemma": "independently",
+          "pos": "adv.",
+          "phonetic": "/independently/",
+          "meaning": "核心字彙：independently",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"independently\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，「獨立」應用可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "organizing",
+          "lemma": "organiz",
+          "pos": "v./n.",
+          "phonetic": "/organiz/",
+          "meaning": "核心字彙：organiz",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"organiz\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「organiz」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "start": 883.3,
+      "end": 890.7,
+      "en": "Then as a final step, I'll wrap a sigmoid around the outside here, and what that's supposed to represent is that you're going to apply the.",
+      "zh": "然後，作為最後一步，我將在此處的外部包裹一個 sigmoid 曲線，這應該代表您將應用 .",
+      "grammarNote": "時間軸 (883.3s - 890.7s) · 核心字詞：represent (n./v.)、suppos (v./adj.)",
+      "keywords": [
+        {
+          "word": "represent",
+          "lemma": "represent",
+          "pos": "n./v.",
+          "phonetic": "/represent/",
+          "meaning": "核心字彙：represent",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"represent\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「代表」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "supposed",
+          "lemma": "suppos",
+          "pos": "v./adj.",
+          "phonetic": "/suppos/",
+          "meaning": "核心字彙：suppos",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"suppos\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「suppos」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "start": 890.7,
+      "end": 900.5,
+      "en": "Sigmoid function to each specific component of the resulting vector inside. So once you write down this weight matrix and these vectors as their own symbols,.",
+      "zh": "Sigmoid 函數作用於內部結果向量的每個特定分量。因此，一旦你寫下這個權重矩陣和這些向量作為它們自己的符號，。",
+      "grammarNote": "時間軸 (890.7s - 900.5s) · 核心字詞：component (n./v.)、result (v./n.)",
+      "keywords": [
+        {
+          "word": "component",
+          "lemma": "component",
+          "pos": "n./v.",
+          "phonetic": "/component/",
+          "meaning": "組件",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"component\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「組件」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "resulting",
+          "lemma": "result",
+          "pos": "v./n.",
+          "phonetic": "/result/",
+          "meaning": "核心字彙：result",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"result\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「結果」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "start": 900.5,
+      "end": 910.3,
+      "en": "You can communicate the full transition of activations from one layer to the next in an extremely tight and neat little expression, and this makes the relevant code both a lot.",
+      "zh": "您可以用極其緊湊和簡潔的小表達式來傳達從一層到下一層的激活的完整轉換，這使得相關程式碼變得很多。",
+      "grammarNote": "時間軸 (900.5s - 910.3s) · 核心字詞：communicate (n./v.)、activation (n./v.)",
+      "keywords": [
+        {
+          "word": "communicate",
+          "lemma": "communicate",
+          "pos": "n./v.",
+          "phonetic": "/communicate/",
+          "meaning": "核心字彙：communicate",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"communicate\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「溝通」可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "activations",
+          "lemma": "activation",
+          "pos": "n./v.",
+          "phonetic": "/activation/",
+          "meaning": "激活",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"activation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「激活」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "start": 910.3,
+      "end": 915.7,
+      "en": "Simpler and a lot faster, since many libraries optimize the heck out of matrix multiplication.",
+      "zh": "更簡單、更快，因為許多函式庫優化了矩陣乘法。",
+      "grammarNote": "時間軸 (910.3s - 915.7s) · 核心字詞：multiplication (n.)、library (n./v.)",
+      "keywords": [
+        {
+          "word": "multiplication",
+          "lemma": "multiplication",
+          "pos": "n.",
+          "phonetic": "/multiplication/",
+          "meaning": "核心字彙：multiplication",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"multiplication\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「乘法」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "libraries",
+          "lemma": "library",
+          "pos": "n./v.",
+          "phonetic": "/library/",
+          "meaning": "核心字彙：library",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"library\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「庫」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "start": 917.8,
+      "end": 927.3,
+      "en": "Remember how earlier I said these neurons are simply things that hold numbers? Well of course the specific numbers that they hold depends on the image you feed in,.",
+      "zh": "還記得我之前說過這些神經元只是保存數字的東西嗎？當然，它們保存的具體數字取決於您輸入的圖像。",
+      "grammarNote": "時間軸 (917.8s - 927.3s) · 核心字詞：remember (n./v.)、specific (n./v.)",
+      "keywords": [
+        {
+          "word": "Remember",
+          "lemma": "remember",
+          "pos": "n./v.",
+          "phonetic": "/remember/",
+          "meaning": "核心字彙：remember",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"remember\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「記住」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "specific",
+          "lemma": "specific",
+          "pos": "n./v.",
+          "phonetic": "/specific/",
+          "meaning": "具體",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"specific\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「具體」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "start": 927.3,
+      "end": 936.9,
+      "en": "So it's actually more accurate to think of each neuron as a function, one that takes in the outputs of all the neurons in the previous layer and spits out a.",
+      "zh": "因此，將每個神經元視為函數實際上更準確，該函數接收前一層中所有神經元的輸出並輸出 a。",
+      "grammarNote": "時間軸 (927.3s - 936.9s) · 核心字詞：accurate (n./v.)、function (n.)",
+      "keywords": [
+        {
+          "word": "accurate",
+          "lemma": "accurate",
+          "pos": "n./v.",
+          "phonetic": "/accurate/",
+          "meaning": "核心字彙：accurate",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"accurate\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「準確」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "function",
+          "lemma": "function",
+          "pos": "n.",
+          "phonetic": "/function/",
+          "meaning": "功能",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"function\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「功能」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "start": 936.9,
+      "end": 947.1,
+      "en": "Number between 0 and 1. Really the entire network is just a function, one that takes in 784 numbers as an input and spits out 10 numbers as an output.",
+      "zh": "0 到 1 之間的數字。實際上，整個網路只是一個函數，它接受 784 個數字作為輸入，並輸出 10 個數字作為輸出。",
+      "grammarNote": "時間軸 (936.9s - 947.1s) · 核心字詞：function (n.)、between (n./v.)",
+      "keywords": [
+        {
+          "word": "function",
+          "lemma": "function",
+          "pos": "n.",
+          "phonetic": "/function/",
+          "meaning": "功能",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"function\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「功能」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "between",
+          "lemma": "between",
+          "pos": "n./v.",
+          "phonetic": "/between/",
+          "meaning": "之間",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"between\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「之間」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "start": 947.6,
+      "end": 955.4,
+      "en": "It's an absurdly complicated function, one that involves 13,000 parameters in the forms of these weights and biases that pick up on certain patterns,.",
+      "zh": "這是一個極其複雜的函數，涉及 13,000 個參數，這些參數以這些權重和偏差的形式出現，這些參數會根據某些模式而變化。",
+      "grammarNote": "時間軸 (947.6s - 955.4s) · 核心字詞：complicat (v./adj.)、parameter (n./v.)",
+      "keywords": [
+        {
+          "word": "complicated",
+          "lemma": "complicat",
+          "pos": "v./adj.",
+          "phonetic": "/complicat/",
+          "meaning": "核心字彙：complicat",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"complicat\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「複雜化」可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "parameters",
+          "lemma": "parameter",
+          "pos": "n./v.",
+          "phonetic": "/parameter/",
+          "meaning": "參數",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"parameter\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「參數」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "start": 955.4,
+      "end": 962.6,
+      "en": "And which involves iterating many matrix vector products and the sigmoid squishification function, but it's just a function nonetheless.",
+      "zh": "其中涉及迭代許多矩陣向量乘積和 sigmoid 壓縮函數，但它仍然只是一個函數。",
+      "grammarNote": "時間軸 (955.4s - 962.6s) · 核心字詞：squishification (n.)、nonetheless (n./v.)",
+      "keywords": [
+        {
+          "word": "squishification",
+          "lemma": "squishification",
+          "pos": "n.",
+          "phonetic": "/squishification/",
+          "meaning": "壓扁",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"squishification\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「壓縮」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "nonetheless",
+          "lemma": "nonetheless",
+          "pos": "n./v.",
+          "phonetic": "/nonetheless/",
+          "meaning": "核心字彙：nonetheless",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"nonetheless\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「儘管如此」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "start": 963.4,
+      "end": 969.7,
+      "en": "And in a way it's kind of reassuring that it looks complicated. I mean if it were any simpler, what hope would we have.",
+      "zh": "從某種程度上來說，它看起來很複雜，這讓人感到安心。我的意思是，如果事情再簡單一點，我們還有什麼希望呢？",
+      "grammarNote": "時間軸 (963.4s - 969.7s) · 核心字詞：complicat (v./adj.)、reassur (v./n.)",
+      "keywords": [
+        {
+          "word": "complicated",
+          "lemma": "complicat",
+          "pos": "v./adj.",
+          "phonetic": "/complicat/",
+          "meaning": "核心字彙：complicat",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"complicat\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「複雜化」可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "reassuring",
+          "lemma": "reassur",
+          "pos": "v./n.",
+          "phonetic": "/reassur/",
+          "meaning": "核心字彙：reassur",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"reassur\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「放心」可以有效提升清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "start": 969.7,
+      "end": 974.7,
+      "en": "That it could take on the challenge of recognizing digits? And how does it take on that challenge?",
+      "zh": "它可以應付辨識數字的挑戰嗎？它如何應對這項挑戰？",
+      "grammarNote": "時間軸 (969.7s - 974.7s) · 核心字詞：recognizing (v.)、challenge (n./v.)",
+      "keywords": [
+        {
+          "word": "recognizing",
+          "lemma": "recognizing",
+          "pos": "v.",
+          "phonetic": "/recognizing/",
+          "meaning": "將（目前感知到的某事或某人）與先前遇到的同一個人或同一事物的記憶相匹配。",
+          "level": "科技外商核心",
+          "exampleEn": "I recognised his face immediately.",
+          "exampleZh": "在跨國團隊中，有效運用「將（目前感知到的某事或某人）與先前遇到的同一個人或同一事物的記憶相匹配。」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "challenge",
+          "lemma": "challenge",
+          "pos": "n./v.",
+          "phonetic": "/challenge/",
+          "meaning": "核心字彙：challenge",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"challenge\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「挑戰」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "start": 975.1,
+      "end": 983.2,
+      "en": "How does this network learn the appropriate weights and biases just by looking at data? Well that's what I'll show in the next video, and I'll also dig a little.",
+      "zh": "這個網絡如何透過查看數據來學習適當的權重和偏差？這就是我將在下一個影片中展示的內容，我也會進行一些挖掘。",
+      "grammarNote": "時間軸 (975.1s - 983.2s) · 核心字詞：appropriate (n./v.)、network (n./v.)",
+      "keywords": [
+        {
+          "word": "appropriate",
+          "lemma": "appropriate",
+          "pos": "n./v.",
+          "phonetic": "/appropriate/",
+          "meaning": "核心字彙：appropriate",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"appropriate\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「適當」可以有效提高清晰度和執行力。"
+        },
+        {
+          "word": "network",
+          "lemma": "network",
+          "pos": "n./v.",
+          "phonetic": "/network/",
+          "meaning": "網路",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"network\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網路」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "start": 983.2,
+      "end": 990.8,
+      "en": "More into what this particular network we're seeing is really doing. Now is the point I suppose I should say subscribe to stay notified.",
+      "zh": "更深入地了解我們所看到的這個特定網路的真正作用。現在我想我應該說訂閱以保持通知。",
+      "grammarNote": "時間軸 (983.2s - 990.8s) · 核心字詞：particular (n./v.)、subscribe (n./v.)",
+      "keywords": [
+        {
+          "word": "particular",
+          "lemma": "particular",
+          "pos": "n./v.",
+          "phonetic": "/particular/",
+          "meaning": "特別",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"particular\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「特別」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "subscribe",
+          "lemma": "subscribe",
+          "pos": "n./v.",
+          "phonetic": "/subscribe/",
+          "meaning": "核心字彙：subscribe",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"subscribe\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「訂閱」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "start": 990.8,
+      "end": 997.4,
+      "en": "About when that video or any new videos come out, but realistically most of you don't actually receive notifications from YouTube, do you?",
+      "zh": "關於該影片或任何新影片的發佈時間，但實際上你們中的大多數人實際上並沒有收到來自 YouTube 的通知，是嗎？",
+      "grammarNote": "時間軸 (990.8s - 997.4s) · 核心字詞：realistically (adv.)、notification (n./v.)",
+      "keywords": [
+        {
+          "word": "realistically",
+          "lemma": "realistically",
+          "pos": "adv.",
+          "phonetic": "/realistically/",
+          "meaning": "核心字彙：realistically",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"realistically\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，「實際」應用可以有效提升清晰度和執行力。"
+        },
+        {
+          "word": "notifications",
+          "lemma": "notification",
+          "pos": "n./v.",
+          "phonetic": "/notification/",
+          "meaning": "通知",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"notification\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「通知」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "start": 998,
+      "end": 1007.9,
+      "en": "Maybe more honestly I should say subscribe so that the neural networks that underlie YouTube's recommendation algorithm are primed to believe that you want to see content from this channel get recommended to you.",
+      "zh": "也許更誠實地說，我應該說訂閱，這樣 YouTube 推薦演算法背後的神經網路就準備好相信您希望看到該頻道的內容被推薦給您。",
+      "grammarNote": "時間軸 (998s - 1007.9s) · 核心字詞：recommendation (n.)、recommend (v./adj.)",
+      "keywords": [
+        {
+          "word": "recommendation",
+          "lemma": "recommendation",
+          "pos": "n.",
+          "phonetic": "/recommendation/",
+          "meaning": "推薦",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recommendation\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「推薦」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "recommended",
+          "lemma": "recommend",
+          "pos": "v./adj.",
+          "phonetic": "/recommend/",
+          "meaning": "推薦",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"recommend\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「推薦」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "start": 1008.6,
+      "end": 1013.5,
+      "en": "Anyway, stay posted for more. Thank you very much to everyone supporting these videos on Patreon.",
+      "zh": "無論如何，請繼續關注更多資訊。非常感謝 Patreon 上支持這些影片的所有人。",
+      "grammarNote": "時間軸 (1008.6s - 1013.5s) · 核心字詞：support (v./n.)、everyone (n./v.)",
+      "keywords": [
+        {
+          "word": "supporting",
+          "lemma": "support",
+          "pos": "v./n.",
+          "phonetic": "/support/",
+          "meaning": "支持",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"support\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「支持」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "everyone",
+          "lemma": "everyone",
+          "pos": "n./v.",
+          "phonetic": "/everyone/",
+          "meaning": "大家",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"everyone\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「大家」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "start": 1014,
+      "end": 1019.7,
+      "en": "I've been a little slow to progress in the probability series this summer, but I'm jumping back into it after this project,.",
+      "zh": "今年夏天我在機率系列上的進展有點慢，但在這個專案之後我又重新開始了。",
+      "grammarNote": "時間軸 (1014s - 1019.7s) · 核心字詞：probability (n.)、progress (n./v.)",
+      "keywords": [
+        {
+          "word": "probability",
+          "lemma": "probability",
+          "pos": "n.",
+          "phonetic": "/probability/",
+          "meaning": "機率",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"probability\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「機率」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "progress",
+          "lemma": "progress",
+          "pos": "n./v.",
+          "phonetic": "/progress/",
+          "meaning": "進展",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"progress\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「進展」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "start": 1019.7,
+      "end": 1027.1,
+      "en": "So patrons you can look out for updates there. To close things off here I have with me Lisha Li who did her PhD work on the.",
+      "zh": "所以顧客們可以在那裡留意更新。最後，我邀請了 Lisha Li，她在這方面進行了博士研究。",
+      "grammarNote": "時間軸 (1019.7s - 1027.1s) · 核心字詞：patron (n./v.)、update (n./v.)",
+      "keywords": [
+        {
+          "word": "patrons",
+          "lemma": "patron",
+          "pos": "n./v.",
+          "phonetic": "/patron/",
+          "meaning": "贊助人",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"patron\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「贊助人」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "updates",
+          "lemma": "update",
+          "pos": "n./v.",
+          "phonetic": "/update/",
+          "meaning": "更新",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"update\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「更新」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "start": 1027.1,
+      "end": 1034.6,
+      "en": "Theoretical side of deep learning and who currently works at a venture capital firm called Amplify Partners who kindly provided some of the funding for this video.",
+      "zh": "深度學習的理論方面，目前在一家名為 Amplify Partners 的創投公司工作，該公司為該影片提供了部分資金。",
+      "grammarNote": "時間軸 (1027.1s - 1034.6s) · 核心字詞：theoretical (adj.)、currently (adv.)",
+      "keywords": [
+        {
+          "word": "Theoretical",
+          "lemma": "theoretical",
+          "pos": "adj.",
+          "phonetic": "/theoretical/",
+          "meaning": "理論",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"theoretical\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「理論」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "currently",
+          "lemma": "currently",
+          "pos": "adv.",
+          "phonetic": "/currently/",
+          "meaning": "目前",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"currently\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「目前」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "start": 1035.5,
+      "end": 1043.2,
+      "en": "So Lisha one thing I think we should quickly bring up is this sigmoid function. As I understand it early networks use this to squish the relevant weighted.",
+      "zh": "Lisha 我認為我們應該快速提出的一件事是這個 sigmoid 函數。據我了解，早期網路使用它來壓縮相關權重。",
+      "grammarNote": "時間軸 (1035.5s - 1043.2s) · 核心字詞：understand (n./v.)、function (n.)",
+      "keywords": [
+        {
+          "word": "understand",
+          "lemma": "understand",
+          "pos": "n./v.",
+          "phonetic": "/understand/",
+          "meaning": "明白",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"understand\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「明白」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "function",
+          "lemma": "function",
+          "pos": "n.",
+          "phonetic": "/function/",
+          "meaning": "功能",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"function\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「功能」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "start": 1043.2,
+      "end": 1049.8,
+      "en": "Sum into that interval between zero and one, you know kind of motivated by this biological analogy of neurons either being inactive or active.",
+      "zh": "求和到 0 到 1 之間的區間，你知道有點受神經元不活躍或活躍的生物學類比的啟發。",
+      "grammarNote": "時間軸 (1043.2s - 1049.8s) · 核心字詞：biological (adj.)、motivat (v./adj.)",
+      "keywords": [
+        {
+          "word": "biological",
+          "lemma": "biological",
+          "pos": "adj.",
+          "phonetic": "/biological/",
+          "meaning": "生物",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"biological\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「生物」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "motivated",
+          "lemma": "motivat",
+          "pos": "v./adj.",
+          "phonetic": "/motivat/",
+          "meaning": "動機",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"motivat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「動機」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "start": 1050.3,
+      "end": 1055.8,
+      "en": "Exactly. But relatively few modern networks actually use sigmoid anymore. Yeah. It's kind of old school right?",
+      "zh": "確實如此。但真正使用 sigmoid 的現代網路相對較少。是的。這有點老派吧？",
+      "grammarNote": "時間軸 (1050.3s - 1055.8s) · 核心字詞：relatively (adv.)、network (n./v.)",
+      "keywords": [
+        {
+          "word": "relatively",
+          "lemma": "relatively",
+          "pos": "adv.",
+          "phonetic": "/relatively/",
+          "meaning": "相對",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"relatively\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「相對」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "networks",
+          "lemma": "network",
+          "pos": "n./v.",
+          "phonetic": "/network/",
+          "meaning": "網路",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"network\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網路」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "start": 1055.8,
+      "end": 1062.3,
+      "en": "Yeah or rather ReLU seems to be much easier to train. And ReLU, ReLU stands for rectified linear unit?",
+      "zh": "是的，或者更確切地說，ReLU 似乎更容易訓練。還有ReLU，ReLU代表修正線性單元？",
+      "grammarNote": "時間軸 (1055.8s - 1062.3s) · 核心字詞：rectify (v.)、rather (n./v.)",
+      "keywords": [
+        {
+          "word": "rectified",
+          "lemma": "rectify",
+          "pos": "v.",
+          "phonetic": "/rectify/",
+          "meaning": "整頓",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"rectify\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「整頓」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "rather",
+          "lemma": "rather",
+          "pos": "n./v.",
+          "phonetic": "/rather/",
+          "meaning": "相反",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"rather\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「相反」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "start": 1062.7,
+      "end": 1072,
+      "en": "Yes it's this kind of function where you're just taking a max of zero and a where a is given by what you were explaining in the video and.",
+      "zh": "是的，就是這種函數，您只需取最大值為零和 a，其中 a 由您在影片中解釋的內容給出。",
+      "grammarNote": "時間軸 (1062.7s - 1072s) · 核心字詞：explain (v./n.)、function (n.)",
+      "keywords": [
+        {
+          "word": "explaining",
+          "lemma": "explain",
+          "pos": "v./n.",
+          "phonetic": "/explain/",
+          "meaning": "解釋一下",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"explain\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「解釋一下」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "function",
+          "lemma": "function",
+          "pos": "n.",
+          "phonetic": "/function/",
+          "meaning": "功能",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"function\" effectively improves both clarity and execution.",
+          "exampleZh": "在全球團隊中，應用「功能」可以有效提高清晰度和執行力。"
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "start": 1072,
+      "end": 1081.4,
+      "en": "What this was sort of motivated from I think was a partially by a biological analogy with how neurons would either be activated or not.",
+      "zh": "我認為這部分是出於對神經元如何活化或不活化的生物學類比。",
+      "grammarNote": "時間軸 (1072s - 1081.4s) · 核心字詞：biological (adj.)、motivat (v./adj.)",
+      "keywords": [
+        {
+          "word": "biological",
+          "lemma": "biological",
+          "pos": "adj.",
+          "phonetic": "/biological/",
+          "meaning": "生物",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"biological\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「生物」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "motivated",
+          "lemma": "motivat",
+          "pos": "v./adj.",
+          "phonetic": "/motivat/",
+          "meaning": "動機",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"motivat\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「動機」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "start": 1081.4,
+      "end": 1090.8,
+      "en": "And so if it passes a certain threshold it would be the identity function but if it did not then it would just not be activated so it'd be zero so it's kind of a simplification.",
+      "zh": "因此，如果它通過了某個閾值，它將成為恆等函數，但如果沒有通過，那麼它就不會被激活，因此它會為零，因此這是一種簡化。",
+      "grammarNote": "時間軸 (1081.4s - 1090.8s) · 核心字詞：simplification (n.)、threshold (n./v.)",
+      "keywords": [
+        {
+          "word": "simplification",
+          "lemma": "simplification",
+          "pos": "n.",
+          "phonetic": "/simplification/",
+          "meaning": "簡化",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"simplification\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「簡化」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "threshold",
+          "lemma": "threshold",
+          "pos": "n./v.",
+          "phonetic": "/threshold/",
+          "meaning": "門檻",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"threshold\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「門檻」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "start": 1091.2,
+      "end": 1100.2,
+      "en": "Using sigmoids didn't help training or it was very difficult to train at some point and people just tried ReLU and it happened.",
+      "zh": "使用 sigmoid 對訓練沒有幫助，或者在某些時候訓練非常困難，人們只是嘗試了 ReLU，結果就發生了。",
+      "grammarNote": "時間軸 (1091.2s - 1100.2s) · 核心字詞：difficult (n./v.)、sigmoid (n./v.)",
+      "keywords": [
+        {
+          "word": "difficult",
+          "lemma": "difficult",
+          "pos": "n./v.",
+          "phonetic": "/difficult/",
+          "meaning": "困難",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"difficult\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「困難」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "sigmoids",
+          "lemma": "sigmoid",
+          "pos": "n./v.",
+          "phonetic": "/sigmoid/",
+          "meaning": "乙狀結腸",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"sigmoid\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「乙狀結腸」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "start": 1100.2,
+      "end": 1105.6,
+      "en": "To work very well for these incredibly deep neural networks. All right thank you Lisha.",
+      "zh": "非常適合這些令人難以置信的深度神經網路。好的，謝謝麗莎。",
+      "grammarNote": "時間軸 (1100.2s - 1105.6s) · 核心字詞：incredibly (adv.)、network (n./v.)",
+      "keywords": [
+        {
+          "word": "incredibly",
+          "lemma": "incredibly",
+          "pos": "adv.",
+          "phonetic": "/incredibly/",
+          "meaning": "難以置信",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"incredibly\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「難以置信」能同時提升溝通清晰度與執行力。"
+        },
+        {
+          "word": "networks",
+          "lemma": "network",
+          "pos": "n./v.",
+          "phonetic": "/network/",
+          "meaning": "網路",
+          "level": "科技外商核心",
+          "exampleEn": "In global teams, applying \"network\" effectively improves both clarity and execution.",
+          "exampleZh": "在跨國團隊中，有效運用「網路」能同時提升溝通清晰度與執行力。"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "At 59.1s in the video, which word best completes the sentence: \"Telling you what it thinks the digit is, well the task goes from comically trivial to ________ difficult.\"?",
+      "questionZh": "在影片 59.1 秒處，講者提到「告訴你它認為數字是什麼，任務從可笑的瑣碎變成了令人畏懼的困難。」，空格中應填入哪個字彙？",
+      "options": [
+        "dauntingly",
+        "representing",
+        "importance",
+        "quote-unquote"
+      ],
+      "answer": 0,
+      "explanation": "原句為：「Telling you what it thinks the digit is, well the task goes from comically trivial to dauntingly difficult.」（告訴你它認為數字是什麼，任務從可笑的瑣碎變成了令人畏懼的困難。）。其中「dauntingly (adv.)」意為「令人畏懼」。",
+      "relatedTimestamp": 59.1
+    },
+    {
+      "question": "At 311.6s in the video, which word best completes the sentence: \"That pattern of ________ causes some very specific pattern in the next layer which causes some pattern in the one after it,.\"?",
+      "questionZh": "在影片 311.6 秒處，講者提到「這種活化模式會在下一層產生一些非常特定的模式，從而在下一層產生一些模式。」，空格中應填入哪個字彙？",
+      "options": [
+        "between",
+        "activations",
+        "neurons",
+        "arbitrary"
+      ],
+      "answer": 1,
+      "explanation": "原句為：「That pattern of activations causes some very specific pattern in the next layer which causes some pattern in the one after it,.」（這種活化模式會在下一層產生一些非常特定的模式，從而在下一層產生一些模式。）。其中「activation (n./v.)」意為「激活」。",
+      "relatedTimestamp": 311.6
+    },
+    {
+      "question": "At 582.8s in the video, which word best completes the sentence: \"Now if we made the weights ________ with almost all of the pixels zero except for some positive weights in this region that we care about,.\"?",
+      "questionZh": "在影片 582.8 秒處，講者提到「現在，如果我們將與幾乎所有像素相關的權重設為零，除了我們關心的該區域中的一些正權重之外。」，空格中應填入哪個字彙？",
+      "options": [
+        "relevant",
+        "combination",
+        "associated",
+        "intelligent"
+      ],
+      "answer": 2,
+      "explanation": "原句為：「Now if we made the weights associated with almost all of the pixels zero except for some positive weights in this region that we care about,.」（現在，如果我們將與幾乎所有像素相關的權重設為零，除了我們關心的該區域中的一些正權重之外。）。其中「associat (v./adj.)」意為「合夥人」。",
+      "relatedTimestamp": 582.8
+    },
+    {
+      "question": "At 828.4s in the video, which word best completes the sentence: \"Then organize all of the weights as a matrix, where each row of that matrix ________ to the connections between one layer and a particular neuron in the next layer.\"?",
+      "questionZh": "在影片 828.4 秒處，講者提到「然後將所有權重組織為一個矩陣，其中矩陣的每一行對應於一層與下一層中特定神經元之間的連接。」，空格中應填入哪個字彙？",
+      "options": [
+        "squishing",
+        "logistic",
+        "squishification",
+        "corresponds"
+      ],
+      "answer": 3,
+      "explanation": "原句為：「Then organize all of the weights as a matrix, where each row of that matrix corresponds to the connections between one layer and a particular neuron in the next layer.」（然後將所有權重組織為一個矩陣，其中矩陣的每一行對應於一層與下一層中特定神經元之間的連接。）。其中「correspond (n./v.)」意為「對應」。",
+      "relatedTimestamp": 828.4
+    },
+    {
+      "question": "At 1019.7s in the video, which word best completes the sentence: \"So ________ you can look out for updates there. To close things off here I have with me Lisha Li who did her PhD work on the.\"?",
+      "questionZh": "在影片 1019.7 秒處，講者提到「所以顧客們可以在那裡留意更新。最後，我邀請了 Lisha Li，她在這方面進行了博士研究。」，空格中應填入哪個字彙？",
+      "options": [
+        "patrons",
+        "experimenting",
+        "everything",
+        "represent"
+      ],
+      "answer": 0,
+      "explanation": "原句為：「So patrons you can look out for updates there. To close things off here I have with me Lisha Li who did her PhD work on the.」（所以顧客們可以在那裡留意更新。最後，我邀請了 Lisha Li，她在這方面進行了博士研究。）。其中「patron (n./v.)」意為「贊助人」。",
+      "relatedTimestamp": 1019.7
+    }
+  ]
+}
