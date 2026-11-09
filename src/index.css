@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --brand-accent-light: #4f46e5;
+  --brand-accent-dark: #818cf8;
+  --accent-color: var(--brand-accent-light);
+  --surface-bg-light: #f8fafc;
+  --surface-bg-dark: #070a12;
+  --surface-bg: var(--surface-bg-light);
+  --surface-text-light: #0f172a;
+  --surface-text-dark: #f1f5f9;
+  --surface-text: var(--surface-text-light);
+  --scrollbar-thumb-light: #94a3b8;
+  --scrollbar-thumb-dark: #334155;
+  --scrollbar-thumb-hover: #6366f1;
+  --scrollbar-track-light: #f1f5f9;
+  --scrollbar-track-dark: #0f172a;
+  --scrollbar-thumb: var(--scrollbar-thumb-light);
+  --scrollbar-track: var(--scrollbar-track-light);
+
+  /* MANDATORY: Fallback for browsers without light-dark support */
+  @media (prefers-color-scheme: dark) {
+    --accent-color: var(--brand-accent-dark);
+    --surface-bg: var(--surface-bg-dark);
+    --surface-text: var(--surface-text-dark);
+    --scrollbar-thumb: var(--scrollbar-thumb-dark);
+    --scrollbar-track: var(--scrollbar-track-dark);
+  }
+
+  @supports (color: light-dark(white, black)) {
+    --accent-color: light-dark(var(--brand-accent-light), var(--brand-accent-dark));
+    --surface-bg: light-dark(var(--surface-bg-light), var(--surface-bg-dark));
+    --surface-text: light-dark(var(--surface-text-light), var(--surface-text-dark));
+    --scrollbar-thumb: light-dark(var(--scrollbar-thumb-light), var(--scrollbar-thumb-dark));
+    --scrollbar-track: light-dark(var(--scrollbar-track-light), var(--scrollbar-track-dark));
+  }
+
+  /* MANDATORY: Automatically adapt native UI to user system preferences */
+  color-scheme: light dark;
+  accent-color: var(--accent-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --accent-color: var(--brand-accent-dark);
+  --surface-bg: var(--surface-bg-dark);
+  --surface-text: var(--surface-text-dark);
+  --scrollbar-thumb: var(--scrollbar-thumb-dark);
+  --scrollbar-track: var(--scrollbar-track-dark);
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --accent-color: var(--brand-accent-light);
+  --surface-bg: var(--surface-bg-light);
+  --surface-text: var(--surface-text-light);
+  --scrollbar-thumb: var(--scrollbar-thumb-light);
+  --scrollbar-track: var(--scrollbar-track-light);
+}
+
+body {
+  background-color: var(--surface-bg);
+  color: var(--surface-text);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+}
+
+/* Ensure replaced elements like iframe and video use block display to avoid inline baseline gaps */
+iframe,
+video,
+canvas,
+svg {
+  display: block;
+}
+
+/* MANDATORY: Dialog scroll containment and backdrop styling */
+dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background-color: rgba(2, 6, 23, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+/* Custom scrollable containers with stable scrollbar gutter and scroll containment (css-layout guide) */
+.custom-scroller {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+@supports not (scrollbar-color: auto) {
+  .custom-scroller::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .custom-scroller::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 4px;
+  }
+  .custom-scroller::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+}
+
+/* Multi-line truncation utility per css-layout guide */
+.line-clamp-2-stable {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: clip;
+}
