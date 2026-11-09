@@ -529,10 +529,15 @@ export function App() {
     );
   }, [currentLesson.subtitles, subtitleSearch]);
 
-  const totalVideoKeywords = useMemo(
-    () => currentLesson.subtitles.reduce((sum, s) => sum + (s.keywords?.length || 0), 0),
-    [currentLesson.subtitles]
-  );
+  const totalVideoKeywords = useMemo(() => {
+    const seen = new Set<string>();
+    for (const s of currentLesson.subtitles) {
+      for (const k of s.keywords || []) {
+        seen.add(k.lemma.toLowerCase());
+      }
+    }
+    return seen.size;
+  }, [currentLesson.subtitles]);
 
   const isPreviewLesson = currentLesson.subtitles.length < 15;
 
