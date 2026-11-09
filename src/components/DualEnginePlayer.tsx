@@ -13,7 +13,9 @@ import {
   Minimize2,
   MonitorPlay,
   PanelRightClose,
-  PanelRightOpen
+  PanelRightOpen,
+  Columns,
+  Rows
 } from 'lucide-react';
 import { KeywordItem, PlayerEngineMode, SubtitleItem } from '../types';
 import { InlineKeywordHighlighter } from './InlineKeywordHighlighter';
@@ -449,20 +451,34 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
     subtitles[subtitles.length - 1]?.end || 60
   );
 
-  const isBigScreen = cinemaMode !== 'standard';
+  const layoutOptions: Array<{
+    id: CinemaLayoutMode;
+    label: string;
+    title: string;
+    icon: React.ComponentType<{ className?: string; 'aria-hidden'?: boolean | 'true' }>;
+  }> = [
+    { id: 'standard', label: '標準', title: '標準雙欄', icon: Columns },
+    { id: 'theater-split', label: '劇院', title: '劇院模式：大螢幕 + 右側字幕 (T)', icon: MonitorPlay },
+    { id: 'theater-bottom', label: '上下', title: '上下寬幕：上方影片 + 下方解析與字幕', icon: Rows },
+    { id: 'fullscreen-cinema', label: '全螢幕', title: '全螢幕沉浸模式 (F)', icon: Maximize2 }
+  ];
+
+  const canToggleSidebar =
+    cinemaMode === 'theater-split' || cinemaMode === 'fullscreen-cinema';
+
+  const iconBtn =
+    'p-1.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800 transition cursor-pointer';
 
   return (
     <div className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col shrink-0">
-      {/* Unobstructed Video Stage — Zero overlays blocking the video! */}
+      {/* Unobstructed Video Stage — no overlays on top of the video */}
       <div
-        className={`relative w-full bg-black overflow-hidden ${
+        className={`relative w-full bg-black overflow-hidden aspect-video ${
           cinemaMode === 'fullscreen-cinema'
-            ? 'aspect-video max-h-[66dvh]'
-            : cinemaMode === 'theater-bottom'
-              ? 'aspect-video max-h-[58dvh] mx-auto'
-              : cinemaMode === 'theater-split'
-                ? 'aspect-video max-h-[58dvh]'
-                : 'aspect-video'
+            ? 'max-h-[72dvh]'
+            : cinemaMode === 'standard'
+              ? ''
+              : 'max-h-[62dvh] mx-auto'
         }`}
       >
         <div className={`w-full h-full ${engineMode === 'youtube' ? 'block' : 'hidden'}`}>
@@ -470,7 +486,7 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
         </div>
 
         {engineMode === 'tts-simulator' && (
-          <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-950 via-indigo-950/80 to-slate-900 text-white relative">
+          <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-slate-950 via-indigo-950/80 to-slate-900 text-white">
             <div className="flex items-center gap-1.5 mb-3">
               {[0, 1, 2, 3, 4, 5, 6].map((bar) => (
                 <span
@@ -482,7 +498,7 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
               ))}
             </div>
             <p className="text-xs uppercase tracking-widest text-indigo-300 font-semibold mb-1">
-              AI 語音播講模擬引擎
+              AI 語音播講模式
             </p>
             <h2 className="text-sm sm:text-base font-bold text-slate-100 max-w-xl line-clamp-1">
               {title}
@@ -491,13 +507,10 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
         )}
       </div>
 
-      {/* Compact Subtitle Bar ONLY shown when the right-side Subtitles Panel is hidden or on another tab (Zero Duplication!) */}
+      {/* Compact subtitle line — only when no other subtitle view is visible */}
       {showCompactSubtitleBar && activeSubtitle && (
         <div className="px-4 py-2.5 bg-slate-950 text-white border-t border-slate-800 space-y-0.5">
           <div className="text-sm sm:text-base font-medium leading-snug text-slate-100">
-            <span className="text-xs font-mono text-indigo-400 mr-2">
-              #{activeSubtitle.id}
-            </span>
             <InlineKeywordHighlighter
               sentence={activeSubtitle}
               savedWordSet={savedWordSet}
@@ -509,109 +522,98 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
         </div>
       )}
 
-      {/* Sleek All-in-One Transport & Mode Control Bar */}
-      <div className="px-3.5 py-2.5 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 space-y-2">
-        {/* Scrubber Row */}
-        <div className="flex items-center gap-2.5 text-xs font-mono text-slate-500 dark:text-slate-400">
-          <span className="w-11 text-right">{formatTime(currentTime)}</span>
-          <input
-            type="range"
-            min={0}
-            max={maxTimeline}
-            step={0.1}
-            value={Math.min(currentTime, maxTimeline)}
-            aria-label="影片播放時間軸"
-            onChange={(e) => {
-              const val = parseFloat(e.target.value);
-              currentTimeRef.current = val;
-              onTimeUpdate(val);
-              if (engineMode === 'youtube' && ytPlayerRef.current && ytReady) {
-                ytPlayerRef.current.seekTo(val, true);
-              }
-            }}
-            className="flex-1 h-1.5 rounded-lg cursor-pointer"
-          />
-          <span className="w-11">{formatTime(maxTimeline)}</span>
-        </div>
+      {/* Single control bar */}
+      <div className="px-3 py-2 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 space-y-2">
+        {/* Custom scrubber only in AI voice mode (YouTube already has its own progress bar) */}
+        {engineMode === 'tts-simulator' && (
+          <div className="flex items-center gap-2.5 text-xs font-mono text-slate-500 dark:text-slate-400">
+            <span className="w-11 text-right">{formatTime(currentTime)}</span>
+            <input
+              type="range"
+              min={0}
+              max={maxTimeline}
+              step={0.1}
+              value={Math.min(currentTime, maxTimeline)}
+              aria-label="播放進度"
+              onChange={(e) => {
+                const val = parseFloat(e.target.value);
+                currentTimeRef.current = val;
+                onTimeUpdate(val);
+              }}
+              className="flex-1 h-1.5 rounded-lg cursor-pointer"
+            />
+            <span className="w-11">{formatTime(maxTimeline)}</span>
+          </div>
+        )}
 
-        {/* Controls Row */}
         <div className="flex flex-wrap items-center justify-between gap-2">
-          {/* Left Playback Transport */}
-          <div className="flex items-center gap-1">
+          {/* Sentence transport */}
+          <div className="flex items-center gap-0.5">
             <button
               type="button"
               onClick={jumpToPrevSentence}
-              aria-label="上一句 (←)"
+              aria-label="上一句"
               title="上一句 (←)"
-              className="p-1.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-200/70 dark:hover:bg-slate-800 transition cursor-pointer"
+              className={iconBtn}
             >
               <SkipBack className="w-4 h-4" aria-hidden="true" />
             </button>
-
             <button
               type="button"
               onClick={togglePlayPause}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs shadow-xs transition cursor-pointer"
+              aria-label={isPlaying ? '暫停' : '播放'}
+              title="播放 / 暫停 (空白鍵)"
+              className="mx-0.5 inline-flex items-center justify-center w-9 h-9 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white shadow-xs transition cursor-pointer"
             >
               {isPlaying ? (
-                <>
-                  <Pause className="w-3.5 h-3.5" aria-hidden="true" />
-                  暫停
-                </>
+                <Pause className="w-4 h-4" aria-hidden="true" />
               ) : (
-                <>
-                  <Play className="w-3.5 h-3.5" aria-hidden="true" />
-                  播放
-                </>
+                <Play className="w-4 h-4 translate-x-px" aria-hidden="true" />
               )}
             </button>
-
             <button
               type="button"
               onClick={jumpToNextSentence}
-              aria-label="下一句 (→)"
+              aria-label="下一句"
               title="下一句 (→)"
-              className="p-1.5 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-200/70 dark:hover:bg-slate-800 transition cursor-pointer"
+              className={iconBtn}
             >
               <SkipForward className="w-4 h-4" aria-hidden="true" />
             </button>
-
             <button
               type="button"
               onClick={replayCurrentSentence}
-              className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg text-xs font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800 transition cursor-pointer"
-              title="重播本句 (快捷鍵 R)"
+              aria-label="重播本句"
+              title="重播本句 (R)"
+              className={iconBtn}
             >
-              <RotateCcw className="w-3.5 h-3.5" aria-hidden="true" />
-              <span className="hidden sm:inline">重播 (R)</span>
+              <RotateCcw className="w-4 h-4" aria-hidden="true" />
             </button>
-
             <button
               type="button"
               onClick={onToggleSentenceLoop}
-              className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold border transition cursor-pointer ${
+              aria-pressed={sentenceLoop}
+              title="單句循環 (L)"
+              className={`ml-1 inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold border transition cursor-pointer ${
                 sentenceLoop
                   ? 'bg-amber-500/15 border-amber-500/50 text-amber-700 dark:text-amber-300'
-                  : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-indigo-400'
+                  : 'border-transparent text-slate-600 dark:text-slate-300 hover:bg-slate-200/70 dark:hover:bg-slate-800'
               }`}
-              title="單句循環播放 (快捷鍵 L)"
             >
               <Repeat className="w-3.5 h-3.5" aria-hidden="true" />
-              單句循環 {sentenceLoop ? 'ON' : 'OFF'}
+              循環
             </button>
-          </div>
 
-          {/* Right Speed, Engine & Theater Controls */}
-          <div className="flex flex-wrap items-center gap-1.5 text-xs">
-            {/* Speed Selector */}
-            <div className="inline-flex items-center gap-0.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-1.5 py-1">
+            {/* Speed */}
+            <div className="ml-1 inline-flex items-center gap-0.5 text-xs" role="group" aria-label="播放速度">
               <Gauge className="w-3.5 h-3.5 text-slate-400 mr-0.5" aria-hidden="true" />
               {[0.75, 1, 1.25].map((rate) => (
                 <button
                   key={rate}
                   type="button"
                   onClick={() => onPlaybackRateChange(rate)}
-                  className={`px-1.5 py-0.5 rounded font-medium cursor-pointer ${
+                  aria-pressed={playbackRate === rate}
+                  className={`px-1.5 py-0.5 rounded-md font-medium cursor-pointer ${
                     playbackRate === rate
                       ? 'bg-indigo-600 text-white'
                       : 'text-slate-600 dark:text-slate-300 hover:text-indigo-500'
@@ -621,8 +623,10 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
                 </button>
               ))}
             </div>
+          </div>
 
-            {/* Engine Toggle */}
+          {/* View controls */}
+          <div className="flex items-center gap-1 text-xs">
             <button
               type="button"
               onClick={() => {
@@ -637,84 +641,67 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
                   onEngineModeChange('youtube');
                 }
               }}
-              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:border-indigo-400 font-medium cursor-pointer"
-              title="切換 YouTube 原生影片或 AI 語音播講"
+              aria-label={engineMode === 'youtube' ? '切換為 AI 語音播講' : '切換回 YouTube 原音'}
+              title={engineMode === 'youtube' ? '目前：YouTube 原音（點擊切換 AI 播講）' : '目前：AI 播講（點擊切換 YouTube 原音）'}
+              className={iconBtn}
             >
               {engineMode === 'youtube' ? (
-                <>
-                  <Tv className="w-3.5 h-3.5 text-indigo-500" aria-hidden="true" />
-                  <span className="hidden md:inline">YT 原音</span>
-                </>
+                <Tv className="w-4 h-4" aria-hidden="true" />
               ) : (
-                <>
-                  <Radio className="w-3.5 h-3.5 text-emerald-500" aria-hidden="true" />
-                  <span className="hidden md:inline">AI 播講</span>
-                </>
+                <Radio className="w-4 h-4 text-emerald-500" aria-hidden="true" />
               )}
             </button>
 
-            {/* Theater Mode Toggle */}
-            <button
-              type="button"
-              onClick={() =>
-                onCinemaModeChange(
-                  cinemaMode === 'theater-split' || cinemaMode === 'theater-bottom'
-                    ? 'standard'
-                    : 'theater-split'
-                )
-              }
-              className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-semibold border transition cursor-pointer ${
-                cinemaMode === 'theater-split' || cinemaMode === 'theater-bottom'
-                  ? 'bg-indigo-600 text-white border-indigo-500 shadow-2xs'
-                  : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-indigo-400'
-              }`}
-              title="切換劇院大螢幕模式 (快捷鍵 T)"
+            <div
+              role="group"
+              aria-label="版面配置"
+              className="inline-flex items-center gap-0.5 p-0.5 rounded-lg bg-slate-200/70 dark:bg-slate-800"
             >
-              <MonitorPlay className="w-3.5 h-3.5" aria-hidden="true" />
-              {cinemaMode === 'theater-split' || cinemaMode === 'theater-bottom'
-                ? '退出劇院 (T)'
-                : '劇院模式 (T)'}
-            </button>
+              {layoutOptions.map((opt) => {
+                const Icon = opt.icon;
+                const selected = cinemaMode === opt.id;
+                return (
+                  <button
+                    key={opt.id}
+                    type="button"
+                    title={opt.title}
+                    aria-pressed={selected}
+                    onClick={() =>
+                      onCinemaModeChange(
+                        selected && opt.id !== 'standard' ? 'standard' : opt.id
+                      )
+                    }
+                    className={`inline-flex items-center gap-1 px-2 py-1 rounded-md font-semibold transition cursor-pointer ${
+                      selected
+                        ? 'bg-white dark:bg-slate-950 text-indigo-600 dark:text-indigo-400 shadow-2xs'
+                        : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+                    }`}
+                  >
+                    {selected && opt.id === 'fullscreen-cinema' ? (
+                      <Minimize2 className="w-3.5 h-3.5" aria-hidden="true" />
+                    ) : (
+                      <Icon className="w-3.5 h-3.5" aria-hidden="true" />
+                    )}
+                    <span className="hidden sm:inline">
+                      {selected && opt.id === 'fullscreen-cinema' ? '退出' : opt.label}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
 
-            {/* Fullscreen Cinema Toggle */}
-            <button
-              type="button"
-              onClick={() =>
-                onCinemaModeChange(
-                  cinemaMode === 'fullscreen-cinema' ? 'standard' : 'fullscreen-cinema'
-                )
-              }
-              className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg font-semibold border transition cursor-pointer ${
-                cinemaMode === 'fullscreen-cinema'
-                  ? 'bg-rose-600 text-white border-rose-500'
-                  : 'bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:border-indigo-400'
-              }`}
-              title="全螢幕雙語劇院 (快捷鍵 F)"
-            >
-              {cinemaMode === 'fullscreen-cinema' ? (
-                <>
-                  <Minimize2 className="w-3.5 h-3.5" aria-hidden="true" />
-                  退出全螢幕
-                </>
-              ) : (
-                <>
-                  <Maximize2 className="w-3.5 h-3.5" aria-hidden="true" />
-                  全螢幕 (F)
-                </>
-              )}
-            </button>
-
-            {(cinemaMode === 'theater-split' || cinemaMode === 'fullscreen-cinema') && (
+            {canToggleSidebar && (
               <button
                 type="button"
                 onClick={onToggleSidebarInCinema}
-                className="inline-flex items-center gap-1 px-2 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:border-indigo-400 cursor-pointer"
-                title="展開或收合右側雙語字幕欄"
+                aria-label={showSidebarInCinema ? '收合字幕欄' : '展開字幕欄'}
+                title={showSidebarInCinema ? '收合字幕欄，影片更大' : '展開字幕欄'}
+                className={iconBtn}
               >
                 {showSidebarInCinema ? (
-                  <PanelRightClose className="w-3.5 h-3.5" aria-hidden="true" />
+                  <PanelRightClose className="w-4 h-4" aria-hidden="true" />
                 ) : (
-                  <PanelRightOpen className="w-3.5 h-3.5" aria-hidden="true" />
+                  <PanelRightOpen className="w-4 h-4" aria-hidden="true" />
                 )}
               </button>
             )}

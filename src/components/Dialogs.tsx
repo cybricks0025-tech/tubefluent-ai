@@ -207,7 +207,7 @@ export const WordCardModal: React.FC<WordCardModalProps> = ({
 
           <div className="space-y-1.5 text-xs">
             <p className="font-semibold text-slate-500 dark:text-slate-400">
-              影片出現原句 (#{selected.sentence.id})：
+              影片原句
             </p>
             <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 space-y-1">
               <p className="font-medium text-slate-900 dark:text-slate-100">
@@ -309,7 +309,7 @@ export const SentenceTutorDialog: React.FC<SentenceTutorDialogProps> = ({
     <NativeModalDialog
       open={Boolean(sentence)}
       onClose={onClose}
-      title={sentence ? `AI 隨堂語法與連音助教 — 第 #${sentence.id} 句` : 'AI 語法助教'}
+      title={sentence ? 'AI 句子拆解' : 'AI 語法助教'}
     >
       {sentence && (
         <div className="space-y-4 text-xs sm:text-sm">

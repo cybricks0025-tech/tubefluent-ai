@@ -11,6 +11,8 @@ import {
 } from 'lucide-react';
 import { KeywordItem, SavedWordItem, SubtitleItem } from '../types';
 
+const fmtClock = (sec: number) => { const t = Math.max(0, Math.floor(sec)); const h = Math.floor(t / 3600); const m = Math.floor((t % 3600) / 60); const s = String(t % 60).padStart(2, '0'); return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${s}` : `${m}:${s}`; };
+
 interface VocabularyVaultProps {
   subtitles: SubtitleItem[];
   savedWords: SavedWordItem[];
@@ -224,7 +226,7 @@ export const VocabularyVault: React.FC<VocabularyVaultProps> = ({
                       onClick={() => onJumpToTime(item.sentence.start)}
                       className="inline-flex items-center gap-0.5 text-xs font-mono text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer"
                     >
-                      跳轉 {item.sentence.start.toFixed(1)}s
+                      {fmtClock(item.sentence.start)}
                       <ArrowUpRight className="w-3 h-3" aria-hidden="true" />
                     </button>
                     <button

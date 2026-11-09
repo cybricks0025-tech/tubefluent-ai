@@ -207,7 +207,7 @@ export const ShadowingStudio: React.FC<ShadowingStudioProps> = ({
         <div className="flex flex-wrap items-center justify-between gap-2">
           <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
             <Headphones className="w-3.5 h-3.5" aria-hidden="true" />
-            跟讀目標句 #{currentSentence.id}
+            跟讀目標句
           </span>
           <div className="flex items-center gap-1.5">
             <button
@@ -375,7 +375,6 @@ export const ShadowingStudio: React.FC<ShadowingStudioProps> = ({
                     : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:border-indigo-300'
                 }`}
               >
-                <span className="font-mono text-xs text-indigo-500 mr-2">#{sub.id}</span>
                 {sub.en}
               </button>
             );

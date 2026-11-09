@@ -9,6 +9,8 @@ import {
 } from 'lucide-react';
 import { QuizQuestion } from '../types';
 
+const fmtClock = (sec: number) => { const t = Math.max(0, Math.floor(sec)); const h = Math.floor(t / 3600); const m = Math.floor((t % 3600) / 60); const s = String(t % 60).padStart(2, '0'); return h > 0 ? `${h}:${String(m).padStart(2, '0')}:${s}` : `${m}:${s}`; };
+
 interface QuizArenaProps {
   quiz: QuizQuestion[];
   videoId: string;
@@ -83,7 +85,7 @@ export const QuizArena: React.FC<QuizArenaProps> = ({ quiz, videoId, onJumpToTim
                     onClick={() => onJumpToTime(q.relatedTimestamp!)}
                     className="shrink-0 inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-mono bg-slate-100 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 transition cursor-pointer"
                   >
-                    線索 {q.relatedTimestamp.toFixed(1)}s
+                    回看 {fmtClock(q.relatedTimestamp)}
                     <ArrowUpRight className="w-3 h-3" aria-hidden="true" />
                   </button>
                 )}
