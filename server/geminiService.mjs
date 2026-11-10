@@ -1,4 +1,8 @@
 import { GoogleGenAI, Type } from '@google/genai';
+import {
+  selectTutorKeywordsForSentence,
+  buildTutorGrammarNote
+} from './tutorLexicon.mjs';
 
 const FOCUS_PROMPTS = {
   'tech-interview':
@@ -139,12 +143,14 @@ ${JSON.stringify(sentences.filter((_, i) => i % Math.max(1, Math.floor(sentences
     .then((r) => JSON.parse(r.text));
 
   const batchPromises = batches.map(async (batch) => {
-    const prompt = `你是一位頂尖的 AI 英語教學專家。請針對以下「${videoTitle}」的字幕批次，輸出 100% 結構化的雙語字幕與重點單字解析。
+    const prompt = `你是一位頂尖、富有親和力的線上真人英文家教（帶領台灣學生一起看 YouTube 影片學道地英文）。請針對以下「${videoTitle}」的字幕批次，輸出 100% 結構化的雙語字幕與家教精選單字／片語解析。
 【專項學習模式】：${focusInstruction}
-【嚴格要求】：
+【嚴格家教標準】：
 1. 必須保留輸入陣列中每一句的 id、start、end，不可遺漏任何一句。
-2. 為每一句提供道地繁體中文翻譯 (zh) 與精簡語法/口語解析 (grammarNote)。
-3. 每句挑選 1~2 個重點字詞放入 keywords，且 word 必須是該句 en 中實際出現的子字串。
+2. 為每一句提供自然流暢的繁體中文翻譯 (zh)。
+3. 為每一句提供像真人英文家教般的「隨堂導讀 (grammarNote)」，點出該句的關鍵句型結構、母語語感轉折、或連音（Linking）跟讀技巧，切勿只重複時間軸。
+4. 每句挑選 0~2 個真正值得學的「實用道地片語／慣用語 (pos 標為 phr.)」或「B2–C2 進階／專業單字」放入 keywords（且 word 必須是該句 en 中實際出現的完整子字串）。若該句極短且全為國小國中基礎字（如 Hi everyone / Thank you），keywords 請給空陣列 []，絕不要亂標簡單字！
+5. 每個 keyword 的 meaning 請提供「語境精準解釋＋搭配詞或字根記憶提示」。
 
 待解析批次 JSON：
 ${JSON.stringify(batch)}`;
@@ -304,57 +310,76 @@ export function generateLocalSentenceBreakdown(sentenceEn, sentenceZh, userQuest
   };
 }
 
+const TRANSLATE_CLIENTS = ['at', 'it', 'dict-chrome-ex', 'gtx'];
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+async function translateSingleChunkToZhTW(batch) {
+  const numberedQuery = batch.map((s, idx) => `[${idx}] ${s}`).join('\n');
+  for (let attempt = 0; attempt < TRANSLATE_CLIENTS.length; attempt++) {
+    const client = TRANSLATE_CLIENTS[attempt];
+    try {
+      const res = await fetch(
+        `https://translate.googleapis.com/translate_a/single?client=${client}&sl=en&tl=zh-TW&dt=t`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
+            'User-Agent':
+              'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36'
+          },
+          body: 'q=' + encodeURIComponent(numberedQuery)
+        }
+      );
+      if (!res.ok) {
+        await sleep(250 * (attempt + 1));
+        continue;
+      }
+      const data = await res.json();
+      const fullTranslated = (data[0] || []).map((part) => part[0] || '').join('');
+      const lines = fullTranslated.split(/\n+/);
+
+      return batch.map((_, idx) => {
+        const matchedLine =
+          lines.find(
+            (l) =>
+              l.trim().startsWith(`[${idx}]`) ||
+              l.trim().startsWith(`【${idx}】`) ||
+              l.trim().startsWith(`[ ${idx} ]`)
+          ) ||
+          lines[idx] ||
+          '';
+        return matchedLine.replace(/^[\[【]\s*\d+\s*[\]】]\s*/, '').trim();
+      });
+    } catch {
+      await sleep(250 * (attempt + 1));
+    }
+  }
+  return batch.map(() => '');
+}
+
 /**
- * High-Speed Parallel POST Batch Translator (Supports 200+ sentences across full videos without URL length limits)
+ * High-Speed Reliable POST Batch Translator (Multi-endpoint fallback to prevent 429 rate-limits)
  */
 async function translateBatchToZhTW(enStrings) {
   if (!enStrings || enStrings.length === 0) return [];
 
-  const CHUNK_SIZE = 25;
-  const chunks = [];
+  const CHUNK_SIZE = 32;
+  const results = new Array(enStrings.length).fill('');
   for (let i = 0; i < enStrings.length; i += CHUNK_SIZE) {
-    chunks.push(enStrings.slice(i, i + CHUNK_SIZE));
+    const batch = enStrings.slice(i, i + CHUNK_SIZE);
+    const translated = await translateSingleChunkToZhTW(batch);
+    for (let j = 0; j < batch.length; j++) {
+      results[i + j] = translated[j] || '';
+    }
+    if (i + CHUNK_SIZE < enStrings.length) {
+      await sleep(150);
+    }
   }
 
-  const translatedChunks = await Promise.all(
-    chunks.map(async (batch) => {
-      try {
-        const numberedQuery = batch.map((s, idx) => `[${idx}] ${s}`).join('\n');
-        const res = await fetch(
-          'https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-TW&dt=t',
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
-              'User-Agent': 'Mozilla/5.0'
-            },
-            body: 'q=' + encodeURIComponent(numberedQuery)
-          }
-        );
-        if (!res.ok) throw new Error('Translate HTTP status ' + res.status);
-        const data = await res.json();
-        const fullTranslated = (data[0] || []).map((part) => part[0] || '').join('');
-        const lines = fullTranslated.split(/\n+/);
-
-        return batch.map((_, idx) => {
-          const matchedLine =
-            lines.find(
-              (l) =>
-                l.trim().startsWith(`[${idx}]`) ||
-                l.trim().startsWith(`【${idx}】`) ||
-                l.trim().startsWith(`[ ${idx} ]`)
-            ) ||
-            lines[idx] ||
-            '';
-          return matchedLine.replace(/^[\[【]\s*\d+\s*[\]】]\s*/, '').trim();
-        });
-      } catch {
-        return batch.map(() => '');
-      }
-    })
-  );
-
-  return translatedChunks.flat();
+  return results;
 }
 
 const STOPWORDS = new Set([
@@ -452,38 +477,25 @@ export async function buildSmartLocalAnalysis(
   videoTitle,
   focusMode = 'tech-interview'
 ) {
-  // 1. Pick 1-2 candidate keywords per sentence across the ENTIRE video
-  const sentenceCandidates = sentences.map((s) => {
-    const tokens = (s.en.match(/[A-Za-z]+(?:-[A-Za-z]+)?/g) || []).filter(
-      (w) => w.length >= 5 && !STOPWORDS.has(w.toLowerCase())
-    );
-    const unique = [];
-    const seen = new Set();
-    const sorted = [...tokens].sort((a, b) => b.length - a.length);
-    for (const t of sorted) {
-      const low = t.toLowerCase();
-      if (!seen.has(low)) {
-        seen.add(low);
-        unique.push(t);
-      }
-      if (unique.length >= 2) break;
-    }
-    if (unique.length === 0) {
-      const fallback = (s.en.match(/[A-Za-z]{4,}/g) || ['focus'])[0];
-      unique.push(fallback);
-    }
-    return unique;
-  });
-
-  // Deduplicate ALL unique words across the entire video (no 35-word slice limit!)
-  const allUniqueWords = Array.from(
-    new Set(sentenceCandidates.flat().map((w) => w.toLowerCase()))
+  // 1. Select tutor-grade phrases (Idioms / Phrasal Verbs) & B2-C2 advanced vocabulary per sentence
+  const sentenceTutorKeywords = sentences.map((s) =>
+    selectTutorKeywordsForSentence(s.en, focusMode)
   );
 
-  // Run sentence translation AND dictionary lookup for top 40 words concurrently
-  const topWordsForDict = allUniqueWords.slice(0, 40);
-  const [sentenceTranslations, dictEntries] = await Promise.all([
+  // Collect uncurated B2-C2 lemmas that need translation
+  const uncuratedLemmas = Array.from(
+    new Set(
+      sentenceTutorKeywords
+        .flat()
+        .filter((kw) => !kw.isCurated && !kw.meaning)
+        .map((kw) => kw.lemma.toLowerCase())
+    )
+  );
+
+  const topWordsForDict = uncuratedLemmas.slice(0, 35);
+  const [sentenceTranslations, translatedUncuratedMeanings, dictEntries] = await Promise.all([
     translateBatchToZhTW(sentences.map((s) => s.en)),
+    translateBatchToZhTW(uncuratedLemmas),
     Promise.all(
       topWordsForDict.map(async (w) => {
         const info = await lookupWordDictionary(w);
@@ -493,82 +505,50 @@ export async function buildSmartLocalAnalysis(
   ]);
 
   const dictMap = Object.fromEntries(dictEntries);
-
-  // Build English meaning & example prompts for ALL unique words across the entire video
-  const wordMeaningsEn = allUniqueWords.map((w) => {
-    const info = dictMap[w];
-    if (info?.defEn) return info.defEn;
-    const { lemma } = inferLemmaAndPos(w);
-    return lemma;
+  const uncuratedMeaningMap = new Map();
+  uncuratedLemmas.forEach((lemma, idx) => {
+    uncuratedMeaningMap.set(lemma, (translatedUncuratedMeanings[idx] || '').trim() || lemma);
   });
 
-  const wordExamplesEn = allUniqueWords.map((w) => {
-    const info = dictMap[w];
-    if (info?.exampleEn) return info.exampleEn;
-    const { lemma } = inferLemmaAndPos(w);
-    return `In global teams, applying "${lemma}" effectively improves both clarity and execution.`;
-  });
-
-  // Batch translate ALL unique word meanings and example sentences in parallel
-  const [translatedMeaningsZh, translatedExamplesZh] = await Promise.all([
-    translateBatchToZhTW(wordMeaningsEn),
-    translateBatchToZhTW(wordExamplesEn)
-  ]);
-
-  const wordDataMap = {};
-  allUniqueWords.forEach((w, idx) => {
-    const dict = dictMap[w];
-    const inferred = inferLemmaAndPos(w);
-    const lemma = dict?.lemma || inferred.lemma;
-    const pos = dict?.pos || inferred.pos;
-    const phonetic = dict?.phonetic || `/${lemma}/`;
-    const meaningZh = (translatedMeaningsZh[idx] || '').trim() || `核心字彙：${lemma}`;
-    const exampleEn = wordExamplesEn[idx];
-    const exampleZh =
-      (translatedExamplesZh[idx] || '').trim() ||
-      `在跨國團隊中，有效運用「${meaningZh}」能同時提升溝通清晰度與執行力。`;
-
-    wordDataMap[w] = {
-      lemma,
-      pos,
-      phonetic,
-      meaning: meaningZh,
-      exampleEn,
-      exampleZh
-    };
-  });
-
-  const levelBadge =
-    focusMode === 'tech-interview'
-      ? '科技外商核心'
-      : focusMode === 'toeic-business'
-        ? 'TOEIC 高頻'
-        : focusMode === 'daily-idioms'
-          ? '道地口語'
-          : 'TED 核心字彙';
+  let totalPhrases = 0;
+  let totalVocab = 0;
 
   const enrichedSubtitles = sentences.map((s, idx) => {
-    const candidates = sentenceCandidates[idx] || [];
-    const keywords = candidates.map((origWord) => {
-      const low = origWord.toLowerCase();
-      const info = wordDataMap[low] || inferLemmaAndPos(low);
+    const rawKws = sentenceTutorKeywords[idx] || [];
+    const keywords = rawKws.map((kw) => {
+      const lowLemma = kw.lemma.toLowerCase();
+      const dict = dictMap[lowLemma];
+      let meaning = kw.meaning;
+      let exampleEn = kw.exampleEn;
+      let exampleZh = kw.exampleZh;
+      let phonetic = dict?.phonetic || kw.phonetic;
+
+      if (!meaning) {
+        const baseM = uncuratedMeaningMap.get(lowLemma) || kw.lemma;
+        meaning = kw.rootHint ? `${baseM}（${kw.rootHint}）` : baseM;
+        exampleZh = `在專業溝通語境中，精準運用「${baseM}（${kw.lemma}）」能讓表達更具說服力。`;
+      }
+      if (dict?.exampleEn && !kw.isCurated) {
+        exampleEn = dict.exampleEn;
+      }
+
+      if (kw.pos === 'phr.') totalPhrases++;
+      else totalVocab++;
+
       return {
-        word: origWord,
-        lemma: info.lemma || low,
-        pos: info.pos || 'n./v.',
-        phonetic: info.phonetic || `/${low}/`,
-        meaning: info.meaning || `核心字彙（${low}）`,
-        level: levelBadge,
-        exampleEn:
-          info.exampleEn ||
-          `Understanding "${low}" in context helps you master natural English delivery.`,
-        exampleZh:
-          info.exampleZh || `在語境中理解「${low}」能幫助你掌握道地的英文表達。`
+        word: kw.word,
+        lemma: kw.lemma,
+        pos: kw.pos,
+        phonetic,
+        meaning,
+        level: kw.level,
+        exampleEn,
+        exampleZh
       };
     });
 
-    const zhText =
-      sentenceTranslations[idx] || `（第 ${idx + 1} 句雙語同步導讀）`;
+    const zhText = sentenceTranslations[idx] || s.en;
+    const grammarNote = buildTutorGrammarNote(s.en, zhText, keywords);
 
     return {
       id: idx + 1,
@@ -576,23 +556,26 @@ export async function buildSmartLocalAnalysis(
       end: s.end,
       en: s.en,
       zh: zhText,
-      grammarNote: `時間軸 (${s.start}s - ${s.end}s) · 核心字詞：${keywords
-        .map((k) => `${k.lemma} (${k.pos})`)
-        .join('、')}`,
+      grammarNote,
       keywords
     };
   });
 
-  // Build 5 comprehension questions distributed evenly across the entire video (0%, 25%, 50%, 75%, 90%)
+  const subsWithKw = enrichedSubtitles.filter((s) => s.keywords && s.keywords.length > 0);
+  const allUniqueWords = Array.from(
+    new Set(subsWithKw.flatMap((s) => s.keywords.map((k) => k.word)))
+  );
+
+  // Build 5 comprehension questions from sentences with tutor-selected phrases or advanced words
   const quiz = [];
-  const ratios = [0.05, 0.28, 0.52, 0.75, 0.92];
+  const ratios = [0.06, 0.28, 0.52, 0.75, 0.92];
   const sampleIndices = ratios
-    .map((r) => Math.min(enrichedSubtitles.length - 1, Math.floor(enrichedSubtitles.length * r)))
+    .map((r) => Math.min(subsWithKw.length - 1, Math.floor(subsWithKw.length * r)))
     .filter((v, i, a) => v >= 0 && a.indexOf(v) === i);
 
   for (let i = 0; i < sampleIndices.length; i++) {
     const sIdx = sampleIndices[i];
-    const targetSub = enrichedSubtitles[sIdx];
+    const targetSub = subsWithKw[sIdx];
     const targetKw = targetSub?.keywords?.[0];
     if (!targetSub || !targetKw) continue;
 
@@ -602,7 +585,9 @@ export async function buildSmartLocalAnalysis(
     );
 
     const distractors = allUniqueWords.filter(
-      (w) => w !== targetKw.word.toLowerCase() && w !== targetKw.lemma.toLowerCase()
+      (w) =>
+        w.toLowerCase() !== targetKw.word.toLowerCase() &&
+        w.toLowerCase() !== targetKw.lemma.toLowerCase()
     );
 
     const pickedDistractors = [
@@ -619,11 +604,11 @@ export async function buildSmartLocalAnalysis(
     rotatedOptions[correctPos] = temp;
 
     quiz.push({
-      question: `At ${targetSub.start.toFixed(1)}s in the video, which word best completes the sentence: "${blankedEn}"?`,
-      questionZh: `在影片 ${targetSub.start.toFixed(1)} 秒處，講者提到「${targetSub.zh}」，空格中應填入哪個字彙？`,
+      question: `At ${targetSub.start.toFixed(1)}s in the video, which expression best completes: "${blankedEn}"?`,
+      questionZh: `在影片 ${targetSub.start.toFixed(1)} 秒處，講者說：「${targetSub.zh}」，空格中應填入哪個道地字詞或片語？`,
       options: rotatedOptions,
       answer: correctPos,
-      explanation: `原句為：「${targetSub.en}」（${targetSub.zh}）。其中「${targetKw.lemma} (${targetKw.pos})」意為「${targetKw.meaning}」。`,
+      explanation: `原句為：「${targetSub.en}」（${targetSub.zh}）。家教解析：「${targetKw.lemma} (${targetKw.pos})」意為「${targetKw.meaning}」。`,
       relatedTimestamp: targetSub.start
     });
   }
@@ -642,19 +627,16 @@ export async function buildSmartLocalAnalysis(
 
   return {
     summary: {
-      overviewZh: `已完整解析全片「${videoTitle}」（片長約 ${totalDurMin} 分鐘，共 ${enrichedSubtitles.length} 個完整語句、${allUniqueWords.length} 個不重複核心字彙）。全片脈絡從「${introZh.slice(0, 45)}⋯」展開，中段探討「${midZh.slice(0, 45)}⋯」，最終收斂於「${endZh.slice(0, 45)}」。`,
+      overviewZh: `已完整解析全片「${videoTitle}」（片長約 ${totalDurMin} 分鐘，共 ${enrichedSubtitles.length} 個完整語句、${allUniqueWords.length} 個精選字詞與片語）。全片脈絡從「${introZh.slice(0, 45)}⋯」展開，中段探討「${midZh.slice(0, 45)}⋯」，最終收斂於「${endZh.slice(0, 45)}」。`,
       keyTakeaways: [
-        `全片 100% 完整解析：共 ${enrichedSubtitles.length} 句中英對照字幕（0.0s 至 ${
+        `全片 100% 雙語時間軸同步：共 ${enrichedSubtitles.length} 句中英對照字幕（${enrichedSubtitles[0]?.start || 0}s 至 ${
           enrichedSubtitles[enrichedSubtitles.length - 1]?.end || 0
-        }s 全覆蓋）`,
-        `共標記 ${enrichedSubtitles.reduce(
-          (acc, s) => acc + s.keywords.length,
-          0
-        )} 處語境重點單字，點擊底線即可查看音標、中文釋義與雙語延伸例句`,
-        `涵蓋片頭、中段與結尾的 ${quiz.length} 題全片時間軸聽力測驗，可一鍵跳轉對應秒數複習`
+        }s）`,
+        `真人感家教精選：標記 ${totalPhrases} 處道地片語（Phrasal Verbs / Idioms）與 ${totalVocab} 個 B2–C2 專業字彙，自動過濾簡單基礎字`,
+        `每句皆附「家教隨堂導讀（句型解析 × 母語語感 × 連音技巧）」與 ${quiz.length} 題時間軸實戰測驗`
       ],
-      difficultyLevel: 'B2 中高級 (全片完整版)',
-      topicTags: ['全片完整解析', `共 ${enrichedSubtitles.length} 句`, '雙語時間軸同步']
+      difficultyLevel: 'B2–C1 線上家教精講版',
+      topicTags: ['線上家教導讀', `共 ${enrichedSubtitles.length} 句`, '道地片語＋進階字彙']
     },
     subtitles: enrichedSubtitles,
     quiz

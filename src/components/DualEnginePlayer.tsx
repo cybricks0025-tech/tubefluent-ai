@@ -220,6 +220,11 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
           try {
             const d = event.target.getDuration?.();
             if (typeof d === 'number' && d > 0) setYtDuration(d);
+            const t = event.target.getCurrentTime?.();
+            if (typeof t === 'number' && !Number.isNaN(t)) {
+              currentTimeRef.current = t;
+              onTimeUpdate(t);
+            }
           } catch {
             // ignore
           }
@@ -287,14 +292,17 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
     }
   }, [playbackRate, engineMode, ytReady]);
 
-  // Stable 150ms Polling Engine
+  // High-precision 100ms Polling Engine (also tracks native YouTube seekbar scrubbing while paused)
   useEffect(() => {
-    if (!isPlaying) {
-      if (engineMode === 'tts-simulator') {
-        window.speechSynthesis?.cancel();
-      }
+    if (!isPlaying && engineMode === 'tts-simulator') {
+      window.speechSynthesis?.cancel();
       return;
     }
+    if (!isPlaying && (engineMode !== 'youtube' || !ytReady)) {
+      return;
+    }
+
+    const pollMs = isPlaying ? 100 : 350;
 
     const interval = window.setInterval(() => {
       const mode = engineModeRef.current;
@@ -317,12 +325,12 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
         } catch {
           // ignore
         }
-      } else {
-        nextTime = Number((nextTime + 0.15 * rate).toFixed(2));
+      } else if (isPlaying) {
+        nextTime = Number((nextTime + 0.1 * rate).toFixed(2));
       }
 
-      if (loop && activeSub) {
-        if (nextTime >= activeSub.end - 0.08) {
+      if (isPlaying && loop && activeSub) {
+        if (nextTime >= activeSub.end - 0.06) {
           nextTime = activeSub.start;
           lastSpokenSubIdRef.current = null;
           if (mode === 'youtube' && ytPlayerRef.current && ytReady) {
@@ -335,7 +343,7 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
         }
       }
 
-      if (mode === 'tts-simulator') {
+      if (isPlaying && mode === 'tts-simulator') {
         const maxSubEnd = Math.max(
           durationRef.current,
           subs[subs.length - 1]?.end || 60
@@ -348,9 +356,11 @@ export const DualEnginePlayer: React.FC<DualEnginePlayerProps> = ({
         }
       }
 
-      currentTimeRef.current = nextTime;
-      onTimeUpdate(nextTime);
-    }, 150);
+      if (Math.abs(nextTime - currentTimeRef.current) >= 0.03) {
+        currentTimeRef.current = nextTime;
+        onTimeUpdate(nextTime);
+      }
+    }, pollMs);
 
     return () => window.clearInterval(interval);
   }, [isPlaying, engineMode, ytReady]);

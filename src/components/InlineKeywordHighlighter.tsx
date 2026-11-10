@@ -49,11 +49,13 @@ export const InlineKeywordHighlighter: React.FC<InlineKeywordHighlighterProps> =
         }
 
         const isSaved = savedWordSet.has(matchedKw.lemma.toLowerCase());
+        const isPhrase = matchedKw.pos === 'phr.' || matchedKw.word.trim().includes(' ');
 
         return (
           <button
             key={idx}
             type="button"
+            title={`${matchedKw.lemma} (${matchedKw.pos})：${matchedKw.meaning}`}
             onClick={(e) => {
               e.stopPropagation();
               onSelectKeyword(matchedKw, sentence);
@@ -63,9 +65,13 @@ export const InlineKeywordHighlighter: React.FC<InlineKeywordHighlighterProps> =
                 ? darkOverlay
                   ? 'decoration-amber-400 text-amber-300 bg-amber-500/20 hover:bg-amber-500/30'
                   : 'decoration-amber-500 text-amber-800 dark:text-amber-300 bg-amber-500/15 hover:bg-amber-500/25'
-                : darkOverlay
-                  ? 'decoration-indigo-400 text-indigo-200 hover:bg-indigo-500/30'
-                  : 'decoration-indigo-500 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-500/15'
+                : isPhrase
+                  ? darkOverlay
+                    ? 'decoration-emerald-400 text-emerald-200 hover:bg-emerald-500/30'
+                    : 'decoration-emerald-500 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-500/15'
+                  : darkOverlay
+                    ? 'decoration-indigo-400 text-indigo-200 hover:bg-indigo-500/30'
+                    : 'decoration-indigo-500 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-500/15'
             }`}
           >
             <span>{part}</span>

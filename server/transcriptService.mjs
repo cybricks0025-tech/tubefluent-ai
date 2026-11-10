@@ -167,81 +167,163 @@ export async function fetchRawYoutubeCaptions(videoId) {
   return segments;
 }
 
+function cleanSegmentText(raw) {
+  let t = (raw || '')
+    .replace(/\[(?:music|applause|laughter|音樂|掌聲|笑聲|intro video|video\s*-\s*no narration|video\s*-\s*song plays)\]/gi, '')
+    .replace(/\((?:music|applause|laughter|singing|cheering)\)/gi, '')
+    .replace(/^(?:Transcriber|Translator|Reviewer|Captions by|Subtitles by):[\s\S]*$/i, '')
+    .replace(/^(?:Transcriber|Translator):\s*[^R]+Reviewer:\s*[A-Za-z\s]+/i, '')
+    .replace(/\[(?:JENSEN(?:\s+HUANG)?|INTRO VIDEO|SPEAKER[^\]]*)\]:?\s*/gi, '')
+    .replace(/_{3,}/g, '')
+    .replace(/>>+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return t;
+}
+
 /**
- * Full-Video Smart Sentence Chunker (全片碎字幕合併演算法)
- * Merges fragmented 3-4 word YouTube captions into natural sentences across the ENTIRE video!
+ * Split a single segment that contains multiple sentences (e.g. from manual captions)
+ * into proportional sub-segments so each sentence has its own accurate start/end time.
  */
-export function chunkTranscriptIntoSentences(rawSegments, maxSentences = 2000) {
-  if (!Array.isArray(rawSegments) || rawSegments.length === 0) return [];
+function expandMultiSentenceSegments(rawSegments) {
+  const expanded = [];
+  for (const seg of rawSegments) {
+    const clean = cleanSegmentText(seg.text);
+    if (!clean || /^\[.*\]$/.test(clean) || /^\(.*\)$/.test(clean) || /^[♪♫]+$/.test(clean)) {
+      continue;
+    }
 
-  const merged = [];
-  let current = null;
+    let start = Number(seg.start);
+    let end = Number(seg.end);
+    const wordCount = clean.split(/\s+/).length;
+    const maxExpectedDur = Math.max(6.5, wordCount * 0.6 + 2.5);
+    if (end - start > maxExpectedDur + 5.0) {
+      end = Number((start + maxExpectedDur).toFixed(2));
+    }
 
-  for (let i = 0; i < rawSegments.length; i++) {
-    const seg = rawSegments[i];
-    const cleanText = (seg.text || '')
-      .replace(/\[(?:music|applause|laughter|音樂|掌聲)\]/gi, '')
-      .replace(/\s+/g, ' ')
-      .trim();
+    const protectedText = clean
+      .replace(/\b(Mr|Mrs|Ms|Dr|Prof|Sr|Jr|St|vs|etc|e\.g|i\.e)\./gi, '$1<DOT>')
+      .replace(/(\d)\.(\d)/g, '$1<DOT>$2');
 
-    if (!cleanText) continue;
+    const parts = protectedText
+      .split(/(?<=[.?!]["']?)\s+(?=[A-Z0-9"'])/)
+      .map((p) => p.replace(/<DOT>/g, '.').trim())
+      .filter(Boolean);
 
-    if (!current) {
-      current = {
-        start: Number(seg.start.toFixed(1)),
-        end: Number(seg.end.toFixed(1)),
-        text: cleanText
-      };
+    if (parts.length <= 1) {
+      expanded.push({ start, end, text: clean });
     } else {
-      current.text = `${current.text} ${cleanText}`.replace(/\s+/g, ' ').trim();
-      current.end = Number(Math.max(current.end, seg.end).toFixed(1));
-
-      const wordCount = current.text.split(/\s+/).length;
-      const duration = current.end - current.start;
-      const endsWithPunctuation = /[.?!]["']?$/.test(cleanText);
-      const nextSeg = rawSegments[i + 1];
-      const nextGap = nextSeg ? nextSeg.start - seg.end : 99;
-
-      const shouldSplit =
-        (endsWithPunctuation && wordCount >= 6) ||
-        (nextGap > 1.25 && wordCount >= 7) ||
-        wordCount >= 22 ||
-        duration >= 11;
-
-      if (shouldSplit) {
-        let formatted = current.text.charAt(0).toUpperCase() + current.text.slice(1);
-        if (!/[.?!]["']?$/.test(formatted)) {
-          formatted += '.';
-        }
-        merged.push({
-          id: merged.length + 1,
-          start: current.start,
-          end: current.end,
-          en: formatted
+      const totalChars = parts.reduce((acc, p) => acc + p.length, 0) || 1;
+      const totalDur = Math.max(1.2, end - start);
+      let cursor = start;
+      for (let i = 0; i < parts.length; i++) {
+        const part = parts[i];
+        const dur = i === parts.length - 1 ? end - cursor : Math.max(0.8, totalDur * (part.length / totalChars));
+        const pStart = Number(cursor.toFixed(2));
+        const pEnd = i === parts.length - 1 ? Number(end.toFixed(2)) : Number(Math.min(end - 0.2, cursor + dur).toFixed(2));
+        cursor = pEnd;
+        expanded.push({
+          start: pStart,
+          end: Math.max(Number((pStart + 0.6).toFixed(2)), pEnd),
+          text: part
         });
-        current = null;
       }
     }
   }
+  return expanded;
+}
 
-  if (current && current.text) {
-    let formatted = current.text.charAt(0).toUpperCase() + current.text.slice(1);
-    if (!/[.?!]["']?$/.test(formatted)) {
+function endsWithSentencePunctuation(text) {
+  const trimmed = (text || '').trim();
+  if (!/[.?!]["')\]]?$/.test(trimmed)) return false;
+  if (/\b(?:Mr|Mrs|Ms|Dr|Prof|Sr|Jr|St|vs|etc)\.$/.test(trimmed)) return false;
+  return true;
+}
+
+/**
+ * Full-Video Smart Sentence Chunker (全片精準時間軸對齊演算法)
+ * Preserves exact sentence start/end timestamps and never merges across sentence boundaries or pauses.
+ */
+export function chunkTranscriptIntoSentences(rawSegments, maxSentences = 2500) {
+  if (!Array.isArray(rawSegments) || rawSegments.length === 0) return [];
+
+  const segments = expandMultiSentenceSegments(rawSegments);
+  const merged = [];
+  let current = null;
+
+  const flushCurrent = () => {
+    if (!current || !current.text) return;
+    let formatted = current.text.replace(/\s+/g, ' ').trim();
+    if (!formatted) {
+      current = null;
+      return;
+    }
+    formatted = formatted.charAt(0).toUpperCase() + formatted.slice(1);
+    if (!/[.?!]["')\]]?$/.test(formatted)) {
       formatted += '.';
     }
     merged.push({
       id: merged.length + 1,
-      start: current.start,
-      end: current.end,
+      start: Number(current.start.toFixed(1)),
+      end: Number(Math.max(current.start + 0.8, current.end).toFixed(1)),
       en: formatted
     });
+    current = null;
+  };
+
+  for (let i = 0; i < segments.length; i++) {
+    const seg = segments[i];
+    const cleanText = seg.text;
+    if (!cleanText) continue;
+
+    if (!current) {
+      current = {
+        start: seg.start,
+        end: seg.end,
+        text: cleanText
+      };
+    } else {
+      const gap = seg.start - current.end;
+      const currentWords = current.text.split(/\s+/).length;
+      const segWords = cleanText.split(/\s+/).length;
+      const combinedDuration = seg.end - current.start;
+
+      // Flush BEFORE merging if:
+      // 1. current already ends with a sentence punctuation (.?!) and has >= 2 words
+      // 2. There is a clear speech pause (gap > 0.9s)
+      // 3. Merging would exceed reasonable single-subtitle length (> 24 words or > 8.5s)
+      const shouldFlushBefore =
+        (endsWithSentencePunctuation(current.text) && currentWords >= 2) ||
+        gap > 0.9 ||
+        currentWords + segWords > 24 ||
+        (combinedDuration > 8.5 && currentWords >= 6);
+
+      if (shouldFlushBefore) {
+        flushCurrent();
+        current = {
+          start: seg.start,
+          end: seg.end,
+          text: cleanText
+        };
+      } else {
+        current.text = `${current.text} ${cleanText}`.replace(/\s+/g, ' ').trim();
+        current.end = Math.max(current.end, seg.end);
+      }
+    }
+
+    // Also flush immediately if current now ends with sentence punctuation and has >= 3 words
+    if (current && endsWithSentencePunctuation(current.text) && current.text.split(/\s+/).length >= 3) {
+      flushCurrent();
+    }
   }
+
+  flushCurrent();
 
   // Ensure sequential non-overlapping timestamps
   for (let i = 0; i < merged.length - 1; i++) {
     if (merged[i].end > merged[i + 1].start) {
       merged[i].end = Number(
-        Math.max(merged[i].start + 0.8, merged[i + 1].start - 0.1).toFixed(1)
+        Math.max(merged[i].start + 0.6, merged[i + 1].start).toFixed(1)
       );
     }
   }

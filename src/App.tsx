@@ -50,7 +50,7 @@ import {
 const STORAGE_KEYS = {
   SAVED_WORDS: 'tubefluent_saved_words_v1',
   API_KEY: 'tubefluent_gemini_api_key_v1',
-  CUSTOM_LESSONS: 'tubefluent_custom_lessons_v3',
+  CUSTOM_LESSONS: 'tubefluent_custom_lessons_v5',
   THEME: 'tubefluent_theme_v1'
 };
 
@@ -90,8 +90,19 @@ const dedupeByVideo = (lessons: VideoLesson[]) => {
 export function App() {
   const [customLessons, setCustomLessons] = useState<VideoLesson[]>(() => {
     try {
+      localStorage.removeItem('tubefluent_custom_lessons_v1');
+      localStorage.removeItem('tubefluent_custom_lessons_v2');
+      localStorage.removeItem('tubefluent_custom_lessons_v3');
       const raw = localStorage.getItem(STORAGE_KEYS.CUSTOM_LESSONS);
-      return raw ? JSON.parse(raw) : [];
+      if (!raw) return [];
+      const parsed: VideoLesson[] = JSON.parse(raw);
+      return Array.isArray(parsed)
+        ? parsed.filter(
+            (l) =>
+              Array.isArray(l?.subtitles) &&
+              !l.subtitles.some((s) => s.zh?.includes('雙語同步導讀'))
+          )
+        : [];
     } catch {
       return [];
     }
@@ -266,11 +277,11 @@ export function App() {
     setSubtitleSearch('');
   };
 
-  // Exact active subtitle
-  const activeSubtitle = useMemo(
-    () => currentLesson.subtitles.find((s) => currentTime >= s.start && currentTime < s.end),
-    [currentLesson.subtitles, currentTime]
-  );
+  // Exact active subtitle (with 80ms lookahead to compensate for YouTube IFrame postMessage latency)
+  const activeSubtitle = useMemo(() => {
+    const t = currentTime + 0.08;
+    return currentLesson.subtitles.find((s) => t >= s.start && t < s.end);
+  }, [currentLesson.subtitles, currentTime]);
 
   // Latched subtitle: holds the last spoken sentence during pauses and defaults to the first one
   const latchedSubtitle = useMemo(() => {
@@ -637,10 +648,13 @@ export function App() {
                 {latchedSubtitle.zh}
               </p>
               {latchedSubtitle.grammarNote && (
-                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed pt-1">
-                  <span className="font-semibold text-indigo-600 dark:text-indigo-400">語法　</span>
-                  {latchedSubtitle.grammarNote}
-                </p>
+                <div className="mt-2 p-2.5 rounded-xl bg-indigo-50/60 dark:bg-indigo-950/35 border border-indigo-200/60 dark:border-indigo-900/50 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                  <span className="inline-flex items-center gap-1 font-bold text-indigo-600 dark:text-indigo-400 mr-1.5">
+                    <GraduationCap className="w-3.5 h-3.5" aria-hidden="true" />
+                    線上家教隨堂導讀：
+                  </span>
+                  <span>{latchedSubtitle.grammarNote}</span>
+                </div>
               )}
             </div>
 
@@ -649,10 +663,15 @@ export function App() {
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-2.5">
                 {contextualKeywords.map(({ keyword: kw, sentence, isPreview }, idx) => {
                   const isSaved = savedWordSet.has(kw.lemma.toLowerCase());
+                  const isPhrase = kw.pos === 'phr.' || kw.word.trim().includes(' ');
                   return (
                     <article
                       key={`${kw.lemma}-${idx}`}
-                      className={`group/kw relative p-3 rounded-xl border transition hover:border-indigo-400 ${
+                      className={`group/kw relative p-3 rounded-xl border transition ${
+                        isPhrase
+                          ? 'hover:border-emerald-400'
+                          : 'hover:border-indigo-400'
+                      } ${
                         isPreview
                           ? 'border-dashed border-slate-300 dark:border-slate-700'
                           : 'border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/40'
@@ -664,13 +683,27 @@ export function App() {
                         className="block w-full text-left cursor-pointer space-y-1"
                       >
                         <span className="flex flex-wrap items-baseline gap-x-1.5 pr-14">
-                          <span className="text-sm font-extrabold text-indigo-600 dark:text-indigo-400">
+                          <span
+                            className={`text-sm font-extrabold ${
+                              isPhrase
+                                ? 'text-emerald-600 dark:text-emerald-400'
+                                : 'text-indigo-600 dark:text-indigo-400'
+                            }`}
+                          >
                             {kw.lemma}
                           </span>
+                          <span
+                            className={`text-[10px] font-bold px-1.5 py-0.2 rounded ${
+                              isPhrase
+                                ? 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300'
+                                : 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-300'
+                            }`}
+                          >
+                            {isPhrase ? '實用片語' : kw.pos}
+                          </span>
                           <span className="text-[11px] font-mono text-slate-400">{kw.phonetic}</span>
-                          <span className="text-[10px] text-slate-400">{kw.pos}</span>
                         </span>
-                        <span className="block text-xs font-semibold text-slate-800 dark:text-slate-100">
+                        <span className="block text-xs font-semibold text-slate-800 dark:text-slate-100 leading-snug">
                           {kw.meaning}
                         </span>
                         {kw.exampleEn && (

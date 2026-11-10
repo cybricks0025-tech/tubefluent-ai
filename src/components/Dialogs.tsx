@@ -137,21 +137,41 @@ export const WordCardModal: React.FC<WordCardModalProps> = ({
     window.speechSynthesis.speak(u);
   };
 
+  const isPhrase =
+    Boolean(selected) &&
+    (selected!.keyword.pos === 'phr.' || selected!.keyword.word.trim().includes(' '));
+
   return (
     <NativeModalDialog
       open={Boolean(selected)}
       onClose={onClose}
-      title={selected ? `語境字彙精析：${selected.keyword.lemma}` : '語境字彙卡'}
+      title={
+        selected
+          ? `${isPhrase ? '🎯 線上家教片語精講' : '📘 線上家教字彙精析'}：${selected.keyword.lemma}`
+          : '語境字彙卡'
+      }
     >
       {selected && (
         <div className="space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div className="flex flex-wrap items-baseline gap-2">
-              <span className="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
+              <span
+                className={`text-2xl font-extrabold ${
+                  isPhrase
+                    ? 'text-emerald-600 dark:text-emerald-400'
+                    : 'text-indigo-600 dark:text-indigo-400'
+                }`}
+              >
                 {selected.keyword.lemma}
               </span>
-              <span className="text-xs font-bold px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-600 dark:text-indigo-300">
-                {selected.keyword.pos}
+              <span
+                className={`text-xs font-bold px-2 py-0.5 rounded ${
+                  isPhrase
+                    ? 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300'
+                    : 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-300'
+                }`}
+              >
+                {isPhrase ? '道地片語 (phr.)' : selected.keyword.pos}
               </span>
               <span className="text-sm font-mono text-slate-500">
                 {selected.keyword.phonetic}
@@ -166,7 +186,7 @@ export const WordCardModal: React.FC<WordCardModalProps> = ({
             <div className="flex items-center gap-1.5">
               <button
                 type="button"
-                onClick={() => speak(selected.keyword.lemma, 1.0)}
+                onClick={() => speak(selected.keyword.lemma, 0.9)}
                 className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 text-slate-700 dark:text-slate-200 cursor-pointer"
               >
                 <Volume2 className="w-3.5 h-3.5 text-indigo-500" aria-hidden="true" />
@@ -196,11 +216,23 @@ export const WordCardModal: React.FC<WordCardModalProps> = ({
             </div>
           </div>
 
-          <div className="p-3.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-200/70 dark:border-indigo-900/60">
-            <p className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 mb-1">
-              在該句語境下的精準解釋：
+          <div
+            className={`p-3.5 rounded-xl border ${
+              isPhrase
+                ? 'bg-emerald-50/70 dark:bg-emerald-950/35 border-emerald-200/70 dark:border-emerald-900/60'
+                : 'bg-indigo-50/70 dark:bg-indigo-950/40 border-indigo-200/70 dark:border-indigo-900/60'
+            }`}
+          >
+            <p
+              className={`text-xs font-semibold mb-1 ${
+                isPhrase
+                  ? 'text-emerald-700 dark:text-emerald-400'
+                  : 'text-indigo-600 dark:text-indigo-400'
+              }`}
+            >
+              👩‍🏫 線上家教語境精講（用法、字根與母語語感）：
             </p>
-            <p className="text-base font-bold text-slate-900 dark:text-white">
+            <p className="text-[15px] font-bold leading-relaxed text-slate-900 dark:text-white">
               {selected.keyword.meaning}
             </p>
           </div>
