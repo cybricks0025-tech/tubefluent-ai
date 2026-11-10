@@ -121,8 +121,8 @@ export async function analyzeTranscriptWithGemini({
   const ai = new GoogleGenAI({ apiKey: resolvedKey });
   const focusInstruction = FOCUS_PROMPTS[focusMode] || FOCUS_PROMPTS['tech-interview'];
 
-  // Split sentences into batches of 28 for reliable structured output
-  const BATCH_SIZE = 28;
+  // Split sentences into batches of 40 and run with max concurrency 2 to respect Free Tier RPM limits
+  const BATCH_SIZE = 40;
   const batches = [];
   for (let i = 0; i < sentences.length; i += BATCH_SIZE) {
     batches.push(sentences.slice(i, i + BATCH_SIZE));
@@ -137,20 +137,21 @@ ${JSON.stringify(sentences.filter((_, i) => i % Math.max(1, Math.floor(sentences
       config: {
         responseMimeType: 'application/json',
         responseSchema: SUMMARY_AND_QUIZ_SCHEMA,
-        temperature: 0.25
+        temperature: 0.25,
+        thinkingConfig: { thinkingBudget: 0 }
       }
     })
     .then((r) => JSON.parse(r.text));
 
-  const batchPromises = batches.map(async (batch) => {
+  const analyzeSingleBatch = async (batch) => {
     const prompt = `你是一位頂尖、富有親和力的線上真人英文家教（帶領台灣學生一起看 YouTube 影片學道地英文）。請針對以下「${videoTitle}」的字幕批次，輸出 100% 結構化的雙語字幕與家教精選單字／片語解析。
 【專項學習模式】：${focusInstruction}
 【嚴格家教標準】：
-1. 必須保留輸入陣列中每一句的 id、start、end，不可遺漏任何一句。
-2. 為每一句提供自然流暢的繁體中文翻譯 (zh)。
-3. 為每一句提供像真人英文家教般的「隨堂導讀 (grammarNote)」，點出該句的關鍵句型結構、母語語感轉折、或連音（Linking）跟讀技巧，切勿只重複時間軸。
-4. 每句挑選 0~2 個真正值得學的「實用道地片語／慣用語 (pos 標為 phr.)」或「B2–C2 進階／專業單字」放入 keywords（且 word 必須是該句 en 中實際出現的完整子字串）。若該句極短且全為國小國中基礎字（如 Hi everyone / Thank you），keywords 請給空陣列 []，絕不要亂標簡單字！
-5. 每個 keyword 的 meaning 請提供「語境精準解釋＋搭配詞或字根記憶提示」。
+1. 必須嚴格保留輸入陣列中每一句的 id、start、end 與 en，絕對不可遺漏、合併或更改 id！輸出陣列長度必須與輸入完全相同（共 ${batch.length} 句）。
+2. 為每一句提供自然流暢且精準對應該句 en 的繁體中文翻譯 (zh)。
+3. 為每一句提供像真人英文家教般的「隨堂導讀 (grammarNote)」，專門點出「該句本身」的關鍵句型結構、母語語感轉折、或連音（Linking）跟讀技巧。
+4. 每句挑選 0~2 個真正出現在「該句 en 中」的「實用道地片語／慣用語 (pos 標為 phr.)」或「B2–C2 進階／專業單字」放入 keywords（word 必須是該句 en 中實際出現的完整子字串！）。若該句極短且全為國小國中基礎字（如 Hi everyone / Thank you），keywords 請給空陣列 []，絕不要亂標簡單字！
+5. 每個 keyword 的 meaning 請提供「該單字／片語本身的語境精準中文解釋＋搭配詞或字根記憶提示」，絕不可直接複製整句中文字幕！
 
 待解析批次 JSON：
 ${JSON.stringify(batch)}`;
@@ -161,18 +162,59 @@ ${JSON.stringify(batch)}`;
       config: {
         responseMimeType: 'application/json',
         responseSchema: SUBTITLE_BATCH_SCHEMA,
-        temperature: 0.2
+        temperature: 0.15,
+        maxOutputTokens: 65536,
+        thinkingConfig: { thinkingBudget: 0 }
       }
     });
     const parsed = JSON.parse(res.text);
-    return parsed.subtitles || [];
-  });
+    const aiSubs = Array.isArray(parsed.subtitles) ? parsed.subtitles : [];
 
-  const [summaryAndQuiz, ...subtitleChunks] = await Promise.all([
-    summaryPromise,
-    ...batchPromises
-  ]);
+    // Strictly lock each returned item to its original sentence so subtitles & explanations NEVER drift!
+    return batch.map((orig, idx) => {
+      const matched =
+        aiSubs.find((item) => item.id === orig.id) ||
+        aiSubs.find(
+          (item) =>
+            typeof item.en === 'string' &&
+            item.en.trim().toLowerCase().slice(0, 20) === orig.en.trim().toLowerCase().slice(0, 20)
+        ) ||
+        aiSubs[idx] ||
+        {};
 
+      const zhText = (matched.zh || orig.en).trim();
+      const rawKws = Array.isArray(matched.keywords) ? matched.keywords : [];
+      const validKeywords = rawKws.filter((kw) => {
+        if (!kw || !kw.word || !kw.meaning) return false;
+        const w = kw.word.trim();
+        return orig.en.toLowerCase().includes(w.toLowerCase()) && kw.meaning.trim() !== zhText;
+      });
+
+      const grammarNote =
+        matched.grammarNote && matched.grammarNote.trim().length > 6
+          ? matched.grammarNote.trim()
+          : buildTutorGrammarNote(orig.en, zhText, validKeywords);
+
+      return {
+        id: orig.id,
+        start: orig.start,
+        end: orig.end,
+        en: orig.en,
+        zh: zhText,
+        grammarNote,
+        keywords: validKeywords
+      };
+    });
+  };
+
+  const subtitleChunks = [];
+  for (let i = 0; i < batches.length; i += 2) {
+    const pair = batches.slice(i, i + 2);
+    const pairResults = await Promise.all(pair.map((b) => analyzeSingleBatch(b)));
+    subtitleChunks.push(...pairResults);
+  }
+
+  const summaryAndQuiz = await summaryPromise;
   const allSubtitles = subtitleChunks.flat().sort((a, b) => a.id - b.id);
 
   return {
@@ -180,6 +222,21 @@ ${JSON.stringify(batch)}`;
     subtitles: allSubtitles,
     quiz: summaryAndQuiz.quiz
   };
+}
+
+function parseServerTimestamp(raw, fallbackSec = 0) {
+  if (typeof raw === 'number' && !Number.isNaN(raw)) return Math.max(0, Number(raw.toFixed(1)));
+  if (typeof raw !== 'string') return fallbackSec;
+  const s = raw.trim();
+  const m = s.match(/^(\d+):(\d{1,2})(?::(\d{1,2}(?:\.\d+)?))?$/);
+  if (m) {
+    if (m[3] !== undefined) {
+      return Number((parseInt(m[1], 10) * 3600 + parseInt(m[2], 10) * 60 + parseFloat(m[3])).toFixed(1));
+    }
+    return Number((parseInt(m[1], 10) * 60 + parseFloat(m[2])).toFixed(1));
+  }
+  const n = parseFloat(s);
+  return Number.isNaN(n) ? fallbackSec : Math.max(0, Number(n.toFixed(1)));
 }
 
 export async function analyzeYoutubeVideoDirectlyWithGemini({
@@ -200,26 +257,43 @@ export async function analyzeYoutubeVideoDirectlyWithGemini({
   const focusInstruction = FOCUS_PROMPTS[focusMode] || FOCUS_PROMPTS['tech-interview'];
   const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
-  const compactSchema = {
+  const directVideoSchema = {
     type: Type.OBJECT,
     properties: {
-      summary: SUMMARY_AND_QUIZ_SCHEMA.properties.summary,
       subtitles: {
         type: Type.ARRAY,
         items: {
           type: Type.OBJECT,
           properties: {
-            start: { type: Type.NUMBER },
-            end: { type: Type.NUMBER },
+            startTime: { type: Type.STRING, description: 'MM:SS timestamp e.g. 00:04' },
+            endTime: { type: Type.STRING, description: 'MM:SS timestamp e.g. 00:08' },
             en: { type: Type.STRING },
-            zh: { type: Type.STRING }
+            zh: { type: Type.STRING },
+            note: { type: Type.STRING },
+            words: {
+              type: Type.ARRAY,
+              items: {
+                type: Type.OBJECT,
+                properties: {
+                  w: { type: Type.STRING },
+                  l: { type: Type.STRING },
+                  p: { type: Type.STRING },
+                  ph: { type: Type.STRING },
+                  m: { type: Type.STRING },
+                  exEn: { type: Type.STRING },
+                  exZh: { type: Type.STRING }
+                },
+                required: ['w', 'l', 'p', 'ph', 'm', 'exEn', 'exZh']
+              }
+            }
           },
-          required: ['start', 'end', 'en', 'zh']
+          required: ['startTime', 'endTime', 'en', 'zh', 'note', 'words']
         }
       },
+      summary: SUMMARY_AND_QUIZ_SCHEMA.properties.summary,
       quiz: SUMMARY_AND_QUIZ_SCHEMA.properties.quiz
     },
-    required: ['summary', 'subtitles', 'quiz']
+    required: ['subtitles', 'summary', 'quiz']
   };
 
   const response = await ai.models.generateContent({
@@ -232,41 +306,55 @@ export async function analyzeYoutubeVideoDirectlyWithGemini({
         }
       },
       {
-        text: `請直接聽譯這支 YouTube 影片「${videoTitle}」，完整擷取核心英文句子（含準確的 start 與 end 秒數）、流暢繁體中文翻譯 (zh)、重點摘要 (summary) 與 4 題隨堂測驗 (quiz)。
+        text: `你是一位頂尖的線上真人英文家教。請直接聆聽並觀看這支 YouTube 影片的真實音軌與畫面，從頭依時間軸順序列出講者實際說出的每一句完整英文原句 (en)、對應的 "MM:SS" 時間戳 (startTime, endTime)、繁體中文翻譯 (zh)、針對該句本身的家教隨堂導讀 (note)，以及真正出現在該句 en 中的 0～2 個道地片語或進階單字 (words)。
 【專項學習模式】：${focusInstruction}`
       }
     ],
     config: {
       responseMimeType: 'application/json',
-      responseSchema: compactSchema,
-      temperature: 0.2,
+      responseSchema: directVideoSchema,
+      temperature: 0.15,
       maxOutputTokens: 65536,
       mediaResolution: 'MEDIA_RESOLUTION_LOW',
-      thinkingConfig: { thinkingBudget: 0 }
+      thinkingConfig: { thinkingBudget: 1024 }
     }
   });
 
   const parsed = JSON.parse(response.text);
   const rawSubs = Array.isArray(parsed.subtitles) ? parsed.subtitles : [];
+  let cursor = 0;
   parsed.subtitles = rawSubs.map((s, idx) => {
-    const rawKws = selectTutorKeywordsForSentence(s.en, 2) || [];
-    const keywords = rawKws.map((kw) => ({
-      word: kw.word,
-      lemma: kw.lemma,
-      pos: kw.pos,
-      phonetic: kw.phonetic || `/${kw.lemma}/`,
-      meaning: kw.meaning || `句中進階核心詞（${s.zh}）`,
-      level: kw.level || 'B2/C1 職場專業',
-      exampleEn: kw.exampleEn,
-      exampleZh: kw.exampleZh || `在專業溝通語境中，精準運用「${kw.lemma}」能讓表達更具說服力。`
-    }));
+    const enText = (s.en || '').trim();
+    const zhText = (s.zh || s.en || '').trim();
+    const start = parseServerTimestamp(s.startTime ?? s.start, cursor);
+    let end = parseServerTimestamp(s.endTime ?? s.end, start + 3.5);
+    if (end <= start) end = Number((start + 3.5).toFixed(1));
+    cursor = end;
+
+    const rawWords = Array.isArray(s.words) ? s.words : [];
+    const keywords = rawWords
+      .filter((kw) => kw && kw.w && kw.m && enText.toLowerCase().includes(kw.w.trim().toLowerCase()))
+      .map((kw) => ({
+        word: kw.w.trim(),
+        lemma: (kw.l || kw.w).trim().toLowerCase(),
+        pos: kw.p || 'n./v.',
+        phonetic: kw.ph || `/${(kw.l || kw.w).trim().toLowerCase()}/`,
+        meaning: kw.m.trim(),
+        level: kw.p === 'phr.' ? '道地實用片語' : 'B2/C1 職場專業',
+        exampleEn: kw.exEn || enText,
+        exampleZh: kw.exZh || zhText
+      }));
+
     return {
       id: idx + 1,
-      start: Number(Number(s.start || 0).toFixed(1)),
-      end: Number(Number(s.end || (s.start || 0) + 3.5).toFixed(1)),
-      en: s.en,
-      zh: s.zh || s.en,
-      grammarNote: buildTutorGrammarNote(s.en, keywords),
+      start,
+      end,
+      en: enText,
+      zh: zhText,
+      grammarNote:
+        s.note && s.note.trim().length > 6
+          ? s.note.trim()
+          : buildTutorGrammarNote(enText, zhText, keywords),
       keywords
     };
   });

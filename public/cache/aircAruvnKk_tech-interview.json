@@ -109,16 +109,6 @@
           "level": "B2 進階形容詞",
           "exampleEn": "Despite entirely different pixel values, all three images remain instantly recognizable as the number three.",
           "exampleZh": "儘管像素數值截然不同，這三張影像依然能瞬間被辨識為數字 3。"
-        },
-        {
-          "word": "specific",
-          "lemma": "specific",
-          "pos": "adj.",
-          "phonetic": "/specific/",
-          "meaning": "具體",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"specific\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「具體（specific）」能讓表達更具說服力。"
         }
       ],
       "id": 4,
@@ -138,30 +128,9 @@
       "end": 33,
       "en": "The particular light-sensitive cells in your eye that are firing when you.",
       "zh": "當您觀察時，眼睛中的特殊光敏細胞會放電。",
-      "keywords": [
-        {
-          "word": "light-sensitive",
-          "lemma": "light-sensitive",
-          "pos": "adj.",
-          "phonetic": "/light-sensitive/",
-          "meaning": "受光影響或對光敏感。（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"light-sensitive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「受光影響或對光敏感。（light-sensitive）」能讓表達更具說服力。"
-        },
-        {
-          "word": "particular",
-          "lemma": "particular",
-          "pos": "n./v.",
-          "phonetic": "/particular/",
-          "meaning": "特別",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"particular\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「特別（particular）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 6,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「light-sensitive (adj. 受光影響或對光敏感。)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 33,
@@ -187,16 +156,6 @@
           "level": "C1 神經科學與 AI 術語",
           "exampleEn": "Convolutional neural networks were originally inspired by how the biological visual cortex processes edges.",
           "exampleZh": "卷積神經網路最初的靈感，正是來自生物「視覺皮質」處理邊緣特徵的方式。"
-        },
-        {
-          "word": "crazy-smart",
-          "lemma": "crazy-smart",
-          "pos": "n./v.",
-          "phonetic": "/crazy-smart/",
-          "meaning": "瘋狂的聰明",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"crazy-smart\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「瘋狂的聰明（crazy-smart）」能讓表達更具說服力。"
         }
       ],
       "id": 8,
@@ -285,60 +244,18 @@
       "end": 70.9,
       "en": "Unless you've been living under a rock, I think I hardly need to motivate the relevance.",
       "zh": "除非你一直住在岩石下，否則我想我幾乎不需要激發相關性。",
-      "keywords": [
-        {
-          "word": "relevance",
-          "lemma": "relevance",
-          "pos": "n.",
-          "phonetic": "/relevance/",
-          "meaning": "相關或相關的屬性或狀態。（字首 re- 表「重新、反覆」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"relevance\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「相關或相關的屬性或狀態。（relevance）」能讓表達更具說服力。"
-        },
-        {
-          "word": "motivate",
-          "lemma": "motivate",
-          "pos": "v.",
-          "phonetic": "/motivate/",
-          "meaning": "激勵",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"motivate\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「激勵（motivate）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 13,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「relevance (n. 相關或相關的屬性或狀態。)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 70.9,
       "end": 74.6,
       "en": "And importance of machine learning and neural networks to the present and to the future.",
       "zh": "以及機器學習和神經網路對現在和未來的重要性。",
-      "keywords": [
-        {
-          "word": "importance",
-          "lemma": "importance",
-          "pos": "n.",
-          "phonetic": "/importance/",
-          "meaning": "重要性（否定／反向字首搭配核心字根）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"importance\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重要性（importance）」能讓表達更具說服力。"
-        },
-        {
-          "word": "networks",
-          "lemma": "network",
-          "pos": "n./v.",
-          "phonetic": "/network/",
-          "meaning": "網路",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"network\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「網路（network）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 14,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「importance (n. 重要性)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 75.1,
@@ -354,108 +271,34 @@
       "end": 84.5,
       "en": "Assuming no background, and to help visualize what it's doing, not as a buzzword but as a piece of math.",
       "zh": "假設沒有背景，並幫助視覺化它正在做什麼，不是作為一個流行詞，而是作為一段數學。",
-      "keywords": [
-        {
-          "word": "visualize",
-          "lemma": "visualize",
-          "pos": "v.",
-          "phonetic": "/visualize/",
-          "meaning": "想像",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"visualize\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「想像（visualize）」能讓表達更具說服力。"
-        },
-        {
-          "word": "background",
-          "lemma": "background",
-          "pos": "n./v.",
-          "phonetic": "/background/",
-          "meaning": "背景",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"background\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「背景（background）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 16,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「visualize (v. 想像)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 85,
       "end": 88.8,
       "en": "My hope is that you come away feeling like the structure itself is motivated.",
       "zh": "我希望你在離開時感覺這個結構本身是有動力的。",
-      "keywords": [
-        {
-          "word": "structure",
-          "lemma": "structure",
-          "pos": "n./v.",
-          "phonetic": "/structure/",
-          "meaning": "結構",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"structure\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「結構（structure）」能讓表達更具說服力。"
-        },
-        {
-          "word": "motivated",
-          "lemma": "motivated",
-          "pos": "v./adj.",
-          "phonetic": "/motivated/",
-          "meaning": "動機",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"motivated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「動機（motivated）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 17,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「structure (n./v. 結構)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 88.8,
       "end": 94.3,
       "en": "And to feel like you know what it means when you read, or you hear about a neural network quote-unquote learning.",
       "zh": "當你閱讀或聽到神經網路引用-非引用學習時，感覺你知道它意味著什麼。",
-      "keywords": [
-        {
-          "word": "quote-unquote",
-          "lemma": "quote-unquote",
-          "pos": "n./v.",
-          "phonetic": "/quote-unquote/",
-          "meaning": "引用-取消引用",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"quote-unquote\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「引用-取消引用（quote-unquote）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 18,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「quote-unquote (n./v. 引用-取消引用)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 95.4,
       "end": 100.3,
       "en": "This video is just going to be devoted to the structure component of that, and the following one is going to tackle learning.",
       "zh": "這段影片將專門討論其結構部分，下面的影片將討論學習問題。",
-      "keywords": [
-        {
-          "word": "structure",
-          "lemma": "structure",
-          "pos": "n./v.",
-          "phonetic": "/structure/",
-          "meaning": "結構",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"structure\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「結構（structure）」能讓表達更具說服力。"
-        },
-        {
-          "word": "component",
-          "lemma": "component",
-          "pos": "adj.",
-          "phonetic": "/component/",
-          "meaning": "組件（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"component\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「組件（component）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 19,
       "grammarNote": "🔊 連音跟讀：注意句中「going to」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -474,16 +317,6 @@
           "level": "B2 認知與 AI 核心動詞",
           "exampleEn": "A well-trained neural network can recognize handwritten digits with over 99% accuracy.",
           "exampleZh": "訓練精良的神經網路能以超過 99% 的準確率辨識手寫數字。"
-        },
-        {
-          "word": "handwritten",
-          "lemma": "handwritten",
-          "pos": "v.",
-          "phonetic": "/handwritten/",
-          "meaning": "手寫",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"handwritten\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「手寫（handwritten）」能讓表達更具說服力。"
         }
       ],
       "id": 20,
@@ -504,16 +337,6 @@
           "level": "實用口語片語",
           "exampleEn": "Commit to practicing for at least twenty hours so you stick with it past the frustration barrier.",
           "exampleZh": "承諾自己至少練習二十小時，讓自己能堅持度過初期的挫折門檻。"
-        },
-        {
-          "word": "introducing",
-          "lemma": "introducing",
-          "pos": "v./n.",
-          "phonetic": "/introducing/",
-          "meaning": "介紹（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"introducing\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「介紹（introducing）」能讓表達更具說服力。"
         }
       ],
       "id": 21,
@@ -533,48 +356,16 @@
       "end": 123.1,
       "en": "Resources where you can learn more, and where you can download the code that does this and play with it on your own computer.",
       "zh": "您可以在其中了解更多信息，也可以下載執行此操作的程式碼並在您自己的電腦上使用它的資源。",
-      "keywords": [
-        {
-          "word": "download",
-          "lemma": "download",
-          "pos": "n./v.",
-          "phonetic": "/download/",
-          "meaning": "將檔案傳輸到本機。",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"download\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「將檔案傳輸到本機。（download）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 23,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「download (n./v. 將檔案傳輸到本機。)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 125,
       "end": 132.3,
       "en": "There are many many variants of neural networks, and in recent years there's been sort of a boom in research towards these variants.",
       "zh": "神經網路有很多變體，近年來對這些變體的研究出現了一定程度的繁榮。",
-      "keywords": [
-        {
-          "word": "variants",
-          "lemma": "variant",
-          "pos": "adj.",
-          "phonetic": "/variant/",
-          "meaning": "變體",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"variant\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「變體（variant）」能讓表達更具說服力。"
-        },
-        {
-          "word": "networks",
-          "lemma": "network",
-          "pos": "n./v.",
-          "phonetic": "/network/",
-          "meaning": "網路",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"network\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「網路（network）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 24,
       "grammarNote": "🔊 連音跟讀：注意句中「sort of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -583,28 +374,7 @@
       "end": 139.2,
       "en": "But in these two introductory videos you and I are just going to look at the simplest plain vanilla form with no added frills.",
       "zh": "但在這兩個介紹影片中，你和我只是要看看最簡單的普通形式，沒有任何額外的裝飾。",
-      "keywords": [
-        {
-          "word": "introductory",
-          "lemma": "introductory",
-          "pos": "adj.",
-          "phonetic": "/introductory/",
-          "meaning": "介紹（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"introductory\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「介紹（introductory）」能讓表達更具說服力。"
-        },
-        {
-          "word": "simplest",
-          "lemma": "simplest",
-          "pos": "n./v.",
-          "phonetic": "/simplest/",
-          "meaning": "最簡單的",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"simplest\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「最簡單的（simplest）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 25,
       "grammarNote": "🔊 連音跟讀：注意句中「going to」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -617,22 +387,12 @@
         {
           "word": "prerequisite",
           "lemma": "prerequisite",
-          "pos": "n./v.",
-          "phonetic": "/prerequisite/",
-          "meaning": "先決條件（字首 pre-/pro- 表「預先、向前推進」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"prerequisite\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「先決條件（prerequisite）」能讓表達更具說服力。"
-        },
-        {
-          "word": "necessary",
-          "lemma": "necessary",
-          "pos": "adj.",
-          "phonetic": "/necessary/",
-          "meaning": "necessary",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"necessary\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「necessary（necessary）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/priˈrɛkwəzət/",
+          "meaning": "先決條件、必備前提；先修課程（字首 pre-「預先」+ requisite「必要的」，常搭配 a prerequisite for/to）",
+          "level": "C1 學術與職場核心字",
+          "exampleEn": "Clear problem definition is an essential prerequisite for writing clean, maintainable code.",
+          "exampleZh": "清晰的問題定義是撰寫乾淨、易維護程式碼的必備「先決條件」。"
         }
       ],
       "id": 26,
@@ -643,30 +403,9 @@
       "end": 148.7,
       "en": "Modern variants, and trust me it still has plenty of complexity for us to wrap our minds around.",
       "zh": "現代變體，相信我，它仍然有足夠的複雜性供我們思考。",
-      "keywords": [
-        {
-          "word": "complexity",
-          "lemma": "complexity",
-          "pos": "n.",
-          "phonetic": "/complexity/",
-          "meaning": "複雜性（字首 co-/con- 表「共同、整合」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"complexity\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「複雜性（complexity）」能讓表達更具說服力。"
-        },
-        {
-          "word": "variants",
-          "lemma": "variant",
-          "pos": "adj.",
-          "phonetic": "/variant/",
-          "meaning": "變體",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"variant\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「變體（variant）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 27,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「complexity (n. 複雜性)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 149.1,
@@ -683,16 +422,6 @@
           "level": "B2 認知與 AI 核心動詞",
           "exampleEn": "A well-trained neural network can recognize handwritten digits with over 99% accuracy.",
           "exampleZh": "訓練精良的神經網路能以超過 99% 的準確率辨識手寫數字。"
-        },
-        {
-          "word": "handwritten",
-          "lemma": "handwritten",
-          "pos": "v.",
-          "phonetic": "/handwritten/",
-          "meaning": "手寫",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"handwritten\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「手寫（handwritten）」能讓表達更具說服力。"
         }
       ],
       "id": 28,
@@ -721,30 +450,9 @@
       "end": 168.5,
       "en": "As the name suggests neural networks are inspired by the brain, but let's break that down.",
       "zh": "顧名思義，神經網路受到大腦的啟發，但讓我們來分解一下。",
-      "keywords": [
-        {
-          "word": "suggests",
-          "lemma": "suggest",
-          "pos": "n./v.",
-          "phonetic": "/suggest/",
-          "meaning": "建議",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"suggest\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「建議（suggest）」能讓表達更具說服力。"
-        },
-        {
-          "word": "networks",
-          "lemma": "network",
-          "pos": "n./v.",
-          "phonetic": "/network/",
-          "meaning": "網路",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"network\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「網路（network）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 31,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「suggest (n./v. 建議)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 168.5,
@@ -755,12 +463,12 @@
         {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 32,
@@ -775,36 +483,25 @@
         {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 33,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n./v. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 178,
       "end": 180.4,
       "en": "Specifically a number between 0 and 1.",
       "zh": "具體來說是 0 到 1 之間的數字。",
-      "keywords": [
-        {
-          "word": "Specifically",
-          "lemma": "specifically",
-          "pos": "adv.",
-          "phonetic": "/specifically/",
-          "meaning": "具體來說",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"specifically\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「具體來說（specifically）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 34,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「specifically (adv. 具體來說)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 180.7,
@@ -822,28 +519,18 @@
       "zh": "例如，網路從對應的一堆神經元開始。",
       "keywords": [
         {
-          "word": "corresponding",
-          "lemma": "corresponding",
-          "pos": "v./n.",
-          "phonetic": "/corresponding/",
-          "meaning": "對應（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"corresponding\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「對應（corresponding）」能讓表達更具說服力。"
-        },
-        {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 36,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「corresponding (v./n. 對應)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 188.8,
@@ -854,12 +541,12 @@
         {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 37,
@@ -870,28 +557,7 @@
       "end": 199.4,
       "en": "Each one of these holds a number that represents the grayscale value of the.",
       "zh": "其中每一個都包含一個代表灰階值的數字。",
-      "keywords": [
-        {
-          "word": "represents",
-          "lemma": "represent",
-          "pos": "adj.",
-          "phonetic": "/represent/",
-          "meaning": "代表（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"represent\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「代表（represent）」能讓表達更具說服力。"
-        },
-        {
-          "word": "grayscale",
-          "lemma": "grayscale",
-          "pos": "n./v.",
-          "phonetic": "/grayscale/",
-          "meaning": "灰階",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"grayscale\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「灰階（grayscale）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 38,
       "grammarNote": "🔊 連音跟讀：注意句中「one of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -900,18 +566,7 @@
       "end": 204.4,
       "en": "Corresponding pixel, ranging from 0 for black pixels up to 1 for white pixels.",
       "zh": "對應像素，範圍從黑色像素的 0 到白色像素的 1。",
-      "keywords": [
-        {
-          "word": "Corresponding",
-          "lemma": "corresponding",
-          "pos": "v./n.",
-          "phonetic": "/corresponding/",
-          "meaning": "對應（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"corresponding\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「對應（corresponding）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 39,
       "grammarNote": "📐 句型解析：句中運用「, V-ing...」現在分詞構句，不需額外連接詞即可流暢描繪伴隨發生的動作或結果"
     },
@@ -922,6 +577,16 @@
       "zh": "神經元內的這個數字稱為它的活化。",
       "keywords": [
         {
+          "word": "neuron",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
+        },
+        {
           "word": "activation",
           "lemma": "activation",
           "pos": "n.",
@@ -930,20 +595,10 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "neuron",
-          "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
         }
       ],
       "id": 40,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「activation (n. 激活值、活化程度)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 208.3,
@@ -952,6 +607,16 @@
       "zh": "這裡你可能想到的圖像是，當每個神經元的活化值很高時，它就會被點亮。",
       "keywords": [
         {
+          "word": "neuron",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
+        },
+        {
           "word": "activation",
           "lemma": "activation",
           "pos": "n.",
@@ -960,20 +625,10 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "neuron",
-          "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
         }
       ],
       "id": 41,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「activation (n. 激活值、活化程度)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 216.7,
@@ -984,12 +639,12 @@
         {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 42,
@@ -1002,24 +657,14 @@
       "zh": "現在跳到最後一層，它有 10 個神經元，每個神經元代表一個數字。",
       "keywords": [
         {
-          "word": "representing",
-          "lemma": "representing",
-          "pos": "v./n.",
-          "phonetic": "/representing/",
-          "meaning": "再次或重新呈現；借助某物來代替…來呈現；展示其對應物或圖像；來代表。（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"representing\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「再次或重新呈現；借助某物來代替…來呈現；展示其對應物或圖像；來代表。（representing）」能讓表達更具說服力。"
-        },
-        {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 43,
@@ -1044,12 +689,12 @@
         {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 44,
@@ -1060,30 +705,9 @@
       "end": 242.1,
       "en": "Represents how much the system thinks that a given image corresponds with a given digit.",
       "zh": "表示系統認為給定影像與給定數字的對應程度。",
-      "keywords": [
-        {
-          "word": "Represents",
-          "lemma": "represent",
-          "pos": "adj.",
-          "phonetic": "/represent/",
-          "meaning": "代表（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"represent\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「代表（represent）」能讓表達更具說服力。"
-        },
-        {
-          "word": "corresponds",
-          "lemma": "correspond",
-          "pos": "n./v.",
-          "phonetic": "/correspond/",
-          "meaning": "對應（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"correspond\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「對應（correspond）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 45,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「represent (adj. 代表)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 243,
@@ -1131,24 +755,14 @@
       "zh": "在這個網路中，我選擇了兩個隱藏層，每個隱藏層有 16 個神經元，誠然，這是一種任意選擇。",
       "keywords": [
         {
-          "word": "admittedly",
-          "lemma": "admittedly",
-          "pos": "adv.",
-          "phonetic": "/admittedly/",
-          "meaning": "誠然",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"admittedly\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「誠然（admittedly）」能讓表達更具說服力。"
-        },
-        {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 48,
@@ -1159,28 +773,7 @@
       "end": 264.6,
       "en": "To be honest I chose two layers based on how I want to motivate the structure in.",
       "zh": "老實說，我根據我想要如何激發結構的方式選擇了兩層。",
-      "keywords": [
-        {
-          "word": "motivate",
-          "lemma": "motivate",
-          "pos": "v.",
-          "phonetic": "/motivate/",
-          "meaning": "激勵",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"motivate\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「激勵（motivate）」能讓表達更具說服力。"
-        },
-        {
-          "word": "structure",
-          "lemma": "structure",
-          "pos": "n./v.",
-          "phonetic": "/structure/",
-          "meaning": "結構",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"structure\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「結構（structure）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 49,
       "grammarNote": "🔊 連音跟讀：注意句中「want to」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -1198,28 +791,7 @@
       "end": 272.3,
       "en": "In practice there is a lot of room for experiment with a specific structure here.",
       "zh": "在實踐中，這裡的特定結構有很大的實驗空間。",
-      "keywords": [
-        {
-          "word": "experiment",
-          "lemma": "experiment",
-          "pos": "n.",
-          "phonetic": "/experiment/",
-          "meaning": "實驗",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"experiment\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「實驗（experiment）」能讓表達更具說服力。"
-        },
-        {
-          "word": "practice",
-          "lemma": "practice",
-          "pos": "n./v.",
-          "phonetic": "/practice/",
-          "meaning": "practice",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"practice\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「practice（practice）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 51,
       "grammarNote": "🔊 連音跟讀：注意句中「a lot of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -1238,16 +810,6 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "operates",
-          "lemma": "operate",
-          "pos": "v.",
-          "phonetic": "/operate/",
-          "meaning": "operate",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"operate\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「operate（operate）」能讓表達更具說服力。"
         }
       ],
       "id": 52,
@@ -1268,16 +830,6 @@
           "level": "B2 多義核心字彙",
           "exampleEn": "Life changes so rapidly that it can be difficult to process everything at once.",
           "exampleZh": "生活變化得如此迅速，有時讓人很難一下子消化所有改變。"
-        },
-        {
-          "word": "mechanism",
-          "lemma": "mechanism",
-          "pos": "n.",
-          "phonetic": "/mechanism/",
-          "meaning": "機制",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"mechanism\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「機制（mechanism）」能讓表達更具說服力。"
         }
       ],
       "id": 53,
@@ -1310,28 +862,18 @@
       "zh": "這與神經元生物網路中的某些神經元組放電導致某些其他神經元放電的方式大致相似。",
       "keywords": [
         {
-          "word": "biological",
-          "lemma": "biological",
-          "pos": "adj.",
-          "phonetic": "/biological/",
-          "meaning": "生物",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"biological\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「生物（biological）」能讓表達更具說服力。"
-        },
-        {
-          "word": "analogous",
-          "lemma": "analogous",
-          "pos": "adj.",
-          "phonetic": "/analogous/",
-          "meaning": "類似的（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"analogous\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「類似的（analogous）」能讓表達更具說服力。"
+          "word": "neurons",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 55,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「biological (adj. 生物)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 298.1,
@@ -1362,22 +904,12 @@
         {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
-        },
-        {
-          "word": "lighting",
-          "lemma": "lighting",
-          "pos": "v./n.",
-          "phonetic": "/lighting/",
-          "meaning": "光",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"lighting\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「光（lighting）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 57,
@@ -1398,16 +930,6 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "brightness",
-          "lemma": "brightness",
-          "pos": "n.",
-          "phonetic": "/brightness/",
-          "meaning": "亮度",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"brightness\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「亮度（brightness）」能讓表達更具說服力。"
         }
       ],
       "id": 58,
@@ -1429,78 +951,36 @@
       "zh": "輸出層最亮的神經元是網路的選擇，可以說，該影像代表什麼數字。",
       "keywords": [
         {
-          "word": "represents",
-          "lemma": "represent",
-          "pos": "adj.",
-          "phonetic": "/represent/",
-          "meaning": "代表（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"represent\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「代表（represent）」能讓表達更具說服力。"
-        },
-        {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 60,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「represent (adj. 代表)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 332.6,
       "end": 336.3,
       "en": "And before jumping into the math for how one layer influences the next.",
       "zh": "在開始計算一層如何影響下一層之前。",
-      "keywords": [
-        {
-          "word": "influences",
-          "lemma": "influence",
-          "pos": "n.",
-          "phonetic": "/influence/",
-          "meaning": "影響力（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"influence\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「影響力（influence）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 61,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「influence (n. 影響力)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 336.3,
       "end": 343.5,
       "en": "Or how training works, let's just talk about why it's even reasonable to expect a layered structure like this to behave intelligently.",
       "zh": "或訓練是如何進行的，我們只討論為什麼期望這樣的分層結構能夠聰明地運作是合理的。",
-      "keywords": [
-        {
-          "word": "reasonable",
-          "lemma": "reasonable",
-          "pos": "adj.",
-          "phonetic": "/reasonable/",
-          "meaning": "合理（字首 re- 表「重新、反覆」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"reasonable\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「合理（reasonable）」能讓表達更具說服力。"
-        },
-        {
-          "word": "intelligently",
-          "lemma": "intelligently",
-          "pos": "adv.",
-          "phonetic": "/intelligently/",
-          "meaning": "聰明地（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"intelligently\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「聰明地（intelligently）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 62,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「reasonable (adj. 合理)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 344.1,
@@ -1535,16 +1015,6 @@
           "level": "B2 認知與 AI 核心動詞",
           "exampleEn": "A well-trained neural network can recognize handwritten digits with over 99% accuracy.",
           "exampleZh": "訓練精良的神經網路能以超過 99% 的準確率辨識手寫數字。"
-        },
-        {
-          "word": "components",
-          "lemma": "component",
-          "pos": "adj.",
-          "phonetic": "/component/",
-          "meaning": "組件（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"component\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「組件（component）」能讓表達更具說服力。"
         }
       ],
       "id": 65,
@@ -1583,16 +1053,6 @@
           "level": "外商會議必備片語",
           "exampleEn": "Let's break down this complex skill into four manageable components.",
           "exampleZh": "讓我們把這項複雜的技能拆解成四個易於掌握的子部分。"
-        },
-        {
-          "word": "specific",
-          "lemma": "specific",
-          "pos": "adj.",
-          "phonetic": "/specific/",
-          "meaning": "具體",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"specific\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「具體（specific）」能讓表達更具說服力。"
         }
       ],
       "id": 68,
@@ -1605,24 +1065,14 @@
       "zh": "現在在一個完美的世界中，我們可能希望倒數第二層中的每個神經元與這些子組件之一相對應。",
       "keywords": [
         {
-          "word": "subcomponents",
-          "lemma": "subcomponent",
-          "pos": "adj.",
-          "phonetic": "/subcomponent/",
-          "meaning": "子組件（字首 sub- 表「在底層、次級」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"subcomponent\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「子組件（subcomponent）」能讓表達更具說服力。"
-        },
-        {
-          "word": "corresponds",
-          "lemma": "correspond",
-          "pos": "n./v.",
-          "phonetic": "/correspond/",
-          "meaning": "對應（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"correspond\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「對應（correspond）」能讓表達更具說服力。"
+          "word": "neuron",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 69,
@@ -1644,6 +1094,16 @@
       "zh": "就像 9 或 8 一樣，有一些特定的神經元，其活化值將接近 1。",
       "keywords": [
         {
+          "word": "neuron",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
+        },
+        {
           "word": "activation",
           "lemma": "activation",
           "pos": "n.",
@@ -1652,16 +1112,6 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "neuron",
-          "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
         }
       ],
       "id": 71,
@@ -1672,20 +1122,9 @@
       "end": 386.9,
       "en": "And I don't mean this specific loop of pixels.",
       "zh": "我並不是指這個特定的像素循環。",
-      "keywords": [
-        {
-          "word": "specific",
-          "lemma": "specific",
-          "pos": "adj.",
-          "phonetic": "/specific/",
-          "meaning": "具體",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"specific\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「具體（specific）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 72,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「specific (adj. 具體)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 386.9,
@@ -1694,56 +1133,25 @@
       "zh": "希望任何朝向頂部的普遍循環模式都會引發該神經元。",
       "keywords": [
         {
-          "word": "generally",
-          "lemma": "generally",
-          "pos": "adv.",
-          "phonetic": "/generally/",
-          "meaning": "一般而言",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"generally\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「一般而言（generally）」能讓表達更具說服力。"
-        },
-        {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 73,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「generally (adv. 一般而言)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 392.4,
       "end": 400,
       "en": "That way, going from the third layer to the last one just requires learning which combination of subcomponents corresponds to which digits.",
       "zh": "這樣，從第三層到最後一層只需要學習哪個子組件組合對應於哪個數字。",
-      "keywords": [
-        {
-          "word": "combination",
-          "lemma": "combination",
-          "pos": "n.",
-          "phonetic": "/combination/",
-          "meaning": "組合（字首 co-/con- 表「共同、整合」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"combination\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「組合（combination）」能讓表達更具說服力。"
-        },
-        {
-          "word": "subcomponents",
-          "lemma": "subcomponent",
-          "pos": "adj.",
-          "phonetic": "/subcomponent/",
-          "meaning": "子組件（字首 sub- 表「在底層、次級」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"subcomponent\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「子組件（subcomponent）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 74,
       "grammarNote": "📐 句型解析：句中運用「, V-ing...」現在分詞構句，不需額外連接詞即可流暢描繪伴隨發生的動作或結果"
     },
@@ -1762,16 +1170,6 @@
           "level": "B2 認知與 AI 核心動詞",
           "exampleEn": "A well-trained neural network can recognize handwritten digits with over 99% accuracy.",
           "exampleZh": "訓練精良的神經網路能以超過 99% 的準確率辨識手寫數字。"
-        },
-        {
-          "word": "subcomponents",
-          "lemma": "subcomponent",
-          "pos": "adj.",
-          "phonetic": "/subcomponent/",
-          "meaning": "子組件（字首 sub- 表「在底層、次級」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"subcomponent\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「子組件（subcomponent）」能讓表達更具說服力。"
         }
       ],
       "id": 75,
@@ -1782,40 +1180,18 @@
       "end": 407.6,
       "en": "Or even learn what the right subcomponents should be?",
       "zh": "或甚至了解正確的子元件應該是什麼？",
-      "keywords": [
-        {
-          "word": "subcomponents",
-          "lemma": "subcomponent",
-          "pos": "adj.",
-          "phonetic": "/subcomponent/",
-          "meaning": "子組件（字首 sub- 表「在底層、次級」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"subcomponent\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「子組件（subcomponent）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 76,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「subcomponent (adj. 子組件)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 408.1,
       "end": 413.1,
       "en": "And I still haven't even talked about how one layer influences the next, but run with me on this one for a moment.",
       "zh": "我甚至還沒有討論一層如何影響下一層，但請跟我討論這一層。",
-      "keywords": [
-        {
-          "word": "influences",
-          "lemma": "influence",
-          "pos": "n.",
-          "phonetic": "/influence/",
-          "meaning": "影響力（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"influence\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「影響力（influence）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 77,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「influence (n. 影響力)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 413.7,
@@ -1862,16 +1238,6 @@
           "level": "B2 認知與 AI 核心動詞",
           "exampleEn": "A well-trained neural network can recognize handwritten digits with over 99% accuracy.",
           "exampleZh": "訓練精良的神經網路能以超過 99% 的準確率辨識手寫數字。"
-        },
-        {
-          "word": "reasonable",
-          "lemma": "reasonable",
-          "pos": "adj.",
-          "phonetic": "/reasonable/",
-          "meaning": "合理（字首 re- 表「重新、反覆」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"reasonable\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「合理（reasonable）」能讓表達更具說服力。"
         }
       ],
       "id": 79,
@@ -1902,28 +1268,18 @@
       "zh": "因此，也許我們希望網路第二層中的每個神經元都與各種相關的小邊相對應。",
       "keywords": [
         {
-          "word": "corresponds",
-          "lemma": "correspond",
-          "pos": "n./v.",
-          "phonetic": "/correspond/",
-          "meaning": "對應（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"correspond\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「對應（correspond）」能讓表達更具說服力。"
-        },
-        {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 82,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「correspond (n./v. 對應)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 443.5,
@@ -1941,28 +1297,18 @@
       "zh": "神經元與大約 8 到 10 個特定的小邊緣相關，這些小邊緣反過來又點亮與上環相關的神經元。",
       "keywords": [
         {
-          "word": "associated",
-          "lemma": "associated",
-          "pos": "v./adj.",
-          "phonetic": "/associated/",
-          "meaning": "合夥人",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"associated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「合夥人（associated）」能讓表達更具說服力。"
-        },
-        {
           "word": "Neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 84,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「associated (v./adj. 合夥人)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 455.2,
@@ -1971,28 +1317,18 @@
       "zh": "還有一條長垂直線，它們照亮了與 9 相關的神經元。",
       "keywords": [
         {
-          "word": "associated",
-          "lemma": "associated",
-          "pos": "v./adj.",
-          "phonetic": "/associated/",
-          "meaning": "合夥人",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"associated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「合夥人（associated）」能讓表達更具說服力。"
-        },
-        {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 85,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「associated (v./adj. 合夥人)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 460.7,
@@ -2017,18 +1353,7 @@
       "end": 472.5,
       "en": "But this is a hope that we might have, a sort of goal with the layered structure like this.",
       "zh": "但這是我們可能擁有的一個希望，一種像這樣的分層結構的目標。",
-      "keywords": [
-        {
-          "word": "structure",
-          "lemma": "structure",
-          "pos": "n./v.",
-          "phonetic": "/structure/",
-          "meaning": "結構",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"structure\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「結構（structure）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 88,
       "grammarNote": "🔊 連音跟讀：注意句中「sort of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -2037,30 +1362,9 @@
       "end": 480.3,
       "en": "Moreover, you can imagine how being able to detect edges and patterns like this would be really useful for other image recognition tasks.",
       "zh": "此外，您可以想像能夠偵測這樣的邊緣和圖案對於其他影像辨識任務將非常有用。",
-      "keywords": [
-        {
-          "word": "recognition",
-          "lemma": "recognition",
-          "pos": "n.",
-          "phonetic": "/recognition/",
-          "meaning": "認可（字首 re- 表「重新、反覆」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"recognition\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「認可（recognition）」能讓表達更具說服力。"
-        },
-        {
-          "word": "patterns",
-          "lemma": "pattern",
-          "pos": "n./v.",
-          "phonetic": "/pattern/",
-          "meaning": "圖案",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"pattern\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「圖案（pattern）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 89,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「recognition (n. 認可)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 480.9,
@@ -2107,16 +1411,6 @@
           "level": "B2 學術與精準描述",
           "exampleEn": "The visual cortex separates similar patterns into distinct conceptual categories.",
           "exampleZh": "視覺皮質能將相似的圖案區分為截然不同的概念類別。"
-        },
-        {
-          "word": "involves",
-          "lemma": "involve",
-          "pos": "n./v.",
-          "phonetic": "/involve/",
-          "meaning": "涉及（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"involve\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「涉及（involve）」能讓表達更具說服力。"
         }
       ],
       "id": 91,
@@ -2127,20 +1421,9 @@
       "end": 500.1,
       "en": "Which combine to make up phrases and more abstract thoughts, etc.",
       "zh": "結合起來組成短語和更抽象的想法等。",
-      "keywords": [
-        {
-          "word": "abstract",
-          "lemma": "abstract",
-          "pos": "n./v.",
-          "phonetic": "/abstract/",
-          "meaning": "摘要",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"abstract\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「摘要（abstract）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 92,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「abstract (n./v. 摘要)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 501.1,
@@ -2157,16 +1440,6 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "designing",
-          "lemma": "designing",
-          "pos": "v./n.",
-          "phonetic": "/designing/",
-          "meaning": "設計（字首 de- 表「拆解、向下、移除」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"designing\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「設計（designing）」能讓表達更具說服力。"
         }
       ],
       "id": 93,
@@ -2197,50 +1470,18 @@
       "end": 519,
       "en": "The goal is to have some mechanism that could conceivably combine pixels into edges, or edges into patterns, or patterns into digits.",
       "zh": "目標是建立某種機制，可以將像素組合成邊緣，或將邊緣組合成圖案，或將圖案組合成數字。",
-      "keywords": [
-        {
-          "word": "conceivably",
-          "lemma": "conceivably",
-          "pos": "adv.",
-          "phonetic": "/conceivably/",
-          "meaning": "可以想像（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"conceivably\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「可以想像（conceivably）」能讓表達更具說服力。"
-        },
-        {
-          "word": "mechanism",
-          "lemma": "mechanism",
-          "pos": "n.",
-          "phonetic": "/mechanism/",
-          "meaning": "機制",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"mechanism\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「機制（mechanism）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 95,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「conceivably (adv. 可以想像)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 519.4,
       "end": 523.3,
       "en": "And to zoom in on one very specific example, let's say the hope.",
       "zh": "放大一個非常具體的例子，讓我們說希望。",
-      "keywords": [
-        {
-          "word": "specific",
-          "lemma": "specific",
-          "pos": "adj.",
-          "phonetic": "/specific/",
-          "meaning": "具體",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"specific\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「具體（specific）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 96,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「specific (adj. 具體)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 523.3,
@@ -2259,14 +1500,14 @@
           "exampleZh": "一旦你掌握這四個和弦，就能輕鬆上手數百首流行歌曲。"
         },
         {
-          "word": "particular",
-          "lemma": "particular",
-          "pos": "n./v.",
-          "phonetic": "/particular/",
-          "meaning": "特別",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"particular\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「特別（particular）」能讓表達更具說服力。"
+          "word": "neuron",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 97,
@@ -2306,40 +1547,18 @@
       "end": 539.6,
       "en": "What dials and knobs should you be able to tweak so that it's expressive.",
       "zh": "您應該能夠調整哪些旋鈕和旋鈕才能使其具有表現力。",
-      "keywords": [
-        {
-          "word": "expressive",
-          "lemma": "expressive",
-          "pos": "adj.",
-          "phonetic": "/expressive/",
-          "meaning": "富有表現力（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"expressive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「富有表現力（expressive）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 100,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「expressive (adj. 富有表現力)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 539.6,
       "end": 543.7,
       "en": "Enough to potentially capture this pattern, or any other pixel pattern.",
       "zh": "足以捕捉此圖案或任何其他像素圖案。",
-      "keywords": [
-        {
-          "word": "potentially",
-          "lemma": "potentially",
-          "pos": "adv.",
-          "phonetic": "/potentially/",
-          "meaning": "潛在的",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"potentially\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「潛在的（potentially）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 101,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「potentially (adv. 潛在的)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 543.7,
@@ -2357,24 +1576,14 @@
       "zh": "好吧，我們要做的就是為我們的神經元和第一層神經元之間的每個連接分配一個權重。",
       "keywords": [
         {
-          "word": "connections",
-          "lemma": "connection",
-          "pos": "n.",
-          "phonetic": "/connection/",
-          "meaning": "連接（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"connection\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「連接（connection）」能讓表達更具說服力。"
-        },
-        {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 103,
@@ -2404,16 +1613,6 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "weighted",
-          "lemma": "weighted",
-          "pos": "v./adj.",
-          "phonetic": "/weighted/",
-          "meaning": "重量",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"weighted\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重量（weighted）」能讓表達更具說服力。"
         }
       ],
       "id": 105,
@@ -2424,48 +1623,16 @@
       "end": 571.1,
       "en": "I find it helpful to think of these weights as being organized into a.",
       "zh": "我發現將這些權重組織成 a 是有幫助的。",
-      "keywords": [
-        {
-          "word": "organized",
-          "lemma": "organized",
-          "pos": "v./adj.",
-          "phonetic": "/organized/",
-          "meaning": "組織",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"organized\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「組織（organized）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 106,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「organized (v./adj. 組織)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 571.1,
       "end": 577.7,
       "en": "Little grid of their own, and I'm going to use green pixels to indicate positive weights, and red pixels to indicate negative weights.",
       "zh": "他們自己的小網格，我將使用綠色像素表示正權重，使用紅色像素表示負權重。",
-      "keywords": [
-        {
-          "word": "positive",
-          "lemma": "positive",
-          "pos": "adj.",
-          "phonetic": "/positive/",
-          "meaning": "積極（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"positive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「積極（positive）」能讓表達更具說服力。"
-        },
-        {
-          "word": "negative",
-          "lemma": "negative",
-          "pos": "adj.",
-          "phonetic": "/negative/",
-          "meaning": "陰性（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"negative\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「陰性（negative）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 107,
       "grammarNote": "🔊 連音跟讀：注意句中「going to」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -2474,48 +1641,16 @@
       "end": 581.8,
       "en": "Where the brightness of that pixel is some loose depiction of the weight's value.",
       "zh": "其中此像素的亮度是權重值的一些鬆散描述。",
-      "keywords": [
-        {
-          "word": "depiction",
-          "lemma": "depiction",
-          "pos": "n.",
-          "phonetic": "/depiction/",
-          "meaning": "描繪（字首 de- 表「拆解、向下、移除」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"depiction\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「描繪（depiction）」能讓表達更具說服力。"
-        },
-        {
-          "word": "brightness",
-          "lemma": "brightness",
-          "pos": "n.",
-          "phonetic": "/brightness/",
-          "meaning": "亮度",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"brightness\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「亮度（brightness）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 108,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「depiction (n. 描繪)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 582.8,
       "end": 586.5,
       "en": "Now if we made the weights associated with almost all of the pixels zero.",
       "zh": "現在，如果我們將與幾乎所有像素相關的權重設為零。",
-      "keywords": [
-        {
-          "word": "associated",
-          "lemma": "associated",
-          "pos": "v./adj.",
-          "phonetic": "/associated/",
-          "meaning": "合夥人",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"associated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「合夥人（associated）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 109,
       "grammarNote": "🔊 連音跟讀：注意句中「all of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -2524,40 +1659,18 @@
       "end": 590.1,
       "en": "Except for some positive weights in this region that we care about.",
       "zh": "除了我們關心的這個區域的一些正權重之外。",
-      "keywords": [
-        {
-          "word": "positive",
-          "lemma": "positive",
-          "pos": "adj.",
-          "phonetic": "/positive/",
-          "meaning": "積極（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"positive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「積極（positive）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 110,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「positive (adj. 積極)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 590.1,
       "end": 593.9,
       "en": "Then taking the weighted sum of all the pixel values really just amounts.",
       "zh": "然後取所有像素值的加權和實際上只是數量。",
-      "keywords": [
-        {
-          "word": "weighted",
-          "lemma": "weighted",
-          "pos": "v./adj.",
-          "phonetic": "/weighted/",
-          "meaning": "重量",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"weighted\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重量（weighted）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 111,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「weighted (v./adj. 重量)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 593.9,
@@ -2593,28 +1706,7 @@
       "end": 606.6,
       "en": "What you might do is have some negative weights associated with the surrounding pixels.",
       "zh": "您可能會做的是與周圍像素關聯一些負權重。",
-      "keywords": [
-        {
-          "word": "negative",
-          "lemma": "negative",
-          "pos": "adj.",
-          "phonetic": "/negative/",
-          "meaning": "陰性（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"negative\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「陰性（negative）」能讓表達更具說服力。"
-        },
-        {
-          "word": "associated",
-          "lemma": "associated",
-          "pos": "v./adj.",
-          "phonetic": "/associated/",
-          "meaning": "合夥人",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"associated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「合夥人（associated）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 114,
       "grammarNote": "📐 句型解析：以名詞子句「What + S + V」作為主詞的強調句型，母語講者常用來把核心結論推向動詞後方聚焦"
     },
@@ -2623,40 +1715,18 @@
       "end": 612.7,
       "en": "Then the sum is largest when those middle pixels are bright but the surrounding pixels are darker.",
       "zh": "那麼當中間的像素較亮而周圍的像素較暗時，總和最大。",
-      "keywords": [
-        {
-          "word": "surrounding",
-          "lemma": "surrounding",
-          "pos": "v./n.",
-          "phonetic": "/surrounding/",
-          "meaning": "環繞",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"surrounding\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「環繞（surrounding）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 115,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「surrounding (v./n. 環繞)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 614.3,
       "end": 618.6,
       "en": "When you compute a weighted sum like this, you might come out with any number.",
       "zh": "當你計算這樣的加權和時，你可能會得到任何數字。",
-      "keywords": [
-        {
-          "word": "weighted",
-          "lemma": "weighted",
-          "pos": "v./adj.",
-          "phonetic": "/weighted/",
-          "meaning": "重量",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"weighted\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重量（weighted）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 116,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「weighted (v./adj. 重量)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 618.6,
@@ -2683,50 +1753,18 @@
       "end": 628.3,
       "en": "So a common thing to do is to pump this weighted sum into some function.",
       "zh": "因此，常見的做法是將這個加權和注入到某個函數中。",
-      "keywords": [
-        {
-          "word": "function",
-          "lemma": "function",
-          "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
-        },
-        {
-          "word": "weighted",
-          "lemma": "weighted",
-          "pos": "v./adj.",
-          "phonetic": "/weighted/",
-          "meaning": "重量",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"weighted\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重量（weighted）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 118,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「function (n. 功能)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 628.3,
       "end": 632.1,
       "en": "That squishes the real number line into the range between 0 and 1.",
       "zh": "這將實數軸壓縮到 0 到 1 之間的範圍內。",
-      "keywords": [
-        {
-          "word": "squishes",
-          "lemma": "squishe",
-          "pos": "n./v.",
-          "phonetic": "/squishe/",
-          "meaning": "壓扁",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"squishe\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「壓扁（squishe）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 119,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「squishe (n./v. 壓扁)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 632.5,
@@ -2743,16 +1781,6 @@
           "level": "AI 數學核心術語",
           "exampleEn": "The sigmoid function squishes any real number into a clean range between zero and one.",
           "exampleZh": "Sigmoid 函數能將任何實數平滑壓縮到 0 與 1 之間的範圍。"
-        },
-        {
-          "word": "function",
-          "lemma": "function",
-          "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
         }
       ],
       "id": 120,
@@ -2763,60 +1791,18 @@
       "end": 643.4,
       "en": "Basically very negative inputs end up close to 0, positive inputs end up close to 1.",
       "zh": "基本上非常負的輸入最終接近 0，正輸入最終接近 1。",
-      "keywords": [
-        {
-          "word": "negative",
-          "lemma": "negative",
-          "pos": "adj.",
-          "phonetic": "/negative/",
-          "meaning": "陰性（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"negative\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「陰性（negative）」能讓表達更具說服力。"
-        },
-        {
-          "word": "positive",
-          "lemma": "positive",
-          "pos": "adj.",
-          "phonetic": "/positive/",
-          "meaning": "積極（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"positive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「積極（positive）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 121,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「negative (adj. 陰性)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 643.4,
       "end": 646.6,
       "en": "And it just steadily increases around the input 0.",
       "zh": "並且它只是在輸入 0 附近穩定增加。",
-      "keywords": [
-        {
-          "word": "steadily",
-          "lemma": "steadily",
-          "pos": "adv.",
-          "phonetic": "/steadily/",
-          "meaning": "穩步推進",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"steadily\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「穩步推進（steadily）」能讓表達更具說服力。"
-        },
-        {
-          "word": "increases",
-          "lemma": "increase",
-          "pos": "n./v.",
-          "phonetic": "/increase/",
-          "meaning": "增加（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"increase\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「增加（increase）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 122,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「steadily (adv. 穩步推進)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 649.1,
@@ -2835,14 +1821,14 @@
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
         },
         {
-          "word": "positive",
-          "lemma": "positive",
-          "pos": "adj.",
-          "phonetic": "/positive/",
-          "meaning": "積極（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"positive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「積極（positive）」能讓表達更具說服力。"
+          "word": "neuron",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 123,
@@ -2857,86 +1843,43 @@
         {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
-        },
-        {
-          "word": "weighted",
-          "lemma": "weighted",
-          "pos": "v./adj.",
-          "phonetic": "/weighted/",
-          "meaning": "重量",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"weighted\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重量（weighted）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 124,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n./v. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 662.3,
       "end": 666.4,
       "en": "Maybe you only want it to be active when the sum is bigger than say 10.",
       "zh": "也許您只希望當總和大於 10 時它才處於活動狀態。",
-      "keywords": [
-        {
-          "word": "active",
-          "lemma": "active",
-          "pos": "adj.",
-          "phonetic": "/active/",
-          "meaning": "活躍（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"active\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「活躍（active）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 125,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「active (adj. 活躍)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 666.8,
       "end": 670.3,
       "en": "That is, you want some bias for it to be inactive.",
       "zh": "也就是說，您希望對其不活動有一些偏差。",
-      "keywords": [
-        {
-          "word": "inactive",
-          "lemma": "inactive",
-          "pos": "adj.",
-          "phonetic": "/inactive/",
-          "meaning": "不活躍（否定／反向字首搭配核心字根）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"inactive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「不活躍（inactive）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 126,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「inactive (adj. 不活躍)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 671.4,
       "end": 675.5,
       "en": "What we'll do then is just add in some other number like negative 10 to this.",
       "zh": "然後我們要做的就是添加一些其他數字，例如負 10。",
-      "keywords": [
-        {
-          "word": "negative",
-          "lemma": "negative",
-          "pos": "adj.",
-          "phonetic": "/negative/",
-          "meaning": "陰性（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"negative\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「陰性（negative）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 127,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「negative (adj. 陰性)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 675.5,
@@ -2953,16 +1896,6 @@
           "level": "AI 數學核心術語",
           "exampleEn": "The sigmoid function squishes any real number into a clean range between zero and one.",
           "exampleZh": "Sigmoid 函數能將任何實數平滑壓縮到 0 與 1 之間的範圍。"
-        },
-        {
-          "word": "squishification",
-          "lemma": "squishification",
-          "pos": "n.",
-          "phonetic": "/squishification/",
-          "meaning": "壓扁（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"squishification\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「壓扁（squishification）」能讓表達更具說服力。"
         }
       ],
       "id": 128,
@@ -2973,20 +1906,9 @@
       "end": 682.4,
       "en": "That additional number is called the bias.",
       "zh": "這個額外的數字稱為偏差。",
-      "keywords": [
-        {
-          "word": "additional",
-          "lemma": "additional",
-          "pos": "adj.",
-          "phonetic": "/additional/",
-          "meaning": "附加",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"additional\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「附加（additional）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 129,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「additional (adj. 附加)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 683.5,
@@ -2997,16 +1919,16 @@
         {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 130,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n./v. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 687.3,
@@ -3023,16 +1945,6 @@
           "level": "道地多義片語",
           "exampleEn": "Once you master those four chords, you can pick up hundreds of pop songs effortlessly.",
           "exampleZh": "一旦你掌握這四個和弦，就能輕鬆上手數百首流行歌曲。"
-        },
-        {
-          "word": "weighted",
-          "lemma": "weighted",
-          "pos": "v./adj.",
-          "phonetic": "/weighted/",
-          "meaning": "重量",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"weighted\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重量（weighted）」能讓表達更具說服力。"
         }
       ],
       "id": 131,
@@ -3045,28 +1957,18 @@
       "zh": "總和需要在神經元開始有意義地活動之前進行。",
       "keywords": [
         {
-          "word": "meaningfully",
-          "lemma": "meaningfully",
-          "pos": "adv.",
-          "phonetic": "/meaningfully/",
-          "meaning": "有意義",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"meaningfully\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「有意義（meaningfully）」能讓表達更具說服力。"
-        },
-        {
-          "word": "active",
-          "lemma": "active",
-          "pos": "adj.",
-          "phonetic": "/active/",
-          "meaning": "活躍（高頻形容詞字尾，常用於精準描述特質）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"active\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「活躍（active）」能讓表達更具說服力。"
+          "word": "neuron",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 132,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「meaningfully (adv. 有意義)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 696.1,
@@ -3077,16 +1979,16 @@
         {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 133,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n./v. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 698.3,
@@ -3097,22 +1999,12 @@
         {
           "word": "neuron",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
-        },
-        {
-          "word": "connected",
-          "lemma": "connected",
-          "pos": "v./adj.",
-          "phonetic": "/connected/",
-          "meaning": "連接（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"connected\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「連接（connected）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 134,
@@ -3123,30 +2015,9 @@
       "end": 710.9,
       "en": "Those 784 connections has its own weight associated with it.",
       "zh": "這 784 個連結有其自身的權重。",
-      "keywords": [
-        {
-          "word": "connections",
-          "lemma": "connection",
-          "pos": "n.",
-          "phonetic": "/connection/",
-          "meaning": "連接（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"connection\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「連接（connection）」能讓表達更具說服力。"
-        },
-        {
-          "word": "associated",
-          "lemma": "associated",
-          "pos": "v./adj.",
-          "phonetic": "/associated/",
-          "meaning": "合夥人",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"associated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「合夥人（associated）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 135,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「connection (n. 連接)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 711.6,
@@ -3163,16 +2034,6 @@
           "level": "AI 數學核心術語",
           "exampleEn": "The sigmoid function squishes any real number into a clean range between zero and one.",
           "exampleZh": "Sigmoid 函數能將任何實數平滑壓縮到 0 與 1 之間的範圍。"
-        },
-        {
-          "word": "weighted",
-          "lemma": "weighted",
-          "pos": "v./adj.",
-          "phonetic": "/weighted/",
-          "meaning": "重量",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"weighted\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重量（weighted）」能讓表達更具說服力。"
         }
       ],
       "id": 136,
@@ -3196,34 +2057,23 @@
         {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 138,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n./v. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 728.8,
       "end": 731.9,
       "en": "And all of that is just the connections from the first layer to the second.",
       "zh": "所有這些只是從第一層到第二層的連接。",
-      "keywords": [
-        {
-          "word": "connections",
-          "lemma": "connection",
-          "pos": "n.",
-          "phonetic": "/connection/",
-          "meaning": "連接（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"connection\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「連接（connection）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 139,
       "grammarNote": "🔊 連音跟讀：注意句中「all of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -3232,30 +2082,9 @@
       "end": 737.3,
       "en": "The connections between the other layers also have a bunch of weights and biases associated with them.",
       "zh": "其他層之間的連接也有一堆與之相關的權重和偏差。",
-      "keywords": [
-        {
-          "word": "connections",
-          "lemma": "connection",
-          "pos": "n.",
-          "phonetic": "/connection/",
-          "meaning": "連接（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"connection\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「連接（connection）」能讓表達更具說服力。"
-        },
-        {
-          "word": "associated",
-          "lemma": "associated",
-          "pos": "v./adj.",
-          "phonetic": "/associated/",
-          "meaning": "合夥人",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"associated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「合夥人（associated）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 140,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「connection (n. 連接)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 738.3,
@@ -3280,18 +2109,7 @@
       "end": 757.6,
       "en": "So when we talk about learning, what that's referring to is getting the computer to find a valid setting for all of these.",
       "zh": "因此，當我們談論學習時，指的是讓電腦為所有這些找到有效的設定。",
-      "keywords": [
-        {
-          "word": "referring",
-          "lemma": "referring",
-          "pos": "v./n.",
-          "phonetic": "/referring/",
-          "meaning": "推薦人（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"referring\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「推薦人（referring）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 143,
       "grammarNote": "🔊 連音跟讀：注意句中「all of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -3309,28 +2127,7 @@
       "end": 767.2,
       "en": "One thought experiment that is at once fun and kind of horrifying is to imagine sitting.",
       "zh": "一個既有趣又有點可怕的思想實驗是想像坐著。",
-      "keywords": [
-        {
-          "word": "experiment",
-          "lemma": "experiment",
-          "pos": "n.",
-          "phonetic": "/experiment/",
-          "meaning": "實驗",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"experiment\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「實驗（experiment）」能讓表達更具說服力。"
-        },
-        {
-          "word": "horrifying",
-          "lemma": "horrifying",
-          "pos": "v./n.",
-          "phonetic": "/horrifying/",
-          "meaning": "恐怖",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"horrifying\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「恐怖（horrifying）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 145,
       "grammarNote": "🔊 連音跟讀：注意句中「kind of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -3349,16 +2146,6 @@
           "level": "道地多義片語",
           "exampleEn": "Once you master those four chords, you can pick up hundreds of pop songs effortlessly.",
           "exampleZh": "一旦你掌握這四個和弦，就能輕鬆上手數百首流行歌曲。"
-        },
-        {
-          "word": "purposefully",
-          "lemma": "purposefully",
-          "pos": "adv.",
-          "phonetic": "/purposefully/",
-          "meaning": "有目的地",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"purposefully\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「有目的地（purposefully）」能讓表達更具說服力。"
         }
       ],
       "id": 146,
@@ -3379,16 +2166,6 @@
           "level": "道地多義片語",
           "exampleEn": "Once you master those four chords, you can pick up hundreds of pop songs effortlessly.",
           "exampleZh": "一旦你掌握這四個和弦，就能輕鬆上手數百首流行歌曲。"
-        },
-        {
-          "word": "personally",
-          "lemma": "personally",
-          "pos": "adv.",
-          "phonetic": "/personally/",
-          "meaning": "就個人而言",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"personally\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「就個人而言（personally）」能讓表達更具說服力。"
         }
       ],
       "id": 147,
@@ -3399,70 +2176,27 @@
       "end": 784.8,
       "en": "Box, because when the network doesn't perform the way you anticipate.",
       "zh": "方框，因為當網路沒有按照您預期的方式運作時。",
-      "keywords": [
-        {
-          "word": "anticipate",
-          "lemma": "anticipate",
-          "pos": "v.",
-          "phonetic": "/anticipate/",
-          "meaning": "預計",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"anticipate\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「預計（anticipate）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 148,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「anticipate (v. 預計)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 784.8,
       "end": 789,
       "en": "If you've built up a little bit of a relationship with what those weights and biases.",
       "zh": "如果您已經與這些權重和偏見建立了一些聯繫。",
-      "keywords": [
-        {
-          "word": "relationship",
-          "lemma": "relationship",
-          "pos": "n.",
-          "phonetic": "/relationship/",
-          "meaning": "關係（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"relationship\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「關係（relationship）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 149,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「relationship (n. 關係)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 789,
       "end": 794.2,
       "en": "Actually mean, you have a starting place for experimenting with how to change the structure to improve.",
       "zh": "實際上，你有一個起點來嘗試如何改變結構以進行改進。",
-      "keywords": [
-        {
-          "word": "experimenting",
-          "lemma": "experimenting",
-          "pos": "v./n.",
-          "phonetic": "/experimenting/",
-          "meaning": "實驗",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"experimenting\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「實驗（experimenting）」能讓表達更具說服力。"
-        },
-        {
-          "word": "structure",
-          "lemma": "structure",
-          "pos": "n./v.",
-          "phonetic": "/structure/",
-          "meaning": "結構",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"structure\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「結構（structure）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 150,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「experimenting (v./n. 實驗)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 795,
@@ -3478,130 +2212,45 @@
       "end": 802.3,
       "en": "Digging into what the weights and biases are doing is a good way to challenge.",
       "zh": "深入研究權重和偏差的作用是一種很好的挑戰方式。",
-      "keywords": [
-        {
-          "word": "challenge",
-          "lemma": "challenge",
-          "pos": "n./v.",
-          "phonetic": "/challenge/",
-          "meaning": "挑戰",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"challenge\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「挑戰（challenge）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 152,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「challenge (n./v. 挑戰)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 802.3,
       "end": 805.8,
       "en": "Your assumptions and really expose the full space of possible solutions.",
       "zh": "你的假設並真正暴露了可能解決方案的全部空間。",
-      "keywords": [
-        {
-          "word": "assumptions",
-          "lemma": "assumption",
-          "pos": "n.",
-          "phonetic": "/assumption/",
-          "meaning": "假設（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"assumption\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「假設（assumption）」能讓表達更具說服力。"
-        },
-        {
-          "word": "solutions",
-          "lemma": "solution",
-          "pos": "n.",
-          "phonetic": "/solution/",
-          "meaning": "解決方案（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"solution\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「解決方案（solution）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 153,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「assumption (n. 假設)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 806.8,
       "end": 810.7,
       "en": "By the way, the actual function here is a little cumbersome to write down, don't you think?",
       "zh": "順便說一句，這裡的實際函數寫起來有點麻煩，你不覺得嗎？",
-      "keywords": [
-        {
-          "word": "function",
-          "lemma": "function",
-          "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
-        },
-        {
-          "word": "cumbersome",
-          "lemma": "cumbersome",
-          "pos": "n./v.",
-          "phonetic": "/cumbersome/",
-          "meaning": "麻煩",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"cumbersome\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「麻煩（cumbersome）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 154,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「function (n. 功能)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 812.5,
       "end": 817.1,
       "en": "So let me show you a more notationally compact way that these connections are represented.",
       "zh": "因此，讓我向您展示一種更緊湊的表示這些連接的方式。",
-      "keywords": [
-        {
-          "word": "notationally",
-          "lemma": "notationally",
-          "pos": "adv.",
-          "phonetic": "/notationally/",
-          "meaning": "名義上",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"notationally\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「名義上（notationally）」能讓表達更具說服力。"
-        },
-        {
-          "word": "connections",
-          "lemma": "connection",
-          "pos": "n.",
-          "phonetic": "/connection/",
-          "meaning": "連接（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"connection\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「連接（connection）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 155,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「notationally (adv. 名義上)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 817.7,
       "end": 820.5,
       "en": "This is how you'd see it if you choose to read up more about neural networks.",
       "zh": "如果您選擇閱讀更多有關神經網路的內容，您會看到這樣的結果。",
-      "keywords": [
-        {
-          "word": "networks",
-          "lemma": "network",
-          "pos": "n./v.",
-          "phonetic": "/network/",
-          "meaning": "網路",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"network\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「網路（network）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 156,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「network (n./v. 網路)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 820.5,
@@ -3618,16 +2267,6 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "Organize",
-          "lemma": "organize",
-          "pos": "v.",
-          "phonetic": "/organize/",
-          "meaning": "組織",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"organize\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「組織（organize）」能讓表達更具說服力。"
         }
       ],
       "id": 157,
@@ -3640,24 +2279,14 @@
       "zh": "然後將所有權重組織為一個矩陣，其中矩陣的每一行都對應。",
       "keywords": [
         {
-          "word": "organize",
-          "lemma": "organize",
-          "pos": "v.",
-          "phonetic": "/organize/",
-          "meaning": "組織",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"organize\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「組織（organize）」能讓表達更具說服力。"
-        },
-        {
-          "word": "corresponds",
-          "lemma": "correspond",
-          "pos": "n./v.",
-          "phonetic": "/correspond/",
-          "meaning": "對應（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"correspond\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「對應（correspond）」能讓表達更具說服力。"
+          "word": "matrix",
+          "lemma": "matrix",
+          "pos": "n.",
+          "phonetic": "/ˈmeɪtrɪks/",
+          "meaning": "矩陣（複數為 matrices /ˈmeɪtrəˌsiz/；深度學習將千萬個權重組織為矩陣，透過矩陣乘法高速平行運算）",
+          "level": "B2 數學與 AI 核心術語",
+          "exampleEn": "Organizing neural network weights into a matrix allows GPUs to compute millions of products in parallel.",
+          "exampleZh": "將神經網路權重組織成「矩陣」，能讓 GPU 平行計算數百萬個乘積。"
         }
       ],
       "id": 158,
@@ -3670,28 +2299,18 @@
       "zh": "一層與下一層特定神經元之間的連結。",
       "keywords": [
         {
-          "word": "connections",
-          "lemma": "connection",
+          "word": "neuron",
+          "lemma": "neuron",
           "pos": "n.",
-          "phonetic": "/connection/",
-          "meaning": "連接（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"connection\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「連接（connection）」能讓表達更具說服力。"
-        },
-        {
-          "word": "particular",
-          "lemma": "particular",
-          "pos": "n./v.",
-          "phonetic": "/particular/",
-          "meaning": "特別",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"particular\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「特別（particular）」能讓表達更具說服力。"
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 159,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「connection (n. 連接)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 838.5,
@@ -3708,16 +2327,6 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "weighted",
-          "lemma": "weighted",
-          "pos": "v./adj.",
-          "phonetic": "/weighted/",
-          "meaning": "重量",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"weighted\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「重量（weighted）」能讓表達更具說服力。"
         }
       ],
       "id": 160,
@@ -3728,28 +2337,7 @@
       "end": 845.9,
       "en": "The first layer according to these weights corresponds to one of the.",
       "zh": "第一層根據這些權重對應於其中一個。",
-      "keywords": [
-        {
-          "word": "corresponds",
-          "lemma": "correspond",
-          "pos": "n./v.",
-          "phonetic": "/correspond/",
-          "meaning": "對應（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"correspond\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「對應（correspond）」能讓表達更具說服力。"
-        },
-        {
-          "word": "according",
-          "lemma": "according",
-          "pos": "v./n.",
-          "phonetic": "/according/",
-          "meaning": "一致",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"according\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「一致（according）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 161,
       "grammarNote": "🔊 連音跟讀：注意句中「one of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -3758,9 +2346,20 @@
       "end": 849.9,
       "en": "Terms in the matrix vector product of everything we have on the left here.",
       "zh": "左邊所有內容的矩陣向量積中的項。",
-      "keywords": [],
+      "keywords": [
+        {
+          "word": "matrix",
+          "lemma": "matrix",
+          "pos": "n.",
+          "phonetic": "/ˈmeɪtrɪks/",
+          "meaning": "矩陣（複數為 matrices /ˈmeɪtrəˌsiz/；深度學習將千萬個權重組織為矩陣，透過矩陣乘法高速平行運算）",
+          "level": "B2 數學與 AI 核心術語",
+          "exampleEn": "Organizing neural network weights into a matrix allows GPUs to compute millions of products in parallel.",
+          "exampleZh": "將神經網路權重組織成「矩陣」，能讓 GPU 平行計算數百萬個乘積。"
+        }
+      ],
       "id": 162,
-      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「matrix (n. 矩陣)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 854,
@@ -3778,28 +2377,18 @@
       "zh": "掌握線性代數，對於任何想要直觀地理解矩陣以及矩陣向量乘法意義的人來說。",
       "keywords": [
         {
-          "word": "multiplication",
-          "lemma": "multiplication",
-          "pos": "n.",
-          "phonetic": "/multiplication/",
-          "meaning": "乘法（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"multiplication\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「乘法（multiplication）」能讓表達更具說服力。"
-        },
-        {
           "word": "matrices",
-          "lemma": "matrice",
-          "pos": "n./v.",
-          "phonetic": "/matrice/",
-          "meaning": "matrice",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"matrice\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「matrice（matrice）」能讓表達更具說服力。"
+          "lemma": "matrix",
+          "pos": "n.",
+          "phonetic": "/ˈmeɪtrɪks/",
+          "meaning": "矩陣（複數為 matrices /ˈmeɪtrəˌsiz/；深度學習將千萬個權重組織為矩陣，透過矩陣乘法高速平行運算）",
+          "level": "B2 數學與 AI 核心術語",
+          "exampleEn": "Organizing neural network weights into a matrix allows GPUs to compute millions of products in parallel.",
+          "exampleZh": "將神經網路權重組織成「矩陣」，能讓 GPU 平行計算數百萬個乘積。"
         }
       ],
       "id": 164,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「multiplication (n. 乘法)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「matrix (n. 矩陣)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 864.8,
@@ -3815,18 +2404,7 @@
       "end": 873.6,
       "en": "Back to our expression, instead of talking about adding the bias to each one of.",
       "zh": "回到我們的表達，而不是談論為每一項添加偏差。",
-      "keywords": [
-        {
-          "word": "expression",
-          "lemma": "expression",
-          "pos": "n.",
-          "phonetic": "/expression/",
-          "meaning": "表達（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"expression\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「表達（expression）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 166,
       "grammarNote": "🔊 連音跟讀：注意句中「one of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -3835,30 +2413,9 @@
       "end": 878,
       "en": "These values independently, we represent it by organizing all those biases into.",
       "zh": "這些價值觀是獨立的，我們透過將所有這些偏見組織起來來表示它。",
-      "keywords": [
-        {
-          "word": "independently",
-          "lemma": "independently",
-          "pos": "adv.",
-          "phonetic": "/independently/",
-          "meaning": "獨立（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"independently\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「獨立（independently）」能讓表達更具說服力。"
-        },
-        {
-          "word": "organizing",
-          "lemma": "organizing",
-          "pos": "v./n.",
-          "phonetic": "/organizing/",
-          "meaning": "組織",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"organizing\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「組織（organizing）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 167,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「independently (adv. 獨立)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 878,
@@ -3867,18 +2424,18 @@
       "zh": "一個向量，並將整個向量與前一個矩陣向量積相加。",
       "keywords": [
         {
-          "word": "previous",
-          "lemma": "previous",
-          "pos": "adj.",
-          "phonetic": "/previous/",
-          "meaning": "上一頁（字首 pre-/pro- 表「預先、向前推進」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"previous\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「上一頁（previous）」能讓表達更具說服力。"
+          "word": "matrix",
+          "lemma": "matrix",
+          "pos": "n.",
+          "phonetic": "/ˈmeɪtrɪks/",
+          "meaning": "矩陣（複數為 matrices /ˈmeɪtrəˌsiz/；深度學習將千萬個權重組織為矩陣，透過矩陣乘法高速平行運算）",
+          "level": "B2 數學與 AI 核心術語",
+          "exampleEn": "Organizing neural network weights into a matrix allows GPUs to compute millions of products in parallel.",
+          "exampleZh": "將神經網路權重組織成「矩陣」，能讓 GPU 平行計算數百萬個乘積。"
         }
       ],
       "id": 168,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「previous (adj. 上一頁)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「matrix (n. 矩陣)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 883.3,
@@ -3915,16 +2472,6 @@
           "level": "AI 數學核心術語",
           "exampleEn": "The sigmoid function squishes any real number into a clean range between zero and one.",
           "exampleZh": "Sigmoid 函數能將任何實數平滑壓縮到 0 與 1 之間的範圍。"
-        },
-        {
-          "word": "function",
-          "lemma": "function",
-          "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
         }
       ],
       "id": 170,
@@ -3935,9 +2482,20 @@
       "end": 900.5,
       "en": "So once you write down this weight matrix and these vectors as their own symbols.",
       "zh": "因此，一旦你寫下這個權重矩陣和這些向量作為它們自己的符號。",
-      "keywords": [],
+      "keywords": [
+        {
+          "word": "matrix",
+          "lemma": "matrix",
+          "pos": "n.",
+          "phonetic": "/ˈmeɪtrɪks/",
+          "meaning": "矩陣（複數為 matrices /ˈmeɪtrəˌsiz/；深度學習將千萬個權重組織為矩陣，透過矩陣乘法高速平行運算）",
+          "level": "B2 數學與 AI 核心術語",
+          "exampleEn": "Organizing neural network weights into a matrix allows GPUs to compute millions of products in parallel.",
+          "exampleZh": "將神經網路權重組織成「矩陣」，能讓 GPU 平行計算數百萬個乘積。"
+        }
+      ],
       "id": 171,
-      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「matrix (n. 矩陣)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 900.5,
@@ -3954,16 +2512,6 @@
           "level": "AI 與深度學習核心",
           "exampleEn": "The activations in one layer directly determine the activation patterns of the next layer.",
           "exampleZh": "前一層神經元的「激活值」，會直接決定下一層神經元的活化模式。"
-        },
-        {
-          "word": "transition",
-          "lemma": "transition",
-          "pos": "n.",
-          "phonetic": "/transition/",
-          "meaning": "transition（字首 trans- 表「跨越、轉變」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"transition\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「transition（transition）」能讓表達更具說服力。"
         }
       ],
       "id": 172,
@@ -3974,30 +2522,9 @@
       "end": 910.3,
       "en": "Extremely tight and neat little expression, and this makes the relevant code both a lot.",
       "zh": "極其緊湊和工整的小表達，這使得相關程式碼都很多。",
-      "keywords": [
-        {
-          "word": "expression",
-          "lemma": "expression",
-          "pos": "n.",
-          "phonetic": "/expression/",
-          "meaning": "表達（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"expression\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「表達（expression）」能讓表達更具說服力。"
-        },
-        {
-          "word": "relevant",
-          "lemma": "relevant",
-          "pos": "adj.",
-          "phonetic": "/relevant/",
-          "meaning": "相關（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"relevant\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「相關（relevant）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 173,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「expression (n. 表達)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 910.3,
@@ -4006,24 +2533,14 @@
       "zh": "更簡單、更快，因為許多函式庫優化了矩陣乘法。",
       "keywords": [
         {
-          "word": "multiplication",
-          "lemma": "multiplication",
+          "word": "matrix",
+          "lemma": "matrix",
           "pos": "n.",
-          "phonetic": "/multiplication/",
-          "meaning": "乘法（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"multiplication\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「乘法（multiplication）」能讓表達更具說服力。"
-        },
-        {
-          "word": "optimize",
-          "lemma": "optimize",
-          "pos": "v.",
-          "phonetic": "/optimize/",
-          "meaning": "optimize",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"optimize\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「optimize（optimize）」能讓表達更具說服力。"
+          "phonetic": "/ˈmeɪtrɪks/",
+          "meaning": "矩陣（複數為 matrices /ˈmeɪtrəˌsiz/；深度學習將千萬個權重組織為矩陣，透過矩陣乘法高速平行運算）",
+          "level": "B2 數學與 AI 核心術語",
+          "exampleEn": "Organizing neural network weights into a matrix allows GPUs to compute millions of products in parallel.",
+          "exampleZh": "將神經網路權重組織成「矩陣」，能讓 GPU 平行計算數百萬個乘積。"
         }
       ],
       "id": 174,
@@ -4038,36 +2555,25 @@
         {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 175,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n./v. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 922.2,
       "end": 927.3,
       "en": "Well of course the specific numbers that they hold depends on the image you feed in.",
       "zh": "當然，它們保存的具體數字取決於您輸入的影像。",
-      "keywords": [
-        {
-          "word": "specific",
-          "lemma": "specific",
-          "pos": "adj.",
-          "phonetic": "/specific/",
-          "meaning": "具體",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"specific\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「具體（specific）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 176,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「specific (adj. 具體)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 927.3,
@@ -4076,28 +2582,18 @@
       "zh": "因此，將每個神經元視為函數實際上更準確。",
       "keywords": [
         {
-          "word": "function",
-          "lemma": "function",
+          "word": "neuron",
+          "lemma": "neuron",
           "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
-        },
-        {
-          "word": "accurate",
-          "lemma": "accurate",
-          "pos": "v.",
-          "phonetic": "/accurate/",
-          "meaning": "準確",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"accurate\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「準確（accurate）」能讓表達更具說服力。"
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 177,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「function (n. 功能)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 931.6,
@@ -4106,48 +2602,27 @@
       "zh": "接收前一層所有神經元的輸出並輸出 0 到 1 之間的數字。",
       "keywords": [
         {
-          "word": "previous",
-          "lemma": "previous",
-          "pos": "adj.",
-          "phonetic": "/previous/",
-          "meaning": "上一頁（字首 pre-/pro- 表「預先、向前推進」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"previous\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「上一頁（previous）」能讓表達更具說服力。"
-        },
-        {
           "word": "neurons",
           "lemma": "neuron",
-          "pos": "n./v.",
-          "phonetic": "/neuron/",
-          "meaning": "神經元",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"neuron\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「神經元（neuron）」能讓表達更具說服力。"
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 178,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「previous (adj. 上一頁)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 939.2,
       "end": 943.1,
       "en": "Really the entire network is just a function, one that takes in.",
       "zh": "實際上，整個網路只是一個函數，一個接受的函數。",
-      "keywords": [
-        {
-          "word": "function",
-          "lemma": "function",
-          "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 179,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「function (n. 功能)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 943.1,
@@ -4195,6 +2670,16 @@
       "zh": "其中涉及迭代許多矩陣向量乘積和 sigmoid 壓縮函數，但它仍然只是一個函數。",
       "keywords": [
         {
+          "word": "matrix",
+          "lemma": "matrix",
+          "pos": "n.",
+          "phonetic": "/ˈmeɪtrɪks/",
+          "meaning": "矩陣（複數為 matrices /ˈmeɪtrəˌsiz/；深度學習將千萬個權重組織為矩陣，透過矩陣乘法高速平行運算）",
+          "level": "B2 數學與 AI 核心術語",
+          "exampleEn": "Organizing neural network weights into a matrix allows GPUs to compute millions of products in parallel.",
+          "exampleZh": "將神經網路權重組織成「矩陣」，能讓 GPU 平行計算數百萬個乘積。"
+        },
+        {
           "word": "sigmoid",
           "lemma": "sigmoid",
           "pos": "n./adj.",
@@ -4203,48 +2688,17 @@
           "level": "AI 數學核心術語",
           "exampleEn": "The sigmoid function squishes any real number into a clean range between zero and one.",
           "exampleZh": "Sigmoid 函數能將任何實數平滑壓縮到 0 與 1 之間的範圍。"
-        },
-        {
-          "word": "squishification",
-          "lemma": "squishification",
-          "pos": "n.",
-          "phonetic": "/squishification/",
-          "meaning": "壓扁（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"squishification\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「壓扁（squishification）」能讓表達更具說服力。"
         }
       ],
       "id": 182,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「sigmoid (n./adj. S 型函數)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「matrix (n. 矩陣)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 963.4,
       "end": 966.7,
       "en": "And in a way it's kind of reassuring that it looks complicated.",
       "zh": "從某種程度上來說，它看起來很複雜，這讓人感到安心。",
-      "keywords": [
-        {
-          "word": "reassuring",
-          "lemma": "reassuring",
-          "pos": "v./n.",
-          "phonetic": "/reassuring/",
-          "meaning": "放心（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"reassuring\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「放心（reassuring）」能讓表達更具說服力。"
-        },
-        {
-          "word": "complicated",
-          "lemma": "complicated",
-          "pos": "v./adj.",
-          "phonetic": "/complicated/",
-          "meaning": "複雜（字首 co-/con- 表「共同、整合」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"complicated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「複雜（complicated）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 183,
       "grammarNote": "🔊 連音跟讀：注意句中「kind of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -4263,16 +2717,6 @@
           "level": "B2 認知與 AI 核心動詞",
           "exampleEn": "A well-trained neural network can recognize handwritten digits with over 99% accuracy.",
           "exampleZh": "訓練精良的神經網路能以超過 99% 的準確率辨識手寫數字。"
-        },
-        {
-          "word": "challenge",
-          "lemma": "challenge",
-          "pos": "n./v.",
-          "phonetic": "/challenge/",
-          "meaning": "挑戰",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"challenge\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「挑戰（challenge）」能讓表達更具說服力。"
         }
       ],
       "id": 184,
@@ -4283,40 +2727,18 @@
       "end": 974.7,
       "en": "And how does it take on that challenge?",
       "zh": "它如何面對這項挑戰？",
-      "keywords": [
-        {
-          "word": "challenge",
-          "lemma": "challenge",
-          "pos": "n./v.",
-          "phonetic": "/challenge/",
-          "meaning": "挑戰",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"challenge\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「挑戰（challenge）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 185,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「challenge (n./v. 挑戰)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 975.1,
       "end": 979.4,
       "en": "How does this network learn the appropriate weights and biases just by looking at data?",
       "zh": "這個網路如何透過查看數據來學習適當的權重和偏差？",
-      "keywords": [
-        {
-          "word": "appropriate",
-          "lemma": "appropriate",
-          "pos": "v.",
-          "phonetic": "/appropriate/",
-          "meaning": "適當",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"appropriate\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「適當（appropriate）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 186,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「appropriate (v. 適當)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 980.1,
@@ -4332,78 +2754,25 @@
       "end": 986.1,
       "en": "More into what this particular network we're seeing is really doing.",
       "zh": "更深入地了解我們所看到的這個特定網路的真正作用。",
-      "keywords": [
-        {
-          "word": "particular",
-          "lemma": "particular",
-          "pos": "n./v.",
-          "phonetic": "/particular/",
-          "meaning": "特別",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"particular\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「特別（particular）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 188,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「particular (n./v. 特別)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 987.6,
       "end": 993.1,
       "en": "Now is the point I suppose I should say subscribe to stay notified about when that video or any new videos come out.",
       "zh": "現在我想我應該說訂閱以便在該影片或任何新影片發佈時隨時收到通知。",
-      "keywords": [
-        {
-          "word": "subscribe",
-          "lemma": "subscribe",
-          "pos": "n./v.",
-          "phonetic": "/subscribe/",
-          "meaning": "訂閱（字首 sub- 表「在底層、次級」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"subscribe\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「訂閱（subscribe）」能讓表達更具說服力。"
-        },
-        {
-          "word": "notified",
-          "lemma": "notified",
-          "pos": "v./adj.",
-          "phonetic": "/notified/",
-          "meaning": "通知",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"notified\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「通知（notified）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 189,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「subscribe (n./v. 訂閱)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 993.1,
       "end": 997.4,
       "en": "But realistically most of you don't actually receive notifications from YouTube, do you?",
       "zh": "但實際上，你們中的大多數人實際上並沒有收到 YouTube 的通知，不是嗎？",
-      "keywords": [
-        {
-          "word": "realistically",
-          "lemma": "realistically",
-          "pos": "adv.",
-          "phonetic": "/realistically/",
-          "meaning": "現實地（字首 re- 表「重新、反覆」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"realistically\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「現實地（realistically）」能讓表達更具說服力。"
-        },
-        {
-          "word": "receive",
-          "lemma": "receive",
-          "pos": "adj.",
-          "phonetic": "/receive/",
-          "meaning": "receive（字首 re- 表「重新、反覆」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"receive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「receive（receive）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 190,
       "grammarNote": "🔊 連音跟讀：注意句中「most of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -4414,46 +2783,25 @@
       "zh": "也許更誠實地說，我應該說訂閱，以便 YouTube 推薦演算法背後的神經網路準備好相信。",
       "keywords": [
         {
-          "word": "recommendation",
-          "lemma": "recommendation",
+          "word": "algorithm",
+          "lemma": "algorithm",
           "pos": "n.",
-          "phonetic": "/recommendation/",
-          "meaning": "推薦（字首 re- 表「重新、反覆」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"recommendation\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「推薦（recommendation）」能讓表達更具說服力。"
-        },
-        {
-          "word": "subscribe",
-          "lemma": "subscribe",
-          "pos": "n./v.",
-          "phonetic": "/subscribe/",
-          "meaning": "訂閱（字首 sub- 表「在底層、次級」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"subscribe\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「訂閱（subscribe）」能讓表達更具說服力。"
+          "phonetic": "/ˈælɡəˌrɪðəm/",
+          "meaning": "演算法（電腦解決特定問題或執行運算的明確邏輯步驟；形容詞為 algorithmic）",
+          "level": "B2 資訊科學必備字",
+          "exampleEn": "Backpropagation is the core algorithm for computing how a neural network should adjust its weights.",
+          "exampleZh": "反向傳播是計算神經網路應如何調整權重的核心「演算法」。"
         }
       ],
       "id": 191,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「recommendation (n. 推薦)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「algorithm (n. 演算法)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 1004.6,
       "end": 1007.9,
       "en": "That you want to see content from this channel get recommended to you.",
       "zh": "您希望看到該頻道的內容被推薦給您。",
-      "keywords": [
-        {
-          "word": "recommended",
-          "lemma": "recommended",
-          "pos": "v./adj.",
-          "phonetic": "/recommended/",
-          "meaning": "推薦（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"recommended\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「推薦（recommended）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 192,
       "grammarNote": "🔊 連音跟讀：注意句中「want to」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -4471,50 +2819,18 @@
       "end": 1013.5,
       "en": "Thank you very much to everyone supporting these videos on Patreon.",
       "zh": "非常感謝所有在 Patreon 上支持這些影片的人。",
-      "keywords": [
-        {
-          "word": "supporting",
-          "lemma": "supporting",
-          "pos": "v./n.",
-          "phonetic": "/supporting/",
-          "meaning": "支持",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"supporting\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「支持（supporting）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 194,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「supporting (v./n. 支持)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 1014,
       "end": 1019.7,
       "en": "I've been a little slow to progress in the probability series this summer, but I'm jumping back into it after this project.",
       "zh": "今年夏天我在機率系列上的進展有點慢，但在這個專案之後我又重新開始了。",
-      "keywords": [
-        {
-          "word": "probability",
-          "lemma": "probability",
-          "pos": "n.",
-          "phonetic": "/probability/",
-          "meaning": "機率（字首 pre-/pro- 表「預先、向前推進」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"probability\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「機率（probability）」能讓表達更具說服力。"
-        },
-        {
-          "word": "progress",
-          "lemma": "progress",
-          "pos": "n./v.",
-          "phonetic": "/progress/",
-          "meaning": "進展（字首 pre-/pro- 表「預先、向前推進」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"progress\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「進展（progress）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 195,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「probability (n. 機率)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 1019.7,
@@ -4539,48 +2855,16 @@
       "end": 1030.7,
       "en": "Theoretical side of deep learning and who currently works at a venture capital.",
       "zh": "深度學習的理論面向以及目前在創投公司工作。",
-      "keywords": [
-        {
-          "word": "Theoretical",
-          "lemma": "theoretical",
-          "pos": "adj.",
-          "phonetic": "/theoretical/",
-          "meaning": "理論",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"theoretical\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「理論（theoretical）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 198,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「theoretical (adj. 理論)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 1030.7,
       "end": 1034.6,
       "en": "Firm called Amplify Partners who kindly provided some of the funding for this video.",
       "zh": "名為 Amplify Partners 的公司慷慨地為該影片提供了部分資金。",
-      "keywords": [
-        {
-          "word": "Amplify",
-          "lemma": "amplify",
-          "pos": "v.",
-          "phonetic": "/amplify/",
-          "meaning": "amplify",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"amplify\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「amplify（amplify）」能讓表達更具說服力。"
-        },
-        {
-          "word": "provided",
-          "lemma": "provided",
-          "pos": "v./adj.",
-          "phonetic": "/provided/",
-          "meaning": "提供（字首 pre-/pro- 表「預先、向前推進」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"provided\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「提供（provided）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 199,
       "grammarNote": "🔊 連音跟讀：注意句中「some of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -4599,16 +2883,6 @@
           "level": "AI 數學核心術語",
           "exampleEn": "The sigmoid function squishes any real number into a clean range between zero and one.",
           "exampleZh": "Sigmoid 函數能將任何實數平滑壓縮到 0 與 1 之間的範圍。"
-        },
-        {
-          "word": "function",
-          "lemma": "function",
-          "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
         }
       ],
       "id": 200,
@@ -4619,30 +2893,9 @@
       "end": 1043.2,
       "en": "As I understand it early networks use this to squish the relevant weighted.",
       "zh": "據我了解，早期網路使用它來壓縮相關權重。",
-      "keywords": [
-        {
-          "word": "networks",
-          "lemma": "network",
-          "pos": "n./v.",
-          "phonetic": "/network/",
-          "meaning": "網路",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"network\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「網路（network）」能讓表達更具說服力。"
-        },
-        {
-          "word": "relevant",
-          "lemma": "relevant",
-          "pos": "adj.",
-          "phonetic": "/relevant/",
-          "meaning": "相關（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"relevant\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「相關（relevant）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 201,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「network (n./v. 網路)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 1043.2,
@@ -4651,24 +2904,14 @@
       "zh": "求和到 0 到 1 之間的區間，你知道有點受神經元不活躍或活躍的生物學類比的啟發。",
       "keywords": [
         {
-          "word": "biological",
-          "lemma": "biological",
-          "pos": "adj.",
-          "phonetic": "/biological/",
-          "meaning": "生物",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"biological\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「生物（biological）」能讓表達更具說服力。"
-        },
-        {
-          "word": "inactive",
-          "lemma": "inactive",
-          "pos": "adj.",
-          "phonetic": "/inactive/",
-          "meaning": "不活躍（否定／反向字首搭配核心字根）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"inactive\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「不活躍（inactive）」能讓表達更具說服力。"
+          "word": "neurons",
+          "lemma": "neuron",
+          "pos": "n.",
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 202,
@@ -4689,16 +2932,6 @@
           "level": "AI 數學核心術語",
           "exampleEn": "The sigmoid function squishes any real number into a clean range between zero and one.",
           "exampleZh": "Sigmoid 函數能將任何實數平滑壓縮到 0 與 1 之間的範圍。"
-        },
-        {
-          "word": "relatively",
-          "lemma": "relatively",
-          "pos": "adv.",
-          "phonetic": "/relatively/",
-          "meaning": "相對（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"relatively\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「相對（relatively）」能讓表達更具說服力。"
         }
       ],
       "id": 203,
@@ -4727,38 +2960,16 @@
       "end": 1062.3,
       "en": "And ReLU, ReLU stands for rectified linear unit?",
       "zh": "還有ReLU，ReLU代表修正線性單元？",
-      "keywords": [
-        {
-          "word": "rectified",
-          "lemma": "rectified",
-          "pos": "v./adj.",
-          "phonetic": "/rectified/",
-          "meaning": "整頓（字首 re- 表「重新、反覆」）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"rectified\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「整頓（rectified）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 206,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「rectified (v./adj. 整頓)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 1062.7,
       "end": 1067.4,
       "en": "Yes it's this kind of function where you're just taking a max of zero.",
       "zh": "是的，在這個函數中，您只需取最大值為零。",
-      "keywords": [
-        {
-          "word": "function",
-          "lemma": "function",
-          "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 207,
       "grammarNote": "🔊 連音跟讀：注意句中「kind of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -4767,48 +2978,16 @@
       "end": 1072,
       "en": "And a where a is given by what you were explaining in the video and.",
       "zh": "其中 a 是由您在影片中解釋的內容給出的。",
-      "keywords": [
-        {
-          "word": "explaining",
-          "lemma": "explaining",
-          "pos": "v./n.",
-          "phonetic": "/explaining/",
-          "meaning": "解釋一下",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"explaining\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「解釋一下（explaining）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 208,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「explaining (v./n. 解釋一下)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 1072,
       "end": 1076.6,
       "en": "What this was sort of motivated from I think was a partially by a.",
       "zh": "我認為這的動機部分是由於。",
-      "keywords": [
-        {
-          "word": "partially",
-          "lemma": "partially",
-          "pos": "adv.",
-          "phonetic": "/partially/",
-          "meaning": "部分",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"partially\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「部分（partially）」能讓表達更具說服力。"
-        },
-        {
-          "word": "motivated",
-          "lemma": "motivated",
-          "pos": "v./adj.",
-          "phonetic": "/motivated/",
-          "meaning": "動機",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"motivated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「動機（motivated）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 209,
       "grammarNote": "📐 句型解析：以名詞子句「What + S + V」作為主詞的強調句型，母語講者常用來把核心結論推向動詞後方聚焦；🔊 連音跟讀：注意句中「sort of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -4819,86 +2998,34 @@
       "zh": "神經元如何活化或不活化的生物學類比。",
       "keywords": [
         {
-          "word": "Biological",
-          "lemma": "biological",
-          "pos": "adj.",
-          "phonetic": "/biological/",
-          "meaning": "生物",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"biological\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「生物（biological）」能讓表達更具說服力。"
-        },
-        {
-          "word": "analogy",
-          "lemma": "analogy",
+          "word": "neurons",
+          "lemma": "neuron",
           "pos": "n.",
-          "phonetic": "/analogy/",
-          "meaning": "analogy",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"analogy\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「analogy（analogy）」能讓表達更具說服力。"
+          "phonetic": "/ˈnʊrɑn/",
+          "meaning": "神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）",
+          "level": "B2 神經科學與深度學習",
+          "exampleEn": "In a simple neural network, each neuron holds an activation number between zero and one.",
+          "exampleZh": "在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。"
         }
       ],
       "id": 210,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「biological (adj. 生物)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "💡 家教導讀：本句精選高階表達「neuron (n. 神經元)」，朗讀時請將語調重音落在此核心語塊上"
     },
     {
       "start": 1081.4,
       "end": 1086,
       "en": "And so if it passes a certain threshold it would be the identity function but if it did.",
       "zh": "因此，如果它通過了某個閾值，它將成為恆等函數，但如果確實如此。",
-      "keywords": [
-        {
-          "word": "identity",
-          "lemma": "identity",
-          "pos": "n.",
-          "phonetic": "/identity/",
-          "meaning": "身份",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"identity\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「身份（identity）」能讓表達更具說服力。"
-        },
-        {
-          "word": "function",
-          "lemma": "function",
-          "pos": "n.",
-          "phonetic": "/function/",
-          "meaning": "功能（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"function\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「功能（function）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 211,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「identity (n. 身份)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 1086,
       "end": 1090.8,
       "en": "Not then it would just not be activated so it'd be zero so it's kind of a simplification.",
       "zh": "不然它就不會被激活，所以它會為零，所以這是一種簡化。",
-      "keywords": [
-        {
-          "word": "simplification",
-          "lemma": "simplification",
-          "pos": "n.",
-          "phonetic": "/simplification/",
-          "meaning": "簡化（名詞字尾 -tion 表「動作過程或狀態」）",
-          "level": "C1 進階高頻",
-          "exampleEn": "Mastering how speakers use \"simplification\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「簡化（simplification）」能讓表達更具說服力。"
-        },
-        {
-          "word": "activated",
-          "lemma": "activated",
-          "pos": "v./adj.",
-          "phonetic": "/activated/",
-          "meaning": "激活",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"activated\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「激活（activated）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 212,
       "grammarNote": "🔊 連音跟讀：注意句中「kind of」在母語自然語速下子音與母音會緊密連讀（Linking），跟讀時切勿逐字斷開"
     },
@@ -4917,16 +3044,6 @@
           "level": "AI 數學核心術語",
           "exampleEn": "The sigmoid function squishes any real number into a clean range between zero and one.",
           "exampleZh": "Sigmoid 函數能將任何實數平滑壓縮到 0 與 1 之間的範圍。"
-        },
-        {
-          "word": "training",
-          "lemma": "training",
-          "pos": "v./n.",
-          "phonetic": "/training/",
-          "meaning": "training",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"training\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「training（training）」能讓表達更具說服力。"
         }
       ],
       "id": 213,
@@ -4946,30 +3063,9 @@
       "end": 1104.6,
       "en": "To work very well for these incredibly deep neural networks.",
       "zh": "能夠很好地適應這些令人難以置信的深層神經網路。",
-      "keywords": [
-        {
-          "word": "incredibly",
-          "lemma": "incredibly",
-          "pos": "adv.",
-          "phonetic": "/incredibly/",
-          "meaning": "難以置信（否定／反向字首搭配核心字根）",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"incredibly\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「難以置信（incredibly）」能讓表達更具說服力。"
-        },
-        {
-          "word": "networks",
-          "lemma": "network",
-          "pos": "n./v.",
-          "phonetic": "/network/",
-          "meaning": "網路",
-          "level": "B2/C1 職場專業",
-          "exampleEn": "Mastering how speakers use \"network\" in context sharpens your professional English expression.",
-          "exampleZh": "在專業溝通語境中，精準運用「網路（network）」能讓表達更具說服力。"
-        }
-      ],
+      "keywords": [],
       "id": 215,
-      "grammarNote": "💡 家教導讀：本句精選高階表達「incredibly (adv. 難以置信)」，朗讀時請將語調重音落在此核心語塊上"
+      "grammarNote": "🔊 家教導讀：朗讀時請將介系詞與冠詞（to, of, the, in）輕讀弱化為 /ə/，凸顯核心名詞與動詞的重音節奏。"
     },
     {
       "start": 1105.1,

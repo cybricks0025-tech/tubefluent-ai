@@ -1114,6 +1114,249 @@ export const TUTOR_VOCAB = {
     meaning: '自主運作的、自動駕駛的（字根 auto-「自己」+ nomos「法則」；名詞為 autonomy「自主性」）',
     exampleEn: 'Autonomous agents can break down high-level goals, invoke tools, and verify their own outputs.',
     exampleZh: '「自主」AI 代理人能將高階目標拆解、呼叫工具，並自行驗證產出結果。'
+  },
+  inference: {
+    lemma: 'inference',
+    pos: 'n.',
+    phonetic: '/ˈɪnfərəns/',
+    level: 'AI 與機器學習核心字',
+    meaning: '（AI 模型）推論、推理（指訓練完成的模型實際接收提問並生成答案與 tokens 的運算過程；動詞為 infer）',
+    exampleEn: 'Real-time AI inference requires both massive memory bandwidth and ultra-low latency.',
+    exampleZh: '即時 AI「推論」同時需要龐大的記憶體頻寬與極低的延遲。'
+  },
+  infrastructure: {
+    lemma: 'infrastructure',
+    pos: 'n.',
+    phonetic: '/ˈɪnfrəˌstrʌktʃɚ/',
+    level: 'B2 科技與產業必備',
+    meaning: '基礎設施、底層基礎建設（字首 infra-「在底下」+ structure「結構」；如 AI infrastructure、cloud infrastructure）',
+    exampleEn: 'Cloud providers are investing hundreds of billions of dollars into next-generation AI infrastructure.',
+    exampleZh: '雲端服務商正投入數千億美元建置下一代 AI「基礎設施」。'
+  },
+  accelerate: {
+    lemma: 'accelerate',
+    pos: 'v.',
+    phonetic: '/ækˈsɛləˌreɪt/',
+    level: 'B2 科技與商務核心動詞',
+    meaning: '加速、促進（衍生詞 accelerated computing「加速運算」指以 GPU 協同 CPU 進行大規模平行運算）',
+    exampleEn: 'Accelerated computing has dramatically reduced the time needed to train foundation models.',
+    exampleZh: '「加速」運算大幅縮短了訓練基礎模型所需的時間。'
+  },
+  neuron: {
+    lemma: 'neuron',
+    pos: 'n.',
+    phonetic: '/ˈnʊrɑn/',
+    level: 'B2 神經科學與深度學習',
+    meaning: '神經元（神經網路的基本運算單元，負責接收上一層輸入、加權求和並透過激活函數輸出訊號）',
+    exampleEn: 'In a simple neural network, each neuron holds an activation number between zero and one.',
+    exampleZh: '在簡單的神經網路中，每個「神經元」都保有一個介於 0 到 1 之間的激活數值。'
+  },
+  intelligence: {
+    lemma: 'intelligence',
+    pos: 'n.',
+    phonetic: '/ɪnˈtɛlədʒəns/',
+    level: 'B2 核心科技與認知名詞',
+    meaning: '智慧、智能（科技語境指 Artificial Intelligence「人工智慧」或數位智能，而非軍事情報）',
+    exampleEn: 'Modern AI factories transform electricity and data into digital intelligence at scale.',
+    exampleZh: '現代 AI 工廠將電力與資料大規模轉化為數位「智能」。'
+  },
+  integrate: {
+    lemma: 'integrate',
+    pos: 'v.',
+    phonetic: '/ˈɪntəˌɡreɪt/',
+    level: 'B2 工程與商務高頻動詞',
+    meaning: '整合、融入（常搭配 integrate A into/with B，將不同軟硬體系統無縫結合成整體；名詞為 integration）',
+    exampleEn: 'We integrated the new reasoning model directly into our developer workflow.',
+    exampleZh: '我們將新的推理模型直接「整合」進開發者的工作流程中。'
+  },
+  foundation: {
+    lemma: 'foundation',
+    pos: 'n.',
+    phonetic: '/faʊnˈdeɪʃən/',
+    level: 'B2 學術與 AI 核心字',
+    meaning: '基礎、根基；基金會（AI 領域常說 foundation models「基礎大模型」，指可微調應用於萬物的底層模型）',
+    exampleEn: 'Linear algebra provides the mathematical foundation for all modern machine learning.',
+    exampleZh: '線性代數為所有現代機器學習提供了數學「基礎」。'
+  },
+  algorithm: {
+    lemma: 'algorithm',
+    pos: 'n.',
+    phonetic: '/ˈælɡəˌrɪðəm/',
+    level: 'B2 資訊科學必備字',
+    meaning: '演算法（電腦解決特定問題或執行運算的明確邏輯步驟；形容詞為 algorithmic）',
+    exampleEn: 'Backpropagation is the core algorithm for computing how a neural network should adjust its weights.',
+    exampleZh: '反向傳播是計算神經網路應如何調整權重的核心「演算法」。'
+  },
+  capability: {
+    lemma: 'capability',
+    pos: 'n.',
+    phonetic: '/ˌkeɪpəˈbɪləti/',
+    level: 'B2 職場與產品高頻字',
+    meaning: '能力、功能特性（常用複數 capabilities 指系統、產品或模型所具備的「進階功能與實力」）',
+    exampleEn: 'Multimodal reasoning capabilities allow the model to understand audio, video, and code simultaneously.',
+    exampleZh: '多模態推理「能力」讓模型能同時理解音訊、影片與程式碼。'
+  },
+  enterprise: {
+    lemma: 'enterprise',
+    pos: 'n.',
+    phonetic: '/ˈɛntɚˌpraɪz/',
+    level: 'B2 商務與外商核心字',
+    meaning: '大型企業、企業級應用（外商常說 enterprise software「企業級軟體」，強調高安全性與大規模部署能力）',
+    exampleEn: 'Every global enterprise is now building custom AI agents tailored to its own domain data.',
+    exampleZh: '每家全球大型「企業」如今都在打造專屬自身領域資料的客製化 AI 代理人。'
+  },
+  generative: {
+    lemma: 'generative',
+    pos: 'adj.',
+    phonetic: '/ˈdʒɛnəˌreɪtɪv/',
+    level: 'B2 當代科技核心字',
+    meaning: '生成式的、具創造產出能力的（源自動詞 generate；如 generative AI「生成式 AI」）',
+    exampleEn: 'Generative AI has shifted computing from retrieving pre-recorded files to generating answers on the fly.',
+    exampleZh: '「生成式」AI 已將運算模式從檢索預存檔案，轉變為即時生成解答。'
+  },
+  ultimately: {
+    lemma: 'ultimately',
+    pos: 'adv.',
+    phonetic: '/ˈʌltəmətli/',
+    level: 'B2 演講邏輯收斂副詞',
+    meaning: '歸根結底、最終（演講者在鋪陳多個論點後，用來引出「最根本的核心結論」）',
+    exampleEn: 'Ultimately, the quality of your questions determines the quality of your learning.',
+    exampleZh: '「歸根結底」，你提問的品質決定了你學習的品質。'
+  },
+  supercomputer: {
+    lemma: 'supercomputer',
+    pos: 'n.',
+    phonetic: '/ˈsupɚkəmˌpjutɚ/',
+    level: 'B2 科技與硬體核心字',
+    meaning: '超級電腦（由數千至數萬顆高速互連晶片組成、具備極致算力的運算叢集）',
+    exampleEn: 'An entire AI data center now functions as a single giant AI supercomputer.',
+    exampleZh: '整座 AI 資料中心如今就像一台單一的巨型 AI「超級電腦」般運作。'
+  },
+  partnership: {
+    lemma: 'partnership',
+    pos: 'n.',
+    phonetic: '/ˈpɑrtnɚˌʃɪp/',
+    level: 'B2 商務合作核心字',
+    meaning: '夥伴關係、策略合作（常搭配 form/announce a strategic partnership with「與⋯建立策略合作夥伴關係」）',
+    exampleEn: 'We announced a deep engineering partnership to bring accelerated computing to telecommunications.',
+    exampleZh: '我們宣布了一項深度工程「合作夥伴關係」，將加速運算導入電信產業。'
+  },
+  essentially: {
+    lemma: 'essentially',
+    pos: 'adv.',
+    phonetic: '/ɪˈsɛnʃəli/',
+    level: 'B2 演講解釋高頻副詞',
+    meaning: '本質上、說穿了就是（演講者將複雜技術概念化繁為簡、用一句白話解釋核心本質時的必備轉折詞）',
+    exampleEn: 'A neural network is essentially a mathematical function that maps inputs to predictions.',
+    exampleZh: '神經網路「本質上」就是一個將輸入映射到預測結果的數學函數。'
+  },
+  enormous: {
+    lemma: 'enormous',
+    pos: 'adj.',
+    phonetic: '/ɪˈnɔrməs/',
+    level: 'B2 強勢形容詞',
+    meaning: '極為龐大的、巨量的（語氣比 big 強烈許多，常修飾 enormous amount of data / potential）',
+    exampleEn: 'Training frontier models requires an enormous amount of compute and clean data.',
+    exampleZh: '訓練最前沿的模型需要「極為龐大」的算力與乾淨資料。'
+  },
+  efficiency: {
+    lemma: 'efficiency',
+    pos: 'n.',
+    phonetic: '/ɪˈfɪʃənsi/',
+    level: 'B2 工程與商務必備字',
+    meaning: '效率、效能（常見搭配：energy efficiency 能源效率、operational efficiency 營運效率；形容詞為 efficient）',
+    exampleEn: 'Co-designing chips and software together delivers a tenfold leap in energy efficiency.',
+    exampleZh: '將晶片與軟體協同設計，能帶來十倍的能源「效率」躍升。'
+  },
+  confidential: {
+    lemma: 'confidential',
+    pos: 'adj.',
+    phonetic: '/ˌkɑnfəˈdɛnʃəl/',
+    level: 'B2 商務資安核心字',
+    meaning: '機密的、保密的（常見搭配：confidential computing 機密運算、strictly confidential 絕對機密）',
+    exampleEn: 'Confidential computing ensures that sensitive enterprise data remains encrypted even during processing.',
+    exampleZh: '「機密」運算確保敏感的企業資料即使在運算處理過程中也維持加密狀態。'
+  },
+  incredible: {
+    lemma: 'incredible',
+    pos: 'adj.',
+    phonetic: '/ɪnˈkrɛdəbəl/',
+    level: 'B2 演講高頻讚嘆詞',
+    meaning: '驚人的、不可思議的、極為出色的（字根 cred「相信」；副詞 incredibly 極常用來修飾形容詞表「非常、極度」）',
+    exampleEn: 'The open-source community has built an incredible ecosystem of developer tools.',
+    exampleZh: '開源社群已經建立起一個「令人驚嘆」的開發者工具生態系。'
+  },
+  biopsy: {
+    lemma: 'biopsy',
+    pos: 'n.',
+    phonetic: '/ˈbaɪɑpsi/',
+    level: 'C1 醫療與生醫字彙',
+    meaning: '活體組織切片檢查（字根 bio-「生命」+ opsis「觀看」，指取出少量組織在顯微鏡下檢驗病變）',
+    exampleEn: 'The doctors performed a biopsy and discovered that the tumor was a rare, curable form of cancer.',
+    exampleZh: '醫師進行了「活體組織切片檢查」，發現該腫瘤是一種罕見但可治癒的癌症。'
+  },
+  prerequisite: {
+    lemma: 'prerequisite',
+    pos: 'n.',
+    phonetic: '/priˈrɛkwəzət/',
+    level: 'C1 學術與職場核心字',
+    meaning: '先決條件、必備前提；先修課程（字首 pre-「預先」+ requisite「必要的」，常搭配 a prerequisite for/to）',
+    exampleEn: 'Clear problem definition is an essential prerequisite for writing clean, maintainable code.',
+    exampleZh: '清晰的問題定義是撰寫乾淨、易維護程式碼的必備「先決條件」。'
+  },
+  matrix: {
+    lemma: 'matrix',
+    pos: 'n.',
+    phonetic: '/ˈmeɪtrɪks/',
+    level: 'B2 數學與 AI 核心術語',
+    meaning: '矩陣（複數為 matrices /ˈmeɪtrəˌsiz/；深度學習將千萬個權重組織為矩陣，透過矩陣乘法高速平行運算）',
+    exampleEn: 'Organizing neural network weights into a matrix allows GPUs to compute millions of products in parallel.',
+    exampleZh: '將神經網路權重組織成「矩陣」，能讓 GPU 平行計算數百萬個乘積。'
+  },
+  latency: {
+    lemma: 'latency',
+    pos: 'n.',
+    phonetic: '/ˈleɪtənsi/',
+    level: 'C1 系統工程必備術語',
+    meaning: '延遲時間、反應時間（從發出請求到收到第一個回應所需的毫秒數；常說 low latency「低延遲」）',
+    exampleEn: 'Reducing network latency is critical for real-time voice interaction with AI assistants.',
+    exampleZh: '降低網路「延遲」對於與 AI 助理進行即時語音互動至關重要。'
+  },
+  bandwidth: {
+    lemma: 'bandwidth',
+    pos: 'n.',
+    phonetic: '/ˈbændˌwɪdθ/',
+    level: 'B2 科技與職場雙棲字',
+    meaning: '（記憶體／網路）頻寬；（口語喻）個人的時間與心力餘裕（如 I don\'t have the bandwidth this week）',
+    exampleEn: 'High-bandwidth memory is essential for feeding massive parameters into the processor quickly.',
+    exampleZh: '高「頻寬」記憶體對於將龐大參數快速餵入處理器至關重要。'
+  },
+  ecosystem: {
+    lemma: 'ecosystem',
+    pos: 'n.',
+    phonetic: '/ˈikoʊˌsɪstəm/',
+    level: 'B2 商務與科技高頻字',
+    meaning: '生態系、產業生態圈（指硬體、軟體、開發者與合作夥伴相互依存共榮的完整體系）',
+    exampleEn: 'A thriving developer ecosystem is the strongest moat any computing platform can build.',
+    exampleZh: '蓬勃發展的開發者「生態系」是任何運算平台能建立的最強護城河。'
+  },
+  perspective: {
+    lemma: 'perspective',
+    pos: 'n.',
+    phonetic: '/pɚˈspɛktɪv/',
+    level: 'B2 思辨與溝通必備',
+    meaning: '觀點、視角、洞察高度（常見片語：from my perspective 從我的角度來看、put things in perspective 客觀看待全貌）',
+    exampleEn: 'Looking at the problem from a systems perspective revealed a much simpler solution.',
+    exampleZh: '從系統整體的「視角」檢視問題，揭示了一個簡單得多的解決方案。'
+  },
+  fundamental: {
+    lemma: 'fundamental',
+    pos: 'adj.',
+    phonetic: '/ˌfʌndəˈmɛntəl/',
+    level: 'B2 學術與演講核心字',
+    meaning: '根本的、最基礎核心的（副詞 fundamentally 常表「從根本上徹底地」）',
+    exampleEn: 'We are witnessing a fundamental shift in how software is written and executed.',
+    exampleZh: '我們正在見證軟體撰寫與執行方式的一場「根本性」轉變。'
   }
 };
 
@@ -1124,6 +1367,7 @@ export function resolveCanonicalLemma(word) {
   const low = (word || '').toLowerCase().replace(/[^a-z-]/g, '');
   if (!low) return '';
   if (TUTOR_VOCAB[low]) return low;
+  if (low === 'matrices') return 'matrix';
   if (low.endsWith('ies') && low.length > 5) {
     const y = low.slice(0, -3) + 'y';
     if (TUTOR_VOCAB[y]) return y;
@@ -1226,8 +1470,8 @@ export function inferPosAndRootNote(word) {
 }
 
 /**
- * Extract 0-2 truly tutor-worthy items (Phrases/Idioms first, then B2-C2 advanced vocabulary)
- * from a single English sentence. Never tags elementary words!
+ * Extract 0-2 truly tutor-worthy items (Phrases/Idioms first, then Curated B2-C2 vocabulary)
+ * from a single English sentence. Only returns 100% verified entries with genuine meanings & examples!
  */
 export function selectTutorKeywordsForSentence(enText, focusMode = 'tech-interview') {
   const picked = [];
@@ -1258,7 +1502,7 @@ export function selectTutorKeywordsForSentence(enText, focusMode = 'tech-intervi
     }
   }
 
-  // 2. Scan for Curated & B2-C2 Advanced Single Words
+  // 2. Scan for Curated B2-C2 Advanced Single Words
   const tokenRegex = /[A-Za-z]+(?:-[A-Za-z]+)?/g;
   let match;
   const candidates = [];
@@ -1269,26 +1513,16 @@ export function selectTutorKeywordsForSentence(enText, focusMode = 'tech-intervi
     const overlaps = usedSpans.some(([s, e]) => startIdx < e && endIdx > s);
     if (overlaps) continue;
 
-    const score = scoreWordDifficulty(word);
-    if (score >= 16) {
-      candidates.push({ word, startIdx, endIdx, score });
+    const canon = resolveCanonicalLemma(word);
+    if (TUTOR_VOCAB[canon]) {
+      candidates.push({ word, canon, startIdx, endIdx, score: 100 });
     }
   }
 
-  candidates.sort((a, b) => b.score - a.score);
   const seenLemmas = new Set(picked.map((p) => p.lemma.toLowerCase()));
 
-  const defaultBadge =
-    focusMode === 'tech-interview'
-      ? 'B2/C1 職場專業'
-      : focusMode === 'toeic-business'
-        ? 'TOEIC 金色高頻'
-        : focusMode === 'daily-idioms'
-          ? '母語進階表達'
-          : 'TED 學術核心';
-
   for (const cand of candidates) {
-    const canon = resolveCanonicalLemma(cand.word);
+    const canon = cand.canon;
     if (seenLemmas.has(canon)) continue;
     seenLemmas.add(canon);
 
@@ -1304,20 +1538,6 @@ export function selectTutorKeywordsForSentence(enText, focusMode = 'tech-intervi
         exampleEn: curated.exampleEn,
         exampleZh: curated.exampleZh,
         isCurated: true
-      });
-    } else {
-      const { pos, rootHint } = inferPosAndRootNote(canon);
-      picked.push({
-        word: cand.word,
-        lemma: canon,
-        pos,
-        phonetic: `/${canon}/`,
-        meaning: '', // Will be enriched with contextual translation + rootHint
-        rootHint,
-        level: cand.score >= 28 ? 'C1 進階高頻' : defaultBadge,
-        exampleEn: `Mastering how speakers use "${canon}" in context sharpens your professional English expression.`,
-        exampleZh: '',
-        isCurated: false
       });
     }
     if (picked.length >= 2) break;

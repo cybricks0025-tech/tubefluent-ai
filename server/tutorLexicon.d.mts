@@ -1,11 +1,17 @@
-import type { KeywordAnnotation } from '../src/types';
+import type { FocusMode, KeywordItem } from '../src/types';
+
+export interface RawTutorKeyword extends KeywordItem {
+  rootHint?: string;
+  isCurated?: boolean;
+}
 
 export function selectTutorKeywordsForSentence(
   enText: string,
-  maxItems?: number
-): KeywordAnnotation[];
+  focusMode?: FocusMode | string
+): RawTutorKeyword[];
 
 export function buildTutorGrammarNote(
   enText: string,
-  selectedKeywords: KeywordAnnotation[]
+  zhText: string,
+  keywords?: KeywordItem[]
 ): string;

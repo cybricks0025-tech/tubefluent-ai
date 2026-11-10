@@ -50,7 +50,7 @@ import {
 const STORAGE_KEYS = {
   SAVED_WORDS: 'tubefluent_saved_words_v1',
   API_KEY: 'tubefluent_gemini_api_key_v1',
-  CUSTOM_LESSONS: 'tubefluent_custom_lessons_v5',
+  CUSTOM_LESSONS: 'tubefluent_custom_lessons_v6',
   THEME: 'tubefluent_theme_v1'
 };
 
@@ -75,12 +75,11 @@ const speak = (text: string, rate = 1) => {
   window.speechSynthesis.speak(u);
 };
 
-/** Keep one lesson per YouTube video, preferring the most complete one. */
+/** Keep one lesson per YouTube video, preferring custom/newly analyzed lessons over pre-bundled ones. */
 const dedupeByVideo = (lessons: VideoLesson[]) => {
   const map = new Map<string, VideoLesson>();
   for (const lesson of lessons) {
-    const prev = map.get(lesson.videoId);
-    if (!prev || lesson.subtitles.length > prev.subtitles.length) {
+    if (!map.has(lesson.videoId)) {
       map.set(lesson.videoId, lesson);
     }
   }
@@ -93,6 +92,8 @@ export function App() {
       localStorage.removeItem('tubefluent_custom_lessons_v1');
       localStorage.removeItem('tubefluent_custom_lessons_v2');
       localStorage.removeItem('tubefluent_custom_lessons_v3');
+      localStorage.removeItem('tubefluent_custom_lessons_v4');
+      localStorage.removeItem('tubefluent_custom_lessons_v5');
       const raw = localStorage.getItem(STORAGE_KEYS.CUSTOM_LESSONS);
       if (!raw) return [];
       const parsed: VideoLesson[] = JSON.parse(raw);
@@ -294,28 +295,21 @@ export function App() {
     return subs[0];
   }, [activeSubtitle, currentLesson.subtitles, currentTime]);
 
-  // Current-sentence keywords, topped up with the next sentences' keywords so the grid is never empty
+  // Strictly only show keywords that belong to the current sentence so "本句解析" 100% matches the active subtitle
   const contextualKeywords = useMemo(() => {
     if (!latchedSubtitle) return [];
     const items: Array<{ keyword: KeywordItem; sentence: SubtitleItem; isPreview: boolean }> = [];
     const seen = new Set<string>();
-    const push = (kw: KeywordItem, sentence: SubtitleItem, isPreview: boolean) => {
+    const lowerEn = latchedSubtitle.en.toLowerCase();
+    for (const kw of latchedSubtitle.keywords || []) {
       const k = kw.lemma.toLowerCase();
-      if (seen.has(k)) return;
+      if (seen.has(k)) continue;
+      if (!lowerEn.includes(kw.word.trim().toLowerCase()) && !lowerEn.includes(k)) continue;
       seen.add(k);
-      items.push({ keyword: kw, sentence, isPreview });
-    };
-    (latchedSubtitle.keywords || []).forEach((kw) => push(kw, latchedSubtitle, false));
-    const subs = currentLesson.subtitles;
-    const startIdx = subs.findIndex((s) => s.id === latchedSubtitle.id);
-    for (let i = startIdx + 1; i < subs.length && items.length < 3; i++) {
-      for (const kw of subs[i].keywords || []) {
-        push(kw, subs[i], true);
-        if (items.length >= 3) break;
-      }
+      items.push({ keyword: kw, sentence: latchedSubtitle, isPreview: false });
     }
     return items;
-  }, [latchedSubtitle, currentLesson.subtitles]);
+  }, [latchedSubtitle]);
 
   const isTheaterSplit = cinemaMode === 'theater-split';
   const isTheaterBottom = cinemaMode === 'theater-bottom';
