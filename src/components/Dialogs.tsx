@@ -16,7 +16,11 @@ import {
   SentenceTutorBreakdown,
   SubtitleItem
 } from '../types';
-import { askSentenceTutorClientFallback } from '../services/clientAnalyzer';
+import {
+  askSentenceTutorClientFallback,
+  sanitizeApiKey,
+  verifyGeminiApiKey
+} from '../services/clientAnalyzer';
 
 /**
  * Shared Native Modal Dialog wrapper following modern-web-guidance:
@@ -439,6 +443,8 @@ interface SettingsAndCustomTranscriptDialogProps {
   onClose: () => void;
   apiKey: string;
   onSaveApiKey: (key: string) => void;
+  pendingVideoUrl?: string;
+  onSaveAndAnalyze?: (cleanKey: string) => void;
   focusMode: FocusMode;
   onChangeFocusMode: (mode: FocusMode) => void;
   onSubmitCustomTranscript: (payload: {
@@ -455,11 +461,17 @@ export const SettingsAndCustomTranscriptDialog: React.FC<
   onClose,
   apiKey,
   onSaveApiKey,
+  pendingVideoUrl,
+  onSaveAndAnalyze,
   focusMode,
   onChangeFocusMode,
   onSubmitCustomTranscript
 }) => {
   const [localKey, setLocalKey] = useState(apiKey);
+  const [testingKey, setTestingKey] = useState(false);
+  const [keyStatus, setKeyStatus] = useState<{ ok: boolean; message: string } | null>(
+    null
+  );
   const [customUrl, setCustomUrl] = useState('');
   const [customTitle, setCustomTitle] = useState('');
   const [customText, setCustomText] = useState('');
@@ -467,6 +479,26 @@ export const SettingsAndCustomTranscriptDialog: React.FC<
   useEffect(() => {
     setLocalKey(apiKey);
   }, [apiKey]);
+
+  const handleKeyInputChange = (val: string) => {
+    setLocalKey(val);
+    setKeyStatus(null);
+    // Auto-save immediately so closing the dialog via X or backdrop never loses the key!
+    onSaveApiKey(sanitizeApiKey(val));
+  };
+
+  const handleTestKey = async () => {
+    const clean = sanitizeApiKey(localKey);
+    onSaveApiKey(clean);
+    setTestingKey(true);
+    setKeyStatus(null);
+    try {
+      const res = await verifyGeminiApiKey(clean);
+      setKeyStatus(res);
+    } finally {
+      setTestingKey(false);
+    }
+  };
 
   return (
     <NativeModalDialog
@@ -482,31 +514,54 @@ export const SettingsAndCustomTranscriptDialog: React.FC<
             className="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5"
           >
             <KeyRound className="w-4 h-4 text-indigo-500" aria-hidden="true" />
-            Gemini API Key (`gemini-2.5-flash` 結構化雙語輸出)
+            Gemini API Key（公開網址解析任意新 YouTube 影片必備）
           </label>
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            金鑰僅儲存於您的瀏覽器本機 (`localStorage`)。設定後貼上任何 YouTube 網址，系統即透過 Structured Outputs 100% 自動生成雙語翻譯、重點字卡與隨堂測驗！
+            金鑰僅儲存於您的瀏覽器本機 (`localStorage`)。貼上後會自動儲存，並支援直接解析任意新 YouTube 影片網址！
           </p>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <input
               id="gemini-api-key-input"
               type="password"
               value={localKey}
-              onChange={(e) => setLocalKey(e.target.value)}
-              placeholder="AIzaSy..."
-              className="flex-1 px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs font-mono"
+              onChange={(e) => handleKeyInputChange(e.target.value)}
+              placeholder="貼上 AIzaSy... 金鑰（自動儲存）"
+              className="flex-1 min-w-[180px] px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs font-mono"
             />
             <button
               type="button"
+              disabled={testingKey || !localKey.trim()}
+              onClick={handleTestKey}
+              className="px-3 py-2 rounded-xl border border-indigo-500/40 text-indigo-600 dark:text-indigo-300 hover:bg-indigo-500/10 disabled:opacity-40 text-xs font-semibold cursor-pointer"
+            >
+              {testingKey ? '驗證中⋯' : '測試金鑰'}
+            </button>
+            <button
+              type="button"
               onClick={() => {
-                onSaveApiKey(localKey.trim());
+                const clean = sanitizeApiKey(localKey);
+                onSaveApiKey(clean);
                 onClose();
+                if (clean && pendingVideoUrl?.trim() && onSaveAndAnalyze) {
+                  onSaveAndAnalyze(clean);
+                }
               }}
               className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold cursor-pointer"
             >
-              儲存金鑰
+              {pendingVideoUrl?.trim() ? '儲存並立即解析影片' : '儲存並關閉'}
             </button>
           </div>
+          {keyStatus && (
+            <p
+              className={`text-xs font-semibold p-2 rounded-lg ${
+                keyStatus.ok
+                  ? 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300'
+                  : 'bg-rose-500/10 text-rose-600 dark:text-rose-400'
+              }`}
+            >
+              {keyStatus.message}
+            </p>
+          )}
         </div>
 
         {/* Focus Persona Mode */}

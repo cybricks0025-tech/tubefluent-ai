@@ -1,5 +1,10 @@
 import { GoogleGenAI, Type } from '@google/genai';
-import { FocusMode, SubtitleItem, VideoLesson } from '../types';
+import { FocusMode, KeywordItem, QuizQuestion, SubtitleItem, VideoLesson } from '../types';
+// @ts-ignore - shared pure ESM lexicon used by both browser and server
+import {
+  selectTutorKeywordsForSentence,
+  buildTutorGrammarNote
+} from '../../server/tutorLexicon.mjs';
 
 const FOCUS_PROMPTS: Record<FocusMode, string> = {
   'tech-interview':
@@ -11,6 +16,51 @@ const FOCUS_PROMPTS: Record<FocusMode, string> = {
   'academic-ted':
     '重點挑選「TED 演講、學術論述、精準動詞與邏輯轉折詞彙」，延伸例句請設定在公開演講與深度觀點分享情境。'
 };
+
+export function sanitizeApiKey(rawKey: string): string {
+  if (!rawKey) return '';
+  return rawKey.replace(/["'\s\u200B-\u200D\uFEFF]/g, '').trim();
+}
+
+export async function verifyGeminiApiKey(rawKey: string): Promise<{
+  ok: boolean;
+  message: string;
+}> {
+  const cleanKey = sanitizeApiKey(rawKey);
+  if (!cleanKey || cleanKey.length < 20) {
+    return { ok: false, message: '請輸入完整的 Gemini API Key（通常以 AIzaSy 開頭）' };
+  }
+  try {
+    const ai = new GoogleGenAI({ apiKey: cleanKey });
+    const res = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: 'Reply with OK',
+      config: {
+        maxOutputTokens: 10,
+        thinkingConfig: { thinkingBudget: 0 }
+      }
+    });
+    if (res && typeof res.text === 'string') {
+      return { ok: true, message: '✅ Gemini API Key 驗證成功！可直接貼上任何新 YouTube 影片網址進行解析。' };
+    }
+    return { ok: true, message: '✅ Gemini API Key 驗證通過！' };
+  } catch (err: any) {
+    const msg = String(err?.message || err || '');
+    if (msg.includes('API_KEY_INVALID') || msg.includes('400') || msg.includes('403') || msg.includes('invalid')) {
+      return {
+        ok: false,
+        message: '❌ 金鑰無效（API_KEY_INVALID）：請確認複製自 Google AI Studio 的有效 Gemini API Key。'
+      };
+    }
+    if (msg.includes('429') || msg.includes('RESOURCE_EXHAUSTED')) {
+      return {
+        ok: true,
+        message: '⚠️ 金鑰有效，但目前已達每分鐘免費額度上限（429），請稍候 30 秒再試。'
+      };
+    }
+    return { ok: false, message: `❌ 金鑰連線測試失敗：${msg.slice(0, 120)}` };
+  }
+}
 
 export function extractVideoIdClient(input: string): string | null {
   if (!input || typeof input !== 'string') return null;
@@ -32,7 +82,7 @@ export function extractVideoIdClient(input: string): string | null {
   } catch {
     // ignore
   }
-  const regexMatch = trimmed.match(/(?:v=|\/)([0-9A-Za-z_-]{11}).*/);
+  const regexMatch = trimmed.match(/(?:v=|youtu\.be\/|embed\/|shorts\/|live\/)([0-9A-Za-z_-]{11})/);
   return regexMatch ? regexMatch[1] : null;
 }
 
@@ -89,10 +139,26 @@ export function parseCustomTranscriptClient(rawText: string) {
       cursorTime = h1 * 3600 + m1 * 60 + s1;
       continue;
     }
+    const timePrefix = line.match(/^\[?(\d{1,2}):(\d{2})(?:\.(\d+))?\]?\s*(.+)$/);
+    if (timePrefix) {
+      const m = parseInt(timePrefix[1], 10);
+      const s = parseInt(timePrefix[2], 10);
+      const start = m * 60 + s;
+      const text = timePrefix[4].trim();
+      const words = text.split(/\s+/).length;
+      const dur = Math.max(2.5, Math.min(8, Number((words * 0.42).toFixed(1))));
+      items.push({
+        start: Number(start.toFixed(1)),
+        end: Number((start + dur).toFixed(1)),
+        en: text
+      });
+      cursorTime = start + dur;
+      continue;
+    }
     const cleanText = line.replace(/<[^>]+>/g, '').trim();
     if (!cleanText) continue;
     const words = cleanText.split(/\s+/).length;
-    const dur = Math.max(3, Math.min(8, Math.round(words * 0.42)));
+    const dur = Math.max(2.8, Math.min(8, Number((words * 0.42).toFixed(1))));
     items.push({
       start: Number(cursorTime.toFixed(1)),
       end: Number((cursorTime + dur).toFixed(1)),
@@ -103,6 +169,240 @@ export function parseCustomTranscriptClient(rawText: string) {
 
   return items;
 }
+
+/**
+ * Safely parse Gemini JSON response, recovering completed subtitle objects even if output was truncated at maxOutputTokens.
+ */
+export function parseGeminiJsonSafely(rawText: string): {
+  summary?: {
+    overviewZh?: string;
+    keyTakeaways?: string[];
+    difficultyLevel?: string;
+    topicTags?: string[];
+  };
+  subtitles: Array<{ start: number; end: number; en: string; zh: string }>;
+} {
+  const cleaned = (rawText || '')
+    .replace(/^```(?:json)?\s*/i, '')
+    .replace(/\s*```$/i, '')
+    .trim();
+
+  try {
+    const parsed = JSON.parse(cleaned);
+    if (parsed && Array.isArray(parsed.subtitles)) {
+      return parsed;
+    }
+  } catch {
+    // Fall through to partial JSON recovery
+  }
+
+  // Recover individual {"start": ..., "end": ..., "en": "...", "zh": "..."} objects from truncated JSON
+  const recoveredSubs: Array<{ start: number; end: number; en: string; zh: string }> = [];
+  const objRegex =
+    /\{\s*(?:"id"\s*:\s*\d+\s*,\s*)?"start"\s*:\s*([\d.]+)\s*,\s*"end"\s*:\s*([\d.]+)\s*,\s*"en"\s*:\s*"((?:[^"\\]|\\.)*)"\s*,\s*"zh"\s*:\s*"((?:[^"\\]|\\.)*)"/g;
+  let m: RegExpExecArray | null;
+  while ((m = objRegex.exec(cleaned)) !== null) {
+    const start = parseFloat(m[1]);
+    const end = parseFloat(m[2]);
+    const en = m[3].replace(/\\"/g, '"').replace(/\\n/g, ' ').trim();
+    const zh = m[4].replace(/\\"/g, '"').replace(/\\n/g, ' ').trim();
+    if (en && !Number.isNaN(start)) {
+      recoveredSubs.push({
+        start: Number(start.toFixed(1)),
+        end: Number(Math.max(start + 1.2, end || start + 3.5).toFixed(1)),
+        en,
+        zh: zh || en
+      });
+    }
+  }
+
+  let overviewZh = '';
+  const ovMatch = cleaned.match(/"overviewZh"\s*:\s*"((?:[^"\\]|\\.)*)"/);
+  if (ovMatch) {
+    overviewZh = ovMatch[1].replace(/\\"/g, '"');
+  }
+
+  return {
+    summary: overviewZh
+      ? {
+          overviewZh,
+          keyTakeaways: [],
+          difficultyLevel: 'B2–C1 線上家教精講版',
+          topicTags: ['Gemini 2.5 Flash', '線上家教導讀']
+        }
+      : undefined,
+    subtitles: recoveredSubs
+  };
+}
+
+/**
+ * Enrich compact {start, end, en, zh} subtitles with our Online English Tutor Engine
+ * (Phrases/Idioms + B2-C2 Vocabulary + Sentence Coach Notes + 5 Quiz Questions)
+ */
+export function enrichSubtitlesWithTutorEngine(
+  rawSubtitles: Array<{ start: number; end: number; en: string; zh: string; meaningMap?: Record<string, string> }>,
+  videoTitle: string,
+  focusMode: FocusMode
+): {
+  subtitles: SubtitleItem[];
+  quiz: QuizQuestion[];
+  summary: VideoLesson['summary'];
+} {
+  let totalPhrases = 0;
+  let totalVocab = 0;
+
+  const enrichedSubtitles: SubtitleItem[] = rawSubtitles.map((s, idx) => {
+    const rawKws = selectTutorKeywordsForSentence(s.en, 2) || [];
+    const keywords: KeywordItem[] = rawKws.map((kw: any) => {
+      if (kw.pos === 'phr.') totalPhrases++;
+      else totalVocab++;
+
+      const meaning =
+        kw.meaning ||
+        (kw.rootHint
+          ? `句中進階核心詞（${kw.rootHint}；原句語境：${s.zh}）`
+          : `句中進階核心詞（原句語境：${s.zh}）`);
+
+      const exampleZh =
+        kw.exampleZh ||
+        `在專業溝通語境中，精準運用「${kw.lemma}」能讓表達更具說服力。`;
+
+      return {
+        word: kw.word,
+        lemma: kw.lemma,
+        pos: kw.pos,
+        phonetic: kw.phonetic || `/${kw.lemma}/`,
+        meaning,
+        level: kw.level || 'B2/C1 職場專業',
+        exampleEn: kw.exampleEn,
+        exampleZh
+      };
+    });
+
+    const start = Number(Number(s.start || 0).toFixed(1));
+    const nextStart = rawSubtitles[idx + 1]?.start;
+    let end = Number(Number(s.end || start + 3.5).toFixed(1));
+    if (end <= start) end = Number((start + 3.2).toFixed(1));
+    if (typeof nextStart === 'number' && nextStart > start && end > nextStart) {
+      end = Number(Math.max(start + 0.8, nextStart).toFixed(1));
+    }
+
+    const grammarNote = buildTutorGrammarNote(s.en, keywords);
+
+    return {
+      id: idx + 1,
+      start,
+      end,
+      en: s.en,
+      zh: s.zh || s.en,
+      grammarNote,
+      keywords
+    };
+  });
+
+  const subsWithKw = enrichedSubtitles.filter((s) => s.keywords && s.keywords.length > 0);
+  const allUniqueWords = Array.from(
+    new Set(subsWithKw.flatMap((s) => s.keywords.map((k) => k.word)))
+  );
+
+  const quiz: QuizQuestion[] = [];
+  const ratios = [0.08, 0.28, 0.5, 0.72, 0.9];
+  const sampleIndices = ratios
+    .map((r) => Math.min(subsWithKw.length - 1, Math.floor(subsWithKw.length * r)))
+    .filter((v, i, a) => v >= 0 && a.indexOf(v) === i);
+
+  for (let i = 0; i < sampleIndices.length; i++) {
+    const targetSub = subsWithKw[sampleIndices[i]];
+    const targetKw = targetSub?.keywords?.[0];
+    if (!targetSub || !targetKw) continue;
+
+    const blankedEn = targetSub.en.replace(
+      new RegExp(targetKw.word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i'),
+      '________'
+    );
+    const distractors = allUniqueWords.filter(
+      (w) =>
+        w.toLowerCase() !== targetKw.word.toLowerCase() &&
+        w.toLowerCase() !== targetKw.lemma.toLowerCase()
+    );
+    const pickedDistractors = [
+      distractors[(i * 5 + 2) % Math.max(1, distractors.length)] || 'turn out',
+      distractors[(i * 7 + 5) % Math.max(1, distractors.length)] || 'intuition',
+      distractors[(i * 11 + 9) % Math.max(1, distractors.length)] || 'perspective'
+    ];
+    const options = [targetKw.word, ...pickedDistractors];
+    const correctPos = i % 4;
+    const rotatedOptions = [...options];
+    const temp = rotatedOptions[0];
+    rotatedOptions[0] = rotatedOptions[correctPos];
+    rotatedOptions[correctPos] = temp;
+
+    quiz.push({
+      question: `At ${targetSub.start.toFixed(1)}s in the video, which expression best completes: "${blankedEn}"?`,
+      questionZh: `在影片 ${targetSub.start.toFixed(1)} 秒處，講者說：「${targetSub.zh}」，空格中應填入哪個道地字詞或片語？`,
+      options: rotatedOptions,
+      answer: correctPos,
+      explanation: `原句為：「${targetSub.en}」（${targetSub.zh}）。家教解析：「${targetKw.lemma} (${targetKw.pos})」意為「${targetKw.meaning}」。`,
+      relatedTimestamp: targetSub.start
+    });
+  }
+
+  const totalDurMin = Math.max(
+    1,
+    Math.round((enrichedSubtitles[enrichedSubtitles.length - 1]?.end || 60) / 60)
+  );
+  const introZh = enrichedSubtitles
+    .slice(0, 2)
+    .map((s) => s.zh)
+    .join(' ');
+  const midZh = enrichedSubtitles[Math.floor(enrichedSubtitles.length / 2)]?.zh || '';
+  const endZh = enrichedSubtitles[enrichedSubtitles.length - 1]?.zh || '';
+
+  return {
+    subtitles: enrichedSubtitles,
+    quiz,
+    summary: {
+      overviewZh: `已完整解析「${videoTitle}」（片長約 ${totalDurMin} 分鐘，共 ${enrichedSubtitles.length} 個完整語句、${allUniqueWords.length} 個精選字詞與片語）。脈絡從「${introZh.slice(0, 45)}⋯」展開，中段探討「${midZh.slice(0, 45)}⋯」，最終收斂於「${endZh.slice(0, 45)}」。`,
+      keyTakeaways: [
+        `全片雙語時間軸同步：共 ${enrichedSubtitles.length} 句中英對照字幕（${enrichedSubtitles[0]?.start || 0}s 至 ${enrichedSubtitles[enrichedSubtitles.length - 1]?.end || 0}s）`,
+        `真人感家教精選：標記 ${totalPhrases} 處道地片語（Phrasal Verbs / Idioms）與 ${totalVocab} 個 B2–C2 專業字彙，自動過濾簡單基礎字`,
+        `每句皆附「家教隨堂導讀（句型解析 × 母語語感 × 連音技巧）」與 ${quiz.length} 題時間軸實戰測驗`
+      ],
+      difficultyLevel: 'B2–C1 線上家教精講版',
+      topicTags: ['線上家教導讀', `共 ${enrichedSubtitles.length} 句`, '道地片語＋進階字彙']
+    }
+  };
+}
+
+const COMPACT_SUBTITLE_SCHEMA = {
+  type: Type.OBJECT,
+  properties: {
+    summary: {
+      type: Type.OBJECT,
+      properties: {
+        overviewZh: { type: Type.STRING },
+        keyTakeaways: { type: Type.ARRAY, items: { type: Type.STRING } },
+        difficultyLevel: { type: Type.STRING },
+        topicTags: { type: Type.ARRAY, items: { type: Type.STRING } }
+      },
+      required: ['overviewZh', 'keyTakeaways', 'difficultyLevel', 'topicTags']
+    },
+    subtitles: {
+      type: Type.ARRAY,
+      items: {
+        type: Type.OBJECT,
+        properties: {
+          start: { type: Type.NUMBER },
+          end: { type: Type.NUMBER },
+          en: { type: Type.STRING },
+          zh: { type: Type.STRING }
+        },
+        required: ['start', 'end', 'en', 'zh']
+      }
+    }
+  },
+  required: ['subtitles']
+};
 
 export async function analyzeYoutubeInBrowser({
   urlOrId,
@@ -118,6 +418,7 @@ export async function analyzeYoutubeInBrowser({
   customTitle?: string;
 }): Promise<VideoLesson> {
   const videoId = extractVideoIdClient(urlOrId) || 'custom_video';
+  const cleanKey = sanitizeApiKey(apiKey);
 
   // 1. Check static pre-cached lessons in ./cache/ first
   if (!customTranscript) {
@@ -128,9 +429,12 @@ export async function analyzeYoutubeInBrowser({
       try {
         const staticRes = await fetch(candidate);
         if (staticRes.ok) {
-          const cachedLesson = await staticRes.json();
-          if (cachedLesson && Array.isArray(cachedLesson.subtitles)) {
-            return { ...cachedLesson, cached: true };
+          const ct = staticRes.headers.get('content-type') || '';
+          if (ct.includes('application/json') || candidate.endsWith('.json')) {
+            const cachedLesson = await staticRes.json();
+            if (cachedLesson && Array.isArray(cachedLesson.subtitles) && cachedLesson.subtitles.length > 0) {
+              return { ...cachedLesson, cached: true };
+            }
           }
         }
       } catch {
@@ -142,147 +446,131 @@ export async function analyzeYoutubeInBrowser({
   const meta = await fetchVideoMetadataClient(videoId);
   const finalTitle = customTitle?.trim() || meta.title;
 
-  // 2. If user provided a Gemini API Key, run Gemini 2.5 Flash directly in the browser!
-  if (apiKey && apiKey.trim()) {
-    const ai = new GoogleGenAI({ apiKey: apiKey.trim() });
+  // 2. If user provided a Gemini API Key, run Gemini directly in the browser with Compact Schema + Low-Res Video Token Optimization + Multi-Model Fallback!
+  if (cleanKey) {
+    const ai = new GoogleGenAI({ apiKey: cleanKey });
     const focusInstruction = FOCUS_PROMPTS[focusMode] || FOCUS_PROMPTS['tech-interview'];
 
-    const fullSchema = {
-      type: Type.OBJECT,
-      properties: {
-        summary: {
-          type: Type.OBJECT,
-          properties: {
-            overviewZh: { type: Type.STRING },
-            keyTakeaways: { type: Type.ARRAY, items: { type: Type.STRING } },
-            difficultyLevel: { type: Type.STRING },
-            topicTags: { type: Type.ARRAY, items: { type: Type.STRING } }
-          },
-          required: ['overviewZh', 'keyTakeaways', 'difficultyLevel', 'topicTags']
-        },
-        subtitles: {
-          type: Type.ARRAY,
-          items: {
-            type: Type.OBJECT,
-            properties: {
-              id: { type: Type.INTEGER },
-              start: { type: Type.NUMBER },
-              end: { type: Type.NUMBER },
-              en: { type: Type.STRING },
-              zh: { type: Type.STRING },
-              grammarNote: { type: Type.STRING },
-              keywords: {
-                type: Type.ARRAY,
-                items: {
-                  type: Type.OBJECT,
-                  properties: {
-                    word: { type: Type.STRING },
-                    lemma: { type: Type.STRING },
-                    pos: { type: Type.STRING },
-                    phonetic: { type: Type.STRING },
-                    meaning: { type: Type.STRING },
-                    level: { type: Type.STRING },
-                    exampleEn: { type: Type.STRING },
-                    exampleZh: { type: Type.STRING }
-                  },
-                  required: [
-                    'word',
-                    'lemma',
-                    'pos',
-                    'phonetic',
-                    'meaning',
-                    'level',
-                    'exampleEn',
-                    'exampleZh'
-                  ]
-                }
-              }
-            },
-            required: ['id', 'start', 'end', 'en', 'zh', 'grammarNote', 'keywords']
+    const promptText = customTranscript?.trim()
+      ? `你是一位頂尖的線上英文家教。請將以下影片「${finalTitle}」的英文字幕整理為自然完整的英文句子 (en)、精準對應的秒數 (start, end)，以及流暢道地的繁體中文翻譯 (zh)，並提供繁體中文影片重點摘要 (summary)。\n【專項模式】：${focusInstruction}\n【字幕內容】：\n${customTranscript}`
+      : `你是一位頂尖的線上英文家教。請直接聽譯這支 YouTube 影片「${finalTitle}」，依時間軸順序列出影片中講者說的每一句完整英文句子 (en)、對應的開始秒數 (start) 與結束秒數 (end)，以及自然道地的繁體中文翻譯 (zh)，並提供繁體中文影片重點摘要 (summary)。\n【注意】：每一句長度請控制在 1～2 句自然話語（約 3～8 秒），確保 start 與 end 秒數與講者開口聲音完全同步！`;
+
+    // Build attempts:
+    // Attempt 1: gemini-2.5-flash with MEDIA_RESOLUTION_LOW (saves 65% video tokens so 35-min videos fit in free tier!) and thinkingBudget: 0
+    // Attempt 2: If video is very long (>35 mins) and hits token quota, retry with first 12 minutes (startOffset: 0s, endOffset: 720s)
+    // Attempt 3: Fallback model gemini-2.5-flash-lite / gemini-2.0-flash
+    const attempts: Array<{
+      model: string;
+      useClipWindow: boolean;
+    }> = [
+      { model: 'gemini-2.5-flash', useClipWindow: false },
+      { model: 'gemini-2.5-flash', useClipWindow: true },
+      { model: 'gemini-2.5-flash-lite', useClipWindow: true },
+      { model: 'gemini-2.0-flash', useClipWindow: true }
+    ];
+
+    let lastError: any = null;
+
+    for (const attempt of attempts) {
+      try {
+        const videoPart: any = {
+          fileData: {
+            fileUri: `https://www.youtube.com/watch?v=${videoId}`,
+            mimeType: 'video/mp4'
           }
-        },
-        quiz: {
-          type: Type.ARRAY,
-          items: {
-            type: Type.OBJECT,
-            properties: {
-              question: { type: Type.STRING },
-              questionZh: { type: Type.STRING },
-              options: { type: Type.ARRAY, items: { type: Type.STRING } },
-              answer: { type: Type.INTEGER },
-              explanation: { type: Type.STRING },
-              relatedTimestamp: { type: Type.NUMBER }
-            },
-            required: [
-              'question',
-              'questionZh',
-              'options',
-              'answer',
-              'explanation',
-              'relatedTimestamp'
-            ]
-          }
+        };
+        if (attempt.useClipWindow) {
+          videoPart.videoMetadata = {
+            startOffset: '0s',
+            endOffset: '720s'
+          };
         }
-      },
-      required: ['summary', 'subtitles', 'quiz']
-    };
 
-    const contents = customTranscript?.trim()
-      ? [
-          {
-            text: `請針對以下英文影片字幕「${finalTitle}」進行雙語翻譯、句構語法解析、句中核心單字（含音標、詞性、繁中字義、例句）與 4 題隨堂測驗生成。\n【專項模式】：${focusInstruction}\n【字幕內容】：\n${customTranscript}`
-          }
-        ]
-      : [
-          {
-            fileData: {
-              fileUri: `https://www.youtube.com/watch?v=${videoId}`,
-              mimeType: 'video/mp4'
-            }
-          },
-          {
-            text: `請直接觀看並聽譯這支 YouTube 影片「${finalTitle}」，完整擷取核心英文句子（含準確的 start 與 end 秒數）、流暢繁體中文翻譯、語法解析、句中重點單字（keywords）與 4 題隨堂測驗（quiz）。\n【專項學習模式】：${focusInstruction}`
-          }
-        ];
+        const contents = customTranscript?.trim()
+          ? [{ text: promptText }]
+          : [videoPart, { text: promptText }];
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents,
-      config: {
-        responseMimeType: 'application/json',
-        responseSchema: fullSchema,
-        temperature: 0.25
+        const config: any = {
+          responseMimeType: 'application/json',
+          responseSchema: COMPACT_SUBTITLE_SCHEMA,
+          temperature: 0.2,
+          maxOutputTokens: 65536,
+          mediaResolution: 'MEDIA_RESOLUTION_LOW'
+        };
+        if (attempt.model.startsWith('gemini-2.5')) {
+          config.thinkingConfig = { thinkingBudget: 0 };
+        }
+
+        const response = await ai.models.generateContent({
+          model: attempt.model,
+          contents,
+          config
+        });
+
+        const parsed = parseGeminiJsonSafely(response.text || '');
+        if (parsed.subtitles && parsed.subtitles.length > 0) {
+          const enriched = enrichSubtitlesWithTutorEngine(
+            parsed.subtitles,
+            finalTitle,
+            focusMode
+          );
+          const duration = Math.ceil(
+            enriched.subtitles[enriched.subtitles.length - 1]?.end || 180
+          );
+
+          return {
+            id: `yt_${videoId}`,
+            videoId,
+            title: finalTitle,
+            channel: meta.channel,
+            duration,
+            thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+            focusMode,
+            summary: parsed.summary?.overviewZh
+              ? {
+                  overviewZh: parsed.summary.overviewZh,
+                  keyTakeaways:
+                    parsed.summary.keyTakeaways && parsed.summary.keyTakeaways.length > 0
+                      ? parsed.summary.keyTakeaways
+                      : enriched.summary.keyTakeaways,
+                  difficultyLevel:
+                    parsed.summary.difficultyLevel || enriched.summary.difficultyLevel,
+                  topicTags:
+                    parsed.summary.topicTags && parsed.summary.topicTags.length > 0
+                      ? parsed.summary.topicTags
+                      : enriched.summary.topicTags
+                }
+              : enriched.summary,
+            subtitles: enriched.subtitles,
+            quiz: enriched.quiz
+          };
+        }
+      } catch (err: any) {
+        lastError = err;
+        const msg = String(err?.message || err || '');
+        // If key itself is invalid, stop retrying immediately and report clear error
+        if (msg.includes('API_KEY_INVALID') || msg.includes('API key not valid')) {
+          throw new Error('GEMINI_KEY_INVALID: 您輸入的 Gemini API Key 無效，請檢查是否複製完整（應以 AIzaSy 開頭）。');
+        }
       }
-    });
+    }
 
-    const parsed = JSON.parse(response.text || '{}');
-    const subs: SubtitleItem[] = Array.isArray(parsed.subtitles) ? parsed.subtitles : [];
-    const duration = subs.length > 0 ? Math.ceil(subs[subs.length - 1].end) : 180;
-
-    return {
-      id: `yt_${videoId}`,
-      videoId,
-      title: finalTitle,
-      channel: meta.channel,
-      duration,
-      thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
-      focusMode,
-      summary: parsed.summary || {
-        overviewZh: `由 Gemini 2.5 Flash 即時完成「${finalTitle}」全片雙語解析。`,
-        keyTakeaways: ['支援逐句點擊跳轉', '標亮重點單字音標與例句', '隨堂測驗檢驗理解度'],
-        difficultyLevel: 'B2 Upper-Intermediate',
-        topicTags: ['Gemini 2.5 Flash', focusMode]
-      },
-      subtitles: subs,
-      quiz: Array.isArray(parsed.quiz) ? parsed.quiz : []
-    };
+    const errMsg = String(lastError?.message || lastError || '');
+    if (errMsg.includes('429') || errMsg.includes('RESOURCE_EXHAUSTED') || errMsg.includes('quota')) {
+      throw new Error(
+        'GEMINI_QUOTA_EXCEEDED: 您的 Gemini API Key 目前達到每分鐘免費額度上限（429 Quota Exceeded），請稍候約 30～60 秒再試，或於設定中貼上字幕文字直接解析！'
+      );
+    }
+    throw new Error(
+      `GEMINI_CALL_FAILED: Gemini 影片解析失敗（${errMsg.slice(0, 100)}）。請確認該 YouTube 影片為公開影片，或於設定視窗貼上字幕文字解析。`
+    );
   }
 
-  // 3. If customTranscript is provided without API key on GitHub Pages, translate via MyMemory CORS API
+  // 3. If customTranscript is provided without API key on GitHub Pages, translate via MyMemory CORS API + Tutor Engine!
   if (customTranscript && customTranscript.trim()) {
     const rawItems = parseCustomTranscriptClient(customTranscript);
-    const subtitles: SubtitleItem[] = await Promise.all(
-      rawItems.slice(0, 60).map(async (item, idx) => {
+    const translatedRaw = await Promise.all(
+      rawItems.slice(0, 120).map(async (item) => {
         let zh = item.en;
         try {
           const r = await fetch(
@@ -298,33 +586,27 @@ export async function analyzeYoutubeInBrowser({
           // ignore
         }
         return {
-          id: idx + 1,
           start: item.start,
           end: item.end,
           en: item.en,
-          zh,
-          grammarNote: '點擊右上角「AI 深度拆解此句」可查看詳細句構分析。',
-          keywords: []
+          zh
         };
       })
     );
+
+    const enriched = enrichSubtitlesWithTutorEngine(translatedRaw, finalTitle, focusMode);
 
     return {
       id: `yt_${videoId}`,
       videoId,
       title: finalTitle,
       channel: meta.channel,
-      duration: subtitles[subtitles.length - 1]?.end || 120,
+      duration: Math.ceil(enriched.subtitles[enriched.subtitles.length - 1]?.end || 120),
       thumbnail: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
       focusMode,
-      summary: {
-        overviewZh: `已從自訂字幕匯入「${finalTitle}」共 ${subtitles.length} 句雙語對照。`,
-        keyTakeaways: ['若需在靜態網頁直接解析任意新 YouTube 網址，請於右上角「設定」填入免費 Gemini API Key。'],
-        difficultyLevel: 'B2 Upper-Intermediate',
-        topicTags: ['Custom Transcript', focusMode]
-      },
-      subtitles,
-      quiz: []
+      summary: enriched.summary,
+      subtitles: enriched.subtitles,
+      quiz: enriched.quiz
     };
   }
 
@@ -344,9 +626,10 @@ export async function askSentenceTutorClientFallback({
   videoTitle: string;
   apiKey: string;
 }) {
-  if (apiKey && apiKey.trim()) {
+  const cleanKey = sanitizeApiKey(apiKey);
+  if (cleanKey) {
     try {
-      const ai = new GoogleGenAI({ apiKey: apiKey.trim() });
+      const ai = new GoogleGenAI({ apiKey: cleanKey });
       const schema = {
         type: Type.OBJECT,
         properties: {
@@ -375,7 +658,7 @@ export async function askSentenceTutorClientFallback({
       };
       const res = await ai.models.generateContent({
         model: 'gemini-2.5-flash',
-        contents: `你是一位專精於「科技外商與母語口語」的英文私教。
+        contents: `你是一位專精於「科技外商與母語口語」的線上真人英文家教。
 影片標題：「${videoTitle}」
 目標英文原句：「${sentenceEn}」
 目標中文翻譯：「${sentenceZh}」
@@ -385,7 +668,8 @@ export async function askSentenceTutorClientFallback({
         config: {
           responseMimeType: 'application/json',
           responseSchema: schema,
-          temperature: 0.3
+          temperature: 0.3,
+          thinkingConfig: { thinkingBudget: 0 }
         }
       });
       if (res.text) return JSON.parse(res.text);

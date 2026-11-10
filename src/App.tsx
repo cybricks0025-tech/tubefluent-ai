@@ -442,9 +442,17 @@ export function App() {
     customTitle?: string;
     customTranscript?: string;
     forceRefresh?: boolean;
+    overrideApiKey?: string;
   }) => {
     const targetUrl = (options?.customUrl ?? youtubeUrlInput).trim();
     if (!targetUrl && !options?.customTranscript) return;
+
+    const effectiveApiKey = (
+      options?.overrideApiKey ??
+      apiKey ??
+      localStorage.getItem(STORAGE_KEYS.API_KEY) ??
+      ''
+    ).trim();
 
     setAnalyzing(true);
     setAnalyzeStep(1);
@@ -464,7 +472,7 @@ export function App() {
           body: JSON.stringify({
             urlOrId: targetUrl,
             focusMode,
-            apiKey,
+            apiKey: effectiveApiKey,
             customTranscript: options?.customTranscript || '',
             customTitle: options?.customTitle || '',
             forceRefresh: Boolean(options?.forceRefresh)
@@ -476,6 +484,10 @@ export function App() {
 
         const data = await res.json();
         if (!res.ok) {
+          // If backend caption fetch failed, fall through to browser Gemini analyzer if user has an API key
+          if (effectiveApiKey) {
+            throw new Error('TRY_BROWSER_GEMINI');
+          }
           if (data.error === 'CAPTION_FETCH_FAILED') {
             setAnalyzeBanner({ type: 'warning', text: data.message });
             setSettingsOpen(true);
@@ -485,11 +497,11 @@ export function App() {
         }
         newLesson = data;
       } catch {
-        // GitHub Pages (static host): run Gemini 2.5 Flash or static cache directly in the browser
+        // GitHub Pages (static host) or browser Gemini fallback: run Gemini 2.5 Flash directly in the browser
         newLesson = await analyzeYoutubeInBrowser({
           urlOrId: targetUrl,
           focusMode,
-          apiKey,
+          apiKey: effectiveApiKey,
           customTranscript: options?.customTranscript,
           customTitle: options?.customTitle
         });
@@ -510,12 +522,17 @@ export function App() {
         text: `${lesson.cached ? '已載入' : '解析完成'}「${lesson.title}」・共 ${lesson.subtitles.length} 句`
       });
     } catch (err: any) {
+      const msg = String(err?.message || '');
+      const cleanMessage = msg
+        .replace(/^(?:GEMINI_KEY_INVALID|GEMINI_QUOTA_EXCEEDED|GEMINI_CALL_FAILED):\s*/, '')
+        .trim();
+
       setAnalyzeBanner({
         type: 'warning',
         text:
-          err?.message === 'STATIC_HOST_NEEDS_API_KEY'
-            ? '解析新影片需要 Gemini API Key：請在「設定」中填入（只存在你的瀏覽器），或貼上字幕文字匯入。'
-            : '影片解析失敗，請確認網址，或在「設定」填入 Gemini API Key / 貼上字幕匯入。'
+          msg === 'STATIC_HOST_NEEDS_API_KEY'
+            ? '公開靜態網頁解析新 YouTube 影片需使用 Gemini API Key：請在彈出視窗填入免費金鑰（自動儲存於本機），或貼上字幕文字匯入。'
+            : cleanMessage || '影片解析失敗，請確認網址，或在「設定」填入有效的 Gemini API Key / 貼上字幕匯入。'
       });
       setSettingsOpen(true);
     } finally {
@@ -1324,6 +1341,10 @@ export function App() {
         onClose={() => setSettingsOpen(false)}
         apiKey={apiKey}
         onSaveApiKey={handleSaveApiKey}
+        pendingVideoUrl={youtubeUrlInput}
+        onSaveAndAnalyze={(cleanKey) => {
+          handleAnalyzeYoutube({ overrideApiKey: cleanKey });
+        }}
         focusMode={focusMode}
         onChangeFocusMode={setFocusMode}
         onSubmitCustomTranscript={({ videoUrl, title, transcript }) => {

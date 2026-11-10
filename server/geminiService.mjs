@@ -188,7 +188,10 @@ export async function analyzeYoutubeVideoDirectlyWithGemini({
   focusMode = 'tech-interview',
   apiKey
 }) {
-  const resolvedKey = apiKey || process.env.GEMINI_API_KEY;
+  const resolvedKey = (apiKey || process.env.GEMINI_API_KEY || '').replace(
+    /["'\s\u200B-\u200D\uFEFF]/g,
+    ''
+  );
   if (!resolvedKey) {
     throw new Error('MISSING_GEMINI_API_KEY');
   }
@@ -197,11 +200,23 @@ export async function analyzeYoutubeVideoDirectlyWithGemini({
   const focusInstruction = FOCUS_PROMPTS[focusMode] || FOCUS_PROMPTS['tech-interview'];
   const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
-  const fullSchema = {
+  const compactSchema = {
     type: Type.OBJECT,
     properties: {
       summary: SUMMARY_AND_QUIZ_SCHEMA.properties.summary,
-      subtitles: SUBTITLE_BATCH_SCHEMA.properties.subtitles,
+      subtitles: {
+        type: Type.ARRAY,
+        items: {
+          type: Type.OBJECT,
+          properties: {
+            start: { type: Type.NUMBER },
+            end: { type: Type.NUMBER },
+            en: { type: Type.STRING },
+            zh: { type: Type.STRING }
+          },
+          required: ['start', 'end', 'en', 'zh']
+        }
+      },
       quiz: SUMMARY_AND_QUIZ_SCHEMA.properties.quiz
     },
     required: ['summary', 'subtitles', 'quiz']
@@ -217,18 +232,46 @@ export async function analyzeYoutubeVideoDirectlyWithGemini({
         }
       },
       {
-        text: `請直接觀看並聽譯這支 YouTube 影片「${videoTitle}」，完整擷取全片核心英文句子（含準確的 start 與 end 秒數）、流暢繁體中文翻譯、語法解析、句中重點單字（keywords）與 4 題隨堂測驗（quiz）。
+        text: `請直接聽譯這支 YouTube 影片「${videoTitle}」，完整擷取核心英文句子（含準確的 start 與 end 秒數）、流暢繁體中文翻譯 (zh)、重點摘要 (summary) 與 4 題隨堂測驗 (quiz)。
 【專項學習模式】：${focusInstruction}`
       }
     ],
     config: {
       responseMimeType: 'application/json',
-      responseSchema: fullSchema,
-      temperature: 0.25
+      responseSchema: compactSchema,
+      temperature: 0.2,
+      maxOutputTokens: 65536,
+      mediaResolution: 'MEDIA_RESOLUTION_LOW',
+      thinkingConfig: { thinkingBudget: 0 }
     }
   });
 
-  return JSON.parse(response.text);
+  const parsed = JSON.parse(response.text);
+  const rawSubs = Array.isArray(parsed.subtitles) ? parsed.subtitles : [];
+  parsed.subtitles = rawSubs.map((s, idx) => {
+    const rawKws = selectTutorKeywordsForSentence(s.en, 2) || [];
+    const keywords = rawKws.map((kw) => ({
+      word: kw.word,
+      lemma: kw.lemma,
+      pos: kw.pos,
+      phonetic: kw.phonetic || `/${kw.lemma}/`,
+      meaning: kw.meaning || `句中進階核心詞（${s.zh}）`,
+      level: kw.level || 'B2/C1 職場專業',
+      exampleEn: kw.exampleEn,
+      exampleZh: kw.exampleZh || `在專業溝通語境中，精準運用「${kw.lemma}」能讓表達更具說服力。`
+    }));
+    return {
+      id: idx + 1,
+      start: Number(Number(s.start || 0).toFixed(1)),
+      end: Number(Number(s.end || (s.start || 0) + 3.5).toFixed(1)),
+      en: s.en,
+      zh: s.zh || s.en,
+      grammarNote: buildTutorGrammarNote(s.en, keywords),
+      keywords
+    };
+  });
+
+  return parsed;
 }
 
 export async function askSentenceTutorWithGemini({
